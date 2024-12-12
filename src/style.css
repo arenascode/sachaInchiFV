@@ -24,18 +24,36 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-header {
-  background-color: #1b4d20;
-  color: #fff9f0;
-  padding: 20px;
-  text-align: center;
-}
 .hero {
   text-align: center;
   /* padding: 50px; */
   background-image: url("amazon.jpg");
   background-size: cover;
   color: #fff9f0;
+}
+
+.nav {
+  top: 0;
+  /* width: 100%; */
+  transition:all 0.5s;
+  /* position: relative; */
+  z-index: 1;
+}
+body.fixed-nav nav {
+  position: fixed;
+  /* box-shadow: 0 5px 0 rgba(0,0,0,0.1); */
+}
+
+h1.logo {
+  max-width: 0;
+  overflow: hidden;
+  transition: all 1.3s ease-in-out;
+  text-wrap: nowrap;
+  /* font-weight: 600;
+  font-size: 30px; */
+}
+.fixed-nav h1.logo {
+  max-width: 500px;
 }
 .parallax {
   background-attachment: fixed;
@@ -45,6 +63,10 @@ header {
 }
 .hero h1 {
   font-size: 3em;
+}
+
+#whatIsSachaInchi {
+  scroll-margin-top: 64px;
 }
 .cta-buttons {
   margin-top: 20px;
