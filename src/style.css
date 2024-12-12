@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "BrownSugar";
+  src: url("/assets/fonts/BrownSugar.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  background-color: #1b4d20;
+  color: #fff9f0;
+  padding: 20px;
+  text-align: center;
+}
+.hero {
+  text-align: center;
+  /* padding: 50px; */
+  background-image: url("amazon.jpg");
+  background-size: cover;
+  color: #fff9f0;
+}
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero h1 {
+  font-size: 3em;
+}
+.cta-buttons {
+  margin-top: 20px;
+}
+.cta-buttons button {
+  background-color: #f6ba02;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+#whatIsSachaInchi img {
+filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+box-shadow: none;
+}
+.split-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+.split-section div {
+  width: 45%;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 50px;
+}
+.product-card {
+  border: 1px solid #d6cc99;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+.testimonial-slider {
+  padding: 50px;
+  background-color: #1b4d20;
+  color: #fff9f0;
+}
+footer {
+  background-color: #163020;
+  color: #fff9f0;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

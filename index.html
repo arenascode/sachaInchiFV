@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Sacha Inchi</title>
+  </head>
+  <body>
+    <nav
+      class="fixed top-0 left-0 w-full bg-white bg-opacity-10 backdrop-blur-sm z-50 shadow-md"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex-shrink-0">
+            <h1 class="text-2xl font-bold text-[#f6ba02] font-BrownSugar">
+              KAWSAY SISA
+            </h1>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a
+                href="#"
+                class="text-gray-800 hover:text-green-800 px-3 py-2 rounded-md text-sm font-medium"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="text-gray-800 hover:text-green-800 px-3 py-2 rounded-md text-sm font-medium"
+                >About us</a
+              >
+              <a
+                href="#"
+                class="text-gray-800 hover:text-green-800 px-3 py-2 rounded-md text-sm font-medium"
+                >Benefits</a
+              >
+              <a
+                href="#"
+                class="text-gray-800 hover:text-green-800 px-3 py-2 rounded-md text-sm font-medium"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="hero min-h-screen parallax"
+      style="
+        background-image: url(https://images.pexels.com/photos/975771/pexels-photo-975771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+      "
+    >
+      <div class="hero-overlay bg-opacity-30 w-100"></div>
+      <div class="hero-content text-white text-center">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">Sacha Inchi</h1>
+          <h3 class="mb-5 text-2xl font-bold italic">
+            Amazon’s Superfood for a Healthier You!
+          </h3>
+          <p class="mb-5 text-xl text-pretty">
+            Discover the natural goodness of omega-rich, sustainable nutrition
+          </p>
+          <button
+            class="btn bg-[#f6ba02] text-lg border-none text-[#1b4d20] hover:scale-110 hover:bg-[#ffde59] hover:border-none mt-8"
+          >
+            Discover the Amazon's Secret!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section id="whatIsSachaInchi" class="bg-cream flex text-end">
+      <div class="body">
+        <h2 class="text-accent text-3xl font-bold text-center mb-8 border-b-[1px] border-accent">
+          What is Sacha Inchi?
+        </h2>
+        <p class="max-w-3xl mx-auto text-left text-lg">
+          From the heart of the Amazon, Sacha Inchi is more than a
+          superfood—it's a gift from nature! Packed with omega-3s, protein, and
+          antioxidants, this ancient seed supports your health while protecting
+          the planet. Whether enjoyed as a snack, an oil, or a powder, Sacha
+          Inchi brings wellness and sustainability together in every bite.
+        </p>
+      </div>
+      <div class="imgContainer mt-8 text-center text-darkGreen" >
+        <img
+          src="/assets/img/sacha-inchi-grano.png"
+          alt="Sacha Inchi Seed"
+          class="mx-auto rounded-lg shadow-lg"
+          style="max-width: 250px"
+          data-aos="zoom-in-left"
+        />
+      </div>
+    </section>
+
+    <section
+      class="split-section bg-beige py-16 parallax"
+      
+    >
+      <div class="hero-overlay bg-opacity-30 w-100"></div>
+      <div>
+        <h2 class="text-darkGreen text-3xl">
+          Why Your Body Will Love Sacha Inchi
+        </h2>
+        <ul>
+          <li>Boosts heart health with omega-3s</li>
+          <li>Enhances brain function and memory</li>
+          <li>Supports glowing skin and strong bones</li>
+          <li>Sustainably sourced for guilt-free nutrition</li>
+        </ul>
+      </div>
+      <div>
+        <img
+          src="benefits.jpg"
+          alt="Sacha Inchi Benefits"
+          style="width: 100%"
+        />
+      </div>
+    </section>
+
+    <section class="products-grid bg-softGreen">
+      <div class="product-card">
+        <h3>Sacha Inchi Oil</h3>
+        <p>Rich in Omega-3 fatty acids.</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <h3>Toasted Sacha Inchi</h3>
+        <p>A crunchy, healthy snack.</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <h3>Sacha Inchi Powder</h3>
+        <p>Perfect for smoothies and baking.</p>
+        <button>Add to Cart</button>
+      </div>
+    </section>
+
+    <section class="testimonial-slider">
+      <h2>What Others Are Saying</h2>
+      <p>
+        "Sacha Inchi oil has transformed my daily routine. My skin is glowing,
+        and I feel more energized than ever!" – Maria
+      </p>
+    </section>
+
+    <footer>
+      <p>Contact us | Follow us on social media</p>
+      <p>&copy; 2024 Sacha Inchi</p>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+         duration: 1800
+      });
+    </script>
+  </body>
+</html>
