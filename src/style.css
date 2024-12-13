@@ -65,7 +65,85 @@ h1.logo {
   font-size: 3em;
 }
 
-#whatIsSachaInchi {
+/* LANGUAGE SWITCH */
+/* Container for the switch */
+.language-switch {
+  position: relative;
+  width: 3.5rem;
+  height: 1.8rem;
+  display: inline-block;
+}
+
+/* Hidden checkbox */
+.language-switch input {
+  display: none;
+}
+
+/* Switch background */
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ccc;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s ease;
+}
+
+/* Language labels */
+.language {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  padding: 0 3px;
+  transition: opacity 0.3s ease;
+}
+
+/* Toggle button */
+.switch::after {
+  content: '';
+  position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: #fff;
+  border-radius: 18px;
+  top: 0px;
+  right: 27px;
+  transition: transform 0.3s ease;
+}
+
+/* When the toggle is checked */
+.language-switch input:checked + .switch {
+  /* background-color: #4caf4fe0; */
+}
+
+.language-switch input:checked + .switch::after {
+  transform: translateX(27px);
+}
+
+/* Adjust visibility of language labels */
+.language-switch input:checked + .switch .en {
+  opacity: 0.8;
+}
+
+.language-switch input:checked + .switch .es {
+  opacity: 1;
+}
+
+.language-switch input:not(:checked) + .switch .en {
+  opacity: 1;
+}
+
+.language-switch input:not(:checked) + .switch .es {
+  opacity: 0.8;
+  
+}
+
+
+.whatIsSachaInchi {
   scroll-margin-top: 64px;
 }
 .cta-buttons {
@@ -84,7 +162,7 @@ section {
   text-align: center;
 }
 
-#whatIsSachaInchi img {
+.whatIsSachaInchi img {
 filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 box-shadow: none;
 }
