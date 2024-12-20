@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
     <link rel="stylesheet" href="./src/style.css" />
     <title>Sacha Inchi</title>
   </head>
@@ -11,9 +15,7 @@
     <div
       id="section1"
       class="hero min-h-screen parallax"
-      style="
-        background-image: url(https://images.pexels.com/photos/975771/pexels-photo-975771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-      "
+      style="background-image: url(public/assets/img/sacha-inchi-enhanced.png)"
     >
       <div class="hero-overlay bg-opacity-50 w-100"></div>
       <div class="hero-content text-white text-center">
@@ -50,17 +52,20 @@
             <div class="ml-10 flex items-baseline space-x-4">
               <a
                 href="#"
-                class="text-cream hover:text-green-800 px-3 py-2 rounded-md text-sm font-medium"
+                class="text-cream hover:text-accent px-3 py-2 rounded-md text-sm font-medium"
+                data-role="home"
                 >Home</a
               >
               <a
                 href="#"
-                class="text-cream hover:text-green-800 px-3 py-2 rounded-md text-sm font-medium"
+                class="text-cream hover:text-accent px-3 py-2 rounded-md text-sm font-medium"
+                data-role="aboutUs"
                 >About us</a
               >
               <a
                 href="#"
-                class="text-cream hover:text-green-800 px-3 py-2 rounded-md text-sm font-medium"
+                class="text-cream hover:text-accent px-3 py-2 rounded-md text-sm font-medium"
+                data-role="contact"
                 >Contact</a
               >
               <div class="language-switch">
@@ -75,84 +80,665 @@
         </div>
       </div>
     </nav>
-    <section id="section3" class="whatIsSachaInchi bg-cream flex text-end">
-      <div class="body">
-        <h2
-          class="text-accent text-3xl font-bold text-center mb-8 border-b-[1px] border-accent" data-role="title"
-        >
-          What is Sacha Inchi?
-        </h2>
-        <p class="max-w-3xl mx-auto text-left text-lg" data-role="description">
-          From the heart of the Amazon, Sacha Inchi is more than a
+    <section
+      id="section3"
+      class="whatIsSachaInchi relative h-screen flex bg-cover bg-center text-white parallax"
+      style="
+        background-image: url(https://images.pexels.com/photos/975771/pexels-photo-975771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+      "
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="bodyContainer">
+        <div class="body flex flex-col gap-1 relative text-5xl font-bold">
+          <h2
+            class="text-accent text-3xl font-bold text-center mb-8 mr-2 border-b-[1px] border-accent"
+            data-role="title"
+          >
+            What is Sacha Inchi?
+          </h2>
+          <p class="max-w-3xl mx-auto text-left text-lg" data-role="p1">
+            <!-- From the heart of the Amazon, Sacha Inchi is more than a
           superfood—it's a gift from nature! Packed with omega-3s, protein, and
           antioxidants, this ancient seed supports your health while protecting
           the planet. Whether enjoyed as a snack, an oil, or a powder, Sacha
-          Inchi brings wellness and sustainability together in every bite.
-        </p>
-      </div>
-      <div class="imgContainer mt-8 text-center text-darkGreen">
-        <img
-          src="/assets/img/sacha-inchi-grano.png"
-          alt="Sacha Inchi Seed"
-          class="mx-auto rounded-lg shadow-lg"
-          style="max-width: 250px"
-          data-aos="zoom-in-left"
-        />
-      </div>
-    </section>
-
-    <section id="section3" class="split-section bg-beige py-16 parallax">
-      <div class="hero-overlay bg-opacity-30 w-100"></div>
-      <div>
-        <h2 class="text-darkGreen text-3xl">
-          Why Your Body Will Love Sacha Inchi
-        </h2>
-        <ul>
-          <li>Boosts heart health with omega-3s</li>
-          <li>Enhances brain function and memory</li>
-          <li>Supports glowing skin and strong bones</li>
-          <li>Sustainably sourced for guilt-free nutrition</li>
-        </ul>
-      </div>
-      <div>
-        <img
-          src="benefits.jpg"
-          alt="Sacha Inchi Benefits"
-          style="width: 100%"
-        />
+          Inchi brings wellness and sustainability together in every bite. -->
+          </p>
+          <p
+            class="max-w-3xl mx-auto text-left text-lg mt-3"
+            data-role="p2"
+          ></p>
+        </div>
+        <div class="imgContainer text-center text-darkGreen">
+          <img
+            src="/assets/video/oilPour3.webp"
+            alt="Sacha Inchi Seed"
+            class="mx-auto rounded-lg shadow-lg"
+            style="max-width: 250px"
+            data-aos="zoom-in-left"
+          />
+        </div>
       </div>
     </section>
 
-    <section class="products-grid bg-softGreen">
-      <div class="product-card">
-        <h3>Sacha Inchi Oil</h3>
-        <p>Rich in Omega-3 fatty acids.</p>
-        <!-- <button>Add to Cart</button> -->
+    <section id="section4" class="bg-beige flex productBenefits">
+      <div class="top flex flex-col pt-[2rem] px-2">
+        <div class="titleContainer flex text-3xl self-center gap-2">
+         <h1
+          class="text-3xl font-bold text-primary mb-8 text-center"
+          data-role="title"
+        >
+          Sacha Inchi
+        </h1> 
+         <span data-role="subtitle" class="font-semibold"> Is a Superfood </span>
+        </div>
+        
+        <div
+          class="container p-2 px-1 text-center flex flex-col width-full self-center"
+        >
+          <!-- Benefits Grid -->
+          <div class="flex gap-8 w-full justify-center">
+            <!-- Benefit 1 -->
+            <div class="dropdown dropdown-hover h-min benefit1 w-max flex-1">
+              <div
+                tabindex="0"
+                role="button"
+                class="group relative py-4 w-36 h-36 rounded-full bg-green-600 shadow-lg hover:shadow-xl hover:bg-green-700 transition-all duration-300 ease-in-out cursor-pointer text-white text-center flex flex-col items-center overflow-hidden"
+                style="
+                  background-image: url(/assets/img/foods-with-omega3.webp);
+                "
+              >
+                <div class="absolute inset-0 bg-black bg-opacity-25"></div>
+                <div
+                  class="text-4xl mb-2 text-white group-hover:scale-110 transition-transform relative"
+                >
+                  <!-- Add your icon here -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="40px"
+                    viewBox="0 -960 960 960"
+                    width="40px"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M433.33-353.33h93.34v-100h100v-93.34h-100v-100h-93.34v100h-100v93.34h100v100ZM480-80.67q-139.67-35-229.83-161.5Q160-368.67 160-520.67v-240l320-120 320 120v240q0 152-90.17 278.5Q619.67-115.67 480-80.67Zm0-69.33q111.33-36.33 182.33-139.67 71-103.33 71-231v-193.66L480-809.67l-253.33 95.34v193.66q0 127.67 71 231Q368.67-186.33 480-150Zm0-330Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="text-lg font-bold group-hover:translate-y-1 transition-transform relative" data-role="benefit1Title"
+                >
+                  Anti-Inflammatory
+                </div>
+              </div>
+              <div
+                tabindex="0"
+                class="dropdown-content menu rounded-lg z-[1] w-[40rem] p-4 shadow-xl card mt-6 ml-[5rem] bg-cream border border-softGreen"
+              >
+                <div class="card-body p-[0.5rem]">
+                  <!-- Card Title -->
+                  <h3
+                    class="card-title text-lg font-bold text-primary mb-3 justify-center" data-role="benefit1CardTitle"
+                  >
+                    Soothe Inflammation and Boost Your Health Naturally
+                  </h3>
+
+                  <!-- First Paragraph -->
+                  <p class="text-[1rem] text-darkGreen leading-tight mb-1" data-role="benefit1Cardp1">
+                    Sacha Inchi is a powerful source of Omega-3 fatty acids and
+                    Vitamin E, offering anti-inflammatory and antioxidant
+                    properties.
+                  </p>
+
+                  <!-- Second Paragraph -->
+                  <p class="text-[1rem] text-darkGreen leading-tight" data-role="benefit1Cardp2">
+                    These nutrients work together to reduce inflammation, easing
+                    joint pain, muscle soreness, and symptoms of conditions like
+                    arthritis, while also protecting cells from oxidative stress
+                    and damage.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div class="dropdown dropdown-hover h-min w-max flex-1">
+              <div
+                tabindex="0"
+                role="button"
+                class="group relative py-4 w-36 h-36 rounded-full bg-green-600 shadow-lg hover:shadow-xl hover:bg-green-700 transition-all duration-300 ease-in-out cursor-pointer text-white text-center flex flex-col items-center overflow-hidden"
+                style="
+                  background-image: url(/assets/img/high-protein-foods.webp);
+                "
+              >
+                <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+                <div
+                  class="text-4xl mb-2 text-darkGreen group-hover:scale-110 transition-transform relative"
+                >
+                  <img
+                    src="/assets/icons/musculo.png"
+                    alt="muscle"
+                    width="38"
+                  />
+                </div>
+                <div
+                  class="text-lg font-bold text-white group-hover:translate-y-1 transition-transform relative" data-role="benefit2Title"
+                >
+                  Muscle Recovery
+                </div>
+              </div>
+              <div
+                tabindex="0"
+                class="dropdown-content menu rounded-lg z-[1] w-[40rem] p-4 shadow-xl card mt-6 ml-[-8rem] bg-cream border border-softGreen"
+              >
+                <div class="card-body p-[0.5rem]">
+                  <!-- Card Title -->
+                  <h2
+                    class="card-title text-lg font-bold text-primary mb-3 justify-center" data-role="benefit2CardTitle"
+                  >
+                    Fuel Your Muscles, Recover Faster, and Grow Stronger
+                  </h2>
+
+                  <!-- First Paragraph -->
+                  <p class="text-[1rem] text-darkGreen leading-tight mb-1" data-role="benefit2Cardp1">
+                    Rich in high-quality protein for muscle repair, recovery,
+                    and growth. After workouts, its protein helps rebuild muscle
+                    tissue, reduce soreness, and speed up recovery.
+                  </p>
+
+                  <!-- Second Paragraph -->
+                  <p class="text-[1rem] text-darkGreen leading-tight" data-role="benefit2Cardp2">
+                    Packed with magnesium and potassium, it prevents cramps,
+                    supports muscle function, and restores electrolyte balance.
+                    Its anti-inflammatory properties and Omega-3 fatty acids
+                    reduce muscle inflammation, helping you recover faster,
+                    perform better, and build strong, lean muscles naturally.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div class="dropdown dropdown-hover h-min w-max flex-1">
+              <div
+                tabindex="0"
+                role="button"
+                class="group relative py-4 w-36 h-36 rounded-full bg-green-600 shadow-lg hover:shadow-xl hover:bg-green-700 transition-all duration-300 ease-in-out cursor-pointer text-white text-center flex flex-col items-center overflow-hidden"
+                style="
+                  background-image: url(/assets/img/foodsForHeartHealth.webp);
+                "
+              >
+                <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+                <div
+                  class="text-4xl mb-2 text-white group-hover:scale-110 transition-transform relative"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="40px"
+                    viewBox="0 -960 960 960"
+                    width="40px"
+                    fill="#FFFFFF"
+                  >
+                    <path
+                      d="M293.33-840q55.34 0 103.34 25.33 48 25.34 83.33 72.67 39.33-49.33 86.33-73.67 47-24.33 100.34-24.33 90.66 0 152 61.33Q880-717.33 880-626q0 11.67-1.17 23-1.16 11.33-3.83 23h-68q3.67-11.67 5-23t1.33-23q0-64-41.33-105.67-41.33-41.66-105.33-41.66-49.67 0-92.34 29.83-42.66 29.83-65.66 81.5h-58q-22.34-51-65-81.17-42.67-30.16-92.34-30.16-64 0-105.33 41.66Q146.67-690 146.67-626q0 11.67 1.33 23t5 23H85q-2.67-11.67-3.83-23Q80-614.33 80-626q0-91.33 61.33-152.67 61.34-61.33 152-61.33Zm-94.66 460H288q36 38.33 83 83.33t109 101.34q62-56.34 108.67-101.34 46.66-45 82.66-83.33h90.34q-40.67 46.67-98 102.67-57.34 56-137 128.66l-46.67 42-46.67-42q-79.66-72.66-136.83-128.66-57.17-56-97.83-102.67ZM442-326.67q10.33 0 18.17-6.16Q468-339 471.33-349L530-524l42.33 62.67q5 6.66 12 10.66t15.67 4h313.33v-66.66H619L548-618q-5.33-7.67-13.17-11.17-7.83-3.5-16.83-3.5-10.33 0-18.5 6.17T488-610.33l-58 174.66-42.67-63q-5-6.66-11.66-10.66-6.67-4-15.34-4H46.67v66.66h293.66l71 105.34q5.34 7.66 13.5 11.16 8.17 3.5 17.17 3.5Zm38-157.66Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="text-lg font-bold group-hover:translate-y-1 transition-transfor text-wrap relative"
+                 data-role="benefit3Title">
+                  Cardiovascular Health
+                </div>
+              </div>
+              <div
+                tabindex="0"
+                class="dropdown-content menu rounded-lg z-[1] w-[40rem] p-4 shadow-xl card mt-5 ml-[-21rem] bg-cream border border-softGreen"
+              >
+                <div class="card-body p-[0.5rem]">
+                  <!-- Card Title -->
+                  <h2
+                    class="card-title text-lg font-bold text-primary mb-3 text-center justify-center" data-role="benefit3CardTitle"
+                  >
+                    Support a Stronger Heart, Naturally
+                  </h2>
+
+                  <!-- First Paragraph -->
+                  <p class="text-[1rem] text-darkGreen leading-tight mb-1" data-role="benefit3Cardp1">
+                    Packed with Omega-3 fatty acids, phytosterols, and
+                    antioxidants that work together to boost cardiovascular
+                    health. Its Omega-3s help lower bad cholesterol (LDL),
+                    increase good cholesterol (HDL), and reduce blood pressure,
+                    promoting healthy blood flow and protecting against heart
+                    disease.
+                  </p>
+
+                  <!-- Second Paragraph -->
+                  <p class="text-[1rem] text-darkGreen leading-tight" data-role="benefit3Cardp2">
+                    The antioxidants, including Vitamin E, shield your heart and
+                    arteries from oxidative stress, while its anti-inflammatory
+                    properties support overall heart function. Incorporating
+                    Sacha Inchi into your diet is a natural way to maintain a
+                    healthier, stronger heart.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Benefit 4 -->
+            <div class="dropdown dropdown-hover h-min w-max flex-1">
+              <div
+                tabindex="0"
+                role="button"
+                class="group relative py-4 w-36 h-36 rounded-full bg-green-600 shadow-lg hover:shadow-xl hover:bg-green-700 transition-all duration-300 ease-in-out cursor-pointer text-white text-center flex flex-col items-center overflow-hidden"
+                style="
+                  background-image: url(/assets/img/foodsRichVitaminE.webp);
+                "
+              >
+                <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                <div
+                  class="text-4xl mb-2 text-white group-hover:scale-110 transition-transform relative"
+                >
+                  <img src="/assets/icons/starSkin.png" alt="skin" width="38" />
+                </div>
+                <div
+                  class="text-lg font-bold group-hover:translate-y-1 transition-transform relative" data-role="benefit4Title"
+                >
+                  Skin Benefits
+                </div>
+              </div>
+              <div
+                tabindex="0"
+                class="dropdown-content menu rounded-lg z-[1] w-[40rem] p-4 shadow-xl card mt-6 ml-[-33rem] bg-cream border border-softGreen"
+              >
+                <div class="card-body p-[0.5rem]">
+                  <!-- Card Title -->
+                  <h2
+                    class="card-title text-lg font-bold text-primary mb-3 justify-center" data-role="benefit4CardTitle"
+                  >
+                    Glow Naturally with Nourished, Healthy Skin
+                  </h2>
+
+                  <!-- First Paragraph -->
+                  <p class="text-[1rem] text-darkGreen leading-tight mb-1" data-role="benefit4Cardp1">
+                    Sacha Inchi oil is a beauty secret powered by nature. Rich
+                    in Vitamin E and Omega-3 fatty acids, it deeply hydrates,
+                    restores skin elasticity, and fights signs of aging like
+                    fine lines and wrinkles. Its antioxidants protect your skin
+                    from environmental stress and free radical damage, promoting
+                    a radiant and even complexion.
+                  </p>
+
+                  <!-- Second Paragraph -->
+                  <p class="text-[1rem] text-darkGreen leading-tight" data-role="benefit4Cardp2">
+                    With its lightweight texture and anti-inflammatory
+                    properties, Sacha Inchi oil soothes irritation and balances
+                    oil production, making it perfect for all skin types. Reveal
+                    your natural glow with this Amazonian treasure.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--BackGround Parallax-->
       </div>
-      <div class="product-card">
-        <h3>Toasted Sacha Inchi</h3>
-        <p>A crunchy, healthy snack.</p>
-        <!-- <button>Add to Cart</button> -->
-      </div>
-      <div class="product-card">
-        <h3>Sacha Inchi Powder</h3>
-        <p>Perfect for smoothies and baking.</p>
-        <!-- <button>Add to Cart</button> -->
+      <div
+        class="imageSection4 relative parallax flex align-middle justify-center inset-0 bg-black bg-opacity-30"
+        style="background-image: url(public/assets/img/sacha-inchi-granos.jpg)"
+      >
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <span
+          class="text-white italic text-3xl text-center self-center bold relative" data-role="parallaxText"
+          >Nature’s Superfood for a Healthier, Happier You</span
+        >
       </div>
     </section>
 
-    <section class="testimonial-slider">
-      <h2>What Others Are Saying</h2>
-      <p>
-        "Sacha Inchi oil has transformed my daily routine. My skin is glowing,
-        and I feel more energized than ever!" – Maria
+    <section id="section5" class="dark:bg-primary">
+      <div class="container mx-auto py-12 px-4">
+        <!-- Section Title -->
+        <h1
+          class="text-center text-3xl font-bold text-primary mb-10 dark:text-white" data-role="title"
+        >
+          Discover Our Products
+        </h1>
+
+        <!-- Cards Container -->
+        <div class="grid gap-8 md:grid-cols-3">
+          <!-- Card 1 -->
+          <div
+            class="card group bg-cream rounded-lg shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105 overflow-hidden h-[500px]"
+          >
+            <div class="imgContainer h-[40%]">
+              <img
+                src="/assets/img/oilShot.webp"
+                alt="Product 1"
+                class="rounded-t-lg w-full h-full object-cover"
+                style="
+                  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+                  box-shadow: none;
+                "
+              />
+            </div>
+
+            <div class="card-body p-2 gap-2 max-h-min">
+              <h3 class="card-title text-lg font-bold text-primary mb-1" data-role="product1Title">
+                Oil
+              </h3>
+              <p class="text-sm text-darkGreen leading-relaxed max-h-min" data-role="product1p1">
+                Sacha Inchi Oil is a nutrient-rich treasure packed with
+                Omega-3s, Vitamin E, and powerful antioxidants.
+              </p>
+              <h3 class="card-title text-lg font-bold text-primary mb-1" data-role="product1Subtitle">
+                How To Use It
+              </h3>
+              <p class="text-sm text-darkGreen leading-relaxed max-h-min" data-role="product1p2">
+                Perfect for drizzling over salads, or as a supplement, it
+                supports heart health, glowing skin, and overall vitality.
+              </p>
+            </div>
+            <!-- <div class="card-footer p-5 text-right">
+        <button
+          class="px-4 py-2 bg-primary text-cream font-bold rounded-lg hover:bg-darkGreen transition-all duration-300"
+        >
+          Learn More
+        </button>
+      </div> -->
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="card group bg-cream rounded-lg shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105 overflow-hidden h-[500px]"
+          >
+            <div class="imgContainer h-[40%]">
+              <img
+                src="/assets/img/proteinPowder.webp"
+                alt="Product 2"
+                class="rounded-t-lg w-full h-full object-cover"
+                style="
+                  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+                  box-shadow: none;
+                "
+              />
+            </div>
+
+            <div class="card-body p-2 gap-2 max-h-min">
+              <h2 class="card-title text-lg font-bold text-primary mb-1" data-role="product2Title">
+                Protein Powder
+              </h2>
+              <p class="text-sm text-darkGreen leading-relaxed h-max" data-role="product2p1">
+                Sacha Inchi Protein Powder is a plant-based powerhouse loaded
+                with essential amino acids.
+              </p>
+              <h3 class="card-title text-lg font-bold text-primary mb-1" data-role="product2Subtitle">
+                How To Use It
+              </h3>
+              <p class="text-sm text-darkGreen leading-relaxed max-h-min" data-role="product2p2">
+                Add it to smoothies, baked goods, or post-workout shakes for
+                natural muscle recovery and sustained energy.
+              </p>
+            </div>
+            <!-- <div class="card-footer p-5 text-right">
+        <button
+          class="px-4 py-2 bg-primary text-cream font-bold rounded-lg hover:bg-darkGreen transition-all duration-300"
+        >
+          Learn More
+        </button>
+      </div> -->
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="card group bg-cream rounded-lg shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105 h-[500px]"
+          >
+            <div class="imgContainer h-[40%]">
+              <img
+                src="/assets/img/snacks.webp"
+                alt="Product 3"
+                class="rounded-t-lg w-full h-full object-cover"
+                style="
+                  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+                  box-shadow: none;
+                "
+              />
+            </div>
+
+            <div class="card-body p-2 max-h-min">
+              <h2 class="card-title text-lg font-bold text-primary mb-1" data-role="product3Title">
+                Snacks
+              </h2>
+              <p class="text-sm text-darkGreen leading-relaxed max-h-min" data-role="product3p1">
+                Toasted Sacha Inchi Seeds are a crunchy, satisfying snack packed
+                with protein, fiber, and healthy fats.
+              </p>
+              <h3 class="card-title text-lg font-bold text-primary mb-1" data-role="product3Subtitle">
+                How To Use It
+              </h3>
+              <p class="text-sm text-darkGreen leading-relaxed max-h-min" data-role="product3p2">
+                Perfect for guilt-free munching while boosting your energy and
+                overall health.
+              </p>
+            </div>
+            <!-- <div class="card-footer p-5 text-right">
+        <button
+          class="px-4 py-2 bg-primary text-cream font-bold rounded-lg hover:bg-darkGreen transition-all duration-300"
+        >
+          Learn More
+        </button>
+      </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="section6"
+      class="pt-6 pb-10 bg-cream dark:bg-beige flex flex-col"
+    >
+      <h2 class="text-3xl font-bold text-center text-darkGreen mb-8" data-role="title">
+        Awards for Sacha Inchi
+      </h2>
+      <p class="self-center italic text-lg text-primary" data-role="description">
+        Recognized Excellence: Award-Winning Sacha Inchi Oil Through the Years
       </p>
+      <div class="relative overflow-hidden max-w-4xl mx-auto w-[700px] mt-6">
+        <!-- Carousel Wrapper -->
+        <div
+          id="carousel"
+          class="flex gap-16 animate-scroll justify-center items-center"
+        >
+          <img
+            src="/assets/img/lemonde.webp"
+            alt="Award 2"
+            class="h-24 object-contain"
+          />
+          <img
+            src="/assets/img/ISO22000.webp"
+            alt="Award 2"
+            class="h-24 object-contain"
+          />
+          <img
+            src="/assets/img/2007award.webp"
+            alt="Award 2"
+            class="h-24 object-contain"
+          />
+          <img
+            src="/assets/img/medalla-de-oro.webp"
+            alt="Award 3"
+            class="h-24 object-contain"
+          />
+          <img
+            src="/assets/img/superiorTasteAward.webp"
+            alt="Award 4"
+            class="h-24 object-contain"
+          />
+          <!-- Duplicate Images for Infinite Scrolling -->
+          <img
+            src="/assets/img/lemonde.webp"
+            alt="Award 2"
+            class="h-24 object-contain"
+          />
+          <img
+            src="/assets/img/ISO22000.webp"
+            alt="Award 2"
+            class="h-24 object-contain"
+          />
+          <img
+            src="/assets/img/2007award.webp"
+            alt="Award 2"
+            class="h-24 object-contain"
+          />
+          <img
+            src="/assets/img/medalla-de-oro.webp"
+            alt="Award 3"
+            class="h-24 object-contain"
+          />
+          <img
+            src="/assets/img/superiorTasteAward.webp"
+            alt="Award 4"
+            class="h-24 object-contain"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="section7" class="py-16 bg-softGreen text-white text-center">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-6 text-darkGreen" data-role="title">
+          Experience the Benefits of Sacha Inchi
+        </h2>
+        <p class="text-xl mb-8 text-primary" data-role="description">
+          Take the first step towards better health and wellness with this
+          award-winning Amazonian treasure. Learn more to start your journey.
+        </p>
+        <div class="flex justify-center gap-4">
+          <!-- <button
+            id="shopNowBtn"
+            class="px-8 py-3 bg-yellow-500 text-darkGreen font-bold rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300"
+          >
+            Shop Now
+          </button> -->
+
+          <a href="/about.html" class="">
+            <button
+              id="learnMoreBtn"
+              class="px-8 py-3 bg-white text-green-600 font-bold rounded-lg shadow-lg hover:bg-green-600 hover:text-white transition duration-300" data-role="button"
+            >
+              Learn More
+            </button>
+          </a>
+        </div>
+      </div>
     </section>
 
-    <footer>
-      <p>Contact us | Follow us on social media</p>
-      <p>&copy; 2024 Sacha Inchi</p>
+    <footer id="section8"
+      class="bg-darkGreen text-white py-8 pl-16 flex flex-col justify-center content-center"
+    >
+      <div
+        class="container flex px-2 md:flex gap-20 justify-between items-center"
+      >
+        <!-- Company Info -->
+        <div
+          class="mb-6 md:mb-0 pr-6 md:border-r md:border-gray-400 md:w-1/3 flex-1"
+        >
+          <h2 class="text-2xl font-bold">Sacha Inchi</h2>
+          <p class="text-sm mt-2" data-role="description">
+            Discover the natural benefits of Sacha Inchi, the Amazonian treasure
+            for your health and wellness.
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div
+          class="mb-6 md:mb-0 pr-4 md:w-1/3 md:border-r md:border-gray-400 flex-1"
+        >
+          <ul class="space-y-2 items-center justify-between gap-4 text-nowrap">
+            <li>
+              <a href="/index.html" class="hover:text-accent transition" data-role="home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="/about.html" class="hover:text-accent transition" data-role="aboutUs"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="#section5" class="hover:text-accent transition" data-role="products"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a href="/contact" class="hover:text-accent transition" data-role="contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4" data-role="followUs">Follow Us</h3>
+          <div class="flex space-x-4">
+            <!-- Facebook -->
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              class="hover:text-yellow-400 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22.675 0h-21.35C.587 0 0 .588 0 1.313v21.374C0 23.413.587 24 1.325 24H12.82v-9.293H9.692v-3.622h3.127V8.413c0-3.1 1.892-4.787 4.652-4.787 1.321 0 2.457.1 2.788.142v3.234h-1.914c-1.504 0-1.794.715-1.794 1.762v2.309h3.588l-.467 3.622h-3.121V24h6.104c.738 0 1.325-.588 1.325-1.313V1.313C24 .588 23.413 0 22.675 0z"
+                />
+              </svg>
+            </a>
+            <!-- Twitter -->
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              class="hover:text-yellow-400 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M24 4.557a9.835 9.835 0 0 1-2.827.775 4.936 4.936 0 0 0 2.165-2.724 9.865 9.865 0 0 1-3.127 1.195 4.92 4.92 0 0 0-8.38 4.482A13.978 13.978 0 0 1 1.671 3.15a4.93 4.93 0 0 0 1.524 6.573 4.902 4.902 0 0 1-2.229-.616v.062a4.924 4.924 0 0 0 3.95 4.827 4.902 4.902 0 0 1-2.224.084 4.927 4.927 0 0 0 4.604 3.417 9.874 9.874 0 0 1-6.102 2.102c-.395 0-.785-.023-1.17-.067a13.945 13.945 0 0 0 7.557 2.215c9.057 0 14.009-7.513 14.009-14.009 0-.213-.005-.426-.014-.637a10.024 10.024 0 0 0 2.457-2.548z"
+                />
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="hover:text-yellow-400 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.428.41a4.92 4.92 0 0 1 1.7 1.105 4.923 4.923 0 0 1 1.105 1.7c.17.459.356 1.259.41 2.429.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.41 2.428a4.92 4.92 0 0 1-1.105 1.7 4.923 4.923 0 0 1-1.7 1.105c-.459.17-1.259.356-2.428.41-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.428-.41a4.92 4.92 0 0 1-1.7-1.105 4.923 4.923 0 0 1-1.105-1.7c-.17-.459-.356-1.259-.41-2.428C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.054-1.17.24-1.97.41-2.429a4.92 4.92 0 0 1 1.105-1.7A4.923 4.923 0 0 1 5.318 2.572c.459-.17 1.259-.356 2.429-.41 1.266-.058 1.646-.07 4.85-.07z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="mt-8 text-center text-sm text-gray-400">
+        © 2024 KAWSAY SISA | All rights reserved
+      </div>
     </footer>
+
     <script type="module" src="./src/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

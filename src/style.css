@@ -142,9 +142,18 @@ h1.logo {
   
 }
 
-
+/**SECTION 3*/
 .whatIsSachaInchi {
   scroll-margin-top: 64px;
+  height: 100vh;
+  padding: 0 50px;
+  text-align: center;
+  padding: 60px 50px 50px 50px;
+  /* opacity: 0.5; */
+}
+.whatIsSachaInchi .bodyContainer {
+  display: flex;
+  gap: 1rem;
 }
 .cta-buttons {
   margin-top: 20px;
@@ -157,10 +166,10 @@ h1.logo {
   font-size: 1.2em;
   cursor: pointer;
 }
-section {
+/* section {
   padding: 50px;
   text-align: center;
-}
+} */
 
 .whatIsSachaInchi img {
 filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
@@ -170,10 +179,23 @@ box-shadow: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px;
+  /* padding: 5rem; */
 }
-.split-section div {
-  width: 45%;
+/**Sacha Inchi Benefits*/
+#section4 {
+  display: flex;
+  flex-direction: column;
+  /* padding: 2rem 1rem; */
+  height: 550px;
+  max-width: 100%;
+}
+.imageSection4 {
+  margin-top: 1rem;
+  height: 100vh;
+  width: 100vw;
+}
+#section5 {
+  scroll-margin-top: 55px;
 }
 .products-grid {
   display: grid;

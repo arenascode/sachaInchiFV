@@ -15,6 +15,15 @@ export default {
         darkGreen: "#163020", // Darker green
         cream: "#fff9f0", // Cream white
       },
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        scroll: "scroll 15s linear infinite",
+      },
     },
   },
   plugins: [require("daisyui")],
