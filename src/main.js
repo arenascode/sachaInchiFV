@@ -5,8 +5,6 @@ const topOfNav = nav.offsetTop;
 
 function fixNav() {
   const offsetTop = window.scrollY;
-  console.log({ offsetTop });
-  console.log({ topOfNav });
   
 
   if (offsetTop >= topOfNav - 5) {
@@ -270,8 +268,6 @@ function updateTranslations(language) {
 
   Object.keys(translations[language]).forEach((sectionId) => {
     const sectionData = translations[language][sectionId];
-    console.log({ sectionData });
-
     const section = document.getElementById(sectionId);
 
     if (section) {
