@@ -5,9 +5,9 @@ const topOfNav = nav.offsetTop;
 
 function fixNav() {
   const offsetTop = window.scrollY;
-  // console.log({ offsetTop });
-  // console.log({ topOfNav });
-  // console.log((topOfNav - 1));
+  console.log({ offsetTop });
+  console.log({ topOfNav });
+  
 
   if (offsetTop >= topOfNav - 5) {
     document.body.classList.add("fixed-nav");
@@ -18,13 +18,49 @@ function fixNav() {
   }
 }
 
+window.addEventListener("scroll", fixNav);
+
+//*Show and hidde MobileMenu Modal */
+const mobileMenu = document.getElementById("navBar_mobileMenu");
+
+const hamburguerBtn = document.getElementById("hamburger-btn");
+
+const closeModalBtn = document.getElementById("closeModalBtn");
+
+function openModalMenu() {
+  mobileMenu.style.display = "block";
+  setTimeout(() => {
+    mobileMenu.style.opacity = 1;
+  }, 10);
+}
+
+function closeModalMenu() {
+  mobileMenu.style.opacity = 0;
+  setTimeout(() => {
+    mobileMenu.style.display = "none";
+  }, 500);
+}
+
+window.onclick = function (e) {
+  if (e.target === mobileMenu) {
+    mobileMenu.style.opacity = 0;
+    setTimeout(() => {
+      mobileMenu.style.display = "none";
+    }, 500);
+  }
+};
+
+
+hamburguerBtn.addEventListener("click", openModalMenu);
+
+closeModalBtn.addEventListener("click", closeModalMenu);
+
 const moreinfoHeroBtn = document.getElementById("moreInfoHero");
 const targetSection = document.querySelector(".whatIsSachaInchi");
 
 moreinfoHeroBtn.addEventListener("click", () => {
   targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
 });
-window.addEventListener("scroll", fixNav);
 
 //* ENGLISH/SPANISH SWITCH LOGIC
 
@@ -33,7 +69,7 @@ const translations = {
     section1: {
       subtitle: "Amazon’s Superfood for a Healthier You!",
       description:
-        "Discover the natural goodness of omega-rich, sustainable nutrition",
+        "Discover the natural goodness of sustainable nutrition rich in omegas 3, 6 and 9",
       cta: "Discover the Amazon's Secret",
     },
     section2: {
@@ -130,7 +166,7 @@ const translations = {
     section1: {
       subtitle: "El Superalimento del Amazonas para una Vida Más Saludable.",
       description:
-        "Descubre la bondad natural de una nutrición rica en omegas y sostenible.",
+        "Descubre la bondad natural de una nutrición sostenible y rica en omegas 3, 6 y 9.",
       cta: "Descubre el Secreto del Amazonas!",
     },
     section2: {
