@@ -17,6 +17,25 @@ function fixNav() {
 }
 
 window.addEventListener("scroll", fixNav);
+//* Parallax effect Mobile *//
+document.addEventListener("scroll", function () {
+
+  if (window.innerWidth <= 480) {
+    const scrolled = window.scrollY;
+    const parallax1 = document.querySelectorAll(".parallax1");
+    const parallax2 = document.querySelectorAll(".parallax2");
+    console.log(parallax1);
+    console.log(parallax2);
+    const totalParallax = [...parallax1, ...parallax2]
+    console.log({totalParallax});
+    
+    totalParallax.forEach((e) => {
+      e.style.backgroundPositionY = `${scrolled * 0.5}px`;
+    }
+    )
+  }
+  
+});
 
 //*Show and hidde MobileMenu Modal */
 const mobileMenu = document.getElementById("navBar_mobileMenu");
@@ -59,6 +78,20 @@ const targetSection = document.querySelector(".whatIsSachaInchi");
 moreinfoHeroBtn.addEventListener("click", () => {
   targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
 });
+
+//* Close Benefit Modals
+
+const benefitCloseBtns = document.querySelectorAll('.closeBenefitModal')
+
+console.log(benefitCloseBtns);
+
+benefitCloseBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    console.log(btn.parentNode);
+    const parentNode = btn.parentNode
+    parentNode.style.visibility = 'hidden'
+  })
+})
 
 //* ENGLISH/SPANISH SWITCH LOGIC
 

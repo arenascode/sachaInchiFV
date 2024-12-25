@@ -41,6 +41,7 @@
 }
 body.fixed-nav nav {
   position: fixed;
+  width: 100vw;
   /* box-shadow: 0 5px 0 rgba(0,0,0,0.1); */
 }
 
@@ -54,6 +55,10 @@ h1.logo {
 }
 .fixed-nav h1.logo {
   max-width: 500px;
+}
+
+#section1 {
+  background-image: url(/assets/img/sacha-inchi-bg.webp)
 }
 
 /** Mobile Menu Section  */
@@ -115,6 +120,7 @@ h1.logo {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .hero h1 {
   font-size: 3em;
 }
@@ -198,6 +204,7 @@ h1.logo {
 
 /**SECTION 3*/
 .whatIsSachaInchi {
+  background-image: url(/assets/img/amazonForest.webp);
   scroll-margin-top: 64px;
   height: 100vh;
   padding: 0 50px;
@@ -298,14 +305,27 @@ footer {
 
 /** Mobile */
 @media (max-width: 480px) {
+  #section1 {
+    background-image: url(/assets/img/sacha-inchi-mobile.webp);
+  }
   .whatIsSachaInchi {
+    background-image: url(/assets/img/amazonForestMobile.webp);
     padding: 1.5rem 1rem;
     font-size: 12px;
     height: auto;
   }
+  .parallax {
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repetition */
+  background-attachment: scroll;
+}
   .parallaxText {
     padding: 1rem;
   }
+  #section3 {
+  
+}
   #section5 {
     margin-top: 30px;
   }
