@@ -17,25 +17,6 @@ function fixNav() {
 }
 
 window.addEventListener("scroll", fixNav);
-//* Parallax effect Mobile *//
-document.addEventListener("scroll", function () {
-
-  if (window.innerWidth <= 480) {
-    const scrolled = window.scrollY;
-    const parallax1 = document.querySelectorAll(".parallax1");
-    const parallax2 = document.querySelectorAll(".parallax2");
-    console.log(parallax1);
-    console.log(parallax2);
-    const totalParallax = [...parallax1, ...parallax2]
-    console.log({totalParallax});
-    
-    totalParallax.forEach((e) => {
-      e.style.backgroundPositionY = `${scrolled * 0.5}px`;
-    }
-    )
-  }
-  
-});
 
 //*Show and hidde MobileMenu Modal */
 const mobileMenu = document.getElementById("navBar_mobileMenu");
@@ -79,19 +60,75 @@ moreinfoHeroBtn.addEventListener("click", () => {
   targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
-//* Close Benefit Modals
+//* Close And Reopen Benefit Modals
+
+
 
 const benefitCloseBtns = document.querySelectorAll('.closeBenefitModal')
 
-console.log(benefitCloseBtns);
+const dropdownBtns = document.querySelectorAll('.benefit')
+console.log({dropdownBtns});
+
+dropdownBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const modalContent = btn.parentNode.parentNode.querySelector(
+    '.dropdown-content'
+    )
+    console.log(btn);
+    
+    console.log({modalContent});
+    
+    console.log(btn);
+    modalContent.style.display = "block"
+  })
+})
 
 benefitCloseBtns.forEach((btn) => {
   btn.addEventListener('click', () => {
-    console.log(btn.parentNode);
-    const parentNode = btn.parentNode
-    parentNode.style.visibility = 'hidden'
+    const modal = btn.parentNode;
+    console.log(modal); // Logs current class list
+    modal.style.display = "none";
+
+    console.log(modal); // Logs updated class list
   })
 })
+
+//*other//
+// const dropdownBtns = document.querySelectorAll(".benefit");
+// console.log({dropdownBtns});
+
+// function toggleDropdown(e) {
+//   console.log({e});
+  
+//   const btn = e.target; // Reference the clicked button
+//   console.log({btn});
+  
+//   const modal = btn.querySelector(".dropdown-content");
+//   console.log({modal});
+  
+//   modal.classList.toggle("hidden");
+// }
+
+// // Attach event listeners
+// dropdownBtns.forEach((btn) => {
+//   console.log({btn});
+  
+//   btn.addEventListener("click", toggleDropdown); // Add listener
+//   btn.removeEventListener("click", toggleDropdown);
+// });
+
+// // Close buttons functionality
+// benefitCloseBtns.forEach((btn) => {
+//   btn.addEventListener("click", () => {
+//     const modal = btn.closest(".dropdown-content");
+//     modal.classList.add("hidden");
+//   });
+// });
+
+// // benefitCloseBtns.forEach((btn) => {
+// //   btn.removeEventListener("click", toggleDropdown);
+// // });
+
 
 //* ENGLISH/SPANISH SWITCH LOGIC
 

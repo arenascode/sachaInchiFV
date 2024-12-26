@@ -250,6 +250,10 @@ box-shadow: none;
   height: 550px;
   /* max-width: 100%; */
 }
+/*Modal */
+.hidden {
+  display: none;
+}
 .imageSection4 {
   margin-top: 1rem;
   height: 100vh;
