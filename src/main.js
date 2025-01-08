@@ -5,7 +5,6 @@ const topOfNav = nav.offsetTop;
 
 function fixNav() {
   const offsetTop = window.scrollY;
-  
 
   if (offsetTop >= topOfNav - 5) {
     document.body.classList.add("fixed-nav");
@@ -48,7 +47,6 @@ window.onclick = function (e) {
   }
 };
 
-
 hamburguerBtn.addEventListener("click", openModalMenu);
 
 closeModalBtn.addEventListener("click", closeModalMenu);
@@ -62,36 +60,33 @@ moreinfoHeroBtn.addEventListener("click", () => {
 
 //* Close And Reopen Benefit Modals
 
+const benefitCloseBtns = document.querySelectorAll(".closeBenefitModal");
 
-
-const benefitCloseBtns = document.querySelectorAll('.closeBenefitModal')
-
-const dropdownBtns = document.querySelectorAll('.benefit')
-console.log({dropdownBtns});
+const dropdownBtns = document.querySelectorAll(".benefit");
+console.log({ dropdownBtns });
 
 dropdownBtns.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const modalContent = btn.parentNode.parentNode.querySelector(
-    '.dropdown-content'
-    )
+  btn.addEventListener("click", () => {
+    const modalContent =
+      btn.parentNode.parentNode.querySelector(".dropdown-content");
     console.log(btn);
-    
-    console.log({modalContent});
-    
+
+    console.log({ modalContent });
+
     console.log(btn);
-    modalContent.style.display = "block"
-  })
-})
+    modalContent.style.display = "block";
+  });
+});
 
 benefitCloseBtns.forEach((btn) => {
-  btn.addEventListener('click', () => {
+  btn.addEventListener("click", () => {
     const modal = btn.parentNode;
     console.log(modal); // Logs current class list
     modal.style.display = "none";
 
     console.log(modal); // Logs updated class list
-  })
-})
+  });
+});
 
 //*other//
 // const dropdownBtns = document.querySelectorAll(".benefit");
@@ -99,20 +94,20 @@ benefitCloseBtns.forEach((btn) => {
 
 // function toggleDropdown(e) {
 //   console.log({e});
-  
+
 //   const btn = e.target; // Reference the clicked button
 //   console.log({btn});
-  
+
 //   const modal = btn.querySelector(".dropdown-content");
 //   console.log({modal});
-  
+
 //   modal.classList.toggle("hidden");
 // }
 
 // // Attach event listeners
 // dropdownBtns.forEach((btn) => {
 //   console.log({btn});
-  
+
 //   btn.addEventListener("click", toggleDropdown); // Add listener
 //   btn.removeEventListener("click", toggleDropdown);
 // });
@@ -128,7 +123,6 @@ benefitCloseBtns.forEach((btn) => {
 // // benefitCloseBtns.forEach((btn) => {
 // //   btn.removeEventListener("click", toggleDropdown);
 // // });
-
 
 //* ENGLISH/SPANISH SWITCH LOGIC
 
@@ -147,12 +141,13 @@ const translations = {
     },
     section3: {
       title: "What is Sacha Inchi?",
-      p1: "Native to the Amazon forest of Ecuador, Colombia and Peru, Sacha Inchi has been treasured for centuries for its incredible nutritional benefits.Packed with omega - 3s, protein, fiber, vitamin E, and antioxidants, it’s a true powerhouse for your health.",
-      p2: " Sacha inchi's precious oil is a treasure trove of nutrients, sought after for its unparalleled health benefits. Embrace its goodness in your kitchen, in your skin care routine, or as a daily supplement and experience the magic of this Amazonian wonder!",
+      p1: `Often called the "Indigenous Seed", has been a cherished treasure of the Amazon rainforest for centuries. Indigenous communities in Ecuador, Colombia, and Peru have cultivated and valued this extraordinary plant, celebrating its rich nutritional properties and cultural significance.`,
+      p2: "Packed with Omega-3, 6, 9 fatty acids, protein, fiber, Vitamin E, and antioxidants, Sacha Inchi is nature's answer to health and wellness. Its oil, a nutrient-dense elixir, is renowned for its unparalleled benefits for the body—whether used in cooking, as a skincare essential, or as a daily supplement.",
+      p3: "Beyond its health benefits, Sacha Inchi represents the wisdom and sustainable practices of the Amazon’s indigenous peoples. By embracing this superfood, you not only nourish your body but also support the cultural heritage and traditions of the Amazonian rainforest.",
     },
     section4: {
-      title: "Sacha Inchi",
-      subtitle: "Is a SuperFood",
+      title: "Sacha Inchi is a",
+      subtitle: "SuperFood",
       benefit1Title: "Anti-Inflamatory",
       benefit2Title: "Muscle Recovery",
       benefit3Title: "Cardiovascular Health",
@@ -182,14 +177,14 @@ const translations = {
       benefit4Cardp2:
         " With its lightweight texture and anti-inflammatory properties, Sacha Inchi oil soothes irritation and balances oil production, making it perfect for all skin types. Reveal your natural glow with this Amazonian treasure.",
       //Parallax Text
-      parallaxText: "Nature’s Superfood for a Healthier, Happier You",
+      parallaxText: "Nature’s Superfood for a Healthier, Vibrant You",
     },
     section5: {
-      title: "Discover Our Products",
+      title: "The Many Ways to Enjoy Sacha Inchi",
       //Product 1
       product1Title: "Oil",
       product1p1:
-        "Sacha Inchi Oil is a nutrient-rich treasure packed with Omega-3s, Vitamin E, and powerful antioxidants.",
+        "Sacha Inchi Oil is a nutrient-rich treasure packed with Omega-3s, 6, 9, Vitamin E, and powerful antioxidants.",
       product1Subtitle: "How To Use It",
       product1p2:
         "Perfect for drizzling over salads, or as a supplement, it supports heart health, glowing skin, and overall vitality.",
@@ -244,12 +239,13 @@ const translations = {
     },
     section3: {
       title: "Qué es Sacha Inchi?",
-      p1: "Originario de la selva amazónica de Ecuador, Colombia y Perú, el Sacha Inchi ha sido apreciado durante siglos por sus increíbles beneficios nutricionales. Repleto de omega-3, proteínas, fibra, vitamina E y antioxidantes, es un verdadero tesoro para tu salud.",
-      p2: "El valioso aceite de Sacha Inchi es un tesoro de nutrientes, conocido por sus incomparables beneficios para la salud. Disfruta de su bondad en tu cocina, en tu rutina de cuidado de la piel o como un suplemento diario, y experimenta la magia de esta maravilla amazónica.",
+      p1: `Conocido a menudo como la "Semilla Indígena", ha sido un tesoro preciado de la selva amazónica durante siglos. Las comunidades indígenas de Ecuador, Colombia y Perú han cultivado y valorado esta extraordinaria planta, celebrando sus ricas propiedades nutricionales y su profundo significado cultural.`,
+      p2: "Repleto de ácidos grasos Omega-3, 6, 9, proteínas, fibra, vitamina E y antioxidantes, Sacha Inchi es la respuesta de la naturaleza a la salud y el bienestar. Su aceite, un elixir rico en nutrientes, es famoso por sus incomparables beneficios para el cuerpo, ya sea que se use para cocinar, para el cuidado de la piel o como un suplemento diario.",
+      p3: "Más allá de sus beneficios para la salud, Sacha Inchi representa la sabiduría y las prácticas sostenibles de los pueblos indígenas de la Amazonía. Al adoptar este superalimento, no solo nutre su cuerpo, sino que también apoya el patrimonio cultural y las tradiciones de la selva amazónica.",
     },
     section4: {
-      title: "Sacha Inchi",
-      subtitle: "es un Super Alimento",
+      title: "Sacha Inchi es un",
+      subtitle: "Super Alimento",
       benefit1Title: "Anti-Inflamatorio",
       benefit2Title: "Desarrollo Muscular",
       benefit3Title: "Salud Cardiovascular",
@@ -282,14 +278,14 @@ const translations = {
         "Con su textura ligera y propiedades antiinflamatorias, el aceite de Sacha Inchi calma la irritación y equilibra la producción de grasa, lo que lo hace perfecto para todo tipo de piel. Descubre tu brillo natural con este tesoro amazónico.",
       //ParallaxText
       parallaxText:
-        "El Superalimento de la Naturaleza para una Vida más Saludable y Feliz",
+        "El Superalimento de la Naturaleza para una Vida más Saludable y Vibrante",
     },
     section5: {
-      title: "Descubre Nuestros Productos",
+      title: "Múltiples formas de disfrutar Sacha Inchi",
       // Product 1
       product1Title: "Aceite",
       product1p1:
-        "El aceite de Sacha Inchi es un tesoro rico en nutrientes, cargado de Omega-3, vitamina E y potentes antioxidantes.",
+        "El aceite de Sacha Inchi es un tesoro rico en nutrientes, cargado de Omega-3, 6, 9, vitamina E y potentes antioxidantes.",
       product1Subtitle: "Cómo usarlo",
       product1p2:
         "Perfecto para aderezar ensaladas o como suplemento, apoya la salud del corazón, una piel radiante y el bienestar general.",

@@ -11,7 +11,7 @@ export default {
         accent: "#f6ba02", // Gold
         highlight: "#ffde59", // Bright yellow
         softGreen: "#c4d7b2", // Light green
-        beige: "#d6cc99", // Earthy beige
+        beige: "#b3a86d", // Earthy beige
         darkGreen: "#163020", // Darker green
         cream: "#fff9f0", // Cream white
       },

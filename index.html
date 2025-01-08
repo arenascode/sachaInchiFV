@@ -9,22 +9,29 @@
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
     <link rel="stylesheet" href="./src/style.css" />
-    <link rel="shortcut icon" href="/assets/img/sacha-inchi-grano.webp" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/assets/img/sacha-inchi-grano.webp"
+      type="image/x-icon"
+    />
     <title>Sacha Inchi</title>
   </head>
   <body>
-    <div
-      id="section1"
-      class="hero min-h-screen parallax parallax1"
-    >
-      <div class="hero-overlay bg-opacity-40 w-100"></div>
+    <div id="section1" class="hero min-h-screen parallax parallax1">
+      <div class="hero-overlay bg-opacity-60 w-100"></div>
       <div class="hero-content text-white text-center">
         <div class="max-w-md">
           <h1 class="mb-5 text-5xl font-bold" data-role="title">Sacha Inchi</h1>
-          <h3 class="mb-5 text-2xl font-bold italic" data-role="subtitle">
+          <h3
+            class="mb-5 text-2xl font-bold italic tracking-wide"
+            data-role="subtitle"
+          >
             Amazon’s Superfood for a Healthier You!
           </h3>
-          <p class="mb-5 text-xl text-pretty" data-role="description">
+          <p
+            class="mb-5 text-xl text-pretty font-semibold tracking-wide"
+            data-role="description"
+          >
             Discover the natural goodness of omega-rich, sustainable nutrition
           </p>
           <button
@@ -50,7 +57,7 @@
               KAWSAY SISA
             </h1>
           </div>
-          <div class="flex gap-2 align-middle justify-center">
+          <div class="flex gap-3 align-middle justify-center">
             <div class="ml-10 hidden items-baseline space-x-4 sm:block">
               <a
                 href="#"
@@ -73,7 +80,7 @@
             </div>
             <div class="language-switch self-center">
               <input type="checkbox" id="languageToggle" />
-              <label for="languageToggle" class="switch pr-[0.2rem]">
+              <label for="languageToggle" class="switch pr-[1rem]">
                 <span class="language en">🇺🇸</span>
                 <span class="language es">🇪🇸</span>
               </label>
@@ -94,12 +101,12 @@
               <ul class="links_menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="/about.html">More Info</a></li>
-                <li><a href="#section5" class="goToCartFromMobile">Products</a></li>
+                <li>
+                  <a href="#section5" class="goToCartFromMobile">Products</a>
+                </li>
                 <li class="flex gap-8">
                   <div id="IGRedirect" class="w-8">
-                    <a
-                      href="https://www.instagram.com"
-                      target="_blank"
+                    <a href="https://www.instagram.com" target="_blank"
                       ><img src="/assets/icons/instagram.webp" alt=""
                     /></a>
                   </div>
@@ -128,7 +135,10 @@
           >
             What is Sacha Inchi?
           </h2>
-          <p class="max-w-3xl mx-auto text-left text-lg" data-role="p1">
+          <p
+            class="max-w-3xl mx-auto text-left text-[1.1rem] leading-5 tracking-wide"
+            data-role="p1"
+          >
             <!-- From the heart of the Amazon, Sacha Inchi is more than a
           superfood—it's a gift from nature! Packed with omega-3s, protein, and
           antioxidants, this ancient seed supports your health while protecting
@@ -136,8 +146,12 @@
           Inchi brings wellness and sustainability together in every bite. -->
           </p>
           <p
-            class="max-w-3xl mx-auto text-left text-lg mt-3"
+            class="max-w-3xl mx-auto text-left text-[1.1rem] mt-5 leading-5 tracking-wide"
             data-role="p2"
+          ></p>
+          <p
+            class="max-w-3xl mx-auto text-left text-[1.1rem] mt-5 leading-5 tracking-wide"
+            data-role="p3"
           ></p>
         </div>
         <div class="imgContainer text-center text-darkGreen">
@@ -155,98 +169,106 @@
     <section id="section4" class="bg-beige flex productBenefits items-center">
       <div class="top flex flex-col pt-[2rem] px-2 items-center">
         <div
-          class="titleContainer flex flex-col mb-4 sm:flex-row text-3xl self-center sm:gap-2"
+          class="titleContainer flex flex-col sm:flex-row text-3xl self-center sm:gap-2 align-middle"
         >
           <h1
-            class="text-3xl font-bold text-primary sm:mb-3 text-center"
+            class="text-3xl font-semibold text-primary sm:mb-3 text-center"
             data-role="title"
           >
-            Sacha Inchi
+            Sacha Inchi Is a
           </h1>
-          <span data-role="subtitle" class="font-semibold">
-            Is a Superfood
+          <span data-role="subtitle" class="font-bold text-white self-center sm:self-auto">
+            Superfood
           </span>
         </div>
-
-        <div
-          class="container p-2 px-1 text-center flex flex-col width-full"
-        >
+        <span class="font-semibol italic mt-1 sm:mt-0 mb-4">Tap on a circle to explore more details!</span>
+        <div class="container p-2 px-1 text-center flex flex-col width-full">
           <!-- Benefits Grid -->
           <div class="flex flex-wrap gap-8 w-full justify-center sm:gap-14">
             <!-- Benefit 1 -->
-            <div class="dropdown dropdown-hover h-min benefit1 w-max flex-1 flex justify-center">
+            <div class="benefitContainer">
               <div
-                tabindex="0"
-                role="button"
-                class="group relative py-4 w-36 h-36 rounded-full bg-green-600 shadow-lg hover:shadow-xl hover:bg-green-700 transition-all duration-300 ease-in-out cursor-pointer text-white text-center flex flex-col items-center overflow-hidden"
-                style="
-                  background-image: url(/assets/img/foods-with-omega3.webp);
-                "
+                class="dropdown dropdown-hover h-min benefit1 w-max flex-1 flex justify-center"
               >
-                <div class="benefit absolute inset-0 bg-black bg-opacity-25"></div>
                 <div
-                  class="benefit text-4xl mb-2 text-white group-hover:scale-110 transition-transform relative"
+                  tabindex="0"
+                  role="button"
+                  class="group relative py-4 w-36 h-36 rounded-full bg-green-600 shadow-lg hover:shadow-xl hover:bg-green-700 transition-all duration-300 ease-in-out cursor-pointer text-white text-center flex flex-col items-center overflow-hidden"
+                  style="
+                    background-image: url(/assets/img/foods-with-omega3.webp);
+                  "
                 >
-                  <!-- Add your icon here -->
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="40px"
-                    viewBox="0 -960 960 960"
-                    width="40px"
-                    fill="currentColor"
+                  <div
+                    class="benefit absolute inset-0 bg-black bg-opacity-25"
+                  ></div>
+                  <div
+                    class="benefit text-4xl mb-2 text-white group-hover:scale-110 transition-transform relative"
                   >
-                    <path
-                      d="M433.33-353.33h93.34v-100h100v-93.34h-100v-100h-93.34v100h-100v93.34h100v100ZM480-80.67q-139.67-35-229.83-161.5Q160-368.67 160-520.67v-240l320-120 320 120v240q0 152-90.17 278.5Q619.67-115.67 480-80.67Zm0-69.33q111.33-36.33 182.33-139.67 71-103.33 71-231v-193.66L480-809.67l-253.33 95.34v193.66q0 127.67 71 231Q368.67-186.33 480-150Zm0-330Z"
-                    />
-                  </svg>
+                    <!-- Add your icon here -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="40px"
+                      viewBox="0 -960 960 960"
+                      width="40px"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M433.33-353.33h93.34v-100h100v-93.34h-100v-100h-93.34v100h-100v93.34h100v100ZM480-80.67q-139.67-35-229.83-161.5Q160-368.67 160-520.67v-240l320-120 320 120v240q0 152-90.17 278.5Q619.67-115.67 480-80.67Zm0-69.33q111.33-36.33 182.33-139.67 71-103.33 71-231v-193.66L480-809.67l-253.33 95.34v193.66q0 127.67 71 231Q368.67-186.33 480-150Zm0-330Z"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="benefit text-lg font-bold group-hover:translate-y-1 transition-transform relative"
+                    data-role="benefit1Title"
+                  >
+                    Anti-Inflammatory
+                  </div>
                 </div>
                 <div
-                  class="benefit text-lg font-bold group-hover:translate-y-1 transition-transform relative"
-                  data-role="benefit1Title"
+                  tabindex="0"
+                  class="dropdown-content menu rounded-lg z-[1] w-[22rem] mt-[10rem] ml-[12rem] sm:w-[40rem] p-4 shadow-xl card sm:mt-40 sm:ml-[15rem] bg-cream border border-softGreen relative"
                 >
-                  Anti-Inflammatory
-                </div>
-              </div>
-              <div
-                tabindex="0"
-                class="dropdown-content menu rounded-lg z-[1] w-[22rem] mt-[10rem] ml-[12rem] sm:w-[40rem] p-4 shadow-xl card sm:mt-40 sm:ml-[15rem] bg-cream border border-softGreen relative"
-              >
-              <button class="absolute right-3 closeBenefitModal"> <img src="/assets/icons/cerrar.webp" alt="" width="16"></button>
-                <div class="card-body p-[0.5rem]">
-                  <!-- Card Title -->
-                  <h3
-                    class="card-title text-lg font-bold text-primary mb-3 justify-center"
-                    data-role="benefit1CardTitle"
-                  >
-                    Soothe Inflammation and Boost Your Health Naturally
-                  </h3>
+                  <button class="absolute right-3 closeBenefitModal">
+                    <img src="/assets/icons/cerrar.webp" alt="" width="16" />
+                  </button>
+                  <div class="card-body p-[0.5rem]">
+                    <!-- Card Title -->
+                    <h3
+                      class="card-title text-lg font-bold text-primary mb-3 justify-center"
+                      data-role="benefit1CardTitle"
+                    >
+                      Soothe Inflammation and Boost Your Health Naturally
+                    </h3>
 
-                  <!-- First Paragraph -->
-                  <p
-                    class="text-[1rem] text-darkGreen leading-tight mb-1"
-                    data-role="benefit1Cardp1"
-                  >
-                    Sacha Inchi is a powerful source of Omega-3 fatty acids and
-                    Vitamin E, offering anti-inflammatory and antioxidant
-                    properties.
-                  </p>
+                    <!-- First Paragraph -->
+                    <p
+                      class="text-[1rem] text-darkGreen leading-tight mb-1"
+                      data-role="benefit1Cardp1"
+                    >
+                      Sacha Inchi is a powerful source of Omega-3 fatty acids
+                      and Vitamin E, offering anti-inflammatory and antioxidant
+                      properties.
+                    </p>
 
-                  <!-- Second Paragraph -->
-                  <p
-                    class="text-[1rem] text-darkGreen leading-tight"
-                    data-role="benefit1Cardp2"
-                  >
-                    These nutrients work together to reduce inflammation, easing
-                    joint pain, muscle soreness, and symptoms of conditions like
-                    arthritis, while also protecting cells from oxidative stress
-                    and damage.
-                  </p>
+                    <!-- Second Paragraph -->
+                    <p
+                      class="text-[1rem] text-darkGreen leading-tight"
+                      data-role="benefit1Cardp2"
+                    >
+                      These nutrients work together to reduce inflammation,
+                      easing joint pain, muscle soreness, and symptoms of
+                      conditions like arthritis, while also protecting cells
+                      from oxidative stress and damage.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Benefit 2 -->
-            <div class=" dropdown dropdown-hover h-min w-max flex-1 flex justify-center">
+            <div
+              class="dropdown dropdown-hover h-min w-max flex-1 flex justify-center"
+            >
               <div
                 tabindex="0"
                 role="button"
@@ -255,7 +277,9 @@
                   background-image: url(/assets/img/high-protein-foods.webp);
                 "
               >
-                <div class="benefit absolute inset-0 bg-black bg-opacity-30"></div>
+                <div
+                  class="benefit absolute inset-0 bg-black bg-opacity-30"
+                ></div>
                 <div
                   class="benefit text-4xl mb-2 text-darkGreen group-hover:scale-110 transition-transform relative"
                 >
@@ -276,7 +300,9 @@
                 tabindex="0"
                 class="dropdown-content menu rounded-lg z-[1] w-[22rem] sm:w-[40rem] p-4 shadow-xl card mt-[10rem] sm:mt-40 ml-[-12rem] sm:ml-[0rem] bg-cream border border-softGreen"
               >
-              <button class="absolute right-3 closeBenefitModal"> <img src="/assets/icons/cerrar.webp" alt="" width="16"></button>
+                <button class="absolute right-3 closeBenefitModal">
+                  <img src="/assets/icons/cerrar.webp" alt="" width="16" />
+                </button>
                 <div class="card-body p-[0.5rem]">
                   <!-- Card Title -->
                   <h2
@@ -312,7 +338,9 @@
             </div>
 
             <!-- Benefit 3 -->
-            <div class="dropdown dropdown-hover h-min w-max flex-1 flex justify-center">
+            <div
+              class="dropdown dropdown-hover h-min w-max flex-1 flex justify-center"
+            >
               <div
                 tabindex="0"
                 role="button"
@@ -321,7 +349,9 @@
                   background-image: url(/assets/img/foodsForHeartHealth.webp);
                 "
               >
-                <div class="benefit absolute inset-0 bg-black bg-opacity-30"></div>
+                <div
+                  class="benefit absolute inset-0 bg-black bg-opacity-30"
+                ></div>
                 <div
                   class="benfit text-4xl mb-2 text-white group-hover:scale-110 transition-transform relative"
                 >
@@ -348,7 +378,9 @@
                 tabindex="0"
                 class="dropdown-content menu rounded-lg z-[1] w-[22rem] sm:w-[40rem] p-4 shadow-xl card mt-[10rem] sm:mt-40 ml-[13rem] sm:ml-[-10rem] bg-cream border border-softGreen"
               >
-              <button class="absolute right-3 closeBenefitModal"> <img src="/assets/icons/cerrar.webp" alt="" width="16"></button>
+                <button class="absolute right-3 closeBenefitModal">
+                  <img src="/assets/icons/cerrar.webp" alt="" width="16" />
+                </button>
                 <div class="card-body p-[0.5rem]">
                   <!-- Card Title -->
                   <h2
@@ -387,7 +419,9 @@
             </div>
 
             <!-- Benefit 4 -->
-            <div class="dropdown dropdown-hover h-min w-max flex-1 flex justify-center">
+            <div
+              class="dropdown dropdown-hover h-min w-max flex-1 flex justify-center"
+            >
               <div
                 tabindex="0"
                 role="button"
@@ -396,7 +430,9 @@
                   background-image: url(/assets/img/foodsRichVitaminE.webp);
                 "
               >
-                <div class="benefit absolute inset-0 bg-black bg-opacity-20"></div>
+                <div
+                  class="benefit absolute inset-0 bg-black bg-opacity-20"
+                ></div>
                 <div
                   class="benefit text-4xl mb-2 text-white group-hover:scale-110 transition-transform relative"
                 >
@@ -413,7 +449,9 @@
                 tabindex="0"
                 class="dropdown-content menu rounded-lg z-[1] w-[22rem] sm:w-[40rem] p-4 shadow-xl card mt-[10rem] sm:mt-40 ml-[-10rem] sm:ml-[-33rem] bg-cream border border-softGreen"
               >
-              <button class="absolute right-3 closeBenefitModal"> <img src="/assets/icons/cerrar.webp" alt="" width="16"></button>
+                <button class="absolute right-3 closeBenefitModal">
+                  <img src="/assets/icons/cerrar.webp" alt="" width="16" />
+                </button>
                 <div class="card-body p-[0.5rem]">
                   <!-- Card Title -->
                   <h2

@@ -185,11 +185,11 @@ h1.logo {
 }
 
 /* Adjust visibility of language labels */
-.language-switch input:checked + .switch .en {
+/* .language-switch input:checked + .switch .en {
   opacity: 0.8;
-}
+} */
 
-.language-switch input:checked + .switch .es {
+/* .language-switch input:checked + .switch .es {
   opacity: 1;
 }
 
@@ -200,7 +200,7 @@ h1.logo {
 .language-switch input:not(:checked) + .switch .es {
   opacity: 0.8;
   
-}
+} */
 
 /**SECTION 3*/
 .whatIsSachaInchi {
