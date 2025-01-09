@@ -148,6 +148,7 @@ const translations = {
     section4: {
       title: "Sacha Inchi is a",
       subtitle: "SuperFood",
+      cta: "Tap on a circle to explore more details!",
       benefit1Title: "Anti-Inflamatory",
       benefit2Title: "Muscle Recovery",
       benefit3Title: "Cardiovascular Health",
@@ -246,6 +247,7 @@ const translations = {
     section4: {
       title: "Sacha Inchi es un",
       subtitle: "Super Alimento",
+      cta: "Toca cualquier círculo para descubrir más!",
       benefit1Title: "Anti-Inflamatorio",
       benefit2Title: "Desarrollo Muscular",
       benefit3Title: "Salud Cardiovascular",

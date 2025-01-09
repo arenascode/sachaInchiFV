@@ -5,5 +5,5 @@ export default defineConfig({
   build: {
     outDir: "dist", // Carpeta donde se generan los archivos compilados
   },
-  base: 'https://arenascode.github.io/sachaInchi'
+  // base: 'https://arenascode.github.io/sachaInchi'
 });
