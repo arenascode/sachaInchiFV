@@ -35,7 +35,7 @@
 .nav {
   top: 0;
   /* width: 100%; */
-  transition:all 0.5s;
+  transition: all 0.5s;
   /* position: relative; */
   z-index: 1;
 }
@@ -58,7 +58,7 @@ h1.logo {
 }
 
 #section1 {
-  background-image: url(/assets/img/sacha-inchi-bg.webp)
+  background-image: url(/assets/img/sacha-inchi-bg.webp);
 }
 .heroSection_languageSwitch {
   position: absolute !important;
@@ -168,7 +168,7 @@ h1.logo {
 
 /* Toggle button */
 .switch::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 1.8rem;
   height: 1.8rem;
@@ -238,17 +238,19 @@ h1.logo {
 .whatIsSachaInchi .imgContainer {
   display: flex;
   align-self: center;
+  width: 35%;
 }
 .whatIsSachaInchi img {
-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-box-shadow: none;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  box-shadow: none;
 }
 .whatIsSachaInchi video {
-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-box-shadow: none;
-width: 350px;
-height: 350px;
-object-fit: fill;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  box-shadow: none;
+  width: 100%; /* Adjust as needed */
+  height: 400px; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the video fills its container */
+  display: block;
 }
 .split-section {
   display: flex;
@@ -327,6 +329,10 @@ footer {
   #section1 {
     background-image: url(/assets/img/sacha-inchi-mobile.webp);
   }
+  .language {
+  font-size: 1.2rem;
+  padding: 0 2px;
+}
   .whatIsSachaInchi {
     background-image: url(/assets/img/amazonForestMobile.webp);
     padding: 1.5rem 1rem;
@@ -334,17 +340,28 @@ footer {
     height: auto;
   }
   .parallax {
-  background-size: cover; /* Ensures the image covers the entire container */
-  background-position: center center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents repetition */
-  background-attachment: scroll;
-}
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repetition */
+    background-attachment: scroll;
+  }
   .parallaxText {
     padding: 1rem;
   }
   #section3 {
-  
+  }
+  .whatIsSachaInchi .imgContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
+  .whatIsSachaInchi video {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    box-shadow: none;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+  }
   #section5 {
     /* margin-top: 30px; */
   }

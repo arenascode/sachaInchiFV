@@ -1,117 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Sacha Inchi</title>
-  <script src="/src/main.js" defer></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 text-gray-800">
-<section class="bg-white py-12 px-6">
-  <!-- Section Header -->
-  <header class="text-center mb-12">
-    <h2 class="text-4xl font-bold text-green-700">Learn More About Sacha Inchi</h2>
-    <p class="text-lg text-gray-600 mt-4">
-      Discover the Amazonian seed that combines tradition, nutrition, and sustainability.
-    </p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Sacha Inchi</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="/src/main.js" defer></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  </head>
+  <body class="bg-cream text-gray-800 relative">
+    <nav
+      class="max-w-[100vw] sm:w-full bg-darkGreen z-50 nav text-white"
+      id="section2"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex justify-between gap-4 sm:justify-between items-center h-16 sm:flex-row"
+        >
+          <div class="flex-shrink-0">
+            <h1 class="text-2xl font-bold text-[#f6ba02] font-BrownSugar logo">
+              KAWSAY SISA
+            </h1>
+          </div>
+          <div class="flex gap-3 align-middle justify-center">
+            <div class="ml-10 hidden items-baseline space-x-4 sm:block">
+              <a
+                href="/index.html"
+                class="text-cream hover:text-accent px-3 py-2 rounded-md text-sm font-medium"
+                data-role="home"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="text-cream hover:text-accent px-3 py-2 rounded-md text-sm font-medium"
+                data-role="aboutUs"
+                >About us</a
+              >
+              <a
+                href="#"
+                class="text-cream hover:text-accent px-3 py-2 rounded-md text-sm font-medium"
+                data-role="contact"
+                >Contact</a
+              >
+            </div>
+            <div class="language-switch self-center">
+              <input
+                type="checkbox"
+                id="languageToggle2"
+                class="languageToggle"
+              />
+              <label for="languageToggle2" class="switch w-max">
+                <span class="language en">🇺🇸</span>
+                <span class="language es">🇪🇸</span>
+              </label>
+            </div>
+            <button
+              id="hamburger-btn"
+              class="toggleMobileMenu bg-transparent w-10 flex place-content-end sm:hidden xl:hidden"
+            >
+              <img src="/assets/icons/menuMobile.webp" alt="" />
+            </button>
+          </div>
 
-  <!-- Content Sections -->
-  <div class="space-y-16">
-    <!-- Section 1: Origin and History -->
-    <div>
-      <h3 class="text-3xl font-semibold text-green-600">A Gift from the Amazon</h3>
-      <p class="text-lg text-gray-700 mt-4">
-        Sacha Inchi, often called the "Indigenous Peanut," has been a vital part of Amazonian culture for centuries.
-        Indigenous communities in Ecuador, Colombia, and Peru have cultivated this remarkable seed, cherishing it
-        for its health benefits and sustainability. With its star-shaped fruit and rich heritage, Sacha Inchi
-        represents a deep connection between nature and tradition.
-      </p>
-      <img
-        src="/assets/img/sacha-inchi-origin.jpg"
-        alt="Sacha Inchi Plant"
-        class="rounded-lg shadow-lg mt-6 w-full sm:w-3/4 mx-auto"
-      />
-    </div>
-
-    <!-- Section 2: Nutritional Benefits -->
-    <div>
-      <h3 class="text-3xl font-semibold text-green-600">Nutritional Powerhouse</h3>
-      <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 text-gray-700">
-        <li class="flex items-start space-x-4">
-          <div class="text-3xl text-yellow-500">🍃</div>
-          <p>
-            **Rich in Omega-3s**: Supports heart health, reduces inflammation, and promotes brain function.
-          </p>
-        </li>
-        <li class="flex items-start space-x-4">
-          <div class="text-3xl text-yellow-500">💪</div>
-          <p>
-            **High Protein Content**: A complete source of all nine essential amino acids, aiding muscle recovery and growth.
-          </p>
-        </li>
-        <li class="flex items-start space-x-4">
-          <div class="text-3xl text-yellow-500">✨</div>
-          <p>
-            **Antioxidants and Vitamin E**: Protects cells, enhances skin health, and boosts immunity.
-          </p>
-        </li>
-        <li class="flex items-start space-x-4">
-          <div class="text-3xl text-yellow-500">🌿</div>
-          <p>
-            **Fiber-Rich**: Promotes gut health, supports digestion, and helps maintain a balanced microbiome.
-          </p>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Section 3: Health Benefits -->
-    <div>
-      <h3 class="text-3xl font-semibold text-green-600">Health Benefits</h3>
-      <p class="text-lg text-gray-700 mt-4">
-        Sacha Inchi’s rich composition of Omega-3s, antioxidants, and protein provides a variety of health benefits:
-      </p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-        <!-- Benefit 1 -->
-        <div class="p-6 bg-gray-100 rounded-lg shadow-md">
-          <h4 class="text-xl font-semibold text-green-700">Heart Health</h4>
-          <p class="text-sm mt-2">
-            Reduces cholesterol, supports healthy blood pressure, and promotes overall cardiovascular wellness.
-          </p>
-        </div>
-        <!-- Benefit 2 -->
-        <div class="p-6 bg-gray-100 rounded-lg shadow-md">
-          <h4 class="text-xl font-semibold text-green-700">Brain Function</h4>
-          <p class="text-sm mt-2">
-            Enhances cognitive function, memory, and mood while protecting against neurodegenerative conditions.
-          </p>
-        </div>
-        <!-- Benefit 3 -->
-        <div class="p-6 bg-gray-100 rounded-lg shadow-md">
-          <h4 class="text-xl font-semibold text-green-700">Muscle Recovery</h4>
-          <p class="text-sm mt-2">
-            Provides essential protein for post-workout recovery, reduces inflammation, and promotes lean muscle growth.
-          </p>
+          <div id="navBar_mobileMenu">
+            <div class="mobileMenu_content">
+              <button id="closeModalBtn" class="bg-transparent">
+                <img src="/assets/icons/close.webp" alt="" width="28px" />
+              </button>
+              <ul class="links_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="/about.html">More Info</a></li>
+                <li>
+                  <a href="#section5" class="goToCartFromMobile">Products</a>
+                </li>
+                <li class="flex gap-8">
+                  <div id="IGRedirect" class="w-8">
+                    <a href="https://www.instagram.com" target="_blank"
+                      ><img src="/assets/icons/instagram.webp" alt=""
+                    /></a>
+                  </div>
+                  <div id="WTSPRedirect" class="w-8">
+                    <a href="https://wa.link" target="_blank"
+                      ><img src="/assets/icons/whatsapp.webp" alt=""
+                    /></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- Section 4: Sustainability -->
-    <div>
-      <h3 class="text-3xl font-semibold text-green-600">Sustainability and Impact</h3>
-      <p class="text-lg text-gray-700 mt-4">
-        Supporting Sacha Inchi means preserving the Amazon and empowering local communities. Its cultivation
-        promotes sustainable farming practices and provides economic opportunities for indigenous farmers.
+    </nav>
+    <header
+      class="text-center mb-12 bg-darkGreen rounded-b-full text-white fixed h-26 w-[-webkit-fill-available] z-10"
+    >
+      <h2 class="text-3xl font-bold text-white mb-1">
+        Learn More About Sacha Inchi
+      </h2>
+      <p class="text-md text-gray-300 mt-2 mb-4">
+        Discover the Amazonian seed that combines tradition, nutrition, and
+        sustainability.
       </p>
       <img
-        src="/assets/img/sacha-inchi-sustainability.jpg"
-        alt="Sustainability"
-        class="rounded-lg shadow-lg mt-6 w-full sm:w-3/4 mx-auto"
+        src="./assets/img/SachaSeed.webp"
+        alt=""
+        width="80"
+        class="absolute right-[47%] top-[75%]"
       />
-    </div>
-  </div>
-</section>
+    </header>
+    <section class="bg-cream">
+      <!-- Content Sections -->
+      <div class="flex flex-col gap-10 mt-40 mx-14">
+        <!-- Section 1: Origin and History -->
+        <div
+          class="bg-cream p-8 rounded-lg shadow-xl border-l-4 border-accent hover:shadow-2xl transition-shadow"
+        >
+          <h3
+            class="text-3xl md:text-3xl font-semibold text-primary tracking-wide mb-6 relative"
+          >
+            A Gift from the Amazon
+            <span
+              class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-accent to-highlight rounded-full"
+            ></span>
+          </h3>
+          <p class="text-md text-darkGreen leading-relaxed mb-4">
+            <span class="text-accent font-bold text-xl">Sacha Inchi</span>,
+            often called the "<span class="italic text-primary"
+              >Indigenous Peanut</span
+            >," has been a vital part of Amazonian culture for centuries.
+            Indigenous communities in Ecuador, Colombia, and Peru have
+            cultivated this remarkable seed, cherishing it for its health
+            benefits and sustainability. With its star-shaped fruit and rich
+            heritage, Sacha Inchi represents a deep connection between nature
+            and tradition.
+          </p>
+          <p class="text-md text-darkGreen leading-relaxed mb-6">
+            Sacha Inchi oil is the result of the cold pressing of Sacha Inchi
+            raw seeds. It is a vegetable oil with a very high Omega 3, 6, and 9
+            content (up to 92%). No additives or preservatives are used. It also
+            contains vitamin A, E, and tocopherols.
+          </p>
+          <img
+            src="./assets/img/sachaInchiHarvest.jpg"
+            alt="Sacha Inchi Plant"
+            class="rounded-lg shadow-lg w-full sm:w-1/2 mx-auto border-4 border-softGreen"
+          />
+        </div>
 
-</body>
+        <!-- Section 2: Nutritional Benefits -->
+        <div>
+          <h3
+            class="text-3xl md:text-3xl font-semibold text-primary tracking-wide mb-6 relative"
+          >
+            Nutritional Powerhouse
+            <span
+              class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-accent to-highlight rounded-full"
+            ></span>
+          </h3>
+
+          <p class="mt-5">
+            Sacha Inchi is a very promising plant. Its seeds have a very high
+            nutritional quality due to their exceptionally high content of oil
+            (35 to 45%), proteins (25%), and essential minerals such as calcium,
+            magnesium, zinc, and potassium.
+          </p>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+            <li
+              class="flex items-start space-x-4 bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow"
+            >
+              <div class="text-3xl text-yellow-500">🍃</div>
+              <p class="text-gray-700">
+                <strong>Rich in Omega-3s, 6s, and 9s</strong>: Supports heart
+                health, reduces inflammation, and promotes brain function.
+              </p>
+            </li>
+            <li
+              class="flex items-start space-x-4 bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow"
+            >
+              <div class="text-3xl text-yellow-500">💪</div>
+              <p class="text-gray-700">
+                <strong>High Protein Content</strong>: A complete source of all
+                nine essential amino acids, aiding muscle recovery and growth.
+              </p>
+            </li>
+            <li
+              class="flex items-start space-x-4 bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow"
+            >
+              <div class="text-3xl text-yellow-500">✨</div>
+              <p class="text-gray-700">
+                <strong>Antioxidants and Vitamin E</strong>: Protects cells,
+                enhances skin health, and boosts immunity.
+              </p>
+            </li>
+            <li
+              class="flex items-start space-x-4 bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow"
+            >
+              <div class="text-3xl text-yellow-500">🌿</div>
+              <p class="text-gray-700">
+                <strong>Fiber-Rich</strong>: Promotes gut health, supports
+                digestion, and helps maintain a balanced microbiome.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <!-- Section 3: Comparison -->
+        <div
+          class="overflow-x-auto bg-cream p-6 px-14 rounded-lg shadow-xl border-l-4 border-accent flex flex-col items-center"
+        >
+          <h3
+            class="text-xl md:text-2xl font-semibold text-primary tracking-wide mb-6 relative"
+          >
+            Nutritional values of Sacha Inchi compared to other nuts, seeds, and
+            oils
+            <span
+              class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-accent to-highlight rounded-full"
+            ></span>
+          </h3>
+          <table class="table-xs text-left w-full text-darkGreen">
+            <thead class="bg-softGreen text-primary">
+              <tr>
+                <th class="px-4 py-3 border-b-2 border-primary">Oil</th>
+                <th class="px-4 py-3 border-b-2 border-primary">Omega 3</th>
+                <th class="px-4 py-3 border-b-2 border-primary">Omega 6</th>
+                <th class="px-4 py-3 border-b-2 border-primary">
+                  Total Polyunsaturated Fatty Acids
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="hover:bg-softGreen/50">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                  Sacha Inchi
+                </td>
+                <td class="px-4 py-3 border-b border-softGreen">44.9</td>
+                <td class="px-4 py-3 border-b border-softGreen">37.9</td>
+                <td class="px-4 py-3 border-b border-softGreen">82.8</td>
+              </tr>
+              <tr class="hover:bg-softGreen/50">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                  Flax
+                </td>
+                <td class="px-4 py-3 border-b border-softGreen">56.8</td>
+                <td class="px-4 py-3 border-b border-softGreen">16.1</td>
+                <td class="px-4 py-3 border-b border-softGreen">72.9</td>
+              </tr>
+              <tr class="hover:bg-softGreen/50">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                  Soy
+                </td>
+                <td class="px-4 py-3 border-b border-softGreen">8.0</td>
+                <td class="px-4 py-3 border-b border-softGreen">55.0</td>
+                <td class="px-4 py-3 border-b border-softGreen">63.0</td>
+              </tr>
+              <tr class="hover:bg-softGreen/50">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                  Corn
+                </td>
+                <td class="px-4 py-3 border-b border-softGreen">1.7</td>
+                <td class="px-4 py-3 border-b border-softGreen">60.8</td>
+                <td class="px-4 py-3 border-b border-softGreen">62.5</td>
+              </tr>
+              <tr class="hover:bg-softGreen/50">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                  Sunflower
+                </td>
+                <td class="px-4 py-3 border-b border-softGreen">0.3</td>
+                <td class="px-4 py-3 border-b border-softGreen">62.0</td>
+                <td class="px-4 py-3 border-b border-softGreen">62.3</td>
+              </tr>
+              <tr class="hover:bg-softGreen/50">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                  Olive
+                </td>
+                <td class="px-4 py-3 border-b border-softGreen">0.8</td>
+                <td class="px-4 py-3 border-b border-softGreen">8.3</td>
+                <td class="px-4 py-3 border-b border-softGreen">9.1</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="mt-4 text-sm text-gray-600 text-center">
+            Percent of polyunsaturated fatty acid content
+          </p>
+          <table class="table-xs w-full text-left text-darkGreen mt-10">
+            <thead class="bg-softGreen text-primary">
+              <tr>
+                <th
+                  class="px-4 py-3 border-b-2 border-primary text-pretty text-sm"
+                >
+                  Nuts & Seeds for Snacks
+                </th>
+                <th class="px-4 py-3 border-b-2 border-primary">Omega 3</th>
+                <th class="px-4 py-3 border-b-2 border-primary">Omega 6</th>
+                <th class="px-4 py-3 border-b-2 border-primary">
+                  Total Polyunsaturated Fatty Acids
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="hover:bg-softGreen/50">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                  Sacha Inchi
+                </td>
+                <td class="px-4 py-3 border-b border-softGreen">40.6</td>
+                <td class="px-4 py-3 border-b border-softGreen">43.6</td>
+                <td class="px-4 py-3 border-b border-softGreen">84.5</td>
+              </tr>
+              <tr class="hover:bg-softGreen/50">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                  Sunflower
+                </td>
+                <td class="px-4 py-3 border-b border-softGreen">0.1</td>
+                <td class="px-4 py-3 border-b border-softGreen">68.9</td>
+                <td class="px-4 py-3 border-b border-softGreen">69.0</td>
+              </tr>
+              <tr class="hover:bg-softGreen/50">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                  Peanuts
+                </td>
+                <td class="px-4 py-3 border-b border-softGreen">0.0</td>
+                <td class="px-4 py-3 border-b border-softGreen">33.2</td>
+                <td class="px-4 py-3 border-b border-softGreen">33.2</td>
+              </tr>
+              <tr class="hover:bg-softGreen/50">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                  Pistachios
+                </td>
+                <td class="px-4 py-3 border-b border-softGreen">0.6</td>
+                <td class="px-4 py-3 border-b border-softGreen">31.0</td>
+                <td class="px-4 py-3 border-b border-softGreen">31.6</td>
+              </tr>
+              <tr class="hover:bg-softGreen/50">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                  Cashew
+                </td>
+                <td class="px-4 py-3 border-b border-softGreen">0.4</td>
+                <td class="px-4 py-3 border-b border-softGreen">17.3</td>
+                <td class="px-4 py-3 border-b border-softGreen">17.7</td>
+              </tr>
+              <tr class="hover:bg-softGreen/50">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                  Macadamia
+                </td>
+                <td class="px-4 py-3 border-b border-softGreen">0.0</td>
+                <td class="px-4 py-3 border-b border-softGreen">1.8</td>
+                <td class="px-4 py-3 border-b border-softGreen">1.8</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="mt-4 text-sm text-gray-600 text-center">
+            Percent of polyunsaturated fatty acid content
+          </p>
+          <table class="table-xs w-full text-left text-darkGreen mt-10">
+            <thead class="bg-softGreen text-primary">
+              <tr>
+                <th class="px-4 py-3 border-b-2 border-primary">
+                  Nuts, Grains, and Oils
+                </th>
+                <th class="px-4 py-3 border-b-2 border-primary">% Proteins</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="hover:bg-softGreen/50">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                  Peanuts
+                </td>
+                <td class="px-4 py-3 border-b border-softGreen">25.8</td>
+              </tr>
+              <tr class="hover:bg-softGreen/50">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                  Sacha Inchi seeds
+                </td>
+                <td class="px-4 py-3 border-b border-softGreen">24.7</td>
+              </tr>
+              <tr class="hover:bg-softGreen/50">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                  Sunflower seeds
+                </td>
+                <td class="px-4 py-3 border-b border-softGreen">20.8</td>
+              </tr>
+              <tr class="hover:bg-softGreen/50">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                  Flax seeds
+                </td>
+                <td class="px-4 py-3 border-b border-softGreen">18.3</td>
+              </tr>
+              <tr class="hover:bg-softGreen/50">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                  Sesame seeds
+                </td>
+                <td class="px-4 py-3 border-b border-softGreen">17.3</td>
+              </tr>
+              <tr class="hover:bg-softGreen/50">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                  Olive oil
+                </td>
+                <td class="px-4 py-3 border-b border-softGreen">0.0</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="mt-4 text-sm text-gray-600 text-center">
+            Percent of Proteins content
+          </p>
+        </div>
+
+        <!-- Section 3: Health Benefits -->
+        <!-- <div>
+          <h3 class="text-3xl font-semibold text-primary">Health Benefits</h3>
+          <p class="text-md text-gray-700 mt-4">
+            Sacha Inchi’s rich composition of Omega-3s, antioxidants, and
+            protein provides a variety of health benefits:
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            
+            <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+              <h4 class="text-xl font-semibold text-green-700">Heart Health</h4>
+              <p class="text-sm mt-2">
+                Reduces cholesterol, supports healthy blood pressure, and
+                promotes overall cardiovascular wellness.
+              </p>
+            </div>
+            
+            <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+              <h4 class="text-xl font-semibold text-green-700">
+                Brain Function
+              </h4>
+              <p class="text-sm mt-2">
+                Enhances cognitive function, memory, and mood while protecting
+                against neurodegenerative conditions.
+              </p>
+            </div>
+           
+            <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+              <h4 class="text-xl font-semibold text-green-700">
+                Muscle Recovery
+              </h4>
+              <p class="text-sm mt-2">
+                Provides essential protein for post-workout recovery, reduces
+                inflammation, and promotes lean muscle growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      -->
+        <!-- Section 4: Sustainability -->
+        <div class="bg-cream p-6 rounded-lg shadow-lg border-l-4 border-accent mb-20">
+          <!-- <h3
+            class="text-3xl md:text-3xl font-semibold text-primary tracking-wide mb-6 relative"
+          >
+            Sustainability and Impact
+            <span
+              class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-accent to-highlight rounded-full"
+            ></span>
+          </h3> -->
+<!--BackGround Parallax-->
+      <div
+        class="imageSection4 relative parallax flex align-middle justify-center inset-0 bg-black bg-opacity-30 rounded-sm"
+        style="background-image: url(./assets/img/biosphere.jpeg)"
+      >
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <span
+          class="text-white italic text-4xl text-center self-center bold relative parallaxText"
+          data-role="parallaxText"
+          >Sustainability and Impact</span
+        >
+      </div>
+          <p class="text-md text-darkGreen leading-relaxed mt-8 mb-4">
+            Supporting Sacha Inchi means contributing to the preservation of the
+            Amazon, a vital part of Earth's biosphere that regulates the
+            planet's climate and houses unparalleled biodiversity. By choosing
+            Sacha Inchi, you are empowering local communities through
+            sustainable farming practices that harmonize with the delicate
+            balance of the Amazon ecosystem.
+          </p>
+          <p class="text-md text-darkGreen leading-relaxed">
+            This crop provides economic opportunities for indigenous farmers,
+            enabling them to thrive while protecting their natural environment.
+            Cultivating Sacha Inchi encourages agroforestry and reduces the need
+            for deforestation, fostering a model where the health of the
+            biosphere and human well-being are intrinsically connected.
+          </p>
+          
+        </div>
+      </div>
+    </section>
+    <footer
+      id="section8"
+      class="bg-darkGreen text-white py-8 pl-16 flex flex-col justify-center content-center"
+    >
+      <div
+        class="container flex-col flex sm:flex-row px-2 md:flex gap-5 sm:gap-20 justify-between items-center"
+      >
+        <!-- Company Info -->
+        <div
+          class="mb-6 md:mb-0 pr-6 md:border-r md:border-gray-400 md:w-1/3 flex-1"
+        >
+          <h2 class="text-2xl font-bold">Sacha Inchi</h2>
+          <p class="text-lg sm:text-sm mt-2" data-role="description">
+            Discover the natural benefits of Sacha Inchi, the Amazonian treasure
+            for your health and wellness.
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div
+          class="mb-6 md:mb-0 pr-4 md:w-1/3 md:border-r md:border-gray-400 flex-1"
+        >
+          <ul class="space-y-2 items-center justify-between gap-4 text-nowrap">
+            <li>
+              <a
+                href="/index.html"
+                class="hover:text-accent transition"
+                data-role="home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://arenascode.github.io/sachaInchi/about.html"
+                class="hover:text-accent transition"
+                data-role="aboutUs"
+                >More Info</a
+              >
+            </li>
+            <li>
+              <a
+                href="#section5"
+                class="hover:text-accent transition"
+                data-role="products"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                href="/contact"
+                class="hover:text-accent transition"
+                data-role="contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4" data-role="followUs">
+            Follow Us
+          </h3>
+          <div class="flex space-x-4">
+            <!-- Facebook -->
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              class="hover:text-yellow-400 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22.675 0h-21.35C.587 0 0 .588 0 1.313v21.374C0 23.413.587 24 1.325 24H12.82v-9.293H9.692v-3.622h3.127V8.413c0-3.1 1.892-4.787 4.652-4.787 1.321 0 2.457.1 2.788.142v3.234h-1.914c-1.504 0-1.794.715-1.794 1.762v2.309h3.588l-.467 3.622h-3.121V24h6.104c.738 0 1.325-.588 1.325-1.313V1.313C24 .588 23.413 0 22.675 0z"
+                />
+              </svg>
+            </a>
+            <!-- Twitter -->
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              class="hover:text-yellow-400 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M24 4.557a9.835 9.835 0 0 1-2.827.775 4.936 4.936 0 0 0 2.165-2.724 9.865 9.865 0 0 1-3.127 1.195 4.92 4.92 0 0 0-8.38 4.482A13.978 13.978 0 0 1 1.671 3.15a4.93 4.93 0 0 0 1.524 6.573 4.902 4.902 0 0 1-2.229-.616v.062a4.924 4.924 0 0 0 3.95 4.827 4.902 4.902 0 0 1-2.224.084 4.927 4.927 0 0 0 4.604 3.417 9.874 9.874 0 0 1-6.102 2.102c-.395 0-.785-.023-1.17-.067a13.945 13.945 0 0 0 7.557 2.215c9.057 0 14.009-7.513 14.009-14.009 0-.213-.005-.426-.014-.637a10.024 10.024 0 0 0 2.457-2.548z"
+                />
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="hover:text-yellow-400 transition"
+            >
+              <?xml version="1.0"?><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+                width="30px"
+                height="30px"
+                fill="currentColor"
+              >
+                <path
+                  d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"
+                />
+                <path
+                  fill="#ffffff"
+                  d="M224.1 141c-63.6 0-115 51.5-115 115 0 63.6 51.5 115 115 115 63.6 0 115-51.5 115-115 0-63.6-51.5-115-115-115zm0 190.6c-41.8 0-75.6-33.8-75.6-75.6s33.8-75.6 75.6-75.6 75.6 33.8 75.6 75.6-33.8 75.6-75.6 75.6zm146.4-194.1c0 14.9-12.1 27-27 27-14.9 0-27-12.1-27-27s12.1-27 27-27c14.9 0 27 12.1 27 27zm76.1 27.2c-.7-28.8-7.9-54.3-21.5-78.4-13.6-24.1-32.1-42.6-56.2-56.2-24.1-13.6-49.6-20.8-78.4-21.5C273.4 32.7 259 32 224 32s-49.4.7-73.4 2c-28.8.7-54.3 7.9-78.4 21.5-24.1 13.6-42.6 32.1-56.2 56.2-13.6 24.1-20.8 49.6-21.5 78.4C32.7 182.6 32 197 32 232s.7 49.4 2 73.4c.7 28.8 7.9 54.3 21.5 78.4 13.6 24.1 32.1 42.6 56.2 56.2 24.1 13.6 49.6 20.8 78.4 21.5C174.6 479.3 189 480 224 480s49.4-.7 73.4-2c28.8-.7 54.3-7.9 78.4-21.5 24.1-13.6 42.6-32.1 56.2-56.2 13.6-24.1 20.8-49.6 21.5-78.4 1.3-24 2-38.4 2-73.4s-.7-49.4-2-73.4zM398.8 388c-10.7 26.2-31 46.5-57.2 57.2-22.1 9.1-44.7 13.4-73.2 14.2-26.3 1.2-34.3 1.6-69.5 1.6s-43.2-.4-69.5-1.6c-28.5-.8-51.1-5.1-73.2-14.2-26.2-10.7-46.5-31-57.2-57.2-9.1-22.1-13.4-44.7-14.2-73.2-1.2-26.3-1.6-34.3-1.6-69.5s.4-43.2 1.6-69.5c.8-28.5 5.1-51.1 14.2-73.2 10.7-26.2 31-46.5 57.2-57.2 22.1-9.1 44.7-13.4 73.2-14.2 26.3-1.2 34.3-1.6 69.5-1.6s43.2.4 69.5 1.6c28.5.8 51.1 5.1 73.2 14.2 26.2 10.7 46.5 31 57.2 57.2 9.1 22.1 13.4 44.7 14.2 73.2 1.2 26.3 1.6 34.3 1.6 69.5s-.4 43.2-1.6 69.5c-.8 28.5-5.1 51.1-14.2 73.2z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="mt-8 text-center text-sm text-gray-400">
+        © 2024 KAWSAY SISA | All rights reserved
+      </div>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>

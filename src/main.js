@@ -88,41 +88,6 @@ benefitCloseBtns.forEach((btn) => {
   });
 });
 
-//*other//
-// const dropdownBtns = document.querySelectorAll(".benefit");
-// console.log({dropdownBtns});
-
-// function toggleDropdown(e) {
-//   console.log({e});
-
-//   const btn = e.target; // Reference the clicked button
-//   console.log({btn});
-
-//   const modal = btn.querySelector(".dropdown-content");
-//   console.log({modal});
-
-//   modal.classList.toggle("hidden");
-// }
-
-// // Attach event listeners
-// dropdownBtns.forEach((btn) => {
-//   console.log({btn});
-
-//   btn.addEventListener("click", toggleDropdown); // Add listener
-//   btn.removeEventListener("click", toggleDropdown);
-// });
-
-// // Close buttons functionality
-// benefitCloseBtns.forEach((btn) => {
-//   btn.addEventListener("click", () => {
-//     const modal = btn.closest(".dropdown-content");
-//     modal.classList.add("hidden");
-//   });
-// });
-
-// // benefitCloseBtns.forEach((btn) => {
-// //   btn.removeEventListener("click", toggleDropdown);
-// // });
 
 //* ENGLISH/SPANISH SWITCH LOGIC
 
@@ -388,3 +353,24 @@ languageToggle.forEach((el) => {
 updateTranslations(userLanguage);
 
 // window.addEventListener("load",() => updateTranslations(userLanguage))
+//*Play Introduction VIDEO
+
+document.addEventListener("DOMContentLoaded", () => {
+  const videos = document.querySelectorAll(".videoOil");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const video = entry.target;
+        if (entry.isIntersecting) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
+    },
+    { threshold: 0.5 } // Adjust the threshold as needed (e.g., 0.5 means 50% of the video should be visible).
+  );
+
+  videos.forEach((video) => observer.observe(video));
+});
