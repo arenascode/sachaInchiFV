@@ -136,7 +136,7 @@ const translations = {
     },
     section2: {
       home: "Home",
-      aboutUs: "About Us",
+      aboutUs: "More Info",
       contact: "Contact",
     },
     section3: {
@@ -219,7 +219,7 @@ const translations = {
       description:
         "Discover the natural benefits of Sacha Inchi, the Amazonian treasure for your health and wellness.",
       home: "Home",
-      aboutUs: "About Us",
+      aboutUs: "More Info",
       products: "Products",
       contact: "Contact",
       followUs: "Follow Us",
@@ -235,7 +235,7 @@ const translations = {
     },
     section2: {
       home: "Inicio",
-      aboutUs: "Acerca de Nosotros",
+      aboutUs: "Más Información",
       contact: "Contactanos",
     },
     section3: {
@@ -323,7 +323,7 @@ const translations = {
       description:
         "Descubre los beneficios naturales del Sacha Inchi, el tesoro amazónico para tu salud y bienestar.",
       home: "Inicio",
-      aboutUs: "Acerca de Nosotros",
+      aboutUs: "Más Información",
       products: "Productos",
       contact: "Contactanos",
       followUs: "Siguenos",
@@ -349,18 +349,42 @@ function updateTranslations(language) {
   });
 }
 
-const languageToggle = document.getElementById("languageToggle");
+const languageToggle = document.querySelectorAll(".languageToggle");
+console.log(languageToggle);
 
-languageToggle.addEventListener("change", (event) => {
-  const selectedLanguage = event.target.checked ? "es" : "en";
-  console.log("Selected Language:", selectedLanguage);
-  updateTranslations(selectedLanguage); // Call your translation function
+const toggle1 = document.getElementById("languageToggle");
+const toggle2 = document.getElementById("languageToggle2");
+
+
+function syncToggles(source, target) {
+  console.log({target});
+  console.log({source});
+  
+  target.checked = source.checked;
+}
+toggle1.addEventListener("change", () => syncToggles(toggle1, toggle2));
+toggle2.addEventListener("change", () => syncToggles(toggle2, toggle1));
+
+languageToggle.forEach((el) => {
+  
+  el.addEventListener("change", (event) => {
+    
+    console.log(`clicked`);
+    const selectedLanguage = event.target.checked ? "es" : "en";
+    console.log("Selected Language:", selectedLanguage);
+    updateTranslations(selectedLanguage); // Call your translation function
+  });
+
+
 });
 
 // Set default language
 const userLanguage = navigator.language.startsWith("es") ? "es" : "en";
 
-languageToggle.checked = userLanguage === "es";
+languageToggle.forEach((el) => {
+  el.checked = userLanguage === "es";
+})
+
 updateTranslations(userLanguage);
 
 // window.addEventListener("load",() => updateTranslations(userLanguage))

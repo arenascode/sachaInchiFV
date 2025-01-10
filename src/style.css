@@ -60,7 +60,11 @@ h1.logo {
 #section1 {
   background-image: url(/assets/img/sacha-inchi-bg.webp)
 }
-
+.heroSection_languageSwitch {
+  position: absolute !important;
+  top: 5px;
+  right: 5px;
+}
 /** Mobile Menu Section  */
 #navBar_mobileMenu {
   display: none;
@@ -231,10 +235,20 @@ h1.logo {
   padding: 50px;
   text-align: center;
 } */
-
+.whatIsSachaInchi .imgContainer {
+  display: flex;
+  align-self: center;
+}
 .whatIsSachaInchi img {
 filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 box-shadow: none;
+}
+.whatIsSachaInchi video {
+filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+box-shadow: none;
+width: 350px;
+height: 350px;
+object-fit: fill;
 }
 .split-section {
   display: flex;
