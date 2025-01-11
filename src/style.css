@@ -259,11 +259,11 @@ h1.logo {
 #section5 {
   scroll-margin-top: 55px;
 }
-#section5 .imgContainer {
+#section5 .videoContainer {
   width: 400px;
   height: 400px;
 }
-.imgContainer .videoSmoothie {
+.videoContainer .videoSmoothie {
   width: 100%;
   height: 100%;
   object-fit: inherit;
@@ -313,6 +313,7 @@ footer {
   }
 
 }
+/** Desktop */
 @media (min-width: 1280px) {
   .whatIsSachaInchi {
     padding: 10px 50px 30px 50px;
