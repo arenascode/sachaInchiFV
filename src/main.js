@@ -24,8 +24,10 @@ const hamburguerBtn = document.getElementById("hamburger-btn");
 
 const closeModalBtn = document.getElementById("closeModalBtn");
 
+const headerAboutSection = document.querySelector(".aboutSection_title");
 function openModalMenu() {
   mobileMenu.style.display = "block";
+  headerAboutSection.style.zIndex = '0';
   setTimeout(() => {
     mobileMenu.style.opacity = 1;
   }, 10);
@@ -33,6 +35,7 @@ function openModalMenu() {
 
 function closeModalMenu() {
   mobileMenu.style.opacity = 0;
+  headerAboutSection.style.zIndex = "10";
   setTimeout(() => {
     mobileMenu.style.display = "none";
   }, 500);
@@ -41,6 +44,7 @@ function closeModalMenu() {
 window.onclick = function (e) {
   if (e.target === mobileMenu) {
     mobileMenu.style.opacity = 0;
+    headerAboutSection.style.zIndex = "10";
     setTimeout(() => {
       mobileMenu.style.display = "none";
     }, 500);

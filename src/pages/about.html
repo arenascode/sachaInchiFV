@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../style.css" />
     <link
       rel="shortcut icon"
-      href="../../public/assets/img/sacha-inchi-grano.webp"
+      href="../../assets/img/sacha-inchi-grano.webp"
       type="image/x-icon"
     />
   </head>
@@ -95,12 +95,12 @@
       </div>
     </nav>
     <header
-      class="text-center mb-12 bg-darkGreen rounded-b-full text-white fixed h-26 w-[-webkit-fill-available] z-10"
+      class="text-center mb-12 bg-darkGreen rounded-b-full text-white fixed lg:h-26 w-[-webkit-fill-available] z-10 aboutSection_title"
     >
-      <h2 class="text-3xl font-bold text-white mb-1">
+      <h2 class="lg:text-3xl text-xl font-bold text-white mb-1">
         Learn More About Sacha Inchi
       </h2>
-      <p class="text-md text-gray-300 mt-2 mb-4">
+      <p class="lg:text-md text-sm text-gray-300 mt-2 mb-4 px-2">
         Discover the Amazonian seed that combines tradition, nutrition, and
         sustainability.
       </p>
@@ -108,23 +108,23 @@
         src="../../assets/img/SachaSeed.webp"
         alt=""
         width="80"
-        class="absolute right-[47%] top-[75%]"
+        class="absolute right-[40%] top-[78%] lg:right-[47%] lg:top-[75%]"
       />
     </header>
     <section class="bg-cream">
       <!-- Content Sections -->
-      <div class="flex flex-col gap-10 mt-40 mx-14">
+      <div class="flex flex-col gap-10 lg:mt-40 mt-32 lg:mx-14 mx-4">
         <!-- Section 1: Origin and History -->
         <div
           class="bg-cream p-8 rounded-lg shadow-xl border-l-4 border-accent hover:shadow-2xl transition-shadow"
         >
           <h3
-            class="text-3xl md:text-3xl font-semibold text-primary tracking-wide mb-6 relative"
+            class="text-3xl md:text-3xl font-semibold text-primary tracking-wide mb-6 border-b-4 border-accent"
           >
             A Gift from the Amazon
-            <span
+            <!-- <span
               class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-accent to-highlight rounded-full"
-            ></span>
+            ></span> -->
           </h3>
           <p class="text-md text-darkGreen leading-relaxed mb-4">
             <span class="text-accent font-bold text-xl">Sacha Inchi</span>,
@@ -153,12 +153,12 @@
         <!-- Section 2: Nutritional Benefits -->
         <div>
           <h3
-            class="text-3xl md:text-3xl font-semibold text-primary tracking-wide mb-6 relative"
+            class="text-3xl md:text-3xl font-semibold text-primary tracking-wide mb-6 border-b-4 border-accent"
           >
             Nutritional Powerhouse
-            <span
+            <!-- <span
               class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-accent to-highlight rounded-full"
-            ></span>
+            ></span> -->
           </h3>
 
           <p class="mt-5">
@@ -208,44 +208,44 @@
         </div>
         <!-- Section 3: Comparison -->
         <div
-          class="overflow-x-auto bg-cream p-6 px-14 rounded-lg shadow-xl border-l-4 border-accent flex flex-col items-center"
+          class="bg-cream p-3 lg:p-6 lg:px-14 rounded-lg shadow-xl border-l-4 border-accent flex flex-col items-center overflow-x-hidden"
         >
           <h3
-            class="text-xl md:text-2xl font-semibold text-primary tracking-wide mb-6 relative"
+            class="text-xl md:text-2xl font-semibold text-primary tracking-wide mb-6 border-b-4 border-accent"
           >
             Nutritional values of Sacha Inchi compared to other nuts, seeds, and
             oils
-            <span
+            <!-- <span
               class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-accent to-highlight rounded-full"
-            ></span>
+            ></span> -->
           </h3>
-          <table class="table-xs text-left w-full text-darkGreen">
+          <table class="lg:table-xs table-auto text-center w-full text-darkGreen">
             <thead class="bg-softGreen text-primary">
               <tr>
-                <th class="px-4 py-3 border-b-2 border-primary">Oil</th>
-                <th class="px-4 py-3 border-b-2 border-primary">Omega 3</th>
-                <th class="px-4 py-3 border-b-2 border-primary">Omega 6</th>
-                <th class="px-4 py-3 border-b-2 border-primary">
+                <th class="lg:px-4 px-2 lg:py-3 border-b-2 border-primary">Oil</th>
+                <th class="lg:px-4 px-2 lg:py-3 border-b-2 border-primary">Omega 3</th>
+                <th class="lg:px-4 px-2 lg:py-3 border-b-2 border-primary">Omega 6</th>
+                <th class="lg:px-4 px-2 lg:py-3 border-b-2 border-primary">
                   Total Polyunsaturated Fatty Acids
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr class="hover:bg-softGreen/50">
-                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                <td class="lg:px-4 px-1 py-3 border-b border-softGreen font-semibold">
                   Sacha Inchi
                 </td>
-                <td class="px-4 py-3 border-b border-softGreen">44.9</td>
-                <td class="px-4 py-3 border-b border-softGreen">37.9</td>
-                <td class="px-4 py-3 border-b border-softGreen">82.8</td>
+                <td class="lg:px-4 px-1 py-3 border-b border-softGreen">44.9</td>
+                <td class="lg:px-4 px-1 py-3 border-b border-softGreen">37.9</td>
+                <td class="lg:px-4 px-1 py-3 border-b border-softGreen">82.8</td>
               </tr>
               <tr class="hover:bg-softGreen/50">
-                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+                <td class="lg:px-4 px-1 py-3 border-b border-softGreen font-semibold">
                   Flax
                 </td>
-                <td class="px-4 py-3 border-b border-softGreen">56.8</td>
-                <td class="px-4 py-3 border-b border-softGreen">16.1</td>
-                <td class="px-4 py-3 border-b border-softGreen">72.9</td>
+                <td class="lg:px-4 px-1 py-3 border-b border-softGreen">56.8</td>
+                <td class="lg:px-4 px-1 py-3 border-b border-softGreen">16.1</td>
+                <td class="lg:px-4 px-1 py-3 border-b border-softGreen">72.9</td>
               </tr>
               <tr class="hover:bg-softGreen/50">
                 <td class="px-4 py-3 border-b border-softGreen font-semibold">
@@ -281,32 +281,32 @@
               </tr>
             </tbody>
           </table>
-          <p class="mt-4 text-sm text-gray-600 text-center">
+          <p class="mt-4 text-md text-gray-600 text-center">
             Percent of polyunsaturated fatty acid content
           </p>
-          <table class="table-xs w-full text-left text-darkGreen mt-10">
+          <table class="lg:table-xs w-full text-center text-darkGreen mt-10">
             <thead class="bg-softGreen text-primary">
               <tr>
                 <th
-                  class="px-4 py-3 border-b-2 border-primary text-pretty text-sm"
+                  class="lg:px-4 px-1 py-3 border-b-2 border-primary text-pretty text-md max-w-min"
                 >
                   Nuts & Seeds for Snacks
                 </th>
-                <th class="px-4 py-3 border-b-2 border-primary">Omega 3</th>
-                <th class="px-4 py-3 border-b-2 border-primary">Omega 6</th>
-                <th class="px-4 py-3 border-b-2 border-primary">
+                <th class="lg:px-4 px-1 py-3 border-b-2 border-primary">Omega 3</th>
+                <th class="lg:px-4 px-1 py-3 border-b-2 border-primary">Omega 6</th>
+                <th class="lg:px-4 px-1 py-3 border-b-2 border-primary">
                   Total Polyunsaturated Fatty Acids
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr class="hover:bg-softGreen/50">
-                <td class="px-4 py-3 border-b border-softGreen font-semibold">
+              <tr class="hover:bg-softGreen/50 ">
+                <td class="px-4 py-3 border-b border-softGreen font-semibold text-md">
                   Sacha Inchi
                 </td>
-                <td class="px-4 py-3 border-b border-softGreen">40.6</td>
-                <td class="px-4 py-3 border-b border-softGreen">43.6</td>
-                <td class="px-4 py-3 border-b border-softGreen">84.5</td>
+                <td class="lg:px-4 px-1 py-3 border-b border-softGreen text-md">40.6</td>
+                <td class="lg:px-4 px-1 py-3 border-b border-softGreen text-md">43.6</td>
+                <td class="lg:px-4 px-1 py-3 border-b border-softGreen text-md">84.5</td>
               </tr>
               <tr class="hover:bg-softGreen/50">
                 <td class="px-4 py-3 border-b border-softGreen font-semibold">
@@ -350,16 +350,16 @@
               </tr>
             </tbody>
           </table>
-          <p class="mt-4 text-sm text-gray-600 text-center">
+          <p class="mt-4 text-md text-gray-600 text-center">
             Percent of polyunsaturated fatty acid content
           </p>
-          <table class="table-xs w-full text-left text-darkGreen mt-10">
+          <table class="lg:table-xs w-full text-center text-darkGreen mt-10 ">
             <thead class="bg-softGreen text-primary">
               <tr>
-                <th class="px-4 py-3 border-b-2 border-primary">
+                <th class="lg:px-4 px-1 py-3 border-b-2 border-primary">
                   Nuts, Grains, and Oils
                 </th>
-                <th class="px-4 py-3 border-b-2 border-primary">% Proteins</th>
+                <th class="lg:px-4 px-1 py-3 border-b-2 border-primary">% Proteins</th>
               </tr>
             </thead>
             <tbody>
@@ -407,7 +407,7 @@
         </div>
         <!-- Section 4: Sustainability -->
         <div
-          class="bg-cream p-6 rounded-lg shadow-lg border-l-4 border-accent mb-20"
+          class="bg-cream lg:p-6 rounded-lg shadow-lg border-l-4 border-accent mb-20"
         >
           <!-- <h3
             class="text-3xl md:text-3xl font-semibold text-primary tracking-wide mb-6 relative"
@@ -429,7 +429,7 @@
               >Sustainability and Impact</span
             >
           </div>
-          <p class="text-md text-darkGreen leading-relaxed mt-8 mb-4">
+          <p class="text-md text-darkGreen leading-relaxed mt-8 mb-4 p-2">
             Supporting Sacha Inchi means contributing to the preservation of the
             Amazon, a vital part of Earth's biosphere that regulates the
             planet's climate and houses unparalleled biodiversity. By choosing
@@ -437,7 +437,7 @@
             sustainable farming practices that harmonize with the delicate
             balance of the Amazon ecosystem.
           </p>
-          <p class="text-md text-darkGreen leading-relaxed">
+          <p class="text-md text-darkGreen leading-relaxed p-2">
             This crop provides economic opportunities for indigenous farmers,
             enabling them to thrive while protecting their natural environment.
             Cultivating Sacha Inchi encourages agroforestry and reduces the need
