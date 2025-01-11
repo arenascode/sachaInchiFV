@@ -185,23 +185,6 @@ h1.logo {
   transform: translateX(27px);
 }
 
-/* Adjust visibility of language labels */
-/* .language-switch input:checked + .switch .en {
-  opacity: 0.8;
-} */
-
-/* .language-switch input:checked + .switch .es {
-  opacity: 1;
-}
-
-.language-switch input:not(:checked) + .switch .en {
-  opacity: 1;
-}
-
-.language-switch input:not(:checked) + .switch .es {
-  opacity: 0.8;
-  
-} */
 
 /**SECTION 3*/
 .whatIsSachaInchi {
@@ -276,6 +259,15 @@ h1.logo {
 #section5 {
   scroll-margin-top: 55px;
 }
+#section5 .imgContainer {
+  width: 400px;
+  height: 400px;
+}
+.imgContainer .videoSmoothie {
+  width: 100%;
+  height: 100%;
+  object-fit: inherit;
+}
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -344,6 +336,10 @@ footer {
   height: auto;
   min-height: 300px;
   width: 100%;
+}
+#section5 .imgContainer {
+  width: 355px;
+  height: 355px;
 }
 }
 /** Mobile */

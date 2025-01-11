@@ -369,8 +369,10 @@ updateTranslations(userLanguage);
 //*Play Introduction VIDEO
 
 document.addEventListener("DOMContentLoaded", () => {
-  const videos = document.querySelectorAll(".videoOil");
-
+  const videoOil = document.querySelectorAll(".videoOil");
+  const videoSmoothie = document.querySelectorAll(".videoSmoothie");
+  const videos = [...videoOil, ...videoSmoothie];
+  
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
