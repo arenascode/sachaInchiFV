@@ -4,6 +4,12 @@ import { defineConfig } from "vite";
 export default defineConfig({
   build: {
     outDir: "dist", // Carpeta donde se generan los archivos compilados
+    rollupOptions: {
+      input: {
+        main: "./index.html",
+        about: "./src/pages/about.html",
+      },
+    },
   },
-  base: 'https://arenascode.github.io/sachaInchi'
+  base: "https://arenascode.github.io/sachaInchi",
 });

@@ -27,7 +27,7 @@
 .hero {
   text-align: center;
   /* padding: 50px; */
-  background-image: url("amazon.jpg");
+  /* background-image: url("amazon.jpg"); */
   background-size: cover;
   color: #fff9f0;
 }
@@ -62,8 +62,8 @@ h1.logo {
 }
 .heroSection_languageSwitch {
   position: absolute !important;
-  top: 5px;
-  right: 5px;
+  top: 15px;
+  right: 15px;
 }
 /** Mobile Menu Section  */
 #navBar_mobileMenu {
@@ -125,9 +125,6 @@ h1.logo {
   background-size: cover;
 }
 
-.hero h1 {
-  font-size: 3em;
-}
 
 /* LANGUAGE SWITCH */
 /* Container for the switch */
@@ -322,8 +319,33 @@ footer {
     padding: 10px 20px;
     font-size: 14px;
   }
-}
 
+}
+@media (min-width: 1280px) {
+  .whatIsSachaInchi {
+    padding: 10px 50px 30px 50px;
+  }
+  .whatIsSachaInchi .bodyContainer {
+    width: 100%;
+  gap: 6rem;
+  align-items: center;
+}
+  .whatIsSachaInchi .body {
+  width: 70%;
+}
+  .whatIsSachaInchi .imgContainer {
+  width: 40%;
+}
+  .whatIsSachaInchi video {
+    height: 500px;
+  }
+  .imageSection4 {
+  margin-top: 1rem;
+  height: auto;
+  min-height: 300px;
+  width: 100%;
+}
+}
 /** Mobile */
 @media (max-width: 480px) {
   #section1 {
@@ -339,6 +361,7 @@ footer {
     font-size: 12px;
     height: auto;
   }
+
   .parallax {
     background-size: cover; /* Ensures the image covers the entire container */
     background-position: center center; /* Centers the image */
