@@ -33,12 +33,16 @@
           >
             Amazon’s Superfood for a Healthier You!
           </h3>
-          <p
-            class="mb-5 xl:text-2xl text-xl text-pretty font-semibold tracking-wide"
+          <div class="heroDescription">
+            <p
+            class=" xl:text-2xl text-xl text-pretty lg:text-balance font-semibold tracking-wide"
             data-role="description"
           >
-            Discover the natural goodness of omega-rich, sustainable nutrition
+            Discover the natural goodness of sustainable nutrition rich in omegas 3, 6 and 9
           </p>
+           <span data-role="description2" class="xl:text-2xl text-xl text-pretty lg:text-balance font-semibold tracking-wide">omegas 3, 6 and 9</span>
+          </div>
+          
           <button
             id="moreInfoHero"
             class="xl:btn-2xl xl:text-2xl btn bg-[#f6ba02] text-lg border-none text-[#1b4d20] hover:scale-110 hover:bg-[#ffde59] hover:border-none mt-8"
@@ -51,8 +55,8 @@
       <div class="language-switch self-center heroSection_languageSwitch">
         <input type="checkbox" id="languageToggle" class="languageToggle" />
         <label for="languageToggle" class="switch w-max">
-          <span class="language en">🇺🇸</span>
-          <span class="language es">🇪🇸</span>
+          <span class="language en"><img src="/assets/icons/eeuu.png" alt="eeuuFlag" width="20"></span>
+          <span class="language es"><img src="/assets/icons/spain.png" alt="SpainFlag" width="20"></span>
         </label>
       </div>
     </div>
@@ -99,8 +103,8 @@
                 class="languageToggle"
               />
               <label for="languageToggle2" class="switch w-max">
-                <span class="language en">🇺🇸</span>
-                <span class="language es">🇪🇸</span>
+                <span class="language en"><img src="/assets/icons/eeuu.png" alt="eeuuFlag" width="20"></span>
+                <span class="language es"><img src="/assets/icons/spain.png" alt="SpainFlag" width="20"></span>
               </label>
             </div>
             <button
@@ -149,7 +153,7 @@
       id="section3"
       class="whatIsSachaInchi relative h-screen flex bg-cover bg-center text-white parallax parallax2 xl:justify-center"
     >
-      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
       <div
         class="bodyContainer flex flex-col sm:flex-row xl:justify-between xl:gap-20"
       >
@@ -161,16 +165,20 @@
             What is Sacha Inchi?
           </h2>
           <p
-            class="max-w-3xl mx-auto text-left xl:text-xl text-[1.1rem] leading-5 tracking-wide"
+            class="max-w-3xl mx-auto text-left xl:text-xl text-[1.1rem] leading-5 tracking-wide font-medium"
             data-role="p1"
           ></p>
           <p
-            class="max-w-3xl mx-auto text-left xl:text-xl text-[1.1rem] mt-5 leading-5 tracking-wide"
+            class="max-w-3xl mx-auto text-left xl:text-xl text-[1.1rem] mt-5 leading-5 tracking-wide font-medium"
             data-role="p2"
           ></p>
           <p
-            class="max-w-3xl mx-auto text-left xl:text-xl text-[1.1rem] mt-5 leading-5 tracking-wide"
+            class="max-w-3xl mx-auto text-left xl:text-xl text-[1.1rem] mt-5 leading-5 tracking-wide font-medium"
             data-role="p3"
+          ></p>
+          <p
+            class="max-w-3xl mx-auto text-left xl:text-xl text-[1.1rem] mt-5 leading-5 tracking-wide font-medium"
+            data-role="p4"
           ></p>
         </div>
         <div class="imgContainer text-center text-darkGreen">
@@ -241,7 +249,7 @@
                 "
               >
                 <div
-                  class="benefit absolute inset-0 bg-black bg-opacity-25"
+                  class="benefit absolute inset-0 bg-black bg-opacity-35"
                 ></div>
                 <div
                   class="benefit text-4xl mb-2 text-white group-hover:scale-110 transition-transform relative"
@@ -260,10 +268,10 @@
                   </svg>
                 </div>
                 <div
-                  class="benefit text-lg sm:text-xl font-bold group-hover:translate-y-1 transition-transform relative"
+                  class="benefit text-xl sm:text-2xl font-bold group-hover:translate-y-1 transition-transform relative tracking-wide"
                   data-role="benefit1Title"
                 >
-                  Anti-Inflammatory
+                  Omega-3s Fatty Acid
                 </div>
               </div>
               <div
@@ -318,7 +326,7 @@
                 "
               >
                 <div
-                  class="benefit absolute inset-0 bg-black bg-opacity-30"
+                  class="benefit absolute inset-0 bg-black bg-opacity-35"
                 ></div>
                 <div
                   class="benefit text-4xl mb-2 text-darkGreen group-hover:scale-110 transition-transform relative"
@@ -330,10 +338,10 @@
                   />
                 </div>
                 <div
-                  class="benefit sm:text-xl text-lg font-bold text-white group-hover:translate-y-1 transition-transform relative"
+                  class="benefit sm:text-2xl text-xl font-bold text-white group-hover:translate-y-1 transition-transform relative tracking-wide"
                   data-role="benefit2Title"
                 >
-                  Muscle Recovery
+                  Protein
                 </div>
               </div>
               <div
@@ -390,7 +398,7 @@
                 "
               >
                 <div
-                  class="benefit absolute inset-0 bg-black bg-opacity-30"
+                  class="benefit absolute inset-0 bg-black bg-opacity-35"
                 ></div>
                 <div
                   class="benfit text-4xl mb-2 text-white group-hover:scale-110 transition-transform relative"
@@ -408,10 +416,10 @@
                   </svg>
                 </div>
                 <div
-                  class="benefit sm:text-xl text-lg font-bold group-hover:translate-y-1 transition-transfor text-wrap relative"
+                  class="benefit sm:text-2xl text-xl font-bold group-hover:translate-y-1 transition-transfor text-wrap relative tracking-wider"
                   data-role="benefit3Title"
                 >
-                  Cardiovascular Health
+                  Fiber
                 </div>
               </div>
               <div
@@ -471,7 +479,7 @@
                 "
               >
                 <div
-                  class="benefit absolute inset-0 bg-black bg-opacity-20"
+                  class="benefit absolute inset-0 bg-black bg-opacity-25"
                 ></div>
                 <div
                   class="benefit text-4xl mb-2 text-white group-hover:scale-110 transition-transform relative lg:flex lg:justify-center"
@@ -479,10 +487,10 @@
                   <img src="/assets/icons/starSkin.png" alt="skin" width="38" />
                 </div>
                 <div
-                  class="benefit sm:text-xl text-lg font-bold group-hover:translate-y-1 transition-transform relative"
+                  class="benefit sm:text-2xl text-xl font-bold group-hover:translate-y-1 transition-transform relative tracking-wide"
                   data-role="benefit4Title"
                 >
-                  Skin Benefits
+                  Vitamin E
                 </div>
               </div>
               <div

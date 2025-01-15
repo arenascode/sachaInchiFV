@@ -199,6 +199,7 @@ h1.logo {
 .whatIsSachaInchi .bodyContainer {
   display: flex;
   gap: 1rem;
+  font-weight: 500;
 }
 .cta-buttons {
   margin-top: 20px;

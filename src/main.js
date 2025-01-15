@@ -108,8 +108,8 @@ const translations = {
   en: {
     section1: {
       subtitle: "Amazon’s Superfood for a Healthier You!",
-      description:
-        "Discover the natural goodness of sustainable nutrition rich in omegas 3, 6 and 9",
+      description: `Discover the natural goodness of sustainable nutrition rich in`,
+      description2: "Omega-3s, 6s and 9s.",
       cta: "Discover the Amazon's Secret",
     },
     section2: {
@@ -119,18 +119,19 @@ const translations = {
     },
     section3: {
       title: "What is Sacha Inchi?",
-      p1: `Often called the "Indigenous Seed", has been a cherished treasure of the Amazon rainforest for centuries. Indigenous communities in Ecuador, Colombia, and Peru have cultivated and valued this extraordinary plant, celebrating its rich nutritional properties and cultural significance.`,
-      p2: "Packed with Omega-3, 6, 9 fatty acids, protein, fiber, Vitamin E, and antioxidants, Sacha Inchi is nature's answer to health and wellness. Its oil, a nutrient-dense elixir, is renowned for its unparalleled benefits for the body—whether used in cooking, as a skincare essential, or as a daily supplement.",
-      p3: "Beyond its health benefits, Sacha Inchi represents the wisdom and sustainable practices of the Amazon’s indigenous peoples. By embracing this superfood, you not only nourish your body but also support the cultural heritage and traditions of the Amazonian rainforest.",
+      p1: `Sacha Inchi, the Amazonian superfood hailed as the Indigenous Peanut or the Indigenous Seed, is native to the lush Amazonian rainforests of Colombia, Ecuador, and Peru. This extraordinary plant has been prized for centuries by indigenous communities for its incredible nutritional value.`,
+      p2: "Known as a nutrient powerhouse, Sacha Inchi seeds are rich in protein and an excellent source of healthy fats, especially omega-3s. Packed with fiber, vitamin E, and antioxidants, they provide a holistic boost for your body. Sacha Inchi supports heart health, brain function, immune strength, and radiant skin.",
+      p3: "In today's world of wellness, Sacha Inchi is stealing the spotlight as a must-have health and wellness staple. Beyond its health benefits, Sacha Inchi represents the wisdom and sustainable practices of the Amazon’s indigenous peoples.",
+      p4: "By embracing this superfood, you’re not only honoring the planet but also supporting the biosphere while helping people live healthier, more vibrant lives.",
     },
     section4: {
       title: "Sacha Inchi is a",
       subtitle: "SuperFood",
       cta: "Tap on a circle to explore more details!",
-      benefit1Title: "Anti-Inflamatory",
-      benefit2Title: "Muscle Recovery",
-      benefit3Title: "Cardiovascular Health",
-      benefit4Title: "Skin Benefits",
+      benefit1Title: "Omega-3s Fatty Acid",
+      benefit2Title: "Protein",
+      benefit3Title: "Fiber",
+      benefit4Title: "Vitamin E",
       // Card1
       benefit1CardTitle: "Soothe Inflammation and Boost Your Health Naturally",
       benefit1Cardp1:
@@ -208,7 +209,8 @@ const translations = {
     section1: {
       subtitle: "El Superalimento del Amazonas para una Vida Más Saludable.",
       description:
-        "Descubre la bondad natural de una nutrición sostenible y rica en omegas 3, 6 y 9.",
+        "Descubre la bondad natural de una nutrición sostenible y rica en",
+      description2: "Omega-3s, 6s y 9s.",
       cta: "Descubre el Secreto del Amazonas!",
     },
     section2: {
@@ -218,18 +220,19 @@ const translations = {
     },
     section3: {
       title: "Qué es Sacha Inchi?",
-      p1: `Conocido a menudo como la "Semilla Indígena", ha sido un tesoro preciado de la selva amazónica durante siglos. Las comunidades indígenas de Ecuador, Colombia y Perú han cultivado y valorado esta extraordinaria planta, celebrando sus ricas propiedades nutricionales y su profundo significado cultural.`,
-      p2: "Repleto de ácidos grasos Omega-3, 6, 9, proteínas, fibra, vitamina E y antioxidantes, Sacha Inchi es la respuesta de la naturaleza a la salud y el bienestar. Su aceite, un elixir rico en nutrientes, es famoso por sus incomparables beneficios para el cuerpo, ya sea que se use para cocinar, para el cuidado de la piel o como un suplemento diario.",
-      p3: "Más allá de sus beneficios para la salud, Sacha Inchi representa la sabiduría y las prácticas sostenibles de los pueblos indígenas de la Amazonía. Al adoptar este superalimento, no solo nutre su cuerpo, sino que también apoya el patrimonio cultural y las tradiciones de la selva amazónica.",
+      p1: `Sacha Inchi, el superalimento amazónico conocido como el Maní Indígena o la Semilla Indígena, es nativo de las exuberantes selvas amazónicas de Colombia, Ecuador y Perú. Esta extraordinaria planta ha sido apreciada durante siglos por las comunidades indígenas debido a su increíble valor nutricional.`,
+      p2: "Conocidas como un superalimento lleno de nutrientes, las semillas de Sacha Inchi son ricas en proteínas y una excelente fuente de grasas saludables, especialmente omega-3. Repletas de fibra, vitamina E y antioxidantes, brindan un impulso integral para tu cuerpo. El Sacha Inchi mejora la salud del corazón, la función cerebral, la fortaleza del sistema inmunológico y una piel radiante.",
+      p3: "En el mundo del bienestar actual, el Sacha Inchi está robando protagonismo como un elemento imprescindible para la salud y el bienestar. Más allá de sus beneficios para la salud, Sacha Inchi representa la sabiduría y las prácticas sostenibles de los pueblos indígenas de la Amazonía.",
+      p4: "Al incorporar este superalimento, no solo estás honrando al planeta, sino también apoyando la biosfera mientras ayudas a las personas a vivir vidas más saludables y vibrantes.",
     },
     section4: {
       title: "Sacha Inchi es un",
       subtitle: "Super Alimento",
       cta: "Toca cualquier círculo para descubrir más!",
-      benefit1Title: "Anti-Inflamatorio",
-      benefit2Title: "Desarrollo Muscular",
-      benefit3Title: "Salud Cardiovascular",
-      benefit4Title: "Beneficios para la Piel",
+      benefit1Title: "Ácidos grasos Omega-3",
+      benefit2Title: "Proteina",
+      benefit3Title: "Fibra",
+      benefit4Title: "Vitamina E",
       //Card1
       benefit1CardTitle:
         "Alivia la inflamación y mejora tu salud de forma natural",
