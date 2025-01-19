@@ -14,7 +14,7 @@
   <body class="bg-cream text-gray-800 relative">
     <nav
       class="max-w-[100vw] xl:flex xl:justify-between sm:w-full bg-darkGreen z-50 shadow-md nav text-white"
-      id="section2"
+      id="navBar"
     >
       <div class="xl:w-full xl:mx-0 mx-auto px-4 xl:px-10 sm:px-6 lg:px-2">
         <div
@@ -55,8 +55,15 @@
                 class="languageToggle"
               />
               <label for="languageToggle2" class="switch w-max">
-                <span class="language en">🇺🇸</span>
-                <span class="language es">🇪🇸</span>
+                <span class="language en"
+                  ><img src="/assets/icons/eeuu.png" alt="eeuuFlag" width="20"
+                /></span>
+                <span class="language es"
+                  ><img
+                    src="/assets/icons/spain.png"
+                    alt="SpainFlag"
+                    width="20"
+                /></span>
               </label>
             </div>
             <button
@@ -102,12 +109,17 @@
     </nav>
     <header
       class="text-center mb-12 bg-darkGreen rounded-b-full text-white fixed lg:h-26 w-[-webkit-fill-available] z-10 aboutSection_title"
+      id="header"
     >
-      <h2 class="lg:text-3xl xl:text-4xl text-xl font-bold text-white mb-1">
+      <h2
+        class="lg:text-3xl xl:text-4xl text-xl font-bold text-white mb-1"
+        data-role="title"
+      >
         Learn More About Sacha Inchi
       </h2>
       <p
         class="lg:text-md xl:text-xl text-sm text-gray-300 mt-2 xl:mt-5 mb-4 xl:mb-7 px-2"
+        data-role="subTitle"
       >
         Discover the Amazonian seed that combines tradition, nutrition, and
         sustainability.
@@ -125,33 +137,55 @@
         <!-- Section 1: Origin and History -->
         <div
           class="bg-cream p-8 rounded-lg shadow-xl border-l-4 border-accent hover:shadow-2xl transition-shadow"
+          id="infoSection1"
         >
           <h3
             class="text-3xl md:text-3xl xl:text-4xl font-semibold text-primary tracking-wide mb-6 border-b-4 border-accent"
+            data-role="title"
           >
             A Gift from the Amazon
             <!-- <span
               class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-accent to-highlight rounded-full"
             ></span> -->
           </h3>
-          <p class="text-md xl:text-2xl text-darkGreen leading-relaxed mb-4">
-            <span class="text-accent font-bold text-xl xl:text-3xl"
-              >Sacha Inchi</span
-            >, often called the "<span class="italic text-primary"
+          <div class="bodyContent">
+            <span
+              class="text-accent font-bold text-xl xl:text-3xl"
+              data-role="p1Strong1"
+              >Sacha Inchi, </span
+            >
+            <span
+              ><span class="text-md xl:text-2xl text-darkGreen leading-relaxed" data-role="p1Strong2"
+                > often called the</span
+              >
+            </span>
+            <span
+              class="italic text-primary text-md xl:text-2xl leading-relaxed"
+              data-role="p1Strong3"
               >Indigenous Peanut</span
-            >," has been a vital part of Amazonian culture for centuries.
-            Indigenous communities in Ecuador, Colombia, and Peru have
-            cultivated this remarkable seed, cherishing it for its health
-            benefits and sustainability. With its star-shaped fruit and rich
-            heritage, Sacha Inchi represents a deep connection between nature
-            and tradition.
-          </p>
-          <p class="text-md xl:text-2xl text-darkGreen leading-relaxed mb-6">
-            Sacha Inchi oil is the result of the cold pressing of Sacha Inchi
-            raw seeds. It is an oil with a very high Omega 3, 6, and 9 content
-            (up to 92%). No additives or preservatives are used. It also
-            contains vitamin A, E, and tocopherols.
-          </p>
+            >
+            <p
+              class="text-md xl:text-2xl text-darkGreen leading-relaxed mb-4 mt-3"
+              data-role="p1"
+            >
+              has been a vital part of Amazonian culture for centuries.
+              Indigenous communities in Ecuador, Colombia, and Peru have
+              cultivated this remarkable seed, cherishing it for its health
+              benefits and sustainability. With its star-shaped fruit and rich
+              heritage, Sacha Inchi represents a deep connection between nature
+              and tradition.
+            </p>
+            <p
+              class="text-md xl:text-2xl text-darkGreen leading-relaxed mb-6"
+              data-role="p2"
+            >
+              Sacha Inchi oil is the result of the cold pressing of Sacha Inchi
+              raw seeds. It is an oil with a very high Omega 3, 6, and 9 content
+              (up to 92%). No additives or preservatives are used. It also
+              contains vitamin A, E, and tocopherols.
+            </p>
+          </div>
+
           <img
             src="../../assets/img/sachaInchiHarvest.webp"
             alt="Sacha Inchi Plant"
@@ -160,17 +194,14 @@
         </div>
 
         <!-- Section 2: Nutritional Benefits -->
-        <div>
+        <div id="infoSection2">
           <h3
-            class="text-3xl xl:text-4xl md:text-3xl font-semibold text-primary tracking-wide mb-6 border-b-4 border-accent"
+            class="text-3xl xl:text-4xl md:text-3xl font-semibold text-primary tracking-wide mb-6 border-b-4 border-accent" data-role="title"
           >
             Nutritional Powerhouse
-            <!-- <span
-              class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-accent to-highlight rounded-full"
-            ></span> -->
           </h3>
 
-          <p class="mt-5 xl:text-2xl text-center">
+          <p class="mt-5 xl:text-2xl text-center" data-role="p1">
             Sacha Inchi has a high nutritional quality due to their
             exceptionally high content of healthy fatty acids like Omega-3s, 6s
             and 9s from 35 to 45% with 0% of cholesterol, 25% of proteins, and
@@ -250,12 +281,11 @@
                         data-role="benefit1Cardp1"
                       >
                         Sacha Inchi is a powerful source of Omega-3, 6, and 9
-                        fatty acids, offering
-                        anti-inflammatory and antioxidant properties. These
-                        nutrients work together to reduce inflammation, easing
-                        joint pain, muscle soreness, and symptoms of conditions
-                        like arthritis, while also protecting cells from
-                        oxidative stress and damage.
+                        fatty acids, offering anti-inflammatory and antioxidant
+                        properties. These nutrients work together to reduce
+                        inflammation, easing joint pain, muscle soreness, and
+                        symptoms of conditions like arthritis, while also
+                        protecting cells from oxidative stress and damage.
                       </p>
 
                       <!-- Second Paragraph -->
@@ -263,7 +293,12 @@
                         class="xl:text-xl text-[1rem] text-darkGreen leading-tight"
                         data-role="benefit1Cardp2"
                       >
-                        Additionally, Omega-3s and Omega-6s play a vital role in brain function by supporting cognitive health, improving memory, and promoting mental clarity. Their anti-inflammatory effects also contribute to better neurological health, potentially reducing the risk of age-related cognitive decline.
+                        Additionally, Omega-3s and Omega-6s play a vital role in
+                        brain function by supporting cognitive health, improving
+                        memory, and promoting mental clarity. Their
+                        anti-inflammatory effects also contribute to better
+                        neurological health, potentially reducing the risk of
+                        age-related cognitive decline.
                       </p>
                     </div>
                   </div>
@@ -301,7 +336,7 @@
                   </div>
                   <div
                     tabindex="0"
-                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[20rem] w-[22rem] sm:w-[40rem] p-4 shadow-xl card mt-[10rem] sm:mt-8 ml-[-12rem] sm:ml-[-15rem] bg-cream border border-softGreen"
+                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[20rem] w-[22rem] sm:w-[40rem] p-4 shadow-xl card mt-[1rem] sm:mt-8 ml-[-12rem] sm:ml-[-15rem] bg-cream border border-softGreen"
                   >
                     <button class="absolute right-3 closeBenefitModal">
                       <img src="/assets/icons/cerrar.webp" alt="" width="16" />
@@ -534,14 +569,14 @@
                     </div>
                     <div
                       class="benefit sm:text-2xl text-xl font-bold group-hover:translate-y-1 transition-transform relative tracking-wide"
-                      data-role="benefit4Title"
+                      data-role="benefit5Title"
                     >
                       Antioxidants
                     </div>
                   </div>
                   <div
                     tabindex="0"
-                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[21rem] w-[22rem] sm:w-[40rem] p-4 shadow-xl card mt-[10rem] sm:mt-52 ml-[6rem] sm:ml-[6rem] bg-cream border border-softGreen"
+                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[23.5rem] w-[22rem] sm:w-[40rem] p-4 shadow-xl card mt-[10rem] sm:mt-52 ml-[6rem] sm:ml-[6rem] bg-cream border border-softGreen"
                   >
                     <button class="absolute right-3 closeBenefitModal">
                       <img src="/assets/icons/cerrar.webp" alt="" width="16" />
@@ -550,7 +585,7 @@
                       <!-- Card Title -->
                       <h2
                         class="card-title xl:text-2xl text-lg font-bold text-primary mb-3 justify-center"
-                        data-role="benefit4CardTitle"
+                        data-role="benefit5CardTitle"
                       >
                         Protect Your Body with Powerful Antioxidants
                       </h2>
@@ -558,7 +593,7 @@
                       <!-- First Paragraph -->
                       <p
                         class="xl:text-xl text-[1rem] text-darkGreen leading-tight mb-1"
-                        data-role="benefit4Cardp1"
+                        data-role="benefit5CardP1"
                       >
                         Sacha Inchi, rich in antioxidants, plays a vital role in
                         protecting your body from harmful free radicals. These
@@ -572,7 +607,7 @@
                       <!-- Second Paragraph -->
                       <p
                         class="xl:text-xl text-[1rem] text-darkGreen leading-tight mb-6"
-                        data-role="benefit4Cardp2"
+                        data-role="benefit5Cardp2"
                       >
                         Incorporating Sacha Inchi into your diet can promote
                         overall well-being by reducing oxidative stress and
@@ -611,7 +646,7 @@
                     </div>
                     <div
                       class="benefit sm:text-2xl text-xl font-bold group-hover:translate-y-1 transition-transform relative tracking-wide"
-                      data-role="benefit4Title"
+                      data-role="benefit6Title"
                     >
                       Minerals
                     </div>
@@ -627,7 +662,7 @@
                       <!-- Card Title -->
                       <h2
                         class="card-title xl:text-2xl text-lg font-bold text-primary mb-3 justify-center"
-                        data-role="benefit4CardTitle"
+                        data-role="benefit6CardTitle"
                       >
                         Strengthen Your Body with Essential Minerals
                       </h2>
@@ -635,7 +670,7 @@
                       <!-- First Paragraph -->
                       <p
                         class="xl:text-xl text-[1rem] text-darkGreen leading-tight mb-1"
-                        data-role="benefit4Cardp1"
+                        data-role="benefit6Cardp1"
                       >
                         Sacha Inchi is packed with essential minerals like
                         calcium, magnesium, phosphorus, and potassium. These
@@ -648,7 +683,7 @@
                       <!-- Second Paragraph -->
                       <p
                         class="xl:text-xl text-[1rem] text-darkGreen leading-tight"
-                        data-role="benefit4Cardp2"
+                        data-role="benefit6Cardp2"
                       >
                         In addition to supporting bone and muscle health, these
                         minerals act as electrolytes, helping to regulate fluid
@@ -686,14 +721,14 @@
                     </div>
                     <div
                       class="benefit sm:text-2xl text-xl font-bold group-hover:translate-y-1 transition-transform relative tracking-wide"
-                      data-role="benefit4Title"
+                      data-role="benefit7Title"
                     >
                       Phytosterols
                     </div>
                   </div>
                   <div
                     tabindex="0"
-                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[20rem] w-[22rem] sm:w-[40rem] p-4 shadow-xl card mt-[10rem] sm:mt-52 ml-[-10rem] sm:ml-[-10rem] bg-cream border border-softGreen"
+                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[20rem] w-[22rem] sm:w-[40rem] p-4 shadow-xl card mt-[10rem] sm:mt-52 ml-[-1rem] sm:ml-[-10rem] bg-cream border border-softGreen"
                   >
                     <button class="absolute right-3 closeBenefitModal">
                       <img src="/assets/icons/cerrar.webp" alt="" width="16" />
@@ -702,7 +737,7 @@
                       <!-- Card Title -->
                       <h2
                         class="card-title xl:text-2xl text-lg font-bold text-primary mb-3 justify-center"
-                        data-role="benefit4CardTitle"
+                        data-role="benefit7CardTitle"
                       >
                         Support Cholesterol Balance with Phytosterols
                       </h2>
@@ -710,7 +745,7 @@
                       <!-- First Paragraph -->
                       <p
                         class="xl:text-xl text-[1rem] text-darkGreen leading-tight mb-1"
-                        data-role="benefit4Cardp1"
+                        data-role="benefit7Cardp1"
                       >
                         Sacha Inchi is a natural source of phytosterols,
                         plant-based compounds known for their ability to support
@@ -723,7 +758,7 @@
                       <!-- Second Paragraph -->
                       <p
                         class="xl:text-xl text-[1rem] text-darkGreen leading-tight"
-                        data-role="benefit4Cardp2"
+                        data-role="benefit7Cardp2"
                       >
                         By incorporating Sacha Inchi into your diet, you're not
                         only supporting cardiovascular health but also reducing
@@ -740,19 +775,16 @@
         </div>
         <!-- Section 3: Comparison -->
         <div
-          class="bg-cream p-3 pl-1 lg:p-6 lg:px-14 rounded-lg shadow-xl border-l-4 border-accent flex flex-col items-center overflow-x-hidden"
+          class="bg-cream p-3 pl-1 lg:p-6 lg:px-14 rounded-lg shadow-xl border-l-4 border-accent flex flex-col items-center overflow-x-hidden" id="infoSection3"
         >
           <h3
-            class="text-xl md:text-2xl xl:text-4xl font-semibold text-primary tracking-wide mb-6 xl:mb-10 border-b-4 border-accent"
+            class="text-xl md:text-2xl xl:text-4xl font-semibold text-primary tracking-wide mb-6 xl:mb-10 border-b-4 border-accent" data-role="title"
           >
-            Nutritional values of Sacha Inchi compared to other nuts, seeds, and
+            Nutritional values of Sacha Inchi compared to other nuts, seeds and
             oils
-            <!-- <span
-              class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-accent to-highlight rounded-full"
-            ></span> -->
           </h3>
-          <div class="tableContainer flex gap-5">
-            <div class="table w-[50%]">
+          <div class="tableContainer flex flex-col md:flex-row gap-5">
+            <div class="table md:w-[50%]">
               <table
                 class="lg:table-sm xl:table-sm table-auto text-center w-full text-darkGreen"
               >
@@ -863,15 +895,16 @@
                 Percent of polyunsaturated fatty acid content
               </p>
             </div>
-            <div class="graphContainer w-[50%]">
+            <div class="graphContainer md:w-[50%]">
               <img
                 src="/assets/img/graphPolyFattyAcidsOil.png"
-                alt="PolyFattyAcidsChart" class="rounded-lg"
+                alt="PolyFattyAcidsChart"
+                class="rounded-lg"
               />
             </div>
           </div>
-          <div class="tableConainer flex gap-5 mt-14">
-            <div class="table w-[50%]">
+          <div class="tableConainer flex flex-col md:flex-row gap-5 mt-14">
+            <div class="table md:w-[50%]">
               <table
                 class="lg:table-sm xl:table-sm w-full text-center text-darkGreen"
               >
@@ -989,15 +1022,16 @@
                 Percent of polyunsaturated fatty acid content
               </p>
             </div>
-            <div class="graphContainer w-[50%]">
+            <div class="graphContainer md:w-[50%]">
               <img
                 src="/assets/img/graphPolyFattyAcidsSeeds2.png"
-                alt="PolyFattyAcidsSeedsChart" class="rounded-lg"
+                alt="PolyFattyAcidsSeedsChart"
+                class="rounded-lg"
               />
             </div>
           </div>
-          <div class="tableContainer flex gap-5 mt-14">
-            <div class="table w-[50%]">
+          <div class="tableContainer flex flex-col md:flex-row gap-5 mt-14">
+            <div class="table md:w-[50%]">
               <table
                 class="lg:table-sm xl:table-sm w-full text-center text-darkGreen"
               >
@@ -1108,14 +1142,18 @@
                 Percent of Proteins content
               </p>
             </div>
-            <div class="graphContainer w-[50%]">
-              <img src="/assets/img/graphProtein2.png" alt="ProteinSeedsChart" class="rounded-lg"/>
+            <div class="graphContainer md:w-[50%]">
+              <img
+                src="/assets/img/graphProtein2.png"
+                alt="ProteinSeedsChart"
+                class="rounded-lg"
+              />
             </div>
           </div>
         </div>
         <!-- Section 4: Sustainability -->
         <div
-          class="bg-cream lg:p-6 rounded-lg shadow-lg border-l-4 border-accent mb-20"
+          class="bg-cream lg:p-6 rounded-lg shadow-lg border-l-4 border-accent mb-20" id="infoSection4"
         >
           <!--BackGround Parallax-->
           <div
@@ -1125,12 +1163,12 @@
             <div class="absolute inset-0 bg-black bg-opacity-40"></div>
             <span
               class="text-white italic text-4xl xl:text-6xl text-center self-center bold relative parallaxText"
-              data-role="parallaxText"
+              data-role="title"
               >Sustainability and Impact</span
             >
           </div>
           <p
-            class="text-md xl:text-2xl text-darkGreen leading-relaxed mt-8 mb-4 p-2"
+            class="text-md xl:text-2xl text-darkGreen leading-relaxed mt-8 mb-4 p-2" data-role="p1"
           >
             Supporting Sacha Inchi means contributing to the preservation of the
             Amazon and earth ecosystem, a vital part of Earth's biosphere that
@@ -1139,7 +1177,7 @@
             through sustainable farming practices that harmonize with the
             delicate balance of the Amazon ecosystem.
           </p>
-          <p class="text-md xl:text-2xl text-darkGreen leading-relaxed p-2">
+          <p class="text-md xl:text-2xl text-darkGreen leading-relaxed p-2" data-role="p2">
             This crop provides economic opportunities for indigenous farmers,
             enabling them to thrive while protecting their natural environment.
             Cultivating Sacha Inchi encourages agroforestry and reduces the need
@@ -1150,7 +1188,7 @@
       </div>
     </section>
     <footer
-      id="section8"
+      id="footer"
       class="bg-darkGreen text-white py-8 pl-16 flex flex-col justify-center content-center"
     >
       <div
@@ -1280,6 +1318,6 @@
         © 2024 KAWSAY SISA | All rights reserved
       </div>
     </footer>
-    <script type="module" src="../main.js"></script>
+    <script type="module" src="../moreInfo.js"></script>
   </body>
 </html>
