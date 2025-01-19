@@ -169,6 +169,7 @@ const translations = {
       product1Title: "Oil",
       product1p1:
         "Sacha Inchi Oil is a nutrient-rich treasure packed with Omega-3s, 6, 9, Vitamin E, and powerful antioxidants.",
+      product1VideoTitle: "Try this Delicious Salad 😋 ->",
       product1Subtitle: "How To Use It",
       product1p2:
         "Perfect for drizzling over salads, or as a supplement, it supports heart health, glowing skin, and overall vitality.",
@@ -179,6 +180,7 @@ const translations = {
       product2Subtitle: "How To Use It",
       product2p2:
         "Add it to smoothies, baked goods, or post-workout shakes for natural muscle recovery and sustained energy.",
+      product2VideoTitle: "Try this Delicious Smoothie 😋 ->",
       //Product 3
       product3Title: "Snacks",
       product3p1:
@@ -186,6 +188,7 @@ const translations = {
       product3Subtitle: "How To Use It",
       product3p2:
         "Perfect for guilt-free munching while boosting your energy and overall health.",
+      product3VideoTitle: "Try this Delicious Granola 😋 ->",
     },
     section6: {
       title: "Awards for Sacha Inchi",
@@ -206,12 +209,6 @@ const translations = {
       products: "Products",
       contact: "Contact",
       followUs: "Follow Us",
-    },
-    //*More Info Section
-    infoSection2: {
-      home: "Home",
-      aboutUs: "More Info",
-      contact: "Contact",
     },
   },
 
@@ -282,7 +279,7 @@ const translations = {
       product1Subtitle: "Cómo usarlo",
       product1p2:
         "Perfecto para aderezar ensaladas o como suplemento, apoya la salud del corazón, una piel radiante y el bienestar general.",
-
+      product1VideoTitle: "Prueba esta Deliciosa Ensalada 😋->",
       // Product 2
       product2Title: "Proteína en Polvo",
       product2p1:
@@ -290,7 +287,7 @@ const translations = {
       product2Subtitle: "Cómo usarla",
       product2p2:
         "Agrégala a batidos, productos horneados o bebidas post-entrenamiento para una recuperación muscular natural y energía sostenida.",
-
+      product2VideoTitle: "Prueba este Delicioso Batido 😋 ->",
       // Product 3
       product3Title: "Snacks",
       product3p1:
@@ -298,6 +295,7 @@ const translations = {
       product3Subtitle: "Cómo usarlas",
       product3p2:
         "Perfectas para un antojo sin culpa mientras impulsas tu energía y tu salud en general.",
+        product3VideoTitle: "Prueba esta Deliciosa Granola 😋 ->",
     },
     section6: {
       title: "Reconocimientos Recibidos Por Sacha Inchi",
@@ -318,12 +316,6 @@ const translations = {
       products: "Productos",
       contact: "Contactanos",
       followUs: "Siguenos",
-    },
-    //** More INFO page */
-    infoSection2: {
-      infoHome: "Inicio",
-      aboutUs: "Más Información",
-      contact: "Contactanos",
     },
   },
 };
