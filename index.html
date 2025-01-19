@@ -35,14 +35,19 @@
           </h3>
           <div class="heroDescription">
             <p
-            class=" xl:text-2xl text-xl text-pretty lg:text-balance font-semibold tracking-wide"
-            data-role="description"
-          >
-            Discover the natural goodness of sustainable nutrition rich in omegas 3, 6 and 9
-          </p>
-           <span data-role="description2" class="xl:text-2xl text-xl text-pretty lg:text-balance font-semibold tracking-wide">omegas 3, 6 and 9</span>
+              class="xl:text-2xl text-xl text-pretty lg:text-balance font-semibold tracking-wide"
+              data-role="description"
+            >
+              Discover the natural goodness of sustainable nutrition rich in
+              omegas 3, 6 and 9
+            </p>
+            <span
+              data-role="description2"
+              class="xl:text-2xl text-xl text-pretty lg:text-balance font-semibold tracking-wide"
+              >omegas 3, 6 and 9</span
+            >
           </div>
-          
+
           <button
             id="moreInfoHero"
             class="xl:btn-2xl xl:text-2xl btn bg-[#f6ba02] text-lg border-none text-[#1b4d20] hover:scale-110 hover:bg-[#ffde59] hover:border-none mt-8"
@@ -55,8 +60,12 @@
       <div class="language-switch self-center heroSection_languageSwitch">
         <input type="checkbox" id="languageToggle" class="languageToggle" />
         <label for="languageToggle" class="switch w-max">
-          <span class="language en"><img src="/assets/icons/eeuu.png" alt="eeuuFlag" width="20"></span>
-          <span class="language es"><img src="/assets/icons/spain.png" alt="SpainFlag" width="20"></span>
+          <span class="language en"
+            ><img src="/assets/icons/eeuu.png" alt="eeuuFlag" width="20"
+          /></span>
+          <span class="language es"
+            ><img src="/assets/icons/spain.png" alt="SpainFlag" width="20"
+          /></span>
         </label>
       </div>
     </div>
@@ -103,8 +112,15 @@
                 class="languageToggle"
               />
               <label for="languageToggle2" class="switch w-max">
-                <span class="language en"><img src="/assets/icons/eeuu.png" alt="eeuuFlag" width="20"></span>
-                <span class="language es"><img src="/assets/icons/spain.png" alt="SpainFlag" width="20"></span>
+                <span class="language en"
+                  ><img src="/assets/icons/eeuu.png" alt="eeuuFlag" width="20"
+                /></span>
+                <span class="language es"
+                  ><img
+                    src="/assets/icons/spain.png"
+                    alt="SpainFlag"
+                    width="20"
+                /></span>
               </label>
             </div>
             <button
@@ -271,7 +287,7 @@
                   class="benefit text-xl sm:text-2xl font-bold group-hover:translate-y-1 transition-transform relative tracking-wide"
                   data-role="benefit1Title"
                 >
-                  Omega-3s Fatty Acid
+                  Omega-3s, 6s, 9s Fatty Acid
                 </div>
               </div>
               <div
@@ -564,17 +580,18 @@
 
         <!-- Cards Container -->
         <div
-          class="flex flex-col sm:grid gap-10 xl:gap-20 sm:gap-12 md:grid-cols-3"
+          class="flex flex-col sm:grid gap-10 xl:gap-20 sm:gap-12 md:grid-cols-3 md:flex"
         >
           <!-- Card 1 -->
           <div
-            class="card group bg-cream rounded-lg shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105 overflow-hidden xl:h-auto sm:h-[500px]"
+            class="card group bg-cream rounded-lg shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105 overflow-hidden xl:h-auto sm:h-[500px] sm:flex-row sm:gap-3 md:justify-between"
           >
-            <div class="imgContainer h-[45%] xl:h-[50%] sm:h-[40%]">
+            <div class="imgContainer h-[45%] xl:h-[50%] sm:h-[40%] p-2">
+              
               <img
                 src="/assets/img/oilShot.webp"
                 alt="Product 1"
-                class="rounded-t-lg w-full h-full object-cover"
+                class="rounded-lg w-full h-full object-cover"
                 style="
                   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
                   box-shadow: none;
@@ -582,52 +599,66 @@
               />
             </div>
 
-            <div class="card-body p-2 gap-2 sm:max-h-min">
+            <div class="card-body p-2 gap-2 sm:max-h-min md:gap-5 md:max-w-[30%]">
               <h3
-                class="card-title xl:text-2xl text-xl sm:text-lg font-bold text-primary mb-1"
+                class="card-title xl:text-3xl text-xl sm:text-lg font-bold text-primary mb-1 md:text-2xl"
                 data-role="product1Title"
               >
                 Oil
               </h3>
               <p
-                class="text-lg text-darkGreen leading-relaxed max-h-min"
+                class="text-lg text-darkGreen leading-relaxed max-h-min md:text-xl"
                 data-role="product1p1"
               >
                 Sacha Inchi Oil is a nutrient-rich treasure packed with
                 Omega-3s, Vitamin E, and powerful antioxidants.
               </p>
               <h3
-                class="card-title xl:text-2xl text-xl sm:text-lg font-bold text-primary mb-1"
+                class="card-title xl:text-3xl text-xl sm:text-lg font-bold text-primary mb-1"
                 data-role="product1Subtitle"
               >
                 How To Use It
               </h3>
               <p
-                class="text-lg text-darkGreen leading-relaxed max-h-min"
+                class="text-lg text-darkGreen leading-relaxed max-h-min md:text-xl"
                 data-role="product1p2"
               >
                 Perfect for drizzling over salads, or as a supplement, it
                 supports heart health, glowing skin, and overall vitality.
               </p>
+              <h3
+                class="card-title xl:text-2xl text-xl sm:text-lg font-bold text-primary mb-1"
+                data-role="product2videoTitle"
+              >
+                Try this Delicious Salad ->
+              </h3>
             </div>
-            <!-- <div class="card-footer p-5 text-right">
-        <button
-          class="px-4 py-2 bg-primary text-cream font-bold rounded-lg hover:bg-darkGreen transition-all duration-300"
-        >
-          Learn More
-        </button>
-      </div> -->
+            
+              <div class="videoContainer text-center text-darkGreen p-2">
+                
+                <video
+                  src="/assets/video/smoothie.mp4"
+                  class="videoSmoothie rounded-lg shadow-lg"
+                  muted
+                  playsinline
+                  preload="auto"
+                  autoplay
+                  loop
+                >
+                  <source src="/assets/video/purOil2.mp4" type="video/mp4" />
+                </video>
+              </div>
           </div>
 
           <!-- Card 2 -->
           <div
-            class="card group bg-cream rounded-lg shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105 overflow-hidden xl:h-auto sm:h-[500px]"
+            class="card group bg-cream rounded-lg shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105 overflow-hidden xl:h-auto sm:h-[500px] md:flex-row justify-between"
           >
-            <div class="imgContainer h-[45%] xl:h-[50%] sm:h-[40%]">
+            <div class="imgContainer h-[45%] xl:h-[50%] sm:h-[40%] p-2">
               <img
                 src="/assets/img/proteinPowder.webp"
                 alt="Product 2"
-                class="rounded-t-lg w-full h-full object-cover"
+                class="rounded-lg w-full h-full object-cover"
                 style="
                   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
                   box-shadow: none;
@@ -635,28 +666,28 @@
               />
             </div>
 
-            <div class="card-body p-2 gap-2 h-auto sm:max-h-min">
+            <div class="card-body p-2 gap-2 h-auto sm:max-h-min md:gap-5 md:max-w-[30%]">
               <h2
-                class="card-title xl:text-2xl text-xl sm:text-lg font-bold text-primary mb-1"
+                class="card-title xl:text-3xl text-xl sm:text-lg font-bold text-primary mb-1"
                 data-role="product2Title"
               >
                 Protein Powder
               </h2>
               <p
-                class="text-lg text-darkGreen leading-relaxed max-h-min"
+                class="text-lg text-darkGreen leading-relaxed max-h-min xl:text-xl"
                 data-role="product2p1"
               >
                 Sacha Inchi Protein Powder is a plant-based powerhouse loaded
                 with essential amino acids.
               </p>
               <h3
-                class="card-title xl:text-2xl text-xl sm:text-lg font-bold text-primary mb-1"
+                class="card-title xl:text-3xl text-xl sm:text-lg font-bold text-primary mb-1"
                 data-role="product2Subtitle"
               >
                 How To Use It
               </h3>
               <p
-                class="text-lg text-darkGreen leading-relaxed max-h-min"
+                class="text-lg text-darkGreen leading-relaxed max-h-min xl:text-xl"
                 data-role="product2p2"
               >
                 Add it to smoothies, baked goods, or post-workout shakes for
@@ -666,33 +697,34 @@
                 class="card-title xl:text-2xl text-xl sm:text-lg font-bold text-primary mb-1"
                 data-role="product2Subtitle"
               >
-                Try this Delicious Smoothie
+                Try this Delicious Smoothie ->
               </h3>
-              <div class="videoContainer text-center text-darkGreen">
-          <video
-            src="/assets/video/smoothie.mp4"
-            class="videoSmoothie rounded-lg shadow-lg"
-            muted
-            playsinline
-            preload="auto"
-            autoplay
-            loop
-          >
-            <source src="/assets/video/purOil2.mp4" type="video/mp4" />
-          </video>
-        </div>
+              
             </div>
+            <div class="videoContainer text-center text-darkGreen p-2">
+                <video
+                  src="/assets/video/smoothie.mp4"
+                  class="videoSmoothie rounded-lg shadow-lg"
+                  muted
+                  playsinline
+                  preload="auto"
+                  autoplay
+                  loop
+                >
+                  <source src="/assets/video/purOil2.mp4" type="video/mp4" />
+                </video>
+              </div>
           </div>
 
           <!-- Card 3 -->
           <div
-            class="card group bg-cream rounded-lg shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105 overflow-hidden xl:h-auto sm:h-[500px]"
+            class="card group bg-cream rounded-lg shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105 overflow-hidden xl:h-auto sm:h-[500px] md:flex-row md:justify-between"
           >
-            <div class="imgContainer h-[20%] xl:h-[50%] sm:h-[40%]">
+            <div class="imgContainer h-[20%] xl:h-[50%] sm:h-[40%] p-2">
               <img
                 src="/assets/img/snacks.webp"
                 alt="Product 3"
-                class="rounded-t-lg w-full h-full object-cover"
+                class="rounded-lg w-full h-full object-cover"
                 style="
                   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
                   box-shadow: none;
@@ -700,41 +732,53 @@
               />
             </div>
 
-            <div class="card-body p-2 xl:min-h-min max-h-min">
+            <div class="card-body p-2 xl:min-h-min max-h-min md:max-w-[30%] md:gap-5">
               <h2
-                class="card-title xl:text-2xl text-xl sm:text-lg font-bold text-primary mb-1"
+                class="card-title xl:text-3xl text-xl sm:text-lg font-bold text-primary mb-1"
                 data-role="product3Title"
               >
                 Snacks
               </h2>
               <p
-                class="text-lg text-darkGreen leading-relaxed max-h-min"
+                class="text-lg text-darkGreen leading-relaxed max-h-min lg:text-xl"
                 data-role="product3p1"
               >
                 Toasted Sacha Inchi Seeds are a crunchy, satisfying snack packed
                 with protein, fiber, and healthy fats.
               </p>
               <h3
-                class="card-title xl:text-2xl text-xl sm:text-lg font-bold text-primary mb-1"
+                class="card-title xl:text-3xl text-xl sm:text-lg font-bold text-primary mb-1"
                 data-role="product3Subtitle"
               >
                 How To Use It
               </h3>
               <p
-                class="text-lg text-darkGreen leading-relaxed max-h-min"
+                class="text-lg text-darkGreen leading-relaxed max-h-min lg:text-xl"
                 data-role="product3p2"
               >
                 Perfect for guilt-free munching while boosting your energy and
                 overall health.
               </p>
+              <h3
+                class="card-title xl:text-2xl text-xl sm:text-lg font-bold text-primary mb-1 "
+                data-role="product2Subtitle"
+              >
+                Try this Delicious Granola ->
+              </h3>
             </div>
-            <!-- <div class="card-footer p-5 text-right">
-        <button
-          class="px-4 py-2 bg-primary text-cream font-bold rounded-lg hover:bg-darkGreen transition-all duration-300"
-        >
-          Learn More
-        </button>
-      </div> -->
+            <div class="videoContainer text-center text-darkGreen p-2">
+                <video
+                  src="/assets/video/smoothie.mp4"
+                  class="videoSmoothie rounded-lg shadow-lg"
+                  muted
+                  playsinline
+                  preload="auto"
+                  autoplay
+                  loop
+                >
+                  <source src="/assets/video/purOil2.mp4" type="video/mp4" />
+                </video>
+              </div>
           </div>
         </div>
       </div>

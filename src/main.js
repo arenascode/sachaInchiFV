@@ -128,16 +128,16 @@ const translations = {
       title: "Sacha Inchi is a",
       subtitle: "SuperFood",
       cta: "Tap on a circle to explore more details!",
-      benefit1Title: "Omega-3s Fatty Acid",
+      benefit1Title: "Omega-3s, 6s, 9s Fatty Acid",
       benefit2Title: "Protein",
       benefit3Title: "Fiber",
       benefit4Title: "Vitamin E",
       // Card1
       benefit1CardTitle: "Soothe Inflammation and Boost Your Health Naturally",
       benefit1Cardp1:
-        "Sacha Inchi is a powerful source of Omega-3 fatty acids and Vitamin E, offering anti-inflammatory and antioxidantproperties.",
+        "Sacha Inchi is a powerful source of Omega-3, 6, and 9 fatty acids, offering anti-inflammatory and antioxidant properties. These nutrients work together to reduce inflammation, easing joint pain, muscle soreness, and symptoms of conditions like arthritis, while also protecting cells from oxidative stress and damage.",
       benefit1Cardp2:
-        "These nutrients work together to reduce inflammation, easing joint pain, muscle soreness, and symptoms of conditions like arthritis, while also protecting cells from oxidative stress and damage.",
+        "Additionally, Omega-3s and Omega-6s play a vital role in brain function by supporting cognitive health, improving memory, and promoting mental clarity. Their anti-inflammatory effects also contribute to better neurological health, potentially reducing the risk of age-related cognitive decline.",
       //Card2
       benefit2CardTitle: "Fuel Your Muscles, Recover Faster, and Grow Stronger",
       benefit2Cardp1:
@@ -145,11 +145,11 @@ const translations = {
       benefit2Cardp2:
         "Packed with magnesium and potassium, it prevents cramps,supports muscle function, and restores electrolyte balance. Its anti-inflammatory properties and Omega-3 fatty acids reduce muscle inflammation, helping you recover faster, perform better, and build strong, lean muscles naturally.",
       //Card3
-      benefit3CardTitle: "Support a Stronger Heart, Naturally",
+      benefit3CardTitle: "Promote Digestive Health with Natural Fiber",
       benefit3Cardp1:
-        "Packed with Omega-3 fatty acids, phytosterols, and antioxidants that work together to boost cardiovascular health. Its Omega-3s help lower bad cholesterol (LDL), increase good cholesterol (HDL), and reduce blood pressure, promoting healthy blood flow and protecting against heart disease.",
+        "Rich in dietary fiber, Sacha Inchi supports a healthy digestive system by promoting regular bowel movements and preventing constipation. Fiber plays a crucial role in maintaining gut health, fostering the growth of beneficial gut bacteria, and aiding in nutrient absorption.",
       benefit3Cardp2:
-        "The antioxidants, including Vitamin E, shield your heart and arteries from oxidative stress, while its anti-inflammatory properties support overall heart function. Incorporating Sacha Inchi into your diet is a natural way to maintain a healthier, stronger heart.",
+        "In addition to improving digestion, the fiber in Sacha Inchi helps regulate blood sugar levels and promotes satiety, making it a great ally for weight management. By incorporating this Amazonian superfood into your diet, you're not only boosting your digestive health but also supporting overall well-being naturally and effectively.",
       //Card4
       benefit4CardTitle: "Glow Naturally with Nourished, Healthy Skin",
       benefit4Cardp1:
@@ -229,7 +229,7 @@ const translations = {
       title: "Sacha Inchi es un",
       subtitle: "Super Alimento",
       cta: "Toca cualquier círculo para descubrir más!",
-      benefit1Title: "Ácidos grasos Omega-3",
+      benefit1Title: "Ácidos grasos Omega-3, 6, 9",
       benefit2Title: "Proteina",
       benefit3Title: "Fibra",
       benefit4Title: "Vitamina E",
@@ -237,7 +237,7 @@ const translations = {
       benefit1CardTitle:
         "Alivia la inflamación y mejora tu salud de forma natural",
       benefit1Cardp1:
-        "Sacha Inchi es una poderosa fuente de ácidos grasos Omega-3 y vitamina E, que ofrece propiedades antiinflamatorias y antioxidantes.",
+        "Sacha Inchi es una poderosa fuente de ácidos grasos Omega-3, 6, 9 y vitamina E, que ofrece propiedades antiinflamatorias y antioxidantes.",
       benefit1Cardp2:
         "Estos nutrientes trabajan en conjunto para reducir la inflamación, aliviar el dolor articular, la rigidez muscular y los síntomas de afecciones como la artritis, además de proteger las células del estrés oxidativo y el daño.",
       //Card2
@@ -248,11 +248,11 @@ const translations = {
       benefit2Cardp2:
         "Cargado de magnesio y potasio, previene calambres, apoya la función muscular y restaura el equilibrio de electrolitos. Sus propiedades antiinflamatorias y ácidos grasos Omega-3 reducen la inflamación muscular, ayudándote a recuperarte más rápido, rendir mejor y desarrollar músculos fuertes y definidos de forma natural.",
       //Card3
-      benefit3CardTitle: "Apoya un corazón más fuerte, de forma natural",
+      benefit3CardTitle: "Promueve la Salud Digestiva con Fibra Natural",
       benefit3Cardp1:
-        "Cargado con ácidos grasos Omega-3, fitoesteroles y antioxidantes que trabajan juntos para mejorar la salud cardiovascular. Sus Omega-3 ayudan a reducir el colesterol malo (LDL), aumentar el colesterol bueno (HDL) y disminuir la presión arterial, promoviendo un flujo sanguíneo saludable y protegiendo contra enfermedades del corazón.",
+        "Rico en fibra, Sacha Inchi favorece un sistema digestivo saludable al promover movimientos intestinales regulares y prevenir el estreñimiento. La fibra desempeña un papel crucial en el mantenimiento de la salud intestinal, fomentando el crecimiento de bacterias beneficiosas y ayudando en la absorción de nutrientes.",
       benefit3Cardp2:
-        "Los antioxidantes, incluida la vitamina E, protegen tu corazón y arterias del estrés oxidativo, mientras que sus propiedades antiinflamatorias respaldan la función general del corazón. Incorporar Sacha Inchi en tu dieta es una forma natural de mantener un corazón más saludable y fuerte.",
+        "Además de mejorar la digestión, la fibra del Sacha Inchi ayuda a regular los niveles de azúcar en la sangre y promueve la saciedad, convirtiéndolo en un gran aliado para el manejo del peso. Al incorporar este superalimento amazónico en tu dieta, no solo estás mejorando tu salud digestiva, sino también apoyando tu bienestar general de manera natural y efectiva.",
       //Card4
       benefit4CardTitle: "Luce naturalmente con una piel nutrida y saludable",
       benefit4Cardp1:

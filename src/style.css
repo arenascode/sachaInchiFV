@@ -340,8 +340,8 @@ footer {
   width: 100%;
 }
 #section5 .imgContainer {
-  width: 355px;
-  height: 355px;
+  width: 400px;
+  height: 400px;
 }
 }
 /** Mobile */
@@ -386,4 +386,8 @@ footer {
   #section5 {
     /* margin-top: 30px; */
   }
+  #section5 .videoContainer {
+  width: 385px;
+  height: 385px;
+}
 }
