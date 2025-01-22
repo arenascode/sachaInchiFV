@@ -190,7 +190,7 @@ h1.logo {
 .whatIsSachaInchi {
   background-image: url(/assets/img/amazonForest.webp);
   scroll-margin-top: 64px;
-  height: 100vh;
+  height: auto;
   padding: 0 50px;
   text-align: center;
   padding: 60px 50px 50px 50px;
