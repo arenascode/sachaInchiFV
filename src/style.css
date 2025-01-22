@@ -219,18 +219,18 @@ h1.logo {
 .whatIsSachaInchi .imgContainer {
   display: flex;
   align-self: center;
-  width: 35%;
+  width: 20%;
 }
-.whatIsSachaInchi img {
+/* .whatIsSachaInchi img {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
   box-shadow: none;
-}
+} */
 .whatIsSachaInchi video {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
   box-shadow: none;
   width: 100%; /* Adjust as needed */
   height: 400px; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensures the video fills its container */
+  object-fit: none;
   display: block;
 }
 .split-section {
@@ -261,7 +261,7 @@ h1.logo {
   scroll-margin-top: 55px;
 }
 #section5 .videoContainer {
-  width: 400px;
+  width: 320px;
   height: 400px;
 }
 .videoContainer .videoSmoothie {
@@ -317,18 +317,19 @@ footer {
 /** Desktop */
 @media (min-width: 1280px) {
   .whatIsSachaInchi {
-    padding: 10px 50px 30px 50px;
+    padding: 10px 60px;
   }
   .whatIsSachaInchi .bodyContainer {
-    width: 100%;
-  gap: 6rem;
+  width: 100%;
+  gap: 3rem;
   align-items: center;
 }
   .whatIsSachaInchi .body {
-  width: 70%;
+  width: 65%;
 }
   .whatIsSachaInchi .imgContainer {
-  width: 40%;
+  width: 20%;
+  margin-top: 5rem;
 }
   .whatIsSachaInchi video {
     height: 500px;
@@ -340,8 +341,15 @@ footer {
   width: 100%;
 }
 #section5 .imgContainer {
-  width: 400px;
+  width: 320px;
   height: 400px;
+}
+#section5 .videoContainer {
+  width: 320px;
+  height: 400px;
+}
+#section5 .videoContainer video {
+  object-fit: cover;
 }
 }
 /** Mobile */
