@@ -88,7 +88,7 @@ h1.logo {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100vh;
+  height: 100dvh;
   width: 50%;
   background-color: #163020;
   z-index: 99;
@@ -308,6 +308,12 @@ footer {
 
 /** Tablet */
 @media (max-width: 960px) {
+  body.fixed-nav nav {
+  position: fixed;
+  width: 100vw;
+  max-width: 960px;
+  /* box-shadow: 0 5px 0 rgba(0,0,0,0.1); */
+}
   .button {
     padding: 10px 20px;
     font-size: 14px;
@@ -354,6 +360,12 @@ footer {
 }
 /** Mobile */
 @media (max-width: 480px) {
+  body.fixed-nav nav {
+  position: fixed;
+  width: 100vw;
+  max-width: 480px;
+  /* box-shadow: 0 5px 0 rgba(0,0,0,0.1); */
+}
   #section1 {
     background-image: url(/assets/img/sacha-inchi-mobile.webp);
   }

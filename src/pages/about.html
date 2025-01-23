@@ -78,19 +78,19 @@
           </div>
 
           <div id="navBar_mobileMenu">
-            <div class="mobileMenu_content">
+            <div class="mobileMenu_content" id="mobileMenu">
               <button id="closeModalBtn" class="bg-transparent">
                 <img src="/assets/icons/close.webp" alt="closeButton" width="28px" />
               </button>
               <ul class="links_menu">
                 <li>
-                  <a href="https://arenascode.github.io/sachaInchi/index.html"
+                  <a href="/" data-role="home"
                     >Home</a
                   >
                 </li>
-                <li><a href="#">More Info</a></li>
+                <li><a href="#" data-role="aboutUs">More Info</a></li>
                 <li>
-                  <a href="#section5" class="goToCartFromMobile">Products</a>
+                  <a href="#section5" class="goToCartFromMobile" data-role="products">Products</a>
                 </li>
                 <li class="flex gap-8">
                   <div id="IGRedirect" class="w-8">
@@ -263,7 +263,7 @@
                   </div>
                   <div
                     tabindex="0"
-                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[20rem] w-[22rem] sm:w-[40rem] p-4 shadow-xl card mt-[10rem] sm:mt-52 ml-[-1rem] sm:ml-[-10rem] bg-cream border"
+                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[20rem] w-[22rem] sm:w-[40rem] p-4 shadow-xl card mt-[10rem] sm:mt-52 ml-[-1rem] sm:ml-[15rem] bg-cream border"
                   >
                     <button class="absolute right-3 closeBenefitModal">
                       <img src="/assets/icons/cerrar.webp" alt="closeButton" width="16" />
@@ -1068,7 +1068,7 @@
           <!--BackGround Parallax-->
           <div
             class="imageSection4 relative parallax flex align-middle justify-center inset-0 bg-black bg-opacity-30 rounded-sm"
-            style="background-image: url(../../assets/img/amazonasBG2.jpg)"
+            style="background-image: url(../../assets/img/amazonasBG2.webp)"
           >
             <div class="absolute inset-0 bg-black bg-opacity-40"></div>
             <span
@@ -1133,14 +1133,6 @@
             </li>
             <li>
               <a
-                href="#"
-                class="hover:text-accent transition"
-                data-role="aboutUs"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
                 href="/#section5"
                 class="hover:text-accent transition"
                 data-role="products"
@@ -1149,12 +1141,20 @@
             </li>
             <li>
               <a
+                href="#"
+                class="hover:text-accent transition"
+                data-role="aboutUs"
+                >About Us</a
+              >
+            </li> 
+            <!-- <li>
+              <a
                 href="/"
                 class="hover:text-accent transition"
                 data-role="contact"
                 >Contact</a
               >
-            </li>
+            </li> -->
           </ul>
         </div>
 

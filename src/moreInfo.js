@@ -104,6 +104,11 @@ const translations = {
       aboutUs: "More Info",
       contact: "Contact",
     },
+    mobileMenu: {
+      home: "Home",
+      aboutUs: "More Info",
+      products: "Products",
+    },
     header: {
       title: "Learn More About Sacha Inchi",
       subTitle: `Discover the Amazonian seed that combines tradition, nutrition, and sustainability.`,
@@ -196,6 +201,11 @@ const translations = {
       home: "Inicio",
       aboutUs: "Más Información",
       contact: "Contactanos",
+    },
+    mobileMenu: {
+      home: "Inicio",
+      aboutUs: "Aprende más",
+      products: "Productos",
     },
     header: {
       title: "Aprende Más Acerca de Sacha Inchi",
