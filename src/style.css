@@ -8,7 +8,9 @@
   font-weight: normal;
   font-style: normal;
 }
-
+body {
+  overflow-x: hidden;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -198,7 +200,7 @@ h1.logo {
 }
 .whatIsSachaInchi .bodyContainer {
   display: flex;
-  gap: 1rem;
+  /* gap: 1rem; */
   font-weight: 500;
 }
 .cta-buttons {
@@ -334,7 +336,7 @@ footer {
   margin-top: 5rem;
 }
   .whatIsSachaInchi video {
-    height: 500px;
+    height: 550px;
   }
   .imageSection4 {
   margin-top: 1rem;

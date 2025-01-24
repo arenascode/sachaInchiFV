@@ -16,22 +16,23 @@
       class="max-w-[100vw] xl:flex xl:justify-between sm:w-full bg-darkGreen z-50 shadow-md nav text-white"
       id="navBar"
     >
-      <div class="xl:w-full xl:mx-0 mx-auto px-4 xl:px-10 sm:px-6 lg:px-2">
+      <div class="xl:w-full xl:mx-0 mx-auto px-4 sm:px-3 xl:px-10 md:px-6">
         <div
           class="flex xl:w-full justify-between gap-4 sm:justify-between items-center h-16 sm:flex-row"
         >
           <div class="flex-shrink-0">
             <a href="/">
               <h1
-              class="xl:text-4xl text-2xl font-bold text-[#f6ba02] font-BrownSugar logo"
-            >
-              KAWSAY SISA
-            </h1>
+                class="xl:text-4xl text-2xl font-bold text-[#f6ba02] font-BrownSugar logo"
+              >
+                KAWSAY SISA
+              </h1>
             </a>
-            
           </div>
           <div class="flex gap-3 align-middle justify-center">
-            <div class="ml-10 hidden items-baseline space-x-4 sm:block">
+            <div
+              class="ml-10 sm:ml-1 hidden items-baseline space-x-4 sm:space-x-0 sm:block sm:items-center"
+            >
               <a
                 href="/"
                 class="text-cream hover:text-accent px-3 py-2 rounded-md xl:text-xl md:text-lg text-sm font-medium"
@@ -80,17 +81,24 @@
           <div id="navBar_mobileMenu">
             <div class="mobileMenu_content" id="mobileMenu">
               <button id="closeModalBtn" class="bg-transparent">
-                <img src="/assets/icons/close.webp" alt="closeButton" width="28px" />
+                <img
+                  src="/assets/icons/close.webp"
+                  alt="closeButton"
+                  width="28px"
+                />
               </button>
               <ul class="links_menu">
                 <li>
-                  <a href="/" data-role="home"
-                    >Home</a
-                  >
+                  <a href="/" data-role="home">Home</a>
                 </li>
                 <li><a href="#" data-role="aboutUs">More Info</a></li>
                 <li>
-                  <a href="#section5" class="goToCartFromMobile" data-role="products">Products</a>
+                  <a
+                    href="#section5"
+                    class="goToCartFromMobile"
+                    data-role="products"
+                    >Products</a
+                  >
                 </li>
                 <li class="flex gap-8">
                   <div id="IGRedirect" class="w-8">
@@ -100,7 +108,9 @@
                   </div>
                   <div id="WTSPRedirect" class="w-8">
                     <a href="https://wa.link" target="_blank"
-                      ><img src="/assets/icons/whatsapp.webp" alt="whatsappIcon"
+                      ><img
+                        src="/assets/icons/whatsapp.webp"
+                        alt="whatsappIcon"
                     /></a>
                   </div>
                 </li>
@@ -111,7 +121,7 @@
       </div>
     </nav>
     <header
-      class="text-center mb-12 bg-darkGreen rounded-b-full text-white fixed lg:h-26 w-[-webkit-fill-available] z-10 aboutSection_title max-w-[480px]"
+      class="text-center mb-12 bg-darkGreen rounded-b-full text-white fixed lg:h-26 w-[-webkit-fill-available] z-10 aboutSection_title max-w-[480px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[100%]"
       id="header"
     >
       <h2
@@ -153,25 +163,25 @@
           </h3>
           <div class="bodyContent">
             <span
-              class="text-accent font-bold text-xl xl:text-3xl"
+              class="text-accent font-bold text-xl lg:text-2xl xl:text-3xl"
               data-role="p1Strong1"
               >Sacha Inchi,
             </span>
             <span
               ><span
-                class="text-md xl:text-2xl text-darkGreen leading-relaxed"
+                class="text-md lg:text-xl xl:text-2xl text-darkGreen leading-relaxed"
                 data-role="p1Strong2"
               >
                 often called the</span
               >
             </span>
             <span
-              class="italic text-primary text-md xl:text-2xl leading-relaxed"
+              class="italic text-primary text-md lg:text-xl xl:text-2xl leading-relaxed"
               data-role="p1Strong3"
               >Indigenous Peanut</span
             >
             <p
-              class="text-md xl:text-2xl text-darkGreen leading-relaxed mb-4 mt-3"
+              class="text-md lg:text-xl xl:text-2xl text-darkGreen leading-relaxed mb-4 mt-3"
               data-role="p1"
             >
               has been a vital part of Amazonian culture for centuries.
@@ -182,7 +192,7 @@
               and tradition.
             </p>
             <p
-              class="text-md xl:text-2xl text-darkGreen leading-relaxed mb-6"
+              class="text-md lg:text-xl xl:text-2xl text-darkGreen leading-relaxed mb-6"
               data-role="p2"
             >
               Sacha Inchi oil is the result of the cold pressing of Sacha Inchi
@@ -195,14 +205,14 @@
           <img
             src="../../assets/img/sachaInchiHarvest.webp"
             alt="Sacha Inchi Plant"
-            class="rounded-lg shadow-lg w-full sm:w-1/2 mx-auto border-4"
+            class="rounded-lg shadow-lg w-full sm:w-75% lg:w-[600px] h-auto mx-auto border-4"
           />
         </div>
 
         <!-- Section 2: Nutritional Benefits -->
         <div
           id="infoSection2"
-          class="bg-[#f0dab9] xl:p-12 p-8 rounded-lg shadow-xl border-l-4 border-accent hover:shadow-2xl transition-shadow mx-4 xl:mx-16"
+          class="bg-[#f0dab9] xl:p-12 p-8 md:p-2 lg:p-5 rounded-lg shadow-xl border-l-4 border-accent hover:shadow-2xl transition-shadow mx-4 xl:mx-16"
         >
           <h3
             class="text-3xl xl:text-4xl md:text-3xl pb-1 font-semibold text-primary tracking-wide mb-6 border-b-4 border-accent"
@@ -211,7 +221,10 @@
             Nutritional Powerhouse
           </h3>
 
-          <p class="mt-5 xl:text-2xl text-center text-darkGreen" data-role="p1">
+          <p
+            class="mt-5 xl:mt-10 sm:text-lg lg:text-xl xl:text-2xl text-center sm:text-left md:self-center text-darkGreen lg:pl-2"
+            data-role="p1"
+          >
             Sacha Inchi has a high nutritional quality due to their
             exceptionally high content of healthy fatty acids like Omega-3s, 6s
             and 9s from 35 to 45% with 0% of cholesterol, 25% of proteins, and
@@ -224,13 +237,13 @@
               >Tap on a circle to explore more details!</span
             >
             <div
-              class="container xl:mt-7 xl:mb-10 p-2 px-1 text-center flex flex-col width-full gap-5"
+              class="container mt-5 xl:mt-10 xl:mb-10 p-2 px-1 text-center flex flex-col md:flex-row width-full sm:grid sm:grid-cols-2 md:gap-y-10 md:grid-cols-1 xl:gap-y-20"
             >
               <!-- Benefits Grid -->
               <div
-                class="flex flex-wrap gap-8 w-full justify-center xl:gap-x-28 lg:gap-10"
+                class="flex flex-wrap gap-10 gap-x-14 md:gap-x-8 w-full justify-center xl:gap-x-28 sm:flex-col sm:flex-wrap lg:gap-10 sm:content-center md:flex-row"
               >
-                <!-- Benefit 7 -->
+                <!-- Benefit 7 Phytosterols-->
                 <div
                   class="dropdown dropdown-hover h-min w-max flex justify-center"
                 >
@@ -255,7 +268,7 @@
                       />
                     </div>
                     <div
-                      class="benefit sm:text-2xl text-xl font-bold group-hover:translate-y-1 transition-transform relative tracking-wide"
+                      class="benefit sm:text-[1.4rem] text-xl font-bold group-hover:translate-y-1 transition-transform relative tracking-wide"
                       data-role="benefit7Title"
                     >
                       Phytosterols
@@ -263,10 +276,14 @@
                   </div>
                   <div
                     tabindex="0"
-                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[20rem] w-[22rem] sm:w-[40rem] p-4 shadow-xl card mt-[10rem] sm:mt-52 ml-[-1rem] sm:ml-[15rem] bg-cream border"
+                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[20rem] w-[26rem] sm:w-[36rem] p-4 shadow-xl card mt-[10rem] sm:mt-42 lg:mt-52 ml-[12rem] sm:ml-[15rem] md:ml-[28rem] xl:ml-[32rem] bg-cream border"
                   >
                     <button class="absolute right-3 closeBenefitModal">
-                      <img src="/assets/icons/cerrar.webp" alt="closeButton" width="16" />
+                      <img
+                        src="/assets/icons/cerrar.webp"
+                        alt="closeButton"
+                        width="16"
+                      />
                     </button>
                     <div class="card-body p-[0.5rem]">
                       <!-- Card Title -->
@@ -304,8 +321,7 @@
                     </div>
                   </div>
                 </div>
-
-                <!-- Benefit 2 -->
+                <!-- Benefit 2 Protein-->
                 <div
                   class="dropdown dropdown-hover h-min w-maxflex justify-center"
                 >
@@ -321,7 +337,7 @@
                       class="benefit absolute inset-0 bg-black bg-opacity-35"
                     ></div>
                     <div
-                      class="benefit text-4xl mb-2 text-darkGreen group-hover:scale-110 transition-transform relative"
+                      class="benefit text-4xl mb-2 sm:mb-2 sm:mt-[-1rem] text-darkGreen group-hover:scale-110 transition-transform relative"
                     >
                       <img
                         src="/assets/icons/musculo.png"
@@ -338,10 +354,14 @@
                   </div>
                   <div
                     tabindex="0"
-                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[20rem] w-[22rem] sm:w-[40rem] p-4 shadow-xl card mt-[1rem] sm:mt-8 ml-[-12rem] sm:ml-[-15rem] bg-cream border"
+                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[20rem] w-[26rem] sm:w-[36rem] p-4 shadow-xl card mt-[1rem] sm:mt-5 ml-[-15rem] sm:ml-[-7rem] bg-cream border"
                   >
                     <button class="absolute right-3 closeBenefitModal">
-                      <img src="/assets/icons/cerrar.webp" alt="closeButton" width="16" />
+                      <img
+                        src="/assets/icons/cerrar.webp"
+                        alt="closeButton"
+                        width="16"
+                      />
                     </button>
                     <div class="card-body p-[0.5rem]">
                       <!-- Card Title -->
@@ -378,7 +398,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- Benefit 1 -->
+                <!-- Benefit 1 Omega 3, 6, 9-->
                 <div
                   class="dropdown dropdown-hover lg:w-auto h-min benefit1 w-max flex justify-center"
                 >
@@ -394,7 +414,7 @@
                       class="benefit absolute inset-0 bg-black bg-opacity-35"
                     ></div>
                     <div
-                      class="benefit text-4xl mb-2 text-white group-hover:scale-110 transition-transform relative"
+                      class="benefit text-4xl md:mb-1 text-white group-hover:scale-110 transition-transform relative"
                     >
                       <!-- Add your icon here -->
                       <svg
@@ -410,18 +430,22 @@
                       </svg>
                     </div>
                     <div
-                      class="benefit text-xl sm:text-2xl font-bold group-hover:translate-y-1 transition-transform relative tracking-wide"
+                      class="benefit text-lg sm:text-xl font-bold group-hover:translate-y-1 transition-transform relative tracking-wide sm:text-pretty"
                       data-role="benefit1Title"
                     >
-                      Omega 3, 6 and 9 Fatty Acid
+                      Omega 3, 6 and 9
                     </div>
                   </div>
                   <div
                     tabindex="0"
-                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[21rem] w-[22rem] mt-[10rem] ml-[12rem] sm:w-[40rem] p-4 shadow-xl card sm:mt-52 sm:ml-[23rem] bg-cream border relative"
+                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[16rem] w-[26rem] mt-[10rem] ml-[12rem] sm:w-[36rem] p-4 shadow-xl card sm:mt-40 lg:mt-52 sm:ml-[15rem] md:ml-[-5rem] bg-cream border relative"
                   >
                     <button class="absolute right-3 closeBenefitModal">
-                      <img src="/assets/icons/cerrar.webp" alt="closeButton" width="16" />
+                      <img
+                        src="/assets/icons/cerrar.webp"
+                        alt="closeButton"
+                        width="16"
+                      />
                     </button>
                     <div class="card-body p-[0.5rem]">
                       <!-- Card Title -->
@@ -476,7 +500,7 @@
                       class="benefit absolute inset-0 bg-black bg-opacity-25"
                     ></div>
                     <div
-                      class="benefit text-4xl mb-2 text-white group-hover:scale-110 transition-transform relative lg:flex lg:justify-center"
+                      class="benefit text-4xl mb-4 text-white group-hover:scale-110 transition-transform relative lg:flex lg:justify-center"
                     >
                       <img
                         src="/assets/icons/starSkin.png"
@@ -493,10 +517,14 @@
                   </div>
                   <div
                     tabindex="0"
-                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[20rem] w-[22rem] sm:w-[40rem] p-4 shadow-xl card mt-[10rem] sm:mt-52 ml-[-10rem] sm:ml-[-25rem] bg-cream border"
+                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[21rem] w-[26rem] sm:w-[36rem] p-4 shadow-xl card mt-[10rem] sm:mt-40 lg:mt-52 ml-[-13rem] sm:ml-[15rem] md:ml-[-30rem] bg-cream border"
                   >
                     <button class="absolute right-3 closeBenefitModal">
-                      <img src="/assets/icons/cerrar.webp" alt="closeButton" width="16" />
+                      <img
+                        src="/assets/icons/cerrar.webp"
+                        alt="closeButton"
+                        width="16"
+                      />
                     </button>
                     <div class="card-body p-[0.5rem]">
                       <!-- Card Title -->
@@ -537,7 +565,7 @@
               </div>
               <!-- Benefits Grid 2-->
               <div
-                class="flex flex-wrap gap-8 w-full justify-center xl:gap-36 lg:gap-14 mt-12"
+                class="flex flex-wrap gap-8 sm:gap-10 gap-x-14 w-full justify-center sm:justify-start sm:flex-col sm:content-center xl:gap-36 lg:gap-14 mt-12 sm:mt-0 md:flex-row md:justify-center md:gap-12"
               >
                 <!-- Benefit 3 -->
                 <div
@@ -578,10 +606,14 @@
                   </div>
                   <div
                     tabindex="0"
-                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[22rem] w-[22rem] sm:w-[40rem] p-4 shadow-xl card mt-[10rem] sm:mt-52 ml-[13rem] sm:ml-[6rem] bg-cream border"
+                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[22rem] w-[26rem] sm:w-[36rem] p-4 shadow-xl card mt-[10rem] sm:mt-40 lg:mt-52 ml-[11rem] sm:ml-[-16rem] md:ml-[25rem] bg-cream border"
                   >
                     <button class="absolute right-3 closeBenefitModal">
-                      <img src="/assets/icons/cerrar.webp" alt="closeButton" width="16" />
+                      <img
+                        src="/assets/icons/cerrar.webp"
+                        alt="closeButton"
+                        width="16"
+                      />
                     </button>
                     <div class="card-body p-[0.5rem]">
                       <!-- Card Title -->
@@ -636,7 +668,7 @@
                       class="benefit absolute inset-0 bg-black bg-opacity-25"
                     ></div>
                     <div
-                      class="benefit text-4xl mb-2 text-white group-hover:scale-110 transition-transform relative lg:flex lg:justify-center"
+                      class="benefit text-4xl mb-2 text-white group-hover:scale-110 transition-transform relative lg:flex lg:justify-center sm:content-center sm:mt-2"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -651,7 +683,7 @@
                       </svg>
                     </div>
                     <div
-                      class="benefit sm:text-2xl text-xl font-bold group-hover:translate-y-1 transition-transform relative tracking-wide"
+                      class="benefit sm:text-[1.25rem] text-xl font-bold group-hover:translate-y-1 transition-transform relative tracking-wide"
                       data-role="benefit5Title"
                     >
                       Antioxidants
@@ -659,10 +691,14 @@
                   </div>
                   <div
                     tabindex="0"
-                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[23.5rem] w-[22rem] sm:w-[40rem] p-4 shadow-xl card mt-[10rem] sm:mt-52 ml-[6rem] sm:ml-[6rem] bg-cream border"
+                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] h-auto xl:h-[24rem] w-[26rem] sm:w-[36rem] p-4 shadow-xl card mt-[10rem] sm:mt-40 lg:mt-52 ml-[-12rem] sm:ml-[-15rem] md:ml-[3rem] bg-cream border"
                   >
                     <button class="absolute right-3 closeBenefitModal">
-                      <img src="/assets/icons/cerrar.webp" alt="closeButton" width="16" />
+                      <img
+                        src="/assets/icons/cerrar.webp"
+                        alt="closeButton"
+                        width="16"
+                      />
                     </button>
                     <div class="card-body p-[0.5rem]">
                       <!-- Card Title -->
@@ -689,7 +725,7 @@
 
                       <!-- Second Paragraph -->
                       <p
-                        class="xl:text-xl text-[1rem] text-darkGreen leading-tight mb-6"
+                        class="xl:text-xl text-[1rem] text-darkGreen leading-tight"
                         data-role="benefit5Cardp2"
                       >
                         Incorporating Sacha Inchi into your diet can promote
@@ -736,10 +772,14 @@
                   </div>
                   <div
                     tabindex="0"
-                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[21rem] w-[22rem] sm:w-[40rem] p-4 shadow-xl card mt-[10rem] sm:mt-52 ml-[-10rem] sm:ml-[0] bg-cream border"
+                    class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[21rem] w-[26rem] sm:w-[36rem] p-4 shadow-xl card mt-[10rem] sm:mt-40 lg:mt-52 ml-[1rem] sm:ml-[-15rem] md:ml-[-25rem] bg-cream border"
                   >
                     <button class="absolute right-3 closeBenefitModal">
-                      <img src="/assets/icons/cerrar.webp" alt="closeButton" width="16" />
+                      <img
+                        src="/assets/icons/cerrar.webp"
+                        alt="closeButton"
+                        width="16"
+                      />
                     </button>
                     <div class="card-body p-[0.5rem]">
                       <!-- Card Title -->
@@ -882,7 +922,9 @@
               />
             </div>
           </div>
-          <div class="tableConainer flex flex-col md:flex-row gap-5 mt-14 md:w-full">
+          <div
+            class="tableConainer flex flex-col md:flex-row gap-5 mt-14 md:w-full"
+          >
             <div class="table md:w-[50%]">
               <table
                 class="lg:table-sm xl:table-sm w-full text-center text-darkGreen bg-[#d6cfc7]"
@@ -975,7 +1017,9 @@
               />
             </div>
           </div>
-          <div class="tableContainer flex flex-col md:flex-row gap-5 mt-14 md:w-full">
+          <div
+            class="tableContainer flex flex-col md:flex-row gap-5 mt-14 md:w-full"
+          >
             <div class="table md:w-[50%]">
               <table
                 class="lg:table-sm xl:table-sm w-full text-center text-darkGreen bg-[#d6cfc7]"
@@ -1078,7 +1122,7 @@
             >
           </div>
           <p
-            class="text-md xl:text-2xl text-darkGreen leading-relaxed mt-8 mb-4 p-2"
+            class="text-md lg:text-xl xl:text-2xl text-darkGreen leading-relaxed mt-8 mb-4 p-2"
             data-role="p1"
           >
             Supporting Sacha Inchi means contributing to the preservation of the
@@ -1089,7 +1133,7 @@
             delicate balance of the Amazon ecosystem.
           </p>
           <p
-            class="text-md xl:text-2xl text-darkGreen leading-relaxed p-2"
+            class="text-md lg:text-xl xl:text-2xl text-darkGreen leading-relaxed p-2"
             data-role="p2"
           >
             This crop provides economic opportunities for indigenous farmers,
@@ -1112,7 +1156,7 @@
         <div
           class="mb-6 md:mb-0 pr-6 md:border-r md:border-gray-400 md:w-1/3 flex-1"
         >
-          <h2 class="text-2xl font-bold">Sacha Inchi</h2>
+          <h2 class="text-2xl font-bold text-nowrap">Sacha Inchi</h2>
           <p class="text-lg xl:text-xl sm:text-sm mt-2" data-role="description">
             Discover the natural benefits of Sacha Inchi, the Amazonian treasure
             for your health and wellness.
@@ -1146,7 +1190,7 @@
                 data-role="aboutUs"
                 >About Us</a
               >
-            </li> 
+            </li>
             <!-- <li>
               <a
                 href="/"
