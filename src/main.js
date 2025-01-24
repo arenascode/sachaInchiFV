@@ -267,7 +267,7 @@ const translations = {
       title: "Sacha Inchi es un",
       subtitle: "Super Alimento",
       cta: "Toca cualquier círculo para descubrir más!",
-      benefit1Title: "Ácidos grasos Omega 3, 6, 9",
+      benefit1Title: "Omega 3, 6, 9",
       benefit2Title: "Proteina",
       benefit3Title: "Fibra",
       benefit4Title: "Vitamina E",

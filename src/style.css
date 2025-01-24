@@ -62,8 +62,8 @@ h1.logo {
 }
 .heroSection_languageSwitch {
   position: absolute !important;
-  top: 15px;
-  right: 15px;
+  top: 20px;
+  right: 20px;
 }
 /** Mobile Menu Section  */
 #navBar_mobileMenu {
@@ -191,9 +191,9 @@ h1.logo {
   background-image: url(/assets/img/amazonForest.webp);
   scroll-margin-top: 64px;
   height: auto;
-  padding: 0 50px;
+  /* padding: 0 50px; */
   text-align: center;
-  padding: 60px 50px 50px 50px;
+  /* padding: 60px 50px 50px 50px; */
   /* opacity: 0.5; */
 }
 .whatIsSachaInchi .bodyContainer {
@@ -216,11 +216,11 @@ h1.logo {
   padding: 50px;
   text-align: center;
 } */
-.whatIsSachaInchi .imgContainer {
+/* .whatIsSachaInchi .imgContainer {
   display: flex;
   align-self: center;
   width: 20%;
-}
+} */
 /* .whatIsSachaInchi img {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
   box-shadow: none;
@@ -260,15 +260,11 @@ h1.logo {
 #section5 {
   scroll-margin-top: 55px;
 }
-#section5 .videoContainer {
+/* #section5 .videoContainer {
   width: 320px;
   height: 400px;
-}
-.videoContainer .videoSmoothie {
-  width: 100%;
-  height: 100%;
-  object-fit: inherit;
-}
+} */
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
