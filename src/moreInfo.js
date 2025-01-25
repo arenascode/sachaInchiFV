@@ -126,7 +126,7 @@ const translations = {
       //Product 1
       p1: "Sacha Inchi has a high nutritional quality due to their exceptionally high content of healthy fatty acids like Omega 3, 6 and 9 from 35 to 45% with 0% of cholesterol, 25% of proteins, and essential minerals such as Calcium, Magnesium, Zinc, and Potassium.",
       cta: "Tap on a circle to explore more details!",
-      benefit1Title: "Omega 3, 6, 9 Fatty Acid",
+      benefit1Title: "Omega 3, 6, 9",
       benefit2Title: "Protein",
       benefit3Title: "Fiber",
       benefit4Title: "Vitamin E",
@@ -226,7 +226,7 @@ const translations = {
       title: "Potencia Nutricional",
       p1: "Sacha Inchi tiene una alta calidad nutricional gracias a su excepcional contenido de ácidos grasos saludables como Omega 3, 6 y 9, que varía entre un 35% y un 45%, con 0% de colesterol, 25% de proteínas y minerales esenciales como Calcio, Magnesio, Zinc y Potasio.",
       cta: "Toca cualquier círculo para descubrir más!",
-      benefit1Title: "Ácidos grasos Omega 3, 6, 9",
+      benefit1Title: "Omega 3, 6, 9",
       benefit2Title: "Proteina",
       benefit3Title: "Fibra",
       benefit4Title: "Vitamina E",

@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "BrownSugar";
-  src: url("/assets/fonts/BrownSugar.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
+
+
+
 body {
   overflow-x: hidden;
+  font-family: 'Lora', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 500;
 }
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -52,8 +56,10 @@ h1.logo {
   overflow: hidden;
   transition: all 1.3s ease-in-out;
   text-wrap: nowrap;
-  /* font-weight: 600;
-  font-size: 30px; */
+  font-family: 'Noto Serif', sans-serif;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  font-weight: 600;
 }
 .fixed-nav h1.logo {
   max-width: 500px;
