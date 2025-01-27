@@ -432,8 +432,10 @@ window.addEventListener("load",() => updateTranslations(userLanguage))
 
 document.addEventListener("DOMContentLoaded", () => {
   const videoOil = document.querySelectorAll(".videoOil");
+  const videoSalad = document.querySelectorAll(".videoSalad");
   const videoSmoothie = document.querySelectorAll(".videoSmoothie");
-  const videos = [...videoOil, ...videoSmoothie];
+  const videoSnacks = document.querySelectorAll(".videoSnacks");
+  const videos = [...videoOil, ...videoSalad, ...videoSmoothie, ...videoSnacks];
   
   const observer = new IntersectionObserver(
     (entries) => {

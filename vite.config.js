@@ -8,6 +8,7 @@ export default defineConfig({
       input: {
         main: "./index.html",
         about: "./src/pages/about.html",
+        mission: "./src/pages/mission.html"
       },
     },
   },
