@@ -318,6 +318,16 @@ footer {
   }
 }
 
+/** Mission Statement **/
+/* Custom styles for the glass effect */
+    .glass-effect {
+      background: #fff9f01a; /* Cream with 10% opacity */
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 249, 240, 0.2); /* Light border */
+    }
+    /* .missionStatement {
+      background-image: url(../assets/img/amazonForest2.webp);
+    } */
 /** Tablet */
 @media (max-width: 960px) {
   body.fixed-nav nav {
@@ -332,6 +342,8 @@ footer {
   }
 
 }
+
+
 /** LG */
 
 @media (min-width: 1024px) {
