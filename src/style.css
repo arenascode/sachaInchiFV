@@ -290,6 +290,14 @@ h1.logo {
   background-color: #1b4d20;
   color: #fff9f0;
 }
+
+#section7 {
+  background-image: url(/assets/img/seedsGreenBg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 footer {
   background-color: #163020;
   color: #fff9f0;
@@ -324,6 +332,23 @@ footer {
   }
 
 }
+/** LG */
+
+@media (min-width: 1024px) {
+  #section7 {
+    width: 100%;
+    /* background-image: none; */
+    background-position: left;
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-color: #163020; /* Fallback color */
+  }
+  #section7 .container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 /** Desktop */
 @media (min-width: 1280px) {
   .whatIsSachaInchi {
