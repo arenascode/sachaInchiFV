@@ -26,8 +26,6 @@ const hamburguerBtn = document.getElementById("hamburger-btn");
 const closeModalBtn = document.getElementById("closeModalBtn");
 
 const headerAboutSection = document.querySelector(".aboutSection_title");
-console.log(headerAboutSection);
-console.log(`hello vboy`);
 
 function openModalMenu() {
   mobileMenu.style.display = "block";

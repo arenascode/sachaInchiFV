@@ -318,6 +318,10 @@ footer {
 }
 
 /** Mission Statement **/
+body.body_mission {
+    padding-top: 65px;
+    scrollbar-color: none
+  }
 @media (min-width: 1024px) {
   body.body_mission {
     padding-top: 65px;
