@@ -101,13 +101,13 @@ const translations = {
   en: {
     navBar: {
       home: "Home",
-      aboutUs: "More Info",
-      contact: "Contact",
+      moreInfo: "More Info",
+      aboutUs: "Mission",
     },
     mobileMenu: {
       home: "Home",
-      aboutUs: "More Info",
-      products: "Products",
+      moreInfo: "More Info",
+      aboutUs: "Mission",
     },
     header: {
       title: "Learn More About Sacha Inchi",
@@ -199,13 +199,13 @@ const translations = {
   es: {
     navBar: {
       home: "Inicio",
-      aboutUs: "Más Información",
-      contact: "Contactanos",
+      moreInfo: "Más Información",
+      aboutUs: "Misión",
     },
     mobileMenu: {
       home: "Inicio",
-      aboutUs: "Aprende más",
-      products: "Productos",
+      moreInfo: "Más Información",
+      aboutUs: "Misión",
     },
     header: {
       title: "Aprende Más Acerca de Sacha Inchi",

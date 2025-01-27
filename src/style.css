@@ -80,7 +80,7 @@ h1.logo {
   font-family: var(--pharagrap-font);
   letter-spacing: 1.8px;
   font-size: 1.2rem;
-  width: 100%;
+  width: 100vw;
   height: 100dvh;
   z-index: 999 !important;
   background-color: #000;
@@ -111,7 +111,7 @@ h1.logo {
 }
 .links_menu {
   margin-top: 130px;
-  margin-left: 50px;
+  margin-left: 30px;
   display: flex;
   flex-direction: column;
   gap: 50px;
