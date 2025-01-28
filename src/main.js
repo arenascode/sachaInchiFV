@@ -118,8 +118,8 @@ const translations = {
     },
     section2: {
       home: "Home",
-      aboutUs: "More Info",
-      contact: "Contact",
+      aboutUs: "Mission",
+      moreInfo: "Learn More",
     },
     mobileMenu: {
       home: "Home",
@@ -247,8 +247,8 @@ const translations = {
     },
     section2: {
       home: "Inicio",
-      moreInfo: "Más Información",
       aboutUs: "Misión",
+      moreInfo: "Aprende más",
     },
     mobileMenu: {
       home: "Inicio",

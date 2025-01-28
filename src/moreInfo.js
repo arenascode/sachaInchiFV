@@ -100,7 +100,7 @@ const translations = {
   en: {
     navBar: {
       home: "Home",
-      moreInfo: "More Info",
+      moreInfo: "Learn More",
       aboutUs: "Mission",
     },
     mobileMenu: {
@@ -259,8 +259,8 @@ const translations = {
   es: {
     navBar: {
       home: "Inicio",
-      moreInfo: "Más Información",
       aboutUs: "Misión",
+      moreInfo: "Aprende Más",
     },
     mobileMenu: {
       home: "Inicio",
