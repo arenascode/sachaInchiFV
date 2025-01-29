@@ -250,7 +250,7 @@ const translations = {
       description:
         "Discover the natural benefits of Sacha Inchi, the Amazonian treasure for your health and wellness.",
       home: "Home",
-      moreInfo: "More Info",
+      moreInfo: "Learn More",
       aboutUs: "Mission",
       followUs: "Follow Us",
     },
