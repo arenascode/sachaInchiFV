@@ -322,6 +322,13 @@ body.body_mission {
     padding-top: 65px;
     scrollbar-color: none
   }
+
+  .parallaxMission {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+}
 @media (min-width: 1024px) {
   body.body_mission {
     padding-top: 65px;

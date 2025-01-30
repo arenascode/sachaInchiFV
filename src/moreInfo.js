@@ -1,3 +1,16 @@
+import {
+  Chart,
+  BarController,
+  BarElement,
+  CategoryScale,
+  LinearScale,
+  Title,
+  Tooltip,
+  Legend,
+  SubTitle,
+} from "chart.js";
+import { fontString } from "chart.js/helpers";
+
 //* Sticky Nav Logic
 const nav = document.querySelector(".nav");
 const hero = document.querySelector(".hero");
@@ -6,7 +19,7 @@ const topOfNav = nav.offsetTop;
 function fixNav() {
   const offsetTop = window.scrollY;
   console.log(nav.offsetHeight);
-  
+
   if (offsetTop >= topOfNav - 5) {
     document.body.classList.add("fixed-nav");
     document.body.style.paddingTop = nav.offsetHeight + "px";
@@ -123,7 +136,7 @@ const translations = {
     infoSection2: {
       title: "Nutritional Powerhouse",
       //Product 1
-      p1: "Sacha Inchi has a high nutritional quality due to their exceptionally high content of healthy fatty acids like Omega 3, 6 and 9 from 35 to 45% with 0% of cholesterol, 25% of proteins, and essential minerals such as Calcium, Magnesium, Zinc, and Potassium.",
+      p1: "Sacha Inchi is a highly nutritious superfood, rich in healthy fatty acids, including Omega 3, 6, and 9, which make up 35% to 45% of its composition—completely free of cholesterol. It also boasts 25% protein and is packed with essential minerals like calcium, magnesium, zinc, and potassium, making it a powerful addition to a balanced diet.",
       cta: "Tap on a circle to explore more details!",
       benefit1Title: "Omega 3, 6, 9",
       benefit2Title: "Protein",
@@ -232,6 +245,18 @@ const translations = {
     infoSection4: {
       title:
         "Nutritional values of Sacha Inchi compared to other nuts, seeds and oils",
+      //Table 1
+      table_oil: "Oil",
+      table_oilTitle: "Total Healthy Fats (%)",
+      table_oilBottom: "Percent of Healthy Fats Content",
+      //Table 2
+      table_seeds: "Nuts & Seeds for Snacks",
+      table_seedsTitle: "Total Healthy Fats (%)",
+      table_seedsBottom: "Percent of Healthy Fats Content",
+      //Table 3
+      table_protein: "Nuts, Grains, and Oils",
+      table_proteinTitle: "% Proteins",
+      table_proteinBottom: "Percent of proteins content",
     },
     infoSection5: {
       title: "Sustainability and Impact",
@@ -284,7 +309,7 @@ const translations = {
     },
     infoSection2: {
       title: "Potencia Nutricional",
-      p1: "Sacha Inchi tiene una alta calidad nutricional gracias a su excepcional contenido de ácidos grasos saludables como Omega 3, 6 y 9, que varía entre un 35% y un 45%, con 0% de colesterol, 25% de proteínas y minerales esenciales como Calcio, Magnesio, Zinc y Potasio.",
+      p1: "Sacha Inchi es un superalimento altamente nutritivo, rico en ácidos grasos saludables, incluyendo Omega 3, 6 y 9, que representan entre el 35% y el 45% de su composición, sin colesterol. Además, contiene 25% de proteínas y es una excelente fuente de minerales esenciales como calcio, magnesio, zinc y potasio, lo que lo convierte en un gran aliado para una alimentación equilibrada.",
       cta: "Toca cualquier círculo para descubrir más!",
       benefit1Title: "Omega 3, 6, 9",
       benefit2Title: "Proteina",
@@ -398,6 +423,18 @@ const translations = {
     infoSection4: {
       title:
         "Valores nutricionales de Sacha Inchi comparados con otras nueces, semillas y aceites",
+      //Table 1
+      table_oil: "Aceite",
+      table_oilTitle: "Total Grasas Saludables (%)",
+      table_oilBottom: "Porcentaje de contenido de grasas saludables",
+      //Table 2
+      table_seeds: "Nueces y Semillas para Snacks",
+      table_seedsTitle: "Total Grasas Saludables (%)",
+      table_seedsBottom: "Porcentaje de contenido de grasas saludables",
+      //Table 3
+      table_protein: "Frutos secos, cereales y aceites",
+      table_proteinTitle: "Proteina (%)",
+      table_proteinBottom: "Porcentaje de contenido de Proteinas",
     },
     infoSection5: {
       title: "Sostenibilidad e Impacto",
@@ -441,13 +478,12 @@ function updateTranslations(language) {
 }
 
 const languageToggle = document.querySelector(".languageToggle");
-console.log(languageToggle);
 
 languageToggle.addEventListener("change", (event) => {
   console.log(`clicked`);
   const selectedLanguage = event.target.checked ? "es" : "en";
-  console.log("Selected Language:", selectedLanguage);
   updateTranslations(selectedLanguage); // Call your translation function
+  createChart(selectedLanguage);
 });
 
 // Set default language
@@ -459,4 +495,250 @@ updateTranslations(userLanguage);
 
 window.addEventListener("load", () => updateTranslations(userLanguage));
 
+//*Chart Section
+Chart.register(
+  BarController,
+  BarElement,
+  CategoryScale,
+  LinearScale,
+  Title,
+  Tooltip,
+  Legend
+);
 
+const chartConfigs = [
+  {
+    id: "oilChart",
+    data: [82.8, 72.9, 63.0, 62.5, 62.3, 15.0, 9.1, 2.0],
+  },
+];
+const data = {
+  labels: [
+    "Sacha Inchi",
+    "Flaxseed",
+    "Soybean",
+    "Corn",
+    "Sunflower",
+    "Avocado",
+    "Olive",
+    "Coconut",
+  ],
+  datasets: [
+    {
+      label: "Content Of Healthy Fats In Oil (%)",
+      data: [82.8, 72.9, 63.0, 62.5, 62.3, 15.0, 9.1, 2.0],
+      backgroundColor: [
+        "#7ed957",
+        "#C2A62D", // Golden brown for Flaxseed
+        "#FFD700", // Gold for Soybean
+        "#F8DE7E", // Pale yellow for Corn
+        "#E8D080", // Sunflower yellow
+        "#567D46", // Green for Avocado
+        "#A8A392", // Olive grey
+        "#ffffff", // Coconut cream color
+      ],
+      borderColor: "#1b4d20",
+      borderWidth: 1,
+      borderRadius: 10,
+      fontString: 22,
+    },
+  ],
+};
+
+const config = {
+  type: "bar",
+  data: data,
+  options: {
+    indexAxis: "y", // Horizontal bar configuration
+    responsive: true,
+    maintainAspectRatio: false,
+    animation: {
+      duration: 1500,
+    },
+    plugins: {
+      legend: {
+        display: true,
+        position: "top",
+        labels: {
+          color: "#163020",
+          font: {
+            size: 18,
+            weight: 500,
+          },
+        },
+      },
+      tooltip: {
+        backgroundColor: "#fff9f0",
+        titleColor: "#1b4d20",
+        bodyColor: "#163020",
+        padding: 12,
+        titleFont: { size: 16, weight: "bold" },
+        bodyFont: { size: 14 },
+        cornerRadius: 8,
+        displayColors: true,
+        callbacks: {
+          label: function (tooltipItem) {
+            return `${tooltipItem.raw}% Healthy Fats`;
+          },
+        },
+      },
+    },
+    scales: {
+      x: {
+        ticks: {
+          color: "#1b4d20",
+          font: {
+            size: 14,
+          },
+        },
+        grid: {
+          color: "#f6ba02",
+        },
+      },
+      y: {
+        ticks: {
+          color: "#1b4d20",
+          font: {
+            size: 14,
+            weight: 600,
+          },
+        },
+        grid: {
+          color: "#c4d7b2",
+        },
+      },
+    },
+  },
+};
+
+let oilChart;
+
+function createChart(userLanguage) {
+  const ctx = document.getElementById("nutrientChart").getContext("2d");
+  const labelText =
+    userLanguage === "en"
+      ? "Content Of Healthy Fats In Oil (%)"
+      : "Contenido De Grasas Saludables En El Aceite (%)";
+
+  if (oilChart) {
+    oilChart.destroy();
+  }
+  const data = {
+    labels: [
+      "Sacha Inchi",
+      "Flaxseed",
+      "Soybean",
+      "Corn",
+      "Sunflower",
+      "Avocado",
+      "Olive",
+      "Coconut",
+    ],
+    datasets: [
+      {
+        label: labelText,
+        data: [82.8, 72.9, 63.0, 62.5, 62.3, 15.0, 9.1, 2.0],
+        backgroundColor: [
+          "#7ed957",
+          "#C2A62D", // Golden brown for Flaxseed
+          "#FFD700", // Gold for Soybean
+          "#F8DE7E", // Pale yellow for Corn
+          "#E8D080", // Sunflower yellow
+          "#567D46", // Green for Avocado
+          "#A8A392", // Olive grey
+          "#ffffff", // Coconut White
+        ],
+        borderColor: "#1b4d20",
+        borderWidth: 1,
+        borderRadius: 10,
+        fontString: 20,
+      },
+    ],
+  };
+
+  const config = {
+    type: "bar",
+    data: data,
+    options: {
+      indexAxis: "y", // Horizontal bar configuration
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: {
+        duration: 1500,
+      },
+      plugins: {
+        legend: {
+          display: true,
+          position: "top",
+          labels: {
+            color: "#163020",
+            font: {
+              size: 18,
+              weight: 500,
+            },
+          },
+        },
+        tooltip: {
+          backgroundColor: "#fff9f0",
+          titleColor: "#1b4d20",
+          bodyColor: "#163020",
+          padding: 12,
+          titleFont: { size: 16, weight: "bold" },
+          bodyFont: { size: 14 },
+          cornerRadius: 8,
+          displayColors: true,
+          callbacks: {
+            label: function (tooltipItem) {
+              return `${tooltipItem.raw}% Healthy Fats`;
+            },
+          },
+        },
+      },
+      scales: {
+        x: {
+          ticks: {
+            color: "#1b4d20",
+            font: {
+              size: 14,
+            },
+          },
+          grid: {
+            color: "#f6ba02",
+          },
+        },
+        y: {
+          ticks: {
+            color: "#1b4d20",
+            font: {
+              size: 14,
+              weight: 600,
+            },
+          },
+          grid: {
+            color: "#c4d7b2",
+          },
+        },
+      },
+    },
+  };
+  oilChart = new Chart(ctx, config);
+}
+
+//Initial Chart rendering
+createChart(userLanguage);
+
+const chartContainers = document.querySelectorAll(".graphContainer");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(
+    (entry) => {
+      if (entry.isIntersecting && !nutrientChart) {
+        observer.unobserve(entry);
+        createChart(ctx, config);
+      }
+    },
+    { threshold: 0.5 }
+  );
+});
+
+chartContainers.forEach((chart) => observer.observe(chart));

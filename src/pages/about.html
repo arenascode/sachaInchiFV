@@ -261,7 +261,7 @@
             >Tap on a circle to explore more details!</span
           >
           <div
-            class="container mt-5 xl:mt-10 xl:mb-10 p-2 px-1 text-center flex flex-col md:flex-row width-full sm:grid sm:grid-cols-2 md:gap-y-10 md:grid-cols-1 xl:gap-y-20 xl:px-0"
+            class="container mt-5 xl:mt-10 mb-3 xl:mb-10 p-2 px-1 text-center flex flex-col md:flex-row width-full sm:grid sm:grid-cols-2 md:gap-y-10 md:grid-cols-1 xl:gap-y-20 xl:px-0"
           >
             <!-- Benefits Grid -->
             <div
@@ -842,7 +842,7 @@
         </div>
         <!-- Section 4: Comparison -->
         <div
-          class="bg-[#fcebd0] p-3 pl-1 lg:p-6 lg:px-14 rounded-lg shadow-xl border-l-4 border-accent hover:shadow-2xl transition-shadow flex flex-col items-center overflow-x-hidden mx-4 xl:mx-16"
+          class="bg-[#fcebd0] p-3 lg:p-6 lg:px-14 rounded-lg shadow-xl border-l-4 border-accent hover:shadow-2xl transition-shadow flex flex-col items-center overflow-x-hidden mx-1 xl:mx-16"
           id="infoSection4"
         >
           <h3
@@ -852,183 +852,247 @@
             Nutritional values of Sacha Inchi compared to other nuts, seeds and
             oils
           </h3>
+          <!-- Oil Healthy Fats Comparison -->
           <div
-            class="tableContainer flex flex-col md:flex-row gap-5 md:w-full transform transition-transform duration-300 hover:scale-105 bg-[#f0dab9]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4"
+            class="tableContainer flex flex-col md:flex-row gap-5 md:w-full transform transition-transform duration-300 lg:hover:scale-105 bg-[#e1c9a6]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4 overflow-hidden"
           >
-            <div class="table md:w-[50%] rounded-t-lg">
-              <table
-                class="lg:table-sm xl:table-sm table-auto text-center w-full text-darkGreen bg-[#d6cfc7]"
+            <div class="table md:w-[50%] max-w-4xl">
+              <div
+                class="overflow-x-auto rounded-lg shadow-lg border border-[#b3a86d] bg-[#fff9f0]"
               >
-                <thead class="bg-softGreen text-primary xl:text-lg">
-                  <tr>
-                    <th class="lg:px-4 px-2 lg:py-3 border-b-2 border-primary">
-                      Oil
-                    </th>
-
-                    <th class="lg:px-4 px-2 lg:py-3 border-b-2 border-primary">
-                      Total Polyunsaturated Fatty Acids
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="hover:bg-softGreen/50">
-                    <td
-                      class="lg:px-4 px-1 py-3 border-b font-semibold xl:text-lg"
-                    >
-                      Sacha Inchi
-                    </td>
-
-                    <td class="lg:px-4 px-1 py-3 border-b xl:text-lg">82.8</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td
-                      class="lg:px-4 px-1 py-3 border-b font-semibold xl:text-lg"
-                    >
-                      Flax
-                    </td>
-
-                    <td class="lg:px-4 px-1 py-3 border-b xl:text-lg">72.9</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Soy
-                    </td>
-
-                    <td class="px-4 py-3 border-b xl:text-lg">63.0</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Corn
-                    </td>
-
-                    <td class="px-4 py-3 border-b xl:text-lg">62.5</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Sunflower
-                    </td>
-
-                    <td class="px-4 py-3 border-b xl:text-lg">62.3</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Avocado
-                    </td>
-                    <td class="px-4 py-3 border-b xl:text-lg">15.0</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Olive
-                    </td>
-                    <td class="px-4 py-3 border-b xl:text-lg">9.1</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Coconut
-                    </td>
-                    <td class="px-4 py-3 border-b xl:text-lg">2.0</td>
-                  </tr>
-                </tbody>
-              </table>
-              <p class="text-md xl:text-lg text-gray-600 text-center">
-                Percent of polyunsaturated fatty acid content
-              </p>
+                <table
+                  class="min-w-full table-auto text-darkGreen text-center bg-[#c4d7b2]"
+                >
+                  <thead class="bg-[#1b4d20] text-[#fff9f0] text-lg">
+                    <tr>
+                      <th
+                        class="px-4 py-3 border-b border-[#b3a86d] font-semibold flex flex-col md:flex-row items-center gap-2"
+                      >
+                        <div class="oilImage">
+                          <figure>
+                            <img
+                              src="/assets/img/oilPresentations.webp"
+                              alt="oilBotles"
+                              width="70"
+                            />
+                          </figure>
+                        </div>
+                        <div class="product" data-role="table_oil">Oil</div>
+                      </th>
+                      <th
+                        class="px-4 py-3 border-b border-[#b3a86d] font-semibold"
+                        data-role="table_oilTitle"
+                      >
+                        Total Healthy Fats (%)
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Sacha Inchi
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">82.8%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Flax
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">72.9%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Soy
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">63.0%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Corn
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">62.5%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Sunflower
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">62.3%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Avocado
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">15.0%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Olive
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">9.1%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Coconut
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">2.0%</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p
+                  class="p-1 lg:p-2 text-center text-[#163020] text-sm lg:text-lg"
+                  data-role="table_oilBottom"
+                >
+                  Percent of Healthy Fats Content
+                </p>
+              </div>
             </div>
-            <div class="graphContainer md:w-[50%]">
-              <img
+
+            <div class="graphContainer w-full md:w-[50%] mt-2">
+              <canvas id="nutrientChart" class="w-full h-[300px]"></canvas>
+              <!-- <img
                 src="/assets/img/graphPolyFattyAcidsOil.webp"
                 alt="PolyFattyAcidsChart"
                 class="rounded-lg w-full h-full"
-              />
+              /> -->
             </div>
           </div>
+          <!-- Seeds Healty fats Comparison -->
           <div
-            class="tableConainer flex flex-col md:flex-row gap-5 mt-14 md:w-full hover:scale-105 bg-[#f0dab9]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4"
+            class="tableConainer flex flex-col md:flex-row gap-5 mt-14 md:w-full transform transition-transform duration-300 lg:hover:scale-105 bg-[#f0dab9]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4"
           >
-            <div class="table md:w-[50%]">
-              <table
-                class="lg:table-sm xl:table-sm w-full text-center text-darkGreen bg-[#d6cfc7]"
+            <div class="table md:w-[50%] max-w-4xl">
+              <div
+                class="overflow-x-auto rounded-lg shadow-lg border border-[#b3a86d] bg-[#fff9f0]"
               >
-                <thead class="bg-softGreen text-primary xl:text-lg">
-                  <tr>
-                    <th
-                      class="lg:px-4 px-1 py-3 border-b-2 border-primary text-pretty text-md max-w-min"
-                    >
-                      Nuts & Seeds for Snacks
-                    </th>
-
-                    <th class="lg:px-4 px-1 py-3 border-b-2 border-primary">
-                      Total Polyunsaturated Fatty Acids
-                    </th>
-                  </tr>
-                </thead>
-                <tbody class="xl:text-lg">
-                  <tr class="hover:bg-softGreen/50">
-                    <td
-                      class="px-4 py-3 border-b xl:text-lg font-semibold text-md"
-                    >
-                      Sacha Inchi
-                    </td>
-                    <td class="lg:px-4 px-1 py-3 border-b xl:text-lg text-md">
-                      84.5
-                    </td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Sunflower
-                    </td>
-                    <td class="px-4 py-3 border-b xl:text-lg">69.0</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Corn
-                    </td>
-                    <td class="px-4 py-3 border-b xl:text-lg">56.0</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Peanuts
-                    </td>
-
-                    <td class="px-4 py-3 border-b xl:text-lg">33.2</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Pistachios
-                    </td>
-
-                    <td class="px-4 py-3 border-b xl:text-lg">31.6</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Cashew
-                    </td>
-                    <td class="px-4 py-3 border-b xl:text-lg">17.7</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Avocado
-                    </td>
-                    <td class="px-4 py-3 border-b xl:text-lg">13.0</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Macadamia
-                    </td>
-                    <td class="px-4 py-3 border-b xl:text-lg">1.8</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Coconut
-                    </td>
-                    <td class="px-4 py-3 border-b xl:text-lg">0.5</td>
-                  </tr>
-                </tbody>
-              </table>
-              <p class="text-md xl:text-lg text-gray-600 text-center">
-                Percent of polyunsaturated fatty acid content
-              </p>
+                <table
+                  class="min-w-full table-auto text-darkGreen text-center bg-[#c4d7b2]"
+                >
+                  <thead class="bg-[#1b4d20] text-[#fff9f0] text-lg">
+                    <tr>
+                      <th
+                        class="p-1 font-semibold flex flex-col md:flex-row items-center gap-1"
+                      >
+                        <div class="seedsImage">
+                          <figure>
+                            <img
+                              src="/assets/img/seedsAndGraines.webp"
+                              alt="seeds&Snacks"
+                              width="70"
+                            />
+                          </figure>
+                        </div>
+                        <div class="product text-wrap" data-role="table_seeds">
+                          Nuts & Seeds for Snacks
+                        </div>
+                      </th>
+                      <th
+                        class="px-4 py-3 border-b border-[#b3a86d] font-semibold text-wrap"
+                        data-role="table_seedsTitle"
+                      >
+                        Total Healthy Fats
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Sacha Inchi
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">84.5%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Sunflower
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">69.0%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Corn
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">56.0%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Peanuts
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">33.2%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Pistachios
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">31.6%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Cashew
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">17.7%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Avocado
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">13.0%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Macadamia
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">1.8%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Coconut
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">0.5%</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p
+                  class="p-1 lg:p-2 text-center text-[#163020] text-sm lg:text-lg"
+                  data-role="table_seedsBottom"
+                >
+                  Percent of polyunsaturated fatty acid content
+                </p>
+              </div>
             </div>
+
             <div class="graphContainer md:w-[50%]">
               <img
                 src="/assets/img/graphPolyFattyAcidsSeeds.webp"
@@ -1037,84 +1101,123 @@
               />
             </div>
           </div>
+          <!--Protein Comparison-->
           <div
-            class="tableContainer flex flex-col md:flex-row gap-5 mt-14 md:w-full hover:scale-105 bg-[#f0dab9]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4"
+            class="tableContainer flex flex-col md:flex-row gap-5 mt-14 md:w-full lg:hover:scale-105 bg-[#f0dab9]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4"
           >
-            <div class="table md:w-[50%]">
-              <table
-                class="lg:table-sm xl:table-sm w-full text-center text-darkGreen bg-[#d6cfc7]"
+            <div class="table md:w-[50%] max-w-4xl">
+              <div
+                class="overflow-x-auto rounded-lg shadow-lg border border-[#b3a86d] bg-[#fff9f0]"
               >
-                <thead class="bg-softGreen text-primary xl:text-lg">
-                  <tr>
-                    <th class="lg:px-4 px-1 py-3 border-b-2 border-primary">
-                      Nuts, Grains, and Oils
-                    </th>
-                    <th class="lg:px-4 px-1 py-3 border-b-2 border-primary">
-                      % Proteins
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Peanuts
-                    </td>
-                    <td class="px-4 py-3 border-b xl:text-lg">25.8</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Sacha Inchi seeds
-                    </td>
-                    <td class="px-4 py-3 border-b xl:text-lg">24.7</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Sunflower seeds
-                    </td>
-                    <td class="px-4 py-3 border-b xl:text-lg">20.8</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Flax seeds
-                    </td>
-                    <td class="px-4 py-3 border-b xl:text-lg">18.3</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Sesame seeds
-                    </td>
-                    <td class="px-4 py-3 border-b xl:text-lg">17.3</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Corn
-                    </td>
-                    <td class="px-4 py-3 border-b xl:text-lg">3.0</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Coconut
-                    </td>
-                    <td class="px-4 py-3 border-b xl:text-lg">4.0</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Avocado
-                    </td>
-                    <td class="px-4 py-3 border-b xl:text-lg">2.0</td>
-                  </tr>
-                  <tr class="hover:bg-softGreen/50">
-                    <td class="px-4 py-3 border-b xl:text-lg font-semibold">
-                      Olives
-                    </td>
-                    <td class="px-4 py-3 border-b xl:text-lg">2.0</td>
-                  </tr>
-                </tbody>
-              </table>
-              <p class="xl:text-lg text-sm text-gray-600 text-center">
-                Percent of Proteins content
-              </p>
+                <table
+                  class="min-w-full table-auto text-darkGreen text-center bg-[#c4d7b2]"
+                >
+                  <thead class="bg-[#1b4d20] text-[#fff9f0] text-lg">
+                    <tr>
+                      <th
+                        class="p-1 font-semibold flex flex-col md:flex-row items-center gap-1"
+                      >
+                        <div class="seedsImage">
+                          <figure>
+                            <img
+                              src="/assets/img/seedsAndGraines.webp"
+                              alt="seeds&Oils"
+                              width="70"
+                            />
+                          </figure>
+                        </div>
+                        <div class="product text-wrap" data-role="table_protein">
+                          Nuts, Grains, and Oils
+                        </div>
+                      </th>
+                      <th
+                        class="px-4 py-3 border-b border-[#b3a86d] font-semibold" data-role="table_proteinTitle"
+                      >
+                        % Proteins
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Peanuts
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">25.8%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Sacha Inchi seeds
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">24.7%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Sunflower seeds
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">20.8%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Flax seeds
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">18.3%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Sesame seeds
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">17.3%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Corn
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">3.0%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Coconut
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">4.0%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Avocado
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">2.0%</td>
+                    </tr>
+                    <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
+                      <td
+                        class="px-4 py-3 border-b border-[#b3a86d] font-medium"
+                      >
+                        Olives
+                      </td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">2.0%</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="py-1 lg:p-2 text-center text-[#163020] text-sm md:text-lg" data-role="table_proteinBottom">
+                  Percent of Proteins content
+                </p>
+              </div>
             </div>
+
             <div class="graphContainer md:w-[50%]">
               <img
                 src="/assets/img/graphProtein.webp"
