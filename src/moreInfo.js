@@ -247,15 +247,15 @@ const translations = {
         "Nutritional values of Sacha Inchi compared to other nuts, seeds and oils",
       //Table 1
       table_oil: "Oil",
-      table_oilTitle: "Total Healthy Fats (%)",
+      table_oilTitle: "Healthy Fats",
       table_oilBottom: "Percent of Healthy Fats Content",
       //Table 2
-      table_seeds: "Nuts & Seeds for Snacks",
-      table_seedsTitle: "Total Healthy Fats (%)",
+      table_seeds: "Nuts & Seeds",
+      table_seedsTitle: "Healthy Fats",
       table_seedsBottom: "Percent of Healthy Fats Content",
       //Table 3
       table_protein: "Nuts, Grains, and Oils",
-      table_proteinTitle: "% Proteins",
+      table_proteinTitle: "Proteins",
       table_proteinBottom: "Percent of proteins content",
     },
     infoSection5: {
@@ -310,58 +310,6 @@ const translations = {
     infoSection2: {
       title: "Potencia Nutricional",
       p1: "Sacha Inchi es un superalimento altamente nutritivo, rico en ácidos grasos saludables, incluyendo Omega 3, 6 y 9, que representan entre el 35% y el 45% de su composición, sin colesterol. Además, contiene 25% de proteínas y es una excelente fuente de minerales esenciales como calcio, magnesio, zinc y potasio, lo que lo convierte en un gran aliado para una alimentación equilibrada.",
-      cta: "Toca cualquier círculo para descubrir más!",
-      benefit1Title: "Omega 3, 6, 9",
-      benefit2Title: "Proteina",
-      benefit3Title: "Fibra",
-      benefit4Title: "Vitamina E",
-      benefit5Title: "Antioxidantes",
-      benefit6Title: "Minerales",
-      benefit7Title: "Fitosteroles",
-      //Card1
-      benefit1CardTitle:
-        "Alivia la inflamación y mejora tu salud de forma natural",
-      benefit1Cardp1:
-        "Sacha Inchi es una poderosa fuente de ácidos grasos Omega 3, 6, 9 y vitamina E, que ofrece propiedades antiinflamatorias y antioxidantes.",
-      benefit1Cardp2:
-        "Estos nutrientes trabajan en conjunto para reducir la inflamación, aliviar el dolor articular, la rigidez muscular y los síntomas de afecciones como la artritis, además de proteger las células del estrés oxidativo y el daño.",
-      //Card2
-      benefit2CardTitle:
-        "Nutre tus músculos, recupérate más rápido y crece más fuerte",
-      benefit2Cardp1:
-        "Rico en proteínas de alta calidad para la reparación, recuperación y crecimiento muscular. Después del ejercicio, su proteína ayuda a reconstruir el tejido muscular, reducir el dolor y acelerar la recuperación.",
-      benefit2Cardp2:
-        "Cargado de magnesio y potasio, previene calambres, apoya la función muscular y restaura el equilibrio de electrolitos. Sus propiedades anti-inflamatorias y ácidos grasos Omega 3 reducen la inflamación muscular, ayudándote a recuperarte más rápido, rendir mejor y desarrollar músculos fuertes y definidos de forma natural.",
-      //Card3
-      benefit3CardTitle: "Promueve la Salud Digestiva con Fibra Natural",
-      benefit3Cardp1:
-        "Rico en fibra, Sacha Inchi favorece un sistema digestivo saludable al promover movimientos intestinales regulares y prevenir el estreñimiento. La fibra desempeña un papel crucial en el mantenimiento de la salud intestinal, fomentando el crecimiento de bacterias beneficiosas y ayudando en la absorción de nutrientes.",
-      benefit3Cardp2:
-        "Además de mejorar la digestión, la fibra del Sacha Inchi ayuda a regular los niveles de azúcar en la sangre y promueve la saciedad, convirtiéndolo en un gran aliado para el manejo del peso. Al incorporar este superalimento amazónico en tu dieta, no solo estás mejorando tu salud digestiva, sino también apoyando tu bienestar general de manera natural y efectiva.",
-      //Card4
-      benefit4CardTitle: "Luce naturalmente con una piel nutrida y saludable",
-      benefit4Cardp1:
-        "El aceite de Sacha Inchi es un secreto de belleza impulsado por la naturaleza. Rico en vitamina E y ácidos grasos Omega 3, hidrata profundamente, restaura la elasticidad de la piel y combate los signos de envejecimiento como las líneas finas y las arrugas. Sus antioxidantes protegen tu piel del estrés ambiental y los daños de los radicales libres, promoviendo un cutis radiante y uniforme.",
-      benefit4Cardp2:
-        "Con su textura ligera y propiedades anti-inflamatorias, el aceite de Sacha Inchi calma la irritación y equilibra la producción de grasa, lo que lo hace perfecto para todo tipo de piel. Descubre tu brillo natural con este tesoro amazónico.",
-      //Card5
-      benefit5CardTitle: "Protege tu cuerpo con potentes antioxidantes",
-      benefit5CardP1:
-        "Sacha Inchi, rico en antioxidantes, desempeña un papel vital en la protección de tu cuerpo contra los dañinos radicales libres. Estas moléculas inestables pueden causar daño celular, aumentando el riesgo de enfermedades crónicas. Al neutralizar los radicales libres, el Sacha Inchi ayuda a reducir el estrés oxidativo que acelera el envejecimiento y contribuye a diversos problemas de salud.",
-      benefit5Cardp2:
-        "Incorporar Sacha Inchi en tu dieta puede promover el bienestar general al reducir el estrés oxidativo y apoyar las defensas naturales de tu cuerpo. Con su rico contenido de antioxidantes, este superalimento amazónico ayuda a mantener la salud celular y el equilibrio, proporcionando un escudo protector contra el estrés y los daños ambientales.",
-      //Card6
-      benefit6CardTitle: "Fortalece tu cuerpo con minerales esenciales",
-      benefit6Cardp1:
-        "Sacha Inchi está lleno de minerales esenciales como calcio, magnesio, fósforo y potasio. Estos minerales son cruciales para mantener huesos saludables y apoyar la función muscular adecuada. Trabajan juntos para fortalecer la estructura del cuerpo y asegurar que los músculos y los huesos se mantengan fuertes y funcionales.",
-      benefit6Cardp2:
-        "Además de apoyar la salud ósea y muscular, estos minerales actúan como electrolitos, ayudando a regular el equilibrio de líquidos y la función nerviosa. Incorporar el Sacha Inchi en tu dieta asegura que estés obteniendo estos minerales vitales para mantener tu cuerpo energizado y funcionando al máximo.",
-      //Card7
-      benefit7CardTitle: "Apoya el equilibrio del colesterol con fitosteroles",
-      benefit7Cardp1:
-        "Sacha Inchi es una fuente natural de fitosteroles, compuestos de origen vegetal conocidos por su capacidad para mantener niveles saludables de colesterol. Los fitosteroles ayudan a reducir la absorción de colesterol malo (LDL) en el sistema digestivo, promoviendo un mejor equilibrio del colesterol en el cuerpo.",
-      benefit7Cardp2:
-        "Al incorporar Sacha Inchi en tu dieta, no solo estás apoyando la salud cardiovascular, sino también reduciendo el riesgo de enfermedades relacionadas con el corazón. Este tesoro amazónico es una forma natural de mantener un corazón sano y un bienestar general.",
     },
     infoSection3: {
       title: "Sacha Inchi es un",
@@ -378,9 +326,9 @@ const translations = {
       benefit1CardTitle:
         "Alivia la inflamación y mejora tu salud de forma natural",
       benefit1Cardp1:
-        "Sacha Inchi es una poderosa fuente de ácidos grasos Omega 3, 6, 9 y vitamina E, que ofrece propiedades anti-inflamatorias y antioxidantes.",
+        "Sacha Inchi es una fuente poderosa de ácidos grasos Omega 3, 6 y 9, que ofrecen propiedades antiinflamatorias y antioxidantes. Estos nutrientes trabajan en conjunto para reducir la inflamación, aliviando el dolor en las articulaciones, la tensión muscular y los síntomas de afecciones como la artritis, además de proteger las células del estrés oxidativo y el daño.",
       benefit1Cardp2:
-        "Estos nutrientes trabajan en conjunto para reducir la inflamación, aliviar el dolor articular, la rigidez muscular y los síntomas de afecciones como la artritis, además de proteger las células del estrés oxidativo y el daño.",
+        "Además, los Omega 3 y Omega 6 desempeñan un papel vital en la función cerebral al favorecer la salud cognitiva, mejorar la memoria y promover la claridad mental. Sus efectos antiinflamatorios también contribuyen a una mejor salud neurológica, pudiendo reducir el riesgo de deterioro cognitivo relacionado con la edad.",
       //Card2
       benefit2CardTitle:
         "Nutre tus músculos, recupérate más rápido y crece más fuerte",
@@ -425,15 +373,15 @@ const translations = {
         "Valores nutricionales de Sacha Inchi comparados con otras nueces, semillas y aceites",
       //Table 1
       table_oil: "Aceite",
-      table_oilTitle: "Total Grasas Saludables (%)",
+      table_oilTitle: "Grasas Saludables",
       table_oilBottom: "Porcentaje de contenido de grasas saludables",
       //Table 2
-      table_seeds: "Nueces y Semillas para Snacks",
-      table_seedsTitle: "Total Grasas Saludables (%)",
+      table_seeds: " Nueces y Semillas",
+      table_seedsTitle: "Grasas Saludables",
       table_seedsBottom: "Porcentaje de contenido de grasas saludables",
       //Table 3
       table_protein: "Frutos secos, cereales y aceites",
-      table_proteinTitle: "Proteina (%)",
+      table_proteinTitle: "Proteina",
       table_proteinBottom: "Porcentaje de contenido de Proteinas",
     },
     infoSection5: {
@@ -483,7 +431,9 @@ languageToggle.addEventListener("change", (event) => {
   console.log(`clicked`);
   const selectedLanguage = event.target.checked ? "es" : "en";
   updateTranslations(selectedLanguage); // Call your translation function
-  createChart(selectedLanguage);
+  createOilChart(selectedLanguage);
+  createSeedsChart(selectedLanguage);
+  createProteinChart(selectedLanguage);
 });
 
 // Set default language
@@ -506,146 +456,54 @@ Chart.register(
   Legend
 );
 
-const chartConfigs = [
-  {
-    id: "oilChart",
-    data: [82.8, 72.9, 63.0, 62.5, 62.3, 15.0, 9.1, 2.0],
-  },
-];
-const data = {
-  labels: [
-    "Sacha Inchi",
-    "Flaxseed",
-    "Soybean",
-    "Corn",
-    "Sunflower",
-    "Avocado",
-    "Olive",
-    "Coconut",
-  ],
-  datasets: [
-    {
-      label: "Content Of Healthy Fats In Oil (%)",
-      data: [82.8, 72.9, 63.0, 62.5, 62.3, 15.0, 9.1, 2.0],
-      backgroundColor: [
-        "#7ed957",
-        "#C2A62D", // Golden brown for Flaxseed
-        "#FFD700", // Gold for Soybean
-        "#F8DE7E", // Pale yellow for Corn
-        "#E8D080", // Sunflower yellow
-        "#567D46", // Green for Avocado
-        "#A8A392", // Olive grey
-        "#ffffff", // Coconut cream color
-      ],
-      borderColor: "#1b4d20",
-      borderWidth: 1,
-      borderRadius: 10,
-      fontString: 22,
-    },
-  ],
-};
-
-const config = {
-  type: "bar",
-  data: data,
-  options: {
-    indexAxis: "y", // Horizontal bar configuration
-    responsive: true,
-    maintainAspectRatio: false,
-    animation: {
-      duration: 1500,
-    },
-    plugins: {
-      legend: {
-        display: true,
-        position: "top",
-        labels: {
-          color: "#163020",
-          font: {
-            size: 18,
-            weight: 500,
-          },
-        },
-      },
-      tooltip: {
-        backgroundColor: "#fff9f0",
-        titleColor: "#1b4d20",
-        bodyColor: "#163020",
-        padding: 12,
-        titleFont: { size: 16, weight: "bold" },
-        bodyFont: { size: 14 },
-        cornerRadius: 8,
-        displayColors: true,
-        callbacks: {
-          label: function (tooltipItem) {
-            return `${tooltipItem.raw}% Healthy Fats`;
-          },
-        },
-      },
-    },
-    scales: {
-      x: {
-        ticks: {
-          color: "#1b4d20",
-          font: {
-            size: 14,
-          },
-        },
-        grid: {
-          color: "#f6ba02",
-        },
-      },
-      y: {
-        ticks: {
-          color: "#1b4d20",
-          font: {
-            size: 14,
-            weight: 600,
-          },
-        },
-        grid: {
-          color: "#c4d7b2",
-        },
-      },
-    },
-  },
-};
-
 let oilChart;
+let seedsChart;
+let proteinChart
 
-function createChart(userLanguage) {
-  const ctx = document.getElementById("nutrientChart").getContext("2d");
+function createOilChart(userLanguage) {
+  const ctx = document.getElementById("oilChart").getContext("2d");
   const labelText =
     userLanguage === "en"
-      ? "Content Of Healthy Fats In Oil (%)"
-      : "Contenido De Grasas Saludables En El Aceite (%)";
+      ? "Healthy Fats In Oil (%)"
+      : "Grasas Saludables En El Aceite (%)";
+
+  const labelsText = {
+    sachaInchi: userLanguage === "en" ? "Sacha Inchi" : "Sacha Inchi",
+    flaxseed: userLanguage === "en" ? "Flaxseed" : "Lino",
+    soybean: userLanguage === "en" ? "Soybean" : "Soja",
+    corn: userLanguage === "en" ? "Corn" : "Maiz",
+    sunflower: userLanguage === "en" ? "Sunflower" : "Girasol",
+    avocado: userLanguage === "en" ? "Avocado" : "Aguacate",
+    olive: userLanguage === "en" ? "Olive" : "Oliva",
+    coconut: userLanguage === "en" ? "Coconut" : "Coco",
+  };
 
   if (oilChart) {
     oilChart.destroy();
   }
   const data = {
     labels: [
-      "Sacha Inchi",
-      "Flaxseed",
-      "Soybean",
-      "Corn",
-      "Sunflower",
-      "Avocado",
-      "Olive",
-      "Coconut",
+      labelsText.sachaInchi,
+      labelsText.flaxseed,
+      labelsText.soybean,
+      labelsText.corn,
+      labelsText.sunflower,
+      labelsText.avocado,
+      labelsText.olive,
+      labelsText.coconut,
     ],
     datasets: [
       {
         label: labelText,
         data: [82.8, 72.9, 63.0, 62.5, 62.3, 15.0, 9.1, 2.0],
         backgroundColor: [
-          "#7ed957",
-          "#C2A62D", // Golden brown for Flaxseed
-          "#FFD700", // Gold for Soybean
+          "#7ed957", // Sacha Inchi
+          "#a6a6a6", // Flaxseed
+          "#d6cc99", // Gold for Soybean
           "#F8DE7E", // Pale yellow for Corn
-          "#E8D080", // Sunflower yellow
+          "#D2B4CC", // Sunflower yellow
           "#567D46", // Green for Avocado
-          "#A8A392", // Olive grey
+          "304d30", // Olive grey
           "#ffffff", // Coconut White
         ],
         borderColor: "#1b4d20",
@@ -672,6 +530,9 @@ function createChart(userLanguage) {
           position: "top",
           labels: {
             color: "#163020",
+            usePointStyle: false, // Enable point styles (necessary to customize)
+            boxWidth: 0, // Set box width to 0 to hide the symbol
+            boxHeight: 0, // Optional: Ensure no height for the symbol
             font: {
               size: 18,
               weight: 500,
@@ -697,13 +558,17 @@ function createChart(userLanguage) {
       scales: {
         x: {
           ticks: {
-            color: "#1b4d20",
+            color: "#ffffff",
             font: {
               size: 14,
+              weight: 600,
             },
           },
+          border: {
+            color: "#ffffff",
+          },
           grid: {
-            color: "#f6ba02",
+            color: "#c4d7b2",
           },
         },
         y: {
@@ -714,8 +579,11 @@ function createChart(userLanguage) {
               weight: 600,
             },
           },
+          border: {
+            color: "#ffffff",
+          },
           grid: {
-            color: "#c4d7b2",
+            display: false,
           },
         },
       },
@@ -724,21 +592,290 @@ function createChart(userLanguage) {
   oilChart = new Chart(ctx, config);
 }
 
-//Initial Chart rendering
-createChart(userLanguage);
+function createSeedsChart(userLanguage) {
+  const ctx = document.getElementById("seedsChart").getContext("2d");
+  const labelText =
+    userLanguage === "en"
+      ? "Healthy Fats In Nuts & Seeds (%)"
+      : "Grasas Saludables En Nueces y Semillas (%)";
 
-const chartContainers = document.querySelectorAll(".graphContainer");
+  const labelsText = {
+    sachaInchi: userLanguage === "en" ? "Sacha Inchi" : "Sacha Inchi",
+    sunflower: userLanguage === "en" ? "Sunflower" : "Girasol",
+    corn: userLanguage === "en" ? "Corn" : "Maiz",
+    peanuts: userLanguage === "en" ? "Peanuts" : "Maní",
+    pistachios: userLanguage === "en" ? "Pistachios" : "Pistachos",
+    cashew: userLanguage === "en" ? "Cashew" : "Marañón",
+    avocado: userLanguage === "en" ? "Avocado" : "Aguacate",
+    macadamia: userLanguage === "en" ? "Macadamia" : "Macadamia",
+    coconut: userLanguage === "en" ? "Coconut" : "Coco",
+  };
+  if (seedsChart) {
+    seedsChart.destroy();
+  }
+  const data = {
+    labels: [
+      labelsText.sachaInchi,
+      labelsText.sunflower,
+      labelsText.corn,
+      labelsText.peanuts,
+      labelsText.pistachios,
+      labelsText.cashew,
+      labelsText.avocado,
+      labelsText.macadamia,
+      labelsText.coconut,
+    ],
+    datasets: [
+      {
+        label: labelText,
+        data: [84.5, 69.0, 56.0, 33.2, 31.6, 17.7, 13.0, 1.8, 0.5],
+        backgroundColor: [
+          "#7ed957", // Sacha Inchi
+          "#D2B4CC", // Sunflower
+          "#F8DE7E", // Pale yellow for Corn
+          "#d6cc99", // Peanuts
+          "#93C572", // Pistachios
+          "#8B5A2B", // Cashew
+          "#304d30", // Olive grey
+          "#F1D6BB", // Macadamia
+          "#ffffff", // Coconut White
+        ],
+        borderColor: "#1b4d20",
+        borderWidth: 1,
+        borderRadius: 10,
+        fontString: 20,
+      },
+    ],
+  };
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(
-    (entry) => {
-      if (entry.isIntersecting && !nutrientChart) {
-        observer.unobserve(entry);
-        createChart(ctx, config);
-      }
+  const config = {
+    type: "bar",
+    data: data,
+    options: {
+      indexAxis: "y", // Horizontal bar configuration
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: {
+        duration: 1500,
+      },
+      plugins: {
+        legend: {
+          display: true,
+          position: "top",
+          labels: {
+            color: "#163020",
+            usePointStyle: false, // Enable point styles (necessary to customize)
+            boxWidth: 0, // Set box width to 0 to hide the symbol
+            boxHeight: 0, // Optional: Ensure no height for the symbol
+            font: {
+              size: 18,
+              weight: 500,
+            },
+          },
+        },
+        tooltip: {
+          backgroundColor: "#fff9f0",
+          titleColor: "#1b4d20",
+          bodyColor: "#163020",
+          padding: 12,
+          titleFont: { size: 16, weight: "bold" },
+          bodyFont: { size: 14 },
+          cornerRadius: 8,
+          displayColors: true,
+          callbacks: {
+            label: function (tooltipItem) {
+              return `${tooltipItem.raw}% Healthy Fats`;
+            },
+          },
+        },
+      },
+      scales: {
+        x: {
+          ticks: {
+            color: "#ffffff",
+            font: {
+              size: 14,
+              weight: 600,
+            },
+          },
+          border: {
+            color: "#ffffff",
+          },
+          grid: {
+            color: "#c4d7b2",
+          },
+        },
+        y: {
+          ticks: {
+            color: "#1b4d20",
+            font: {
+              size: 14,
+              weight: 600,
+            },
+          },
+          border: {
+            color: "#ffffff",
+          },
+          grid: {
+            display: false,
+          },
+        },
+      },
     },
-    { threshold: 0.5 }
-  );
-});
+  };
+  seedsChart = new Chart(ctx, config);
+}
 
-chartContainers.forEach((chart) => observer.observe(chart));
+function createProteinChart(userLanguage) {
+  const ctx = document.getElementById("proteinChart").getContext("2d");
+  const labelText =
+    userLanguage === "en"
+      ? "Protein In Nuts, Seeds and Oil (%)"
+      : "Proteina En Nueces, Cereales y Aceite (%)";
+
+  const labelsText = {
+    peanuts: userLanguage === "en" ? "Peanuts" : "Maní",
+    sachaInchi: userLanguage === "en" ? "Sacha Inchi" : "Sacha Inchi",
+    sunflower: userLanguage === "en" ? "Sunflower" : "Girasol",
+    flaxseed: userLanguage === "en" ? "Flax Seed" : "Lino",
+    sesame: userLanguage === "en" ? "Sesame" : "Sesamo",
+    corn: userLanguage === "en" ? "Corn" : "Maiz",
+    coconut: userLanguage === "en" ? "Coconut" : "Coco",
+    avocado: userLanguage === "en" ? "Avocado" : "Aguacate",
+    olive: userLanguage === "en" ? "Olives" : "Aceituna",
+  };
+  if (proteinChart) {
+    proteinChart.destroy();
+  }
+  const data = {
+    labels: [
+      labelsText.peanuts,
+      labelsText.sachaInchi,
+      labelsText.sunflower,
+      labelsText.flaxseed,
+      labelsText.sesame,
+      labelsText.coconut,
+      labelsText.corn,
+      labelsText.avocado,
+      labelsText.olive,
+    ],
+    datasets: [
+      {
+        label: labelText,
+        data: [25.8, 24.7, 20.8, 18.3, 17.3, 4.0, 3.0, 2.0, 2.0],
+        backgroundColor: [
+          "#d6cc99", // Peanuts
+          "#7ed957", // Sacha Inchi
+          "#D2B4CC", // Sunflower
+          "#a6a6a6", // Flaxseed
+          "#EEDFCC", // Sesame
+          "#ffffff", // Coconut White
+          "#F8DE7E", // Corn
+          "#567D46", // Green for Avocado
+          "#304d30", // Olive grey
+        ],
+        borderColor: "#1b4d20",
+        borderWidth: 1,
+        borderRadius: 10,
+        fontString: 20,
+      },
+    ],
+  };
+
+  const config = {
+    type: "bar",
+    data: data,
+    options: {
+      indexAxis: "y", // Horizontal bar configuration
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: {
+        duration: 1500,
+      },
+      plugins: {
+        legend: {
+          display: true,
+          position: "top",
+          labels: {
+            color: "#163020",
+            usePointStyle: false, // Enable point styles (necessary to customize)
+            boxWidth: 0, // Set box width to 0 to hide the symbol
+            boxHeight: 0, // Optional: Ensure no height for the symbol
+            font: {
+              size: 18,
+              weight: 500,
+            },
+          },
+        },
+        tooltip: {
+          backgroundColor: "#fff9f0",
+          titleColor: "#1b4d20",
+          bodyColor: "#163020",
+          padding: 12,
+          titleFont: { size: 16, weight: "bold" },
+          bodyFont: { size: 14 },
+          cornerRadius: 8,
+          displayColors: true,
+          callbacks: {
+            label: function (tooltipItem) {
+              return `${tooltipItem.raw}% Healthy Fats`;
+            },
+          },
+        },
+      },
+      scales: {
+        x: {
+          ticks: {
+            color: "#ffffff",
+            font: {
+              size: 14,
+              weight: 600,
+            },
+          },
+          border: {
+            color: "#ffffff",
+          },
+          grid: {
+            color: "#c4d7b2",
+          },
+        },
+        y: {
+          ticks: {
+            color: "#1b4d20",
+            font: {
+              size: 14,
+              weight: 600,
+            },
+          },
+          border: {
+            color: "#ffffff",
+          },
+          grid: {
+            display: false,
+          },
+        },
+      },
+    },
+  };
+  proteinChart = new Chart(ctx, config);
+}
+//Initial Chart rendering
+createOilChart(userLanguage);
+createSeedsChart(userLanguage);
+createProteinChart(userLanguage);
+
+// const chartContainers = document.querySelectorAll(".graphContainer");
+
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach(
+//     (entry) => {
+//       if (entry.isIntersecting && !nutrientChart) {
+//         observer.unobserve(entry);
+//         createChart(ctx, config);
+//       }
+//     },
+//     { threshold: 0.5 }
+//   );
+// });
+
+// chartContainers.forEach((chart) => observer.observe(chart));

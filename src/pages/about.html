@@ -144,7 +144,7 @@
         src="../../assets/img/SachaSeed.webp"
         alt="SachaInchiSeed"
         width="80"
-        class="absolute xl:w-36 right-[40%] top-[78%] lg:right-[47%] lg:top-[75%] xl:top-[70%] xl:right-[44%]"
+        class="absolute xl:w-28 right-[40%] top-[78%] lg:right-[50%] lg:top-[75%] xl:top-[70%] xl:right-[45%]"
       />
     </header>
     <section class="bg-cream">
@@ -461,7 +461,7 @@
                 </div>
                 <div
                   tabindex="0"
-                  class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[16rem] w-[25rem] mt-[10rem] ml-[12.5rem] sm:w-[36rem] p-4 shadow-xl card sm:mt-40 lg:mt-52 sm:ml-[15rem] md:ml-[-5rem] bg-cream border relative"
+                  class="dropdown-content menu rounded-lg z-[1] xl:w-[50rem] xl:h-[23.3rem] w-[25rem] mt-[10rem] ml-[12.5rem] sm:w-[36rem] p-4 shadow-xl card sm:mt-40 lg:mt-52 sm:ml-[15rem] md:ml-[-5rem] bg-cream border relative"
                 >
                   <button class="absolute right-3 closeBenefitModal">
                     <img
@@ -854,9 +854,11 @@
           </h3>
           <!-- Oil Healthy Fats Comparison -->
           <div
-            class="tableContainer flex flex-col md:flex-row gap-5 md:w-full transform transition-transform duration-300 lg:hover:scale-105 bg-[#e1c9a6]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4 overflow-hidden"
+            class="tableContainer flex flex-col md:flex-row gap-5 md:w-full bg-[#e1c9a6]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4 overflow-hidden"
           >
-            <div class="table md:w-[50%] max-w-4xl">
+            <div
+              class="table md:w-[50%] max-w-4xl transform transition-transform duration-300 lg:hover:scale-105"
+            >
               <div
                 class="overflow-x-auto rounded-lg shadow-lg border border-[#b3a86d] bg-[#fff9f0]"
               >
@@ -866,7 +868,7 @@
                   <thead class="bg-[#1b4d20] text-[#fff9f0] text-lg">
                     <tr>
                       <th
-                        class="px-4 py-3 border-b border-[#b3a86d] font-semibold flex flex-col md:flex-row items-center gap-2"
+                        class="px-4 py-3 border-b border-[#b3a86d] font-semibold flex flex-col md:flex-row items-center gap-2 xl:gap-5"
                       >
                         <div class="oilImage">
                           <figure>
@@ -963,8 +965,10 @@
               </div>
             </div>
 
-            <div class="graphContainer w-full md:w-[50%] mt-2">
-              <canvas id="nutrientChart" class="w-full h-[300px]"></canvas>
+            <div
+              class="graphContainer w-full md:w-[50%] mt-2 lg:mt-0 bg-gradient-to-br from-cream via-softGreen to-primary rounded-lg overflow-hidden transform transition-transform duration-300 lg:hover:scale-105"
+            >
+              <canvas id="oilChart" class="w-full h-[300px] p-2"></canvas>
               <!-- <img
                 src="/assets/img/graphPolyFattyAcidsOil.webp"
                 alt="PolyFattyAcidsChart"
@@ -974,9 +978,11 @@
           </div>
           <!-- Seeds Healty fats Comparison -->
           <div
-            class="tableConainer flex flex-col md:flex-row gap-5 mt-14 md:w-full transform transition-transform duration-300 lg:hover:scale-105 bg-[#f0dab9]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4"
+            class="tableConainer flex flex-col md:flex-row gap-5 mt-14 md:w-full bg-[#f0dab9]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4"
           >
-            <div class="table md:w-[50%] max-w-4xl">
+            <div
+              class="table md:w-[50%] max-w-4xl transform transition-transform duration-300 lg:hover:scale-105"
+            >
               <div
                 class="overflow-x-auto rounded-lg shadow-lg border border-[#b3a86d] bg-[#fff9f0]"
               >
@@ -986,7 +992,7 @@
                   <thead class="bg-[#1b4d20] text-[#fff9f0] text-lg">
                     <tr>
                       <th
-                        class="p-1 font-semibold flex flex-col md:flex-row items-center gap-1"
+                        class="p-1 font-semibold flex flex-col md:flex-row items-center gap-1 xl:gap-3"
                       >
                         <div class="seedsImage">
                           <figure>
@@ -1093,19 +1099,24 @@
               </div>
             </div>
 
-            <div class="graphContainer md:w-[50%]">
-              <img
-                src="/assets/img/graphPolyFattyAcidsSeeds.webp"
-                alt="PolyFattyAcidsSeedsChart"
+            <div
+              class="graphContainer w-full md:w-[50%] mt-2 lg:mt-0 bg-gradient-to-br from-cream via-softGreen to-primary rounded-lg overflow-hidden transform transition-transform duration-300 lg:hover:scale-105"
+            >
+              <canvas id="seedsChart" class="w-full h-[300px] p-2"></canvas>
+              <!-- <img
+                src="/assets/img/graphPolyFattyAcidsOil.webp"
+                alt="PolyFattyAcidsChart"
                 class="rounded-lg w-full h-full"
-              />
+              /> -->
             </div>
           </div>
           <!--Protein Comparison-->
           <div
-            class="tableContainer flex flex-col md:flex-row gap-5 mt-14 md:w-full lg:hover:scale-105 bg-[#f0dab9]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4"
+            class="tableContainer flex flex-col md:flex-row gap-5 mt-14 md:w-full bg-[#f0dab9]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4"
           >
-            <div class="table md:w-[50%] max-w-4xl">
+            <div
+              class="table md:w-[50%] max-w-4xl transform transition-transform duration-300 lg:hover:scale-105"
+            >
               <div
                 class="overflow-x-auto rounded-lg shadow-lg border border-[#b3a86d] bg-[#fff9f0]"
               >
@@ -1126,12 +1137,16 @@
                             />
                           </figure>
                         </div>
-                        <div class="product text-wrap" data-role="table_protein">
+                        <div
+                          class="product text-wrap"
+                          data-role="table_protein"
+                        >
                           Nuts, Grains, and Oils
                         </div>
                       </th>
                       <th
-                        class="px-4 py-3 border-b border-[#b3a86d] font-semibold" data-role="table_proteinTitle"
+                        class="px-4 py-3 border-b border-[#b3a86d] font-semibold"
+                        data-role="table_proteinTitle"
                       >
                         % Proteins
                       </th>
@@ -1182,17 +1197,17 @@
                       <td
                         class="px-4 py-3 border-b border-[#b3a86d] font-medium"
                       >
-                        Corn
+                        Coconut
                       </td>
-                      <td class="px-4 py-3 border-b border-[#b3a86d]">3.0%</td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">4.0%</td>
                     </tr>
                     <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
                       <td
                         class="px-4 py-3 border-b border-[#b3a86d] font-medium"
                       >
-                        Coconut
+                        Corn
                       </td>
-                      <td class="px-4 py-3 border-b border-[#b3a86d]">4.0%</td>
+                      <td class="px-4 py-3 border-b border-[#b3a86d]">3.0%</td>
                     </tr>
                     <tr class="hover:bg-[#ffde59]/50 even:bg-[#f6ba02]/10">
                       <td
@@ -1212,18 +1227,19 @@
                     </tr>
                   </tbody>
                 </table>
-                <p class="py-1 lg:p-2 text-center text-[#163020] text-sm md:text-lg" data-role="table_proteinBottom">
+                <p
+                  class="py-1 lg:p-2 text-center text-[#163020] text-sm md:text-lg"
+                  data-role="table_proteinBottom"
+                >
                   Percent of Proteins content
                 </p>
               </div>
             </div>
 
-            <div class="graphContainer md:w-[50%]">
-              <img
-                src="/assets/img/graphProtein.webp"
-                alt="ProteinSeedsChart"
-                class="rounded-lg w-full h-full"
-              />
+            <div
+              class="graphContainer w-full md:w-[50%] mt-2 lg:mt-0 bg-gradient-to-br from-cream via-softGreen to-primary rounded-lg overflow-hidden transform transition-transform duration-300 lg:hover:scale-105"
+            >
+              <canvas id="proteinChart" class="w-full h-[300px] p-2"></canvas>
             </div>
           </div>
         </div>
