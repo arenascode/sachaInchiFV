@@ -458,7 +458,7 @@ Chart.register(
 
 let oilChart;
 let seedsChart;
-let proteinChart
+let proteinChart;
 
 function createOilChart(userLanguage) {
   const ctx = document.getElementById("oilChart").getContext("2d");
@@ -535,7 +535,8 @@ function createOilChart(userLanguage) {
             boxHeight: 0, // Optional: Ensure no height for the symbol
             font: {
               size: 18,
-              weight: 500,
+              weight: 600,
+              family: "'Playfair Display', sans-serif",
             },
           },
         },
@@ -560,8 +561,9 @@ function createOilChart(userLanguage) {
           ticks: {
             color: "#ffffff",
             font: {
-              size: 14,
-              weight: 600,
+              size: 15,
+              weight: 700,
+              family: "'Lora', sans-serif",
             },
           },
           border: {
@@ -575,8 +577,9 @@ function createOilChart(userLanguage) {
           ticks: {
             color: "#1b4d20",
             font: {
-              size: 14,
+              size: 15,
               weight: 600,
+              family: "'Lora', sans-serif",
             },
           },
           border: {
@@ -669,7 +672,8 @@ function createSeedsChart(userLanguage) {
             boxHeight: 0, // Optional: Ensure no height for the symbol
             font: {
               size: 18,
-              weight: 500,
+              weight: 600,
+              family: "'Playfair Display', sans-serif",
             },
           },
         },
@@ -694,8 +698,9 @@ function createSeedsChart(userLanguage) {
           ticks: {
             color: "#ffffff",
             font: {
-              size: 14,
-              weight: 600,
+              size: 15,
+              weight: 700,
+              family: "'Lora', sans-serif",
             },
           },
           border: {
@@ -709,8 +714,9 @@ function createSeedsChart(userLanguage) {
           ticks: {
             color: "#1b4d20",
             font: {
-              size: 14,
+              size: 15,
               weight: 600,
+              family: "'Lora', sans-serif",
             },
           },
           border: {
@@ -803,7 +809,8 @@ function createProteinChart(userLanguage) {
             boxHeight: 0, // Optional: Ensure no height for the symbol
             font: {
               size: 18,
-              weight: 500,
+              weight: 600,
+              family: "'Playfair Display', sans-serif",
             },
           },
         },
@@ -828,8 +835,9 @@ function createProteinChart(userLanguage) {
           ticks: {
             color: "#ffffff",
             font: {
-              size: 14,
-              weight: 600,
+              size: 15,
+              weight: 700,
+              family: "'Lora', sans-serif",
             },
           },
           border: {
@@ -843,8 +851,9 @@ function createProteinChart(userLanguage) {
           ticks: {
             color: "#1b4d20",
             font: {
-              size: 14,
+              size: 15,
               weight: 600,
+              family: "'Lora', sans-serif",
             },
           },
           border: {
