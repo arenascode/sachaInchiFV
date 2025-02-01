@@ -599,7 +599,7 @@ function createSeedsChart(userLanguage) {
   const ctx = document.getElementById("seedsChart").getContext("2d");
   const labelText =
     userLanguage === "en"
-      ? "Healthy Fats In Nuts & Seeds (%)"
+      ? "Healthy Fats In Nuts and Seeds (%)"
       : "Grasas Saludables En Nueces y Semillas (%)";
 
   const labelsText = {
