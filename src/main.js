@@ -128,7 +128,7 @@ const translations = {
     },
     section3: {
       title: "What is Sacha Inchi?",
-      p1: `Sacha Inchi, the Amazonian superfood hailed as the Indigenous Peanut or the Indigenous Seed, is native to the lush Amazonian rainforests of Ecuador, Colombia and Peru. This extraordinary plant has been prized for centuries by indigenous communities for its incredible nutritional value.`,
+      p1: `Sacha Inchi, the Amazonian superfood hailed as the Indigenous Peanut or the Indigenous Seed, is native to the lush Amazonian rainforests of Ecuador, Colombia and Peru. For centuries, indigenous communities have treasured this powerful plant for its remarkable ability to nourish and fuel the body.`,
       p2: "Known as a nutrient powerhouse, Sacha Inchi seeds are rich in protein and an excellent source of healthy fats, especially Omega 3, 6 and 9. Packed with fiber, vitamin E, and antioxidants, they provide a holistic boost for your body. Sacha Inchi supports heart health, brain function, immune strength, and radiant skin.",
       p3: "Beyond its health benefits, Sacha Inchi represents the wisdom and sustainable practices of the Amazon’s indigenous people.",
       p4: "By integrating it into your healthy regimen, you’re not only honoring the planet but also supporting the biosphere— where plants, animals, and their surroundings work in harmony to provide a reliable source of food back to the Earth.",
@@ -195,10 +195,10 @@ const translations = {
       product1Title: "Oil",
       product1p1:
         "Sacha Inchi Oil is a nutrient-rich treasure packed with Omega-3s, 6, 9, Vitamin E, and powerful antioxidants.",
-      product1VideoTitle: "Try this delicious Salad 😋",
       product1Subtitle: "How To Use It",
       product1p2:
         "Perfect for drizzling over salads, or as a supplement, it supports heart health, glowing skin, and overall vitality.",
+      product1VideoTitle: "Try it in your favorite salads 😋",
       //Product 2
       product2Title: "Protein Powder",
       product2p1:
@@ -206,7 +206,7 @@ const translations = {
       product2Subtitle: "How To Use It",
       product2p2:
         "Add it to smoothies, baked goods, or post-workout shakes for natural muscle recovery and sustained energy.",
-      product2VideoTitle: "Try this delicious Smoothie 😋",
+      product2VideoTitle: "Try it in your favorite smoothies 😋",
       //Product 3
       product3Title: "Snacks",
       product3p1:
@@ -257,7 +257,7 @@ const translations = {
     },
     section3: {
       title: "Qué es Sacha Inchi?",
-      p1: `Sacha Inchi, el superalimento amazónico conocido como el Maní Indígena o la Semilla Indígena, es nativo de las exuberantes selvas amazónicas de Colombia, Ecuador y Perú. Esta extraordinaria planta ha sido apreciada durante siglos por las comunidades indígenas debido a su increíble valor nutricional.`,
+      p1: `Sacha Inchi, el superalimento amazónico conocido como el “Maní Indígena” o la “Semilla Indígena,” es nativa de las exuberantes selvas tropicales de Ecuador, Colombia y Perú. Durante siglos, las comunidades indígenas han valorado esta poderosa planta por su extraordinaria capacidad para nutrir y fortalecer el cuerpo.`,
       p2: "Conocidas como un superalimento lleno de nutrientes, las semillas de Sacha Inchi son ricas en proteínas y una excelente fuente de grasas saludables, especialmente Omega 3, 6 y 9. Repletas de fibra, vitamina E y antioxidantes, brindan un impulso integral para tu cuerpo. El Sacha Inchi mejora la salud del corazón, la función cerebral, la fortaleza del sistema inmunológico y una piel radiante.",
       p3: "Más allá de sus beneficios para la salud, Sacha Inchi representa la sabiduría y las prácticas sostenibles de los pueblos indígenas de la Amazonía.",
       p4: "Al incorporarlo en tu vida diaria, no solo honras al planeta, sino que también apoyas la biosfera, donde las plantas, los animales y su entorno trabajan en armonía para proporcionar una fuente de alimentos de vuelta a la Tierra.",
@@ -331,7 +331,7 @@ const translations = {
       product1Subtitle: "Cómo usarlo",
       product1p2:
         "Perfecto para aderezar ensaladas o como suplemento, apoya la salud del corazón, una piel radiante y el bienestar general.",
-      product1VideoTitle: "Prueba esta deliciosa Ensalada 😋",
+      product1VideoTitle: "Pruebalo en tus ensaladas favoritas 😋",
       // Product 2
       product2Title: "Proteína en Polvo",
       product2p1:
@@ -339,7 +339,7 @@ const translations = {
       product2Subtitle: "Cómo usarla",
       product2p2:
         "Agrégala a batidos, productos horneados o bebidas post-entrenamiento para una recuperación muscular natural y energía sostenida.",
-      product2VideoTitle: "Prueba este delicioso Batido 😋",
+      product2VideoTitle: "Pruebalo en tu batido favorito 😋",
       // Product 3
       product3Title: "Snacks",
       product3p1:

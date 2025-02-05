@@ -131,7 +131,7 @@ const translations = {
       p1Strong1: "Sacha Inchi,",
       p1Strong2: "Often called the",
       p1Strong3: `"Indigenous Peanut".`,
-      p2: "Sacha Inchi oil is the result of the cold pressing of Sacha Inchi raw seeds. It is an oil with a very high Omega 3, 6, and 9 content (up to 92%). No additives or preservatives are used. It also contains vitamin A, E, and tocopherols.",
+      p2: "Sacha Inchi oil is cold-pressed from raw seeds, offering up to 92% Omega 3, 6, and 9, with no additives or preservatives. It’s also rich in vitamins A and E and tocopherols, making it a pure, nutrient-packed addition to your wellness routine",
     },
     infoSection2: {
       title: "Nutritional Powerhouse",
@@ -267,8 +267,8 @@ const translations = {
     mission: {
       title: "About Us",
       subtitle: "Our Mission",
-      p1: "Our mission is to promote wellness from the inside out by providing the nutrient-rich benefits of organic Sancha-Inchi, nature's superfood. With its essential Omega 3, 6, and 9 fatty acids,Sancha-Inchi supports heart health, brain function, immune strength, and radiant skin.",
-      p2: "We are committed to providing an all-natural, sustainable product that nourishes both people and the biosphere. It enhances daily nutrition while honoring the planet and helping people live healthier, more vibrant lives.",
+      p1: "At the heart of our mission is a commitment to your wellness inside and out by delivering the nutrient-rich benefits of organic Sacha Inchi nature’s superfood. Packed with essential Omega 3, 6, and 9 fatty acids, Sacha Inchi supports heart health, brain function, immune strength, and radiant skin.",
+      p2: "We are committed to providing an all-natural, sustainable product that nourishes both people and the planet. By enhancing daily nutrition, we help people live healthier, more vibrant lives, all while honoring the biosphere and supporting the environment.",
     },
 
     footer: {
@@ -305,7 +305,7 @@ const translations = {
       p1Strong1: "Sacha Inchi,",
       p1Strong2: "Conocido como",
       p1Strong3: `"Maní Indígena".`,
-      p2: "El aceite de Sacha Inchi es el resultado del prensado en frío de semillas crudas de Sacha Inchi. Es un aceite con un contenido muy alto de Omega 3, 6 y 9 (hasta un 92%). No se utilizan aditivos ni conservantes. También contiene vitamina A, E y tocoferoles.",
+      p2: "El aceite de Sacha Inchi se obtiene por prensado en frío a partir de semillas crudas, ofreciendo hasta un 92% de Omega 3, 6 y 9, sin aditivos ni conservantes. También es rico en vitaminas A y E y tocoferoles, lo que lo convierte en una adición pura y llena de nutrientes para tu bienestar.",
     },
     infoSection2: {
       title: "Potencia Nutricional",
@@ -392,8 +392,8 @@ const translations = {
     mission: {
       title: "Sobre Nosotros",
       subtitle: "Nuestra Misión",
-      p1: "Nuestra misión es promover el bienestar desde adentro hacia afuera al ofrecer los beneficios ricos en nutrientes del Sacha Inchi orgánico, el superalimento de la naturaleza. Con sus ácidos grasos esenciales Omega 3, 6 y 9, el Sacha Inchi apoya la salud del corazón, la función cerebral, la fortaleza del sistema inmunológico y una piel radiante.",
-      p2: "Estamos comprometidos a ofrecer un producto completamente natural y sostenible que nutre tanto a las personas como a la biosfera. Mejora la nutrición diaria mientras honra al planeta y ayuda a las personas a vivir vidas más saludables y llenas de vitalidad.",
+      p1: "En el corazón de nuestra misión está el compromiso de cuidar tu bienestar por dentro y por fuera, brindándote los beneficios nutritivos del Sacha Inchi orgánico, el superalimento de la naturaleza. Rico en ácidos grasos esenciales Omega 3, 6 y 9, el Sacha Inchi favorece la salud del corazón, la función cerebral, el sistema inmunológico y una piel radiante.",
+      p2: "Estamos comprometidos con ofrecer un producto 100% natural y sostenible que nutra tanto a las personas como al planeta. Al mejorar la nutrición diaria, ayudamos a las personas a llevar una vida más saludable y llena de vitalidad, mientras honramos la biosfera y protegemos el medio ambiente.",
     },
 
     footer: {
