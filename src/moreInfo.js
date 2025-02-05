@@ -246,17 +246,19 @@ const translations = {
       title:
         "Nutritional values of Sacha Inchi compared to other nuts, seeds and oils",
       //Table 1
-      table_oil: "Oil",
-      table_oilTitle: "Healthy Fats",
+      chartOilTitle: "Oil",
+      chartOilDescription:
+        "Sacha Inchi stands out as the ultimate source of healthy fats, reinforcing its status as a powerful superfood. While other oils like flaxseed, soybean, and sunflower are also rich in fats, their nutritional profiles vary. This analysis emphasizes the importance of selecting high-quality fat sources for a balanced and healthy diet.",
       table_oilBottom: "Percent of Healthy Fats Content",
       //Table 2
-      table_seeds: "Nuts & Seeds",
-      table_seedsTitle: "Healthy Fats",
+      chartSeedsTitle: "Nuts & Seeds",
+      chartSeedsDescription:
+        "Sacha Inchi once again stands out as an exceptional source of healthy fats, making it an ideal choice for those looking to incorporate essential fatty acids into their diet. While other nuts and seeds also provide beneficial fats, their lipid content varies significantly. This highlights the unique nutritional advantage of Sacha Inchi, offering a superior balance of Omega-3, 6, and 9 to support overall well-being.",
       table_seedsBottom: "Percent of Healthy Fats Content",
       //Table 3
-      table_protein: "Nuts, Grains, and Oils",
-      table_proteinTitle: "Proteins",
-      table_proteinBottom: "Percent of proteins content",
+      chartProteinTitle: "Nuts, Grains, and Oils",
+      chartProteinDescription:
+        "Sacha Inchi stands out as a highly protein-rich alternative, comparable to peanuts but with a healthier lipid profile. Nuts and seeds serve as key sources of plant-based protein, while oils and fruits like avocado and olives offer other nutritional benefits but are not particularly high in protein. This distinction reinforces the value of Sacha Inchi as a well-rounded superfood, providing both high-quality protein and essential healthy fats for a balanced diet.",
     },
     infoSection5: {
       title: "Sustainability and Impact",
@@ -372,17 +374,17 @@ const translations = {
       title:
         "Valores nutricionales de Sacha Inchi comparados con otras nueces, semillas y aceites",
       //Table 1
-      table_oil: "Aceite",
-      table_oilTitle: "Grasas Saludables",
-      table_oilBottom: "Porcentaje de contenido de grasas saludables",
+      chartOilTitle: "Aceite",
+      chartOilDescription:
+        "Sacha Inchi sobresale como la mejor fuente de grasas saludables, lo que refuerza su valor como superalimento. Aunque otros aceites como los de lino, soja y girasol también son ricos en grasas, su perfil nutricional varía. Este análisis subraya la importancia de elegir fuentes de grasas de calidad para una alimentación equilibrada y saludable",
       //Table 2
-      table_seeds: " Nueces y Semillas",
-      table_seedsTitle: "Grasas Saludables",
+      chartSeedsTitle: "Nueces y Semillas",
+      chartSeedsDescription:
+        "Sacha Inchi sobresale nuevamente como una fuente excepcional de grasas saludables, siendo una opción ideal para quienes buscan ácidos grasos esenciales en su dieta. Aunque los demás frutos secos y semillas también son buenas fuentes, su contenido lipídico varía considerablemente.",
       table_seedsBottom: "Porcentaje de contenido de grasas saludables",
       //Table 3
-      table_protein: "Frutos secos, cereales y aceites",
-      table_proteinTitle: "Proteina",
-      table_proteinBottom: "Porcentaje de contenido de Proteinas",
+      chartProteinTitle: "Frutos secos, cereales y aceites",
+      chartProteinDescription: "Se destaca a Sacha Inchi como una alternativa altamente proteica comparable al maní, pero con un perfil lipídico más saludable. Los frutos secos y semillas son una fuente clave de proteínas vegetales, mientras que los aceites y frutos como el aguacate y la aceituna aportan otros beneficios nutricionales, pero no son ricos en proteínas.",
     },
     infoSection5: {
       title: "Sostenibilidad e Impacto",
@@ -481,6 +483,7 @@ function createOilChart(userLanguage) {
   if (oilChart) {
     oilChart.destroy();
   }
+
   const data = {
     labels: [
       labelsText.sachaInchi,
@@ -513,6 +516,10 @@ function createOilChart(userLanguage) {
       },
     ],
   };
+  const dataValues = [82.8, 72.9, 63.0, 62.5, 62.3, 15.0, 9.1, 2.0];
+
+  const maxValue = Math.max(...dataValues);
+  const maxIndex = dataValues.indexOf(maxValue);
 
   const config = {
     type: "bar",
@@ -544,6 +551,8 @@ function createOilChart(userLanguage) {
           backgroundColor: "#fff9f0",
           titleColor: "#1b4d20",
           bodyColor: "#163020",
+          anchor: "end",
+          align: "end",
           padding: 12,
           titleFont: { size: 16, weight: "bold" },
           bodyFont: { size: 14 },
@@ -593,6 +602,14 @@ function createOilChart(userLanguage) {
     },
   };
   oilChart = new Chart(ctx, config);
+
+  // Show the fixed tooltip after rendering
+  oilChart.render(); // Ensure chart is rendered first
+  oilChart.tooltip.setActiveElements(
+    [{ datasetIndex: 0, index: maxIndex }],
+    { x: 0, y: 0 } // Dummy coordinates; chart auto-adjusts the tooltip
+  );
+  oilChart.update();
 }
 
 function createSeedsChart(userLanguage) {
@@ -650,7 +667,9 @@ function createSeedsChart(userLanguage) {
       },
     ],
   };
-
+  const dataValues = [84.5, 69.0, 56.0, 33.2, 31.6, 17.7, 13.0, 1.8, 0.5];
+  const maxValue = Math.max(...dataValues);
+  const maxIndex = dataValues.indexOf(maxValue);
   const config = {
     type: "bar",
     data: data,
@@ -730,6 +749,13 @@ function createSeedsChart(userLanguage) {
     },
   };
   seedsChart = new Chart(ctx, config);
+  // Show the fixed tooltip after rendering
+  seedsChart.render(); // Ensure chart is rendered first
+  seedsChart.tooltip.setActiveElements(
+    [{ datasetIndex: 0, index: maxIndex }],
+    { x: 0, y: 0 } // Dummy coordinates; chart auto-adjusts the tooltip
+  );
+  seedsChart.update();
 }
 
 function createProteinChart(userLanguage) {
@@ -750,6 +776,7 @@ function createProteinChart(userLanguage) {
     avocado: userLanguage === "en" ? "Avocado" : "Aguacate",
     olive: userLanguage === "en" ? "Olives" : "Aceituna",
   };
+
   if (proteinChart) {
     proteinChart.destroy();
   }
@@ -787,6 +814,20 @@ function createProteinChart(userLanguage) {
       },
     ],
   };
+
+  const labels = [
+    labelsText.peanuts,
+    labelsText.sachaInchi,
+    labelsText.sunflower,
+    labelsText.flaxseed,
+    labelsText.sesame,
+    labelsText.coconut,
+    labelsText.corn,
+    labelsText.avocado,
+    labelsText.olive,
+  ];
+  const targetLabel = 'Sacha Inchi'
+  const targetIndex = labels.indexOf(targetLabel)
 
   const config = {
     type: "bar",
@@ -867,6 +908,13 @@ function createProteinChart(userLanguage) {
     },
   };
   proteinChart = new Chart(ctx, config);
+
+  proteinChart.render(); // Ensure chart is rendered first
+  proteinChart.tooltip.setActiveElements(
+    [{ datasetIndex: 0, index: targetIndex }],
+    { x: 0, y: 0 } // Dummy coordinates; chart auto-adjusts the tooltip
+  );
+  proteinChart.update();
 }
 //Initial Chart rendering
 createOilChart(userLanguage);

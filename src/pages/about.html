@@ -276,7 +276,7 @@
                         <td class="px-4 py-3 border-b border-[#d1d6a8]">
                           Energy
                         </td>
-                        <td class="px-4 py-3 border-b border-[#d1d6a8]">
+                        <td class="px-4 py-3 border-b border-[#d1d6a8] md:pl-2">
                           884 kcal
                         </td>
                         <td class="px-4 py-3 border-b border-[#d1d6a8]">44%</td>
@@ -1107,11 +1107,12 @@
             Nutritional values of Sacha Inchi compared to other nuts, seeds and
             oils
           </h3>
-          <!-- Oil Healthy Fats Comparison -->
-          <div
-            class="tableContainer flex flex-col md:flex-row gap-5 md:w-full bg-[#e1c9a6]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4 overflow-hidden"
-          >
+          <div class="chartsContainer w-full lg:px-4">
+            <!-- Oil Healthy Fats Comparison -->
             <div
+              class="tableContainer flex flex-col-reverse md:flex-row md:align-top gap-5 md:w-full md:p-2 bg-[#e1c9a6]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4 overflow-hidden"
+            >
+              <!-- <div
               class="table md:w-[50%] max-w-4xl transform transition-transform duration-300 lg:hover:scale-105"
             >
               <div
@@ -1218,24 +1219,48 @@
                   Percent of Healthy Fats Content
                 </p>
               </div>
-            </div>
-
-            <div
-              class="graphContainer w-full md:w-[50%] mt-2 lg:mt-0 bg-gradient-to-br from-cream via-softGreen to-primary rounded-lg overflow-hidden transform transition-transform duration-300 lg:hover:scale-105"
-            >
-              <canvas id="oilChart" class="w-full h-[300px] p-2"></canvas>
-              <!-- <img
+            </div> -->
+              <div class="chartAnalisis md:w-[50%] px-2 pb-1 md:pl-2 text-darkGreen">
+                <div class="title flex border-b border-accent justify-center">
+                  <figure>
+                    <img
+                      src="/assets/img/oilPresentations.webp"
+                      alt="oilBotles"
+                      width="70"
+                    />
+                  </figure>
+                  <h4
+                    class="product text-pretty text-center content-center bold text-darkGreen text-lg xl:text-xl"
+                    data-role="chartOilTitle"
+                  >
+                    Nuts, Grains, and Oils
+                  </h4>
+                </div>
+                <p class="body text-lef mt-2 xl:text-lg" data-role="chartOilDescription">
+                  Sacha Inchi sobresale como la mejor fuente de grasas
+                  saludables, lo que refuerza su valor como superalimento.
+                  Aunque otros aceites como los de lino, soja y girasol también
+                  son ricos en grasas, su perfil nutricional varía. Este
+                  análisis subraya la importancia de elegir fuentes de grasas de
+                  calidad para una alimentación equilibrada y saludable.
+                </p>
+              </div>
+              <div
+                class="graphContainer w-full h-auto md:h-96 xl:h-[27rem] md:w-[100%] bg-gradient-to-br from-cream via-softGreen to-primary rounded-lg overflow-hidden transform transition-transform duration-300 lg:hover:scale-105"
+              >
+                <canvas id="oilChart" class="w-full h-[300px] p-2"></canvas>
+                <!-- <img
                 src="/assets/img/graphPolyFattyAcidsOil.webp"
                 alt="PolyFattyAcidsChart"
                 class="rounded-lg w-full h-full"
               /> -->
+              </div>
             </div>
-          </div>
-          <!-- Seeds Healty fats Comparison -->
-          <div
-            class="tableConainer flex flex-col md:flex-row gap-5 mt-14 md:w-full bg-[#f0dab9]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4"
-          >
+            <!-- Seeds Healty fats Comparison -->
             <div
+              class="tableConainer flex flex-col md:flex-row md:p-2 gap-5 mt-14 md:w-full bg-[#f0dab9]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4"
+            >
+              <!-- <div
               class="table md:w-[50%] max-w-4xl transform transition-transform duration-300 lg:hover:scale-105"
             >
               <div
@@ -1352,24 +1377,50 @@
                   Percent of polyunsaturated fatty acid content
                 </p>
               </div>
-            </div>
+            </div> -->
 
-            <div
-              class="graphContainer w-full md:w-[50%] mt-2 lg:mt-0 bg-gradient-to-br from-cream via-softGreen to-primary rounded-lg overflow-hidden transform transition-transform duration-300 lg:hover:scale-105"
-            >
-              <canvas id="seedsChart" class="w-full h-[300px] p-2"></canvas>
-              <!-- <img
+              <div
+                class="graphContainer w-full md:w-[100%] md:h-96 xl:h-[27rem] md:mt-0 bg-gradient-to-br from-cream via-softGreen to-primary rounded-lg overflow-hidden transform transition-transform duration-300 lg:hover:scale-105"
+              >
+                <canvas id="seedsChart" class="w-full h-[300px] p-2"></canvas>
+                <!-- <img
                 src="/assets/img/graphPolyFattyAcidsOil.webp"
                 alt="PolyFattyAcidsChart"
                 class="rounded-lg w-full h-full"
               /> -->
+              </div>
+              <div class="chartAnalisis md:w-[50%] px-2 pb-1 md:pl-2 text-darkGreen">
+                <div
+                  class="title flex justify-center border-b border-accent content-center"
+                >
+                  <figure>
+                    <img
+                      src="/assets/img/seedsAndGraines.webp"
+                      alt="seeds&Snacks"
+                      width="70"
+                    />
+                  </figure>
+                  <h4
+                    class="product text-pretty text-center content-center bold text-darkGreen text-lg xl:text-2xl ml-2"
+                    data-role="chartSeedsTitle"
+                  >
+                    Nuts, Grains, and Oils
+                  </h4>
+                </div>
+                <p class="body md:text-left mt-2 xl:text-lg" data-role="chartSeedsDescription">
+                  Sacha Inchi sobresale nuevamente como una fuente excepcional
+                  de grasas saludables, siendo una opción ideal para quienes
+                  buscan ácidos grasos esenciales en su dieta. Aunque los demás
+                  frutos secos y semillas también son buenas fuentes, su
+                  contenido lipídico varía considerablemente.
+                </p>
+              </div>
             </div>
-          </div>
-          <!--Protein Comparison-->
-          <div
-            class="tableContainer flex flex-col md:flex-row gap-5 mt-14 md:w-full bg-[#f0dab9]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4"
-          >
+            <!--Protein Comparison-->
             <div
+              class="tableContainer flex flex-col-reverse md:flex-row gap-5 mt-14 md:w-full md:p-2 bg-[#f0dab9]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4"
+            >
+              <!-- <div
               class="table md:w-[50%] max-w-4xl transform transition-transform duration-300 lg:hover:scale-105"
             >
               <div
@@ -1489,14 +1540,59 @@
                   Percent of Proteins content
                 </p>
               </div>
-            </div>
+            </div> -->
+              <div class="chartAnalisis md:w-[50%] px-2 pb-1 md:pl-2 text-darkGreen">
+                <div class="title flex border-b border-accent justify-center">
+                  <figure>
+                    <img
+                      src="/assets/img/nutsAndOil.webp"
+                      alt="seeds&Oils"
+                      width="70"
+                    />
+                  </figure>
+                  <h4
+                    class="product text-pretty text-center content-center bold text-darkGreen text-lg xl:text-2xl"
+                    data-role="chartProteinTitle"
+                  >
+                    Nuts, Grains, and Oils
+                  </h4>
+                </div>
+                <p class="body text-lef mt-2 xl:text-lg" data-role="chartProteinDescription">
+                  Se destaca a Sacha Inchi como una alternativa altamente
+                  proteica comparable al maní, pero con un perfil lipídico más
+                  saludable. Los frutos secos y semillas son una fuente clave de
+                  proteínas vegetales, mientras que los aceites y frutos como el
+                  aguacate y la aceituna aportan otros beneficios nutricionales,
+                  pero no son ricos en proteínas.
+                </p>
+              </div>
 
-            <div
-              class="graphContainer w-full md:w-[50%] mt-2 lg:mt-0 bg-gradient-to-br from-cream via-softGreen to-primary rounded-lg overflow-hidden transform transition-transform duration-300 lg:hover:scale-105"
-            >
-              <canvas id="proteinChart" class="w-full h-[300px] p-2"></canvas>
+              <div
+                class="graphContainer w-full md:w-[100%] md:h-96 xl:h-[27rem] md:mt-0 bg-gradient-to-br from-cream via-softGreen to-primary rounded-lg overflow-hidden transform transition-transform duration-300 lg:hover:scale-105"
+              >
+                <div
+                  class="nuts&OilImage flex align-middle justify-center text-center"
+                >
+                  <!-- <figure>
+                            <img
+                              src="/assets/img/nutsAndOil.webp"
+                              alt="seeds&Oils"
+                              width="70"
+                            />
+                          </figure> -->
+                  <!-- <h4
+                          class="product text-pretty text-center"
+                          data-role="table_protein"
+                        >
+                          Nuts, Grains, and Oils
+                        </h4> -->
+                </div>
+
+                <canvas id="proteinChart" class="w-full h-[300px] p-2"></canvas>
+              </div>
             </div>
           </div>
+          <span class="text-darkGreen self-end align-bottom mt-2">Source: https://sachainchilaos.com/en/nutritional-values-of-the-sacha-inchi-nut-compared-to-other-nuts-seeds-and-oils</span>
         </div>
         <!-- Section 5: Sustainability -->
         <div
