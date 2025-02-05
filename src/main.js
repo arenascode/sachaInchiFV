@@ -31,9 +31,9 @@ console.log(`hello vboy`);
 function openModalMenu() {
   mobileMenu.style.display = "block";
   if (headerAboutSection) {
-    headerAboutSection.style.zIndex = '0';
+    headerAboutSection.style.zIndex = "0";
   }
-  
+
   setTimeout(() => {
     mobileMenu.style.opacity = 1;
   }, 10);
@@ -70,10 +70,9 @@ const targetSection = document.querySelector(".whatIsSachaInchi");
 
 if (moreinfoHeroBtn) {
   moreinfoHeroBtn.addEventListener("click", () => {
-  targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
-});
+    targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
 }
-
 
 //* Close And Reopen Benefit Modals
 
@@ -104,7 +103,6 @@ benefitCloseBtns.forEach((btn) => {
     console.log(modal); // Logs updated class list
   });
 });
-
 
 //* ENGLISH/SPANISH SWITCH LOGIC
 
@@ -208,13 +206,11 @@ const translations = {
         "Add it to smoothies, baked goods, or post-workout shakes for natural muscle recovery and sustained energy.",
       product2VideoTitle: "Try it in your favorite smoothies 😋",
       //Product 3
-      product3Title: "Snacks",
-      product3p1:
-        "Toasted Sacha Inchi Seeds are a crunchy, satisfying snack packed with protein, fiber, and healthy fats.",
-      product3Subtitle: "How To Use It",
-      product3p2:
-        "Perfect for guilt-free munching while boosting your energy and overall health.",
-      product3VideoTitle: "Try this delicious Granola 😋",
+      product3Title: "More Than Just Smoothies",
+      product3p1: "Sacha Inchi protein powder isn’t just great for smoothies—you can also add it to your favorite granola, boosting its nutritional value and versatility.",
+product3Subtitle: "How to Use It",
+product3p2: "A perfect way to add a guilt-free protein boost while fueling your energy and supporting your health any time of the day.",
+      product3VideoTitle: "Try it in your favorite Granola 😋",
     },
     section6: {
       title: "Awards for Sacha Inchi",
@@ -341,13 +337,13 @@ const translations = {
         "Agrégala a batidos, productos horneados o bebidas post-entrenamiento para una recuperación muscular natural y energía sostenida.",
       product2VideoTitle: "Pruebalo en tu batido favorito 😋",
       // Product 3
-      product3Title: "Snacks",
+      product3Title: "Más que solo batidos",
       product3p1:
-        "Las semillas tostadas de Sacha Inchi son un snack crujiente y satisfactorio, rico en proteínas, fibra y grasas saludables.",
+        "La proteína en polvo de Sacha Inchi no solo es ideal para batidos, sino que también puedes añadirla a tu granola favorita, aumentando su valor nutricional y versatilidad.",
       product3Subtitle: "Cómo usarlas",
       product3p2:
-        "Perfectas para un antojo sin culpa mientras impulsas tu energía y tu salud en general.",
-      product3VideoTitle: "Prueba esta deliciosa Granola 😋",
+        "Perfecta para añadir un extra de proteina sin culpa mientras impulsas tu energía y tu salud en cualquier momento del día.",
+      product3VideoTitle: "Pruebala en tu granola favorita 😋",
     },
     section6: {
       title: "Reconocimientos Recibidos Por Sacha Inchi",
@@ -396,27 +392,22 @@ console.log(languageToggle2);
 const toggle1 = document.getElementById("languageToggle");
 const toggle2 = document.getElementById("languageToggle2");
 
-
 function syncToggles(source, target) {
-  console.log({target});
-  console.log({source});
-  
+  console.log({ target });
+  console.log({ source });
+
   target.checked = source.checked;
 }
 toggle1.addEventListener("change", () => syncToggles(toggle1, toggle2));
 toggle2.addEventListener("change", () => syncToggles(toggle2, toggle1));
 
 languageToggle.forEach((el) => {
-  
   el.addEventListener("change", (event) => {
-    
     console.log(`clicked`);
     const selectedLanguage = event.target.checked ? "es" : "en";
     console.log("Selected Language:", selectedLanguage);
     updateTranslations(selectedLanguage); // Call your translation function
   });
-
-
 });
 
 // Set default language
@@ -424,11 +415,11 @@ const userLanguage = navigator.language.startsWith("es") ? "es" : "en";
 
 languageToggle.forEach((el) => {
   el.checked = userLanguage === "es";
-})
+});
 
 updateTranslations(userLanguage);
 
-window.addEventListener("load",() => updateTranslations(userLanguage))
+window.addEventListener("load", () => updateTranslations(userLanguage));
 //*Play Introduction VIDEO
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -437,7 +428,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const videoSmoothie = document.querySelectorAll(".videoSmoothie");
   const videoSnacks = document.querySelectorAll(".videoSnacks");
   const videos = [...videoOil, ...videoSalad, ...videoSmoothie, ...videoSnacks];
-  
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
