@@ -207,9 +207,11 @@ const translations = {
       product2VideoTitle: "Try it in your favorite smoothies 😋",
       //Product 3
       product3Title: "More Than Just Smoothies",
-      product3p1: "Sacha Inchi protein powder isn’t just great for smoothies—you can also add it to your favorite granola, boosting its nutritional value and versatility.",
-product3Subtitle: "How to Use It",
-product3p2: "A perfect way to add a guilt-free protein boost while fueling your energy and supporting your health any time of the day.",
+      product3p1:
+        "Sacha Inchi protein powder isn’t just great for smoothies—you can also add it to your favorite granola, boosting its nutritional value and versatility.",
+      product3Subtitle: "How to Use It",
+      product3p2:
+        "A perfect way to add a guilt-free protein boost while fueling your energy and supporting your health any time of the day.",
       product3VideoTitle: "Try it in your favorite Granola 😋",
     },
     section6: {

@@ -267,10 +267,10 @@ const translations = {
     },
     //*Mission Section **/
     mission: {
-      title: "About Us",
-      subtitle: "Our Mission",
-      p1: "At the heart of our mission is a commitment to your wellness inside and out by delivering the nutrient-rich benefits of organic Sacha Inchi nature’s superfood. Packed with essential Omega 3, 6, and 9 fatty acids, Sacha Inchi supports heart health, brain function, immune strength, and radiant skin.",
-      p2: "We are committed to providing an all-natural, sustainable product that nourishes both people and the planet. By enhancing daily nutrition, we help people live healthier, more vibrant lives, all while honoring the biosphere and supporting the environment.",
+      title: "NOURISH YOUR BODY. HONOR THE EARTH",
+      subTitle: "Our Mission",
+      p1: "At the heart of our mission is the commitment to care for your well-being inside and out, providing you with the nourishing benefits of organic Sacha Inchi, nature's superfood. By choosing Sacha Inchi, you're not only fueling your body but also helping to protect the Amazon and support sustainable farming practices for a better future.",
+      // p2: "We are committed to providing an all-natural, sustainable product that nourishes both people and the planet. By enhancing daily nutrition, we help people live healthier, more vibrant lives, all while honoring the biosphere and supporting the environment.",
     },
 
     footer: {
@@ -384,7 +384,8 @@ const translations = {
       table_seedsBottom: "Porcentaje de contenido de grasas saludables",
       //Table 3
       chartProteinTitle: "Frutos secos, cereales y aceites",
-      chartProteinDescription: "Se destaca a Sacha Inchi como una alternativa altamente proteica comparable al maní, pero con un perfil lipídico más saludable. Los frutos secos y semillas son una fuente clave de proteínas vegetales, mientras que los aceites y frutos como el aguacate y la aceituna aportan otros beneficios nutricionales, pero no son ricos en proteínas.",
+      chartProteinDescription:
+        "Se destaca a Sacha Inchi como una alternativa altamente proteica comparable al maní, pero con un perfil lipídico más saludable. Los frutos secos y semillas son una fuente clave de proteínas vegetales, mientras que los aceites y frutos como el aguacate y la aceituna aportan otros beneficios nutricionales, pero no son ricos en proteínas.",
     },
     infoSection5: {
       title: "Sostenibilidad e Impacto",
@@ -392,10 +393,10 @@ const translations = {
       p2: "Este cultivo proporciona oportunidades económicas para los agricultores indígenas, permitiéndoles prosperar mientras protegen su entorno natural. Además, el cultivo de Sacha Inchi fomenta una conexión más profunda con la biosfera, que abarca todas las partes de la Tierra donde la vida prospera. Desde los sistemas de raíces más profundos de los árboles hasta las oscuras profundidades de las trincheras oceánicas, y desde las exuberantes selvas tropicales hasta las altas cumbres montañosas, la biosfera abarca toda la gama de entornos que sostienen la vida.",
     },
     mission: {
-      title: "Sobre Nosotros",
-      subtitle: "Nuestra Misión",
-      p1: "En el corazón de nuestra misión está el compromiso de cuidar tu bienestar por dentro y por fuera, brindándote los beneficios nutritivos del Sacha Inchi orgánico, el superalimento de la naturaleza. Rico en ácidos grasos esenciales Omega 3, 6 y 9, el Sacha Inchi favorece la salud del corazón, la función cerebral, el sistema inmunológico y una piel radiante.",
-      p2: "Estamos comprometidos con ofrecer un producto 100% natural y sostenible que nutra tanto a las personas como al planeta. Al mejorar la nutrición diaria, ayudamos a las personas a llevar una vida más saludable y llena de vitalidad, mientras honramos la biosfera y protegemos el medio ambiente.",
+      title: "NUTRE TU CUERPO. HONRA A LA TIERRA",
+      subTitle: "Nuestra Misión",
+      p1: "En el corazón de nuestra misión está el compromiso de cuidar tu bienestar por dentro y por fuera, brindándote los beneficios nutritivos del Sacha Inchi orgánico, el superalimento de la naturaleza. Al elegir Sacha Inchi, no solo estás alimentando tu cuerpo, sino también ayudando a proteger la Amazonía y apoyar prácticas agrícolas sostenibles para un futuro mejor.",
+      // p2: "Estamos comprometidos con ofrecer un producto 100% natural y sostenible que nutra tanto a las personas como al planeta. Al mejorar la nutrición diaria, ayudamos a las personas a llevar una vida más saludable y llena de vitalidad, mientras honramos la biosfera y protegemos el medio ambiente.",
     },
 
     footer: {
@@ -826,8 +827,8 @@ function createProteinChart(userLanguage) {
     labelsText.avocado,
     labelsText.olive,
   ];
-  const targetLabel = 'Sacha Inchi'
-  const targetIndex = labels.indexOf(targetLabel)
+  const targetLabel = "Sacha Inchi";
+  const targetIndex = labels.indexOf(targetLabel);
 
   const config = {
     type: "bar",
