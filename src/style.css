@@ -48,9 +48,9 @@ h5 {
   z-index: 2;
 }
 .navMission {
-position: fixed;
- z-index: 99;
- width: 100vw;
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
 }
 .navMission .logoMission {
   width: max-content;
@@ -319,37 +319,38 @@ footer {
 
 /** Mission Statement **/
 body.body_mission {
-    padding-top: 65px;
-    scrollbar-color: none
-  }
+  padding-top: 65px;
+  scrollbar-color: none;
+}
 
-  .parallaxMission {
+.parallaxMission {
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
   background-size: contain;
 }
 .missionStatement {
-    position: relative;
-  }
-  .missionStatement::before {
-    content: "";
-    height: 300px;
-    width: 400px;
-    background-image: url("../assets/img/lines4.webp");
-    position: absolute;
-    top: -130px;
-    left: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    /* opacity: 0.5; */
-  }
+  position: relative;
+}
+.missionStatement::before {
+  content: "";
+  height: 300px;
+  width: 400px;
+  background-image: url("../assets/img/lines4.webp");
+  position: absolute;
+  top: -130px;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* opacity: 0.5; */
+}
+
 @media (min-width: 1024px) {
   body.body_mission {
     padding-top: 65px;
-    scrollbar-color: none
+    scrollbar-color: none;
   }
   body::-webkit-scrollbar {
     display: none;
@@ -368,7 +369,7 @@ body.body_mission {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
     /* opacity: 0.5; */
   }
 }
@@ -377,7 +378,7 @@ body.body_mission {
     padding-top: 65px;
     scrollbar-color: none
   } */
-  
+
   .missionStatement::before {
     height: 380px;
     width: 550px;

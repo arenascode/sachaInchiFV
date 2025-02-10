@@ -464,6 +464,9 @@ let seedsChart;
 let proteinChart;
 
 function createOilChart(userLanguage) {
+  const canvasElement = document.getElementById("oilChart");
+  if (!canvasElement) return
+
   const ctx = document.getElementById("oilChart").getContext("2d");
   const labelText =
     userLanguage === "en"
@@ -614,6 +617,9 @@ function createOilChart(userLanguage) {
 }
 
 function createSeedsChart(userLanguage) {
+  const canvasElement = document.getElementById("seedsChart");
+  if (!canvasElement) return;
+
   const ctx = document.getElementById("seedsChart").getContext("2d");
   const labelText =
     userLanguage === "en"
@@ -760,6 +766,9 @@ function createSeedsChart(userLanguage) {
 }
 
 function createProteinChart(userLanguage) {
+  const canvasElement = document.getElementById("proteinChart");
+  if (!canvasElement) return;
+
   const ctx = document.getElementById("proteinChart").getContext("2d");
   const labelText =
     userLanguage === "en"
@@ -922,18 +931,26 @@ createOilChart(userLanguage);
 createSeedsChart(userLanguage);
 createProteinChart(userLanguage);
 
-// const chartContainers = document.querySelectorAll(".graphContainer");
+//* fixing bg parallax of mission section to rigth side
 
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach(
-//     (entry) => {
-//       if (entry.isIntersecting && !nutrientChart) {
-//         observer.unobserve(entry);
-//         createChart(ctx, config);
-//       }
-//     },
-//     { threshold: 0.5 }
-//   );
-// });
+const missionParallax = document.getElementById('mission_bgParallax');
 
-// chartContainers.forEach((chart) => observer.observe(chart));
+// function handleScrollAndResize() {
+//   const viewportWidth = window.innerWidth;
+
+//   if (viewportWidth >= 1024) {
+//     // Fix the element to the right
+//     // missionParallax.style.position = "fixed";
+//     missionParallax.style.right = "0";
+//     missionParallax.style.top = "0"; // optional for vertical alignment
+//   } else {
+//     // Reset the styles when viewport width is below 1024px
+//     missionParallax.style.position = "";
+//     missionParallax.style.right = "";
+//     missionParallax.style.top = "";
+//   }
+// }
+
+// // Attach the function to both scroll and resize events
+// window.addEventListener("resize", handleScrollAndResize);
+// window.addEventListener("load", handleScrollAndResize);
