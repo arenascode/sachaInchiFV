@@ -25,8 +25,6 @@ const hamburguerBtn = document.getElementById("hamburger-btn");
 const closeModalBtn = document.getElementById("closeModalBtn");
 
 const headerAboutSection = document.querySelector(".aboutSection_title");
-console.log(headerAboutSection);
-console.log(`hello vboy`);
 
 function openModalMenu() {
   mobileMenu.style.display = "block";
@@ -79,17 +77,12 @@ if (moreinfoHeroBtn) {
 const benefitCloseBtns = document.querySelectorAll(".closeBenefitModal");
 
 const dropdownBtns = document.querySelectorAll(".benefit");
-console.log({ dropdownBtns });
 
 dropdownBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const modalContent =
       btn.parentNode.parentNode.querySelector(".dropdown-content");
-    console.log(btn);
 
-    console.log({ modalContent });
-
-    console.log(btn);
     modalContent.style.display = "block";
   });
 });
@@ -97,10 +90,7 @@ dropdownBtns.forEach((btn) => {
 benefitCloseBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const modal = btn.parentNode;
-    console.log(modal); // Logs current class list
     modal.style.display = "none";
-
-    console.log(modal); // Logs updated class list
   });
 });
 
@@ -370,7 +360,6 @@ const translations = {
 };
 
 function updateTranslations(language) {
-  console.log(`activated`);
 
   Object.keys(translations[language]).forEach((sectionId) => {
     const sectionData = translations[language][sectionId];
@@ -388,15 +377,11 @@ function updateTranslations(language) {
 }
 
 const languageToggle = document.querySelectorAll(".languageToggle");
-console.log(languageToggle);
 const languageToggle2 = document.querySelectorAll(".languageToggle2");
-console.log(languageToggle2);
 const toggle1 = document.getElementById("languageToggle");
 const toggle2 = document.getElementById("languageToggle2");
 
 function syncToggles(source, target) {
-  console.log({ target });
-  console.log({ source });
 
   target.checked = source.checked;
 }
@@ -405,9 +390,7 @@ toggle2.addEventListener("change", () => syncToggles(toggle2, toggle1));
 
 languageToggle.forEach((el) => {
   el.addEventListener("change", (event) => {
-    console.log(`clicked`);
     const selectedLanguage = event.target.checked ? "es" : "en";
-    console.log("Selected Language:", selectedLanguage);
     updateTranslations(selectedLanguage); // Call your translation function
   });
 });

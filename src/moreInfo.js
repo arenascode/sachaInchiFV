@@ -18,7 +18,6 @@ const topOfNav = nav.offsetTop;
 
 function fixNav() {
   const offsetTop = window.scrollY;
-  console.log(nav.offsetHeight);
 
   if (offsetTop >= topOfNav - 5) {
     document.body.classList.add("fixed-nav");
@@ -82,17 +81,12 @@ closeModalBtn.addEventListener("click", closeModalMenu);
 const benefitCloseBtns = document.querySelectorAll(".closeBenefitModal");
 
 const dropdownBtns = document.querySelectorAll(".benefit");
-console.log({ dropdownBtns });
 
 dropdownBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const modalContent =
       btn.parentNode.parentNode.querySelector(".dropdown-content");
-    console.log(btn);
 
-    console.log({ modalContent });
-
-    console.log(btn);
     modalContent.style.display = "block";
   });
 });
@@ -100,10 +94,7 @@ dropdownBtns.forEach((btn) => {
 benefitCloseBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const modal = btn.parentNode;
-    console.log(modal); // Logs current class list
     modal.style.display = "none";
-
-    console.log(modal); // Logs updated class list
   });
 });
 
@@ -411,8 +402,6 @@ const translations = {
 };
 
 function updateTranslations(language) {
-  console.log(`activated`);
-
   Object.keys(translations[language]).forEach((sectionId) => {
     const sectionData = translations[language][sectionId];
     const section = document.getElementById(sectionId);
@@ -431,7 +420,6 @@ function updateTranslations(language) {
 const languageToggle = document.querySelector(".languageToggle");
 
 languageToggle.addEventListener("change", (event) => {
-  console.log(`clicked`);
   const selectedLanguage = event.target.checked ? "es" : "en";
   updateTranslations(selectedLanguage); // Call your translation function
   createOilChart(selectedLanguage);
@@ -931,26 +919,3 @@ createOilChart(userLanguage);
 createSeedsChart(userLanguage);
 createProteinChart(userLanguage);
 
-//* fixing bg parallax of mission section to rigth side
-
-const missionParallax = document.getElementById('mission_bgParallax');
-
-// function handleScrollAndResize() {
-//   const viewportWidth = window.innerWidth;
-
-//   if (viewportWidth >= 1024) {
-//     // Fix the element to the right
-//     // missionParallax.style.position = "fixed";
-//     missionParallax.style.right = "0";
-//     missionParallax.style.top = "0"; // optional for vertical alignment
-//   } else {
-//     // Reset the styles when viewport width is below 1024px
-//     missionParallax.style.position = "";
-//     missionParallax.style.right = "";
-//     missionParallax.style.top = "";
-//   }
-// }
-
-// // Attach the function to both scroll and resize events
-// window.addEventListener("resize", handleScrollAndResize);
-// window.addEventListener("load", handleScrollAndResize);
