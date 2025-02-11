@@ -346,11 +346,6 @@ body.body_mission {
 
   /* opacity: 0.5; */
 }
-@media (max-width: 480px) {
- .parallaxMission {
-  background-repeat: no-repeat;
- }
-}
 
 @media (min-width: 1024px) {
   body.body_mission {
