@@ -7,9 +7,7 @@ import {
   Title,
   Tooltip,
   Legend,
-  SubTitle,
 } from "chart.js";
-import { fontString } from "chart.js/helpers";
 
 //* Sticky Nav Logic
 const nav = document.querySelector(".nav");

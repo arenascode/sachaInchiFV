@@ -231,7 +231,7 @@ const translations = {
       description:
         "Descubre la bondad natural de una nutrición sostenible y rica en",
       description2: "Omega 3, 6 y 9.",
-      cta: "Descubre el Secreto del Amazonas!",
+      cta: "¡Descubre el Secreto del Amazonas!",
     },
     section2: {
       home: "Inicio",
@@ -246,14 +246,14 @@ const translations = {
     section3: {
       title: "¿Qué es Sacha Inchi?",
       p1: `Sacha Inchi, el superalimento amazónico conocido como el “Maní Indígena” o la “Semilla Indígena,” es nativa de las exuberantes selvas tropicales de Ecuador, Colombia y Perú. Durante siglos, las comunidades indígenas han valorado esta poderosa planta por su extraordinaria capacidad para nutrir y fortalecer el cuerpo.`,
-      p2: "Conocidas como un superalimento lleno de nutrientes, las semillas de Sacha Inchi son ricas en proteínas y una excelente fuente de grasas saludables, especialmente Omega 3, 6 y 9. Repletas de fibra, vitamina E y antioxidantes, brindan un impulso integral para tu cuerpo. El Sacha Inchi mejora la salud del corazón, la función cerebral, la fortaleza del sistema inmunológico y una piel radiante.",
+      p2: "Conocidas como un superalimento lleno de nutrientes, las semillas de Sacha Inchi son ricas en proteínas y una excelente fuente de grasas saludables, especialmente Omega 3, 6 y 9. Son ricas en fibra, vitamina E y antioxidantes, brindando un impulso integral para tu cuerpo. Sacha Inchi mejora la salud del corazón, la función cerebral, la fortaleza del sistema inmunológico y una piel radiante.",
       p3: "Más allá de sus beneficios para la salud, Sacha Inchi representa la sabiduría y las prácticas sostenibles de los pueblos indígenas de la Amazonía.",
-      p4: "Al incorporarlo en tu vida diaria, no solo honras al planeta, sino que también apoyas la biosfera, donde las plantas, los animales y su entorno trabajan en armonía para proporcionar una fuente de alimentos de vuelta a la Tierra.",
+      p4: "Al integrarlo a tu dieta saludable, no solo honras al planeta, sino que también apoyas la biosfera, donde las plantas, los animales y su entorno trabajan en armonía para proporcionar una fuente de alimentos de vuelta a la Tierra.",
     },
     section4: {
       title: "Sacha Inchi es un",
       subtitle: "Super Alimento",
-      cta: "Toca cualquier círculo para descubrir más!",
+      cta: "Toca cualquier círculo para descubrir más",
       benefit1Title: "Omega 3, 6, 9",
       benefit2Title: "Proteina",
       benefit3Title: "Fibra",
@@ -308,7 +308,7 @@ const translations = {
         "Al incorporar Sacha Inchi en tu dieta, no solo estás apoyando la salud cardiovascular, sino también reduciendo el riesgo de enfermedades relacionadas con el corazón. Este tesoro amazónico es una forma natural de mantener un corazón sano y un bienestar general.",
       //ParallaxText
       parallaxText:
-        "El Superalimento de la Naturaleza para una Vida más Saludable y Vibrante",
+        "El superalimento de la naturaleza para una vida más saludable y vibrante",
     },
     section5: {
       title: "Múltiples formas de disfrutar Sacha Inchi",
@@ -319,15 +319,15 @@ const translations = {
       product1Subtitle: "Cómo usarlo",
       product1p2:
         "Perfecto para aderezar ensaladas o como suplemento, apoya la salud del corazón, una piel radiante y el bienestar general.",
-      product1VideoTitle: "Pruebalo en tus ensaladas favoritas 😋",
+      product1VideoTitle: "Pruébalo en tus ensaladas favoritas 😋",
       // Product 2
-      product2Title: "Proteína en Polvo",
+      product2Title: "Proteína en polvo",
       product2p1:
         "La proteína en polvo de Sacha Inchi es una fuente vegetal poderosa cargada de aminoácidos esenciales.",
       product2Subtitle: "Cómo usarla",
       product2p2:
         "Agrégala a batidos, productos horneados o bebidas post-entrenamiento para una recuperación muscular natural y energía sostenida.",
-      product2VideoTitle: "Pruebalo en tu batido favorito 😋",
+      product2VideoTitle: "Pruébalo en tu batido favorito 😋",
       // Product 3
       product3Title: "Más que solo batidos",
       product3p1:
@@ -335,7 +335,7 @@ const translations = {
       product3Subtitle: "Cómo usarlas",
       product3p2:
         "Perfecta para añadir un extra de proteina sin culpa mientras impulsas tu energía y tu salud en cualquier momento del día.",
-      product3VideoTitle: "Pruebala en tu granola favorita 😋",
+      product3VideoTitle: "Pruébalo en tu granola favorita 😋",
     },
     section6: {
       title: "Reconocimientos Recibidos Por Sacha Inchi",
