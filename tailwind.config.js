@@ -14,6 +14,11 @@ export default {
         beige: "#b3a86d", // Earthy beige
         darkGreen: "#163020", // Darker green
         cream: "#fff9f0", // Cream white
+        //new Palette
+        cerulean: "#007BA7",
+        navyBlue: "#002D62",
+        powderBlue: "#B0E0E6",
+        iceBlue: "#E0F7FA"
       },
       keyframes: {
         scroll: {

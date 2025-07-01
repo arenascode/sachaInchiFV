@@ -102,7 +102,7 @@ const translations = {
       subtitle: "Amazon’s Superfood for a Healthier You!",
       description: `Discover the natural goodness of sustainable nutrition rich in`,
       description2: "Omega 3, 6 and 9.",
-      cta: "Discover the Amazon's Secret",
+      cta: "Step Into the Secrets of Ancient Nutrition",
     },
     section2: {
       home: "Home",
