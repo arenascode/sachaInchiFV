@@ -27,7 +27,10 @@ export default {
       },
       backgroundImage: {
         "cerulean-navy": "linear-gradient(45deg, #002D62 0%, #007BA7 100%)",
-        "cerulean-navy-soft": "linear-gradient(45deg, #0A3D62 0%, #5CA8D6 100%)",
+        "cerulean-navy-soft":
+          "linear-gradient(45deg, #0A3D62 0%, #5CA8D6 100%)",
+        "cerulean-navy-soft-top-bottom":
+          "linear-gradient(180deg, #0A3D62 0%, #5CA8D6 100%)",
         "navy-gradient": "linear-gradient(45deg, #002D62 0%, #001634 100%)",
       },
       keyframes: {
