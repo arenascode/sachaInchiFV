@@ -12,6 +12,7 @@ export default {
         highlight: "#ffde59", // Bright yellow
         softGreen: "#c4d7b2", // Light green
         beige: "#b3a86d", // Earthy beige
+        sand: "#F4E3C1",
         warmSandy: "#E6D3B3",
         goldenSand: "#CBAE82",
         sandStone: "#D4BFAA",
@@ -25,8 +26,9 @@ export default {
         earthyGreen: "#3A725F",
       },
       backgroundImage: {
-        "cerulean-navy": "linear-gradient(190deg, #007BA7 0%, #002D62 100%)",
-        "navy-gradient": "linear-gradient(180deg, #002D62 0%, #001634 100%)",
+        "cerulean-navy": "linear-gradient(45deg, #002D62 0%, #007BA7 100%)",
+        "cerulean-navy-soft": "linear-gradient(45deg, #0A3D62 0%, #5CA8D6 100%)",
+        "navy-gradient": "linear-gradient(45deg, #002D62 0%, #001634 100%)",
       },
       keyframes: {
         scroll: {

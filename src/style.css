@@ -262,7 +262,7 @@ h1.logo {
   display: none;
 }
 .imageSection4 {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   height: auto;
   min-height: 200px;
   width: 100%;
@@ -293,12 +293,12 @@ h1.logo {
   color: #fff9f0;
 }
 
-#section7 {
+/* #section7 {
   background-image: url(/assets/img/backgroundSeeds.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
+} */
 
 footer {
   background-color: #163020;
@@ -408,14 +408,13 @@ body.body_mission {
 /** LG */
 
 @media (min-width: 1024px) {
-  #section7 {
+  /* #section7 {
     width: 100%;
-    /* background-image: none; */
     background-position: left;
     background-size: auto;
     background-repeat: no-repeat;
-    background-color: #163020; /* Fallback color */
-  }
+    background-color: #163020;
+  } */
   #section7 .container {
     display: flex;
     flex-direction: row;
