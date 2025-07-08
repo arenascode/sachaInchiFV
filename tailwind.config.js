@@ -12,13 +12,21 @@ export default {
         highlight: "#ffde59", // Bright yellow
         softGreen: "#c4d7b2", // Light green
         beige: "#b3a86d", // Earthy beige
+        warmSandy: "#E6D3B3",
+        goldenSand: "#CBAE82",
+        sandStone: "#D4BFAA",
         darkGreen: "#163020", // Darker green
         cream: "#fff9f0", // Cream white
         //new Palette
         cerulean: "#007BA7",
         navyBlue: "#002D62",
         powderBlue: "#B0E0E6",
-        iceBlue: "#E0F7FA"
+        iceBlue: "#E0F7FA",
+        earthyGreen: "#3A725F",
+      },
+      backgroundImage: {
+        "cerulean-navy": "linear-gradient(190deg, #007BA7 0%, #002D62 100%)",
+        "navy-gradient": "linear-gradient(180deg, #002D62 0%, #001634 100%)",
       },
       keyframes: {
         scroll: {
@@ -31,6 +39,6 @@ export default {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("@tailwindcss/typography")],
 };
 

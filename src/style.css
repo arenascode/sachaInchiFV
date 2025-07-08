@@ -3,6 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@plugin "@tailwindcss/typography";
 
 body {
   overflow-x: hidden;
@@ -23,7 +24,7 @@ h5 {
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: black;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -46,6 +47,7 @@ h5 {
   transition: all 0.5s;
   /* position: relative; */
   z-index: 2;
+  /* background-color: #002D62; */
 }
 .navMission {
   position: fixed;
@@ -62,7 +64,8 @@ h5 {
 body.fixed-nav nav {
   position: fixed;
   width: 100vw;
-  /* box-shadow: 0 5px 0 rgba(0,0,0,0.1); */
+  box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+  /* background-color: #002D62; */
 }
 
 h1.logo {
@@ -112,7 +115,7 @@ h1.logo {
   right: 0;
   height: 100dvh;
   width: 50%;
-  background-color: #163020;
+  background-color: #002D62;
   z-index: 99;
 }
 #closeModalBtn {
@@ -208,7 +211,7 @@ h1.logo {
 
 /**SECTION 3*/
 .whatIsSachaInchi {
-  background-image: url(/assets/img/amazonForest.webp);
+  /* background-image: url(/assets/img/amazonForest.webp); */
   scroll-margin-top: 64px;
   height: auto;
   /* padding: 0 50px; */

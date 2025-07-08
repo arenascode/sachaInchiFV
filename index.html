@@ -46,16 +46,16 @@
           >
             Amazon’s Superfood for a Healthier You!
           </h3>
-          <div class="heroDescription md:mt-4 lg:mt-14">
+          <div class="heroDescription md:mt-4 lg:mt-14 lg:w-[75%] text-center self-center">
             <p
-              class="lg:text-2xl text-xl text-pretty lg:text-balance font-semibold tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]"
+              class="lg:text-2xl text-xl text-pretty lg:text-balance font-semibold tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)] text-center"
               data-role="description"
             >
               Discover the natural goodness of sustainable nutrition rich in
             </p>
             <span
               data-role="description2"
-              class="lg:text-2xl text-xl text-pretty lg:text-balance font-semibold tracking-wide"
+              class="lg:text-2xl text-xl text-pretty lg:text-balance font-semibold tracking-wide text-center"
               >omegas 3, 6 and 9</span
             >
           </div>
@@ -84,7 +84,7 @@
       </div>
     </div>
     <nav
-      class="max-w-[100vw] xl:flex xl:justify-between sm:w-full bg-navyBlue z-50 shadow-md nav text-white"
+      class="max-w-[100vw] xl:flex xl:justify-between sm:w-full bg-navy-gradient z-50 shadow-md nav text-white"
       id="section2"
     >
       <div class="xl:w-full xl:mx-0 mx-auto px-4 sm:px-2 xl:px-10 md:px-6">
@@ -193,58 +193,97 @@
     </nav>
     <section
       id="section3"
-      class="whatIsSachaInchi relative h-auto flex bg-cover sm:px-5 md:px-7 bg-center text-white parallax parallax2 xl:justify-center xl:px-12"
+      class="whatIsSachaInchi bg-cerulean-navy relative h-auto flex flex-col justify-center bg-cover sm:px-5 md:px-7 bg-center text-white parallax parallax2 xl:justify-center xl:px-12 lg:pb-6"
     >
-      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-      <div
-        class="bodyContainer flex flex-col-reverse sm:flex-row sm:pt-5 sm:gap-5 lg:gap-24 xl:gap-20 xl:mb-5"
-      >
-        <div
-          class="body flex flex-col gap-1 relative text-5xl font-bold sm:w-[56%] xl:w-[30%]"
-        >
+      <!-- <div class="absolute inset-0 bg-black bg-opacity-60"></div> -->
+       <div class="section3_title flex justify-center items-center lg:h-22 md:pt-4">
+        <div class="title flex flex-col">
           <h2
-            class="text-accent text-2xl mb-5 mt-4 xl:text-4xl sm:text-3xl font-bold text-center sm:mb-8 sm:mr-2 border-b-[1px] border-accent"
-            data-role="title"
+            class="text-goldenSand text-2xl mt-4 my-0 lg:text-6xl sm:text-3xl font-bold text-left sm:mr-2 border-accent md:w-52 text-pretty"
+            data-role="title1"
           >
-            What is Sacha Inchi?
+            What is  
           </h2>
+          <h2 class="text-accent text-2xl mb-5 my-0 lg:text-6xl sm:text-3xl font-bold text-left sm:mr-2 border-accent md:w-54 text-pretty" data-role="title2">Sacha Inchi?</h2>
+        </div>    
+          <span class="border-l-2 lg:h-full text-xl lg:text-2xl md:w-64 md:text-left md:pl-4 md:ml-1 text-warmSandy text-bold">An ancestral Amazonian seed, rich in history and nutrition.</span>
+       </div>
+      <div
+        class="flex flex-col sm:pt-5 sm:gap-5 xl:gap-20 xl:mb-5 text-warmSandy text-semibold lg:items-center"
+      >
+      <div class="flex flex-col md:flex-row bg-white/10 backdrop-blur-md rounded-2xl shadow-lg overflow-hidden border border-white/20 max-w-5xl mx-auto my-5 lg:w-[80%] justify-between">
+        <!-- Text Section -->
+        <div class="text-left text-[1.1rem] lg:text-xl leading-5 tracking-wide font-medium p-4 items-center content-center w-[60%] ">
+          <p class="prose md:prose-lg text-warmSandy" data-role="p1">
+            Discover the powerful benefits of this Amazonian treasure. Packed with Omega 3, 6, and 9, protein, and antioxidants — it's your ally for wellness and sustainability.
+          </p>
+        </div>
+      
+        <!-- Image Section -->
+        <div class="w-8 flex-1">
+          <img 
+            src="assets/img/SachaInchi1.webp" 
+            alt="Sacha Inchi" 
+            class="object-cover w-full h-full"
+          />
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row-reverse bg-white/10 backdrop-blur-md rounded-2xl shadow-lg overflow-hidden border border-white/20 max-w-5xl mx-auto my-5 lg:w-[80%] justify-between">
+        <!-- Text Section -->
+        <div class="text-left text-[1.1rem] lg:text-xl leading-5 tracking-wide font-medium p-4 items-center content-center w-[60%]">
+          <p class="prose md:prose-lg text-warmSandy" data-role="p2">
+            Discover the powerful benefits of this Amazonian treasure. Packed with Omega 3, 6, and 9, protein, and antioxidants — it's your ally for wellness and sustainability.
+          </p>
+        </div>
+      
+        <!-- Image Section -->
+        <div class="w-80 md:flex-1">
+          <img 
+            src="assets/img/nutrientPowerhouse.webp" 
+            alt="Sacha Inchi" 
+            class="object-fit w-full h-full"
+          />
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row bg-white/10 backdrop-blur-md rounded-2xl shadow-lg overflow-hidden border border-white/20 max-w-5xl mx-auto my-5 lg:w-[80%] justify-between">
+        <!-- Text Section -->
+        <div class="text-left text-[1.1rem] lg:text-xl leading-5 tracking-wide font-medium p-4 items-center content-center w-[60%] ">
           <p
-            class="md:max-w-[90%] lg:max-w-[100%] text-left text-[1.1rem] xl:text-xl leading-5 tracking-wide font-medium"
-            data-role="p1"
-          ></p>
-          <p
-            class="md:max-w-[90%] lg:max-w-[100%] text-left xl:text-xl text-[1.1rem] mt-3 leading-5 tracking-wide font-medium"
-            data-role="p2"
-          ></p>
-          <p
-            class="sm:w-[650px] md:w-[700px] lg:w-auto text-left xl:text-xl text-[1.1rem] mt-3 md:mt-8 xl:mt-3 leading-5 tracking-wide font-medium"
+            class="sm:w-[650px] md:w-[700px] lg:w-auto text-left xl:text-xl text-[1.1rem] mt-3 xl:mt-3 leading-5 tracking-wide font-medium prose md:prose-lg text-warmSandy"
             data-role="p3"
           ></p>
           <p
-            class="sm:w-[650px] md:w-[700px] lg:w-auto text-left xl:text-xl text-[1.1rem] mt-3 sm:mb-5 leading-5 tracking-wide font-medium"
+            class="sm:w-[650px] md:w-[700px] lg:w-auto text-left xl:text-xl text-[1.1rem] mt-3 sm:mb-5 leading-5 tracking-wide font-medium prose md:prose-lg text-warmSandy"
             data-role="p4"
           ></p>
         </div>
-        <div class="imgContainer sm:mt-20 xl:ml-10">
-          <video
-            src="/assets/video/purOil2.mp4"
-            class="videoOil rounded-lg shadow-lg"
-            muted
-            playsinline
-            preload="auto"
-            data-aos="zoom-in-left"
-            autoplay
-            loop
-          >
-            <source src="/assets/video/purOil2.mp4" type="video/mp4" />
-          </video>
+      
+        <!-- Image Section -->
+        <div class="w-80 flex-1">
+          <img 
+            src="assets/img/sachaInchiHarvest.webp" 
+            alt="Sacha Inchi" 
+            class="object-cover w-full h-full"
+          />
         </div>
+      </div>
       </div>
     </section>
 
-    <section id="section4" class="bg-beige flex productBenefits items-center">
+    <section id="section4" class="bg-goldenSand flex productBenefits items-center">
       <div class="top flex flex-col pt-[2rem] px-2 items-center">
-        <div
+        <div class="section3_title flex justify-center items-center lg:h-22 md:pt-4">
+          <div class="title flex flex-col">
+            <h2
+              class="text-iceBlue text-2xl mt-4 my-0 lg:text-5xl sm:text-3xl font-bold text-left border-accent md:w-60 lg:w-80 text-pretty lg:text-right lg:pr-2 lg:leading-10"
+              data-role="title"
+            >
+              Sacha Inchi is a  
+            </h2>
+          </div>    
+            <span class="border-l-2 text-cerulean text-2xl mt-4 my-0 lg:text-6xl sm:text-3xl font-bold text-left sm:mr-2 border-accent/70  text-pretty lg:pl-2 lg:self-center lg:h-24 lg content-center" data-role="subtitle">SuperFood</span>
+         </div>
+        <!-- <div
           class="titleContainer flex flex-col sm:flex-row text-3xl self-center sm:gap-2 align-middle mb-6 border-b-4 border-accent"
         >
           <h1
@@ -259,9 +298,10 @@
           >
             Superfood
           </span>
-        </div>
+        </div> -->
+
         <span
-          class="font-semibol italic mt-1 sm:mt-0 mb-4 xl:text-xl lg:text-lg"
+          class="font-semibol italic mt-1 sm:mt-0 lg:mt-3 mb-4 xl:text-xl lg:text-lg"
           data-role="cta"
           >Tap on a circle to explore more details!</span
         >
@@ -314,7 +354,7 @@
                     width="16"
                   />
                 </button>
-                <div class="card-body p-[0.5rem]">
+                <article class="card-body p-[0.5rem]">
                   <!-- Card Title -->
                   <h2
                     class="card-title xl:text-2xl text-lg font-bold text-primary mb-3 justify-center"
@@ -346,7 +386,7 @@
                     natural way to maintain a healthy heart and overall
                     wellness.
                   </p>
-                </div>
+                </article>
               </div>
             </div>
             <!-- Benefit 2 Protein-->
@@ -842,7 +882,7 @@
       >
         <div class="absolute inset-0 bg-black bg-opacity-40"></div>
         <span
-          class="text-white italic xl:text-5xl text-3xl text-center self-center bold relative parallaxText"
+          class="text-white italic xl:text-5xl text-3xl lg:text-4xl text-center self-center bold relative parallaxText"
           data-role="parallaxText"
           >Nature’s Superfood for a Healthier, Happier You</span
         >
