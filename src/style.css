@@ -83,7 +83,7 @@ h1.logo {
 }
 
 #section1 {
-  background-image: url(/assets/img/heroV4.webp);
+  background-image: url(/assets/img/heroBGV4.png);
 }
 .heroSection_languageSwitch {
   position: absolute !important;
@@ -216,8 +216,13 @@ h1.logo {
   height: auto;
   /* padding: 0 50px; */
   text-align: center;
-  /* padding: 60px 50px 50px 50px; */
-  /* opacity: 0.5; */
+  background-image: 
+    url('/assets/img/worn-dots.png'),
+    linear-gradient(45deg, #0A3D62 0%, #5CA8D6 100%);
+  /* background-blend-mode: overlay; */
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
 }
 .whatIsSachaInchi .bodyContainer {
   display: flex;
@@ -256,6 +261,12 @@ h1.logo {
   /* padding: 2rem 1rem; */
   height: auto;
   /* max-width: 100%; */
+  background-image: 
+    url('/assets/img/worn-dots.png');
+  /* background-blend-mode: overlay; */
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
 }
 /*Modal */
 .hidden {
@@ -267,8 +278,15 @@ h1.logo {
   min-height: 200px;
   width: 100%;
 }
-#section5 {
+
+#infoSection5 {
   scroll-margin-top: 55px;
+   background-image: 
+    url('/assets/img/worn-dots.png'), linear-gradient(45deg, #0A3D62 0%, #5CA8D6 100%);
+  /* background-blend-mode: overlay; */
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
 }
 /* #section5 .videoContainer {
   width: 320px;
@@ -512,3 +530,22 @@ body.body_mission {
     height: 385px;
   }
 }
+
+/* Bosque Seco Page */
+ body.bosque-seco-body {
+            font-family: 'Lato', sans-serif;
+            background-color: #FDFBF5; /* Un fondo crema muy suave */
+        }
+        .font-serif {
+            font-family: 'Lora', serif;
+        }
+        /* Efecto de superposición para la imagen de héroe */
+        .hero-overlay::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.1));
+        }

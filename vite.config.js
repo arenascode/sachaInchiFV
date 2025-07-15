@@ -13,5 +13,5 @@ export default defineConfig({
       },
     },
   },
-  base: "https://arenascode.github.io/sachaInchiFV",
+  // base: "https://arenascode.github.io/sachaInchiFV",
 });

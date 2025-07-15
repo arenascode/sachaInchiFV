@@ -526,7 +526,7 @@ function createOilChart(userLanguage) {
           display: true,
           position: "top",
           labels: {
-            color: "#163020",
+            color: "#E0F7FA",
             usePointStyle: false, // Enable point styles (necessary to customize)
             boxWidth: 0, // Set box width to 0 to hide the symbol
             boxHeight: 0, // Optional: Ensure no height for the symbol
@@ -539,8 +539,8 @@ function createOilChart(userLanguage) {
         },
         tooltip: {
           backgroundColor: "#fff9f0",
-          titleColor: "#1b4d20",
-          bodyColor: "#163020",
+          titleColor: "#2A3D45",
+          bodyColor: "#2A3D45",
           anchor: "end",
           align: "end",
           padding: 12,
@@ -569,12 +569,12 @@ function createOilChart(userLanguage) {
             color: "#ffffff",
           },
           grid: {
-            color: "#c4d7b2",
+            color: "#E0F7FA",
           },
         },
         y: {
           ticks: {
-            color: "#1b4d20",
+            color: "#E0F7FA",
             font: {
               size: 15,
               weight: 600,
@@ -678,7 +678,7 @@ function createSeedsChart(userLanguage) {
           display: true,
           position: "top",
           labels: {
-            color: "#163020",
+            color: "#E0F7FA",
             usePointStyle: false, // Enable point styles (necessary to customize)
             boxWidth: 0, // Set box width to 0 to hide the symbol
             boxHeight: 0, // Optional: Ensure no height for the symbol
@@ -691,8 +691,8 @@ function createSeedsChart(userLanguage) {
         },
         tooltip: {
           backgroundColor: "#fff9f0",
-          titleColor: "#1b4d20",
-          bodyColor: "#163020",
+          titleColor: "#2A3D45",
+          bodyColor: "#2A3D45",
           padding: 12,
           titleFont: { size: 16, weight: "bold" },
           bodyFont: { size: 14 },
@@ -719,12 +719,12 @@ function createSeedsChart(userLanguage) {
             color: "#ffffff",
           },
           grid: {
-            color: "#c4d7b2",
+            color: "#E0F7FA",
           },
         },
         y: {
           ticks: {
-            color: "#1b4d20",
+            color: "#E0F7FA",
             font: {
               size: 15,
               weight: 600,
@@ -840,7 +840,7 @@ function createProteinChart(userLanguage) {
           display: true,
           position: "top",
           labels: {
-            color: "#163020",
+            color: "#E0F7FA",
             usePointStyle: false, // Enable point styles (necessary to customize)
             boxWidth: 0, // Set box width to 0 to hide the symbol
             boxHeight: 0, // Optional: Ensure no height for the symbol
@@ -853,8 +853,8 @@ function createProteinChart(userLanguage) {
         },
         tooltip: {
           backgroundColor: "#fff9f0",
-          titleColor: "#1b4d20",
-          bodyColor: "#163020",
+          titleColor: "#2A3D45",
+          bodyColor: "#2A3D45",
           padding: 12,
           titleFont: { size: 16, weight: "bold" },
           bodyFont: { size: 14 },
@@ -881,12 +881,12 @@ function createProteinChart(userLanguage) {
             color: "#ffffff",
           },
           grid: {
-            color: "#c4d7b2",
+            color: "#E0F7FA",
           },
         },
         y: {
           ticks: {
-            color: "#1b4d20",
+            color: "#E0F7FA",
             font: {
               size: 15,
               weight: 600,

@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         custom: ["BrownSugar", "sans-serif"],
+        sans: ["Lato", "sans-serif"],
+        serif: ["Lora", "serif"],
       },
       colors: {
         primary: "#1b4d20", // Deep green
@@ -21,9 +23,15 @@ export default {
         //new Palette
         cerulean: "#007BA7",
         navyBlue: "#002D62",
+        petroleumBlue: "#2A3D45",
         powderBlue: "#B0E0E6",
         iceBlue: "#E0F7FA",
         earthyGreen: "#3A725F",
+        //Bosque Seco Page
+        "brand-green": "#588157",
+        "brand-brown": "#5D4037",
+        "brand-gold": "#A47X54" /* Dorado ocre */,
+        "brand-cream": "#FDFBF5",
       },
       backgroundImage: {
         "cerulean-navy": "linear-gradient(45deg, #002D62 0%, #007BA7 100%)",
