@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "chart.js": "^4.4.7"
+    "chart.js": "^4.4.7",
+    "tailwindcss-textshadow": "^2.1.3"
   }
 }

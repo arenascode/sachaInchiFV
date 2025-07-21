@@ -33,6 +33,10 @@ export default {
         "brand-gold": "#A47X54" /* Dorado ocre */,
         "brand-cream": "#FDFBF5",
       },
+      textShadow: {
+        default: "2px 2px 4px rgba(0,0,0,0.4)",
+        strong: "3px 3px 6px rgba(0,0,0,0.6)",
+      },
       backgroundImage: {
         "cerulean-navy": "linear-gradient(45deg, #002D62 0%, #007BA7 100%)",
         "cerulean-navy-soft":
@@ -52,6 +56,5 @@ export default {
       },
     },
   },
-  plugins: [require("daisyui"), require("@tailwindcss/typography")],
+  plugins: [require("daisyui"), require("@tailwindcss/typography"), require('tailwindcss-textshadow')],
 };
-

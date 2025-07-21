@@ -10,8 +10,9 @@ export default defineConfig({
         main: resolve(__dirname, "index.html"), // Main entry point
         about: resolve(__dirname, "src/pages/about.html"), // About page
         mission: resolve(__dirname, "src/pages/mission.html"), // Mission page
+        bosqueSeco: resolve(__dirname, "src/pages/bosqueSeco.html") //Bosque Seco page
       },
     },
   },
-  // base: "https://arenascode.github.io/sachaInchiFV",
+  base: "https://arenascode.github.io/sachaInchiFV",
 });

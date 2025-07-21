@@ -64,7 +64,7 @@ h5 {
 body.fixed-nav nav {
   position: fixed;
   width: 100vw;
-  box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+  /* box-shadow: 0 5px 0 rgba(0,0,0,0.1); */
   /* background-color: #002D62; */
 }
 
@@ -83,7 +83,7 @@ h1.logo {
 }
 
 #section1 {
-  background-image: url(/assets/img/heroBGV4.png);
+  background-image: url(/assets/img/heroBGV6.png);
 }
 .heroSection_languageSwitch {
   position: absolute !important;
@@ -217,11 +217,11 @@ h1.logo {
   /* padding: 0 50px; */
   text-align: center;
   background-image: 
-    url('/assets/img/worn-dots.png'),
+    url('/assets/img/bgSachaInchi4.png'),
     linear-gradient(45deg, #0A3D62 0%, #5CA8D6 100%);
   /* background-blend-mode: overlay; */
-  background-size: contain;
-  background-repeat: repeat;
+  background-size: fit;
+  /* background-repeat: repeat; */
   background-position: center;
 }
 .whatIsSachaInchi .bodyContainer {
