@@ -240,14 +240,7 @@ h1.logo {
   font-size: 1.2em;
   cursor: pointer;
 }
-.whatIsSachaInchi video {
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-  box-shadow: none;
-  width: 100%; /* Adjust as needed */
-  height: 400px; /* Maintain aspect ratio */
-  object-fit: none;
-  display: block;
-}
+
 .split-section {
   display: flex;
   align-items: center;
@@ -261,8 +254,7 @@ h1.logo {
   /* padding: 2rem 1rem; */
   height: auto;
   /* max-width: 100%; */
-  background-image: 
-    url('/assets/img/worn-dots.png');
+  /* background-image: url('/assets/img/xv.png'); */
   /* background-blend-mode: overlay; */
   background-size: contain;
   background-repeat: repeat;
@@ -282,7 +274,7 @@ h1.logo {
 #infoSection5 {
   scroll-margin-top: 55px;
    background-image: 
-    url('/assets/img/worn-dots.png'), linear-gradient(45deg, #0A3D62 0%, #5CA8D6 100%);
+    url('/assets/img/bgSachaInchi4.png'), linear-gradient(45deg, #0A3D62 0%, #5CA8D6 100%);
   /* background-blend-mode: overlay; */
   background-size: contain;
   background-repeat: repeat;
@@ -508,19 +500,10 @@ body.body_mission {
   .parallaxText {
     padding: 1rem;
   }
-  #section3 {
-  }
   .whatIsSachaInchi .imgContainer {
     display: flex;
     justify-content: center;
     width: 100%;
-  }
-  .whatIsSachaInchi video {
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-    box-shadow: none;
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
   }
   #section5 {
     /* margin-top: 30px; */

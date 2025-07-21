@@ -34,7 +34,7 @@ export default {
         "brand-cream": "#FDFBF5",
       },
       textShadow: {
-        default: "2px 2px 4px rgba(0,0,0,0.4)",
+        default: "2px 2px 4px rgba(0,0,0,0.5)",
         strong: "3px 3px 6px rgba(0,0,0,0.6)",
       },
       backgroundImage: {
@@ -44,6 +44,7 @@ export default {
         "cerulean-navy-soft-top-bottom":
           "linear-gradient(180deg, #0A3D62 0%, #5CA8D6 100%)",
         "navy-gradient": "linear-gradient(45deg, #002D62 0%, #001634 100%)",
+        "sandy-gradient": "radial-gradient(circle,#f4e3c1 0%,#cbae82 100%)",
       },
       keyframes: {
         scroll: {
@@ -56,5 +57,9 @@ export default {
       },
     },
   },
-  plugins: [require("daisyui"), require("@tailwindcss/typography"), require('tailwindcss-textshadow')],
+  plugins: [
+    require("daisyui"),
+    require("@tailwindcss/typography"),
+    require("tailwindcss-textshadow"),
+  ],
 };
