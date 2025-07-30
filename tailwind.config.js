@@ -45,6 +45,7 @@ export default {
           "linear-gradient(180deg, #0A3D62 0%, #5CA8D6 100%)",
         "navy-gradient": "linear-gradient(45deg, #002D62 0%, #001634 100%)",
         "sandy-gradient": "radial-gradient(circle,#f4e3c1 0%,#cbae82 100%)",
+        "powderBlue-iceBlue": "radial-gradient(circle,#B0E0E6 0%,#E0F7FA 100%)",
       },
       keyframes: {
         scroll: {
