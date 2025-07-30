@@ -15,7 +15,7 @@
       content="Descubre los beneficios del Sacha Inchi, el superalimento rico en Omega 3, 6 y 9. Mejora tu salud cardiovascular, cerebral e inmunológica mientras apoyas la sostenibilidad y la protección de la Amazonía."
     />
   </head>
-  <body class="bg-cream text-petroleumBlue">
+  <body class="bg-sandy-gradient text-petroleumBlue">
     <nav
       class="max-w-[100vw] xl:flex xl:justify-between sm:w-full bg-cerulean-navy z-50 nav border-none text-warmSandy"
       id="navBar"
@@ -147,7 +147,7 @@
         class="absolute xl:w-60 right-[40%] top-[78%] lg:right-[45%] lg:top-[57%] xl:top-[60%] xl:right-[40%]"
       />
     </header>
-    <section class="bg-cream">
+    <section>
       <!-- Content Sections -->
       <div class="flex flex-col gap-10 lg:mt-28 mt-32">
         <!-- Section 1: Origin and History -->
@@ -164,7 +164,9 @@
               class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-accent to-highlight rounded-full"
             ></span> -->
           </h3>
-          <div class="body-section flex flex-col lg:flex-row lg:flex-start lg:justify-between">
+          <div
+            class="body-section flex flex-col lg:flex-row lg:flex-start lg:gap-10 lg:justify-between"
+          >
             <div class="imgContent flex flex-col lg:w-[500px]">
               <img
                 src="../../assets/img/sachaInchiHarvest.png"
@@ -208,7 +210,7 @@
               >Indigenous Peanut
             </span> -->
               <p
-                class="text-md lg:text-xl leading-relaxed mb-4 mt-3 lg:mt-0 prose-lg"
+                class="text-md lg:text-xl leading-relaxed mb-4 mt-3 lg:mt-0 prose-lg xl:prose-xl"
                 data-role="p1"
               >
                 has been a vital part of Amazonian culture for centuries.
@@ -255,18 +257,25 @@
           <div
             class="nutritionalTableContainer mt-4 lg:mt-6 flex flex-col gap-4 md:flex-row lg:gap-6 w-full"
           >
-            <div class="table1 md:w-[50%] rounded-lg overflow-hidden flex flex-col justify-between">
+            <div
+              class="table1 md:w-[50%] rounded-lg overflow-hidden flex flex-col justify-between"
+            >
               <p
-            class="mt-5 xl:mt-0 sm:text-lg lg:text-xl xl:text-xl text-left pl-1 md:self-center text-petroleumBlue lg:pl-2"
-            data-role="p1"
-          >
-            Sacha Inchi has a high nutritional quality due to their
-            exceptionally high content of healthy fatty acids like Omega-3s, 6s
-            and 9s from 35 to 45% with 0% of cholesterol, 25% of proteins, and
-            essential minerals such as Calcium, Magnesium, Zinc, and Potassium.
-          </p>
-              <img src="/assets/img/womanCooking.jpg" alt="woman cooking" class="w-full h-auto xl:h-[26.5rem] rounded-lg object-cover">
-              
+                class="mt-5 lg:mt-0 sm:text-lg lg:text-xl xl:text-xl text-left pl-1 md:self-center text-petroleumBlue lg:pl-2"
+                data-role="p1"
+              >
+                Sacha Inchi has a high nutritional quality due to their
+                exceptionally high content of healthy fatty acids like Omega-3s,
+                6s and 9s from 35 to 45% with 0% of cholesterol, 25% of
+                proteins, and essential minerals such as Calcium, Magnesium,
+                Zinc, and Potassium.
+              </p>
+              <img
+                src="/assets/img/womanCooking.jpg"
+                alt="woman cooking"
+                class="w-full h-auto xl:h-[26.5rem] rounded-lg object-cover"
+              />
+
               <!-- <div
                 class="transform transition-transform duration-300 lg:hover:scale-105"
               >
@@ -1115,7 +1124,7 @@
         </div> -->
         <!-- Section 4: Comparison -->
         <div
-          class="bg-sandy-gradient p-3 lg:p-6 mx-4 lg:px-6 rounded-lg shadow-xl border-l-4 border-cerulean hover:shadow-2xl transition-shadow flex flex-col items-center overflow-x-hidden xl:mx-16 lg:mb-7"
+          class="bg-sandy-gradient p-3 lg:p-6 mx-4 lg:px-2 xl:px-6 rounded-lg shadow-xl border-l-4 border-cerulean hover:shadow-2xl transition-shadow flex flex-col items-center overflow-x-hidden xl:mx-16 lg:mb-7"
           id="infoSection4"
         >
           <h3
@@ -1128,36 +1137,60 @@
           <div class="chartsContainer w-full lg:px-4 flex flex-col lg:gap-10">
             <!-- Seeds Healty fats Comparison -->
             <div
-              class="tableConainer flex flex-col md:flex-row-reverse md:p-2 gap-5 md:w-full bg-[#f0dab9]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4"
+              class="tableConainer flex flex-col md:p-2 gap-5 md:w-full lg:p-4"
             >
-              <div
-                class="graphContainer w-full md:w-[100%] md:h-96 xl:h-[27rem] md:mt-0 bg-cerulean-navy-soft overflow-hidden transform transition-transform duration-300 lg:hover:scale-105 lg:flex-1 rounded-lg"
-              >
-                <canvas id="seedsChart" class="w-full h-[300px] lg:h-auto p-2 rounded-lg"></canvas>
-              </div>
-              <div
-                class="chartAnalisis md:w-[50%] px-2 pb-1 md:pl-2 text-darkGreen lg:flex-1"
-              >
+              <div class="images flex flex-row flex-1">
                 <div
-                  class="title flex flex-col items-center justify-center border-b border-accent content-center"
+                  class="graphContainer w-full md:w-[100%] md:h-96 xl:h-[27rem] md:mt-0 bg-cerulean-navy-soft overflow-hidden transform transition-transform duration-300 lg:hover:scale-105 lg:flex-1 rounded-lg"
                 >
-                  <figure>
-                    <img
-                      src="/assets/img/seedsOnPlate.webp"
-                      alt="seeds&Snacks"
-                      width="200"
-                      class="object-cover rounded-lg"
-                    />
-                  </figure>
-                  <h4
+                  <canvas
+                    id="seedsChart"
+                    class="w-full h-[300px] lg:h-auto p-2 rounded-lg"
+                  ></canvas>
+                </div>
+                <div
+                  class="chartAnalisis md:w-[50%] h-auto px-2 pb-1 md:pl-2 text-darkGreen lg:flex-1"
+                >
+                  <div
+                    class="title flex flex-col items-center justify-center content-center h-full w-full"
+                  >
+                    <figure>
+                      <img
+                        src="/assets/img/steep-woman.webp"
+                        alt="seeds&Snacks"
+                        height="200"
+                        class="object-cover rounded-lg w-full lg:h-[380px] xl:h-[430px]"
+                      />
+                    </figure>
+                    <!-- <h4
                     class="product text-pretty text-center content-center bold text-darkGreen text-lg xl:text-2xl ml-2"
                     data-role="chartSeedsTitle"
                   >
                     Nuts, Grains, and Oils
-                  </h4>
+                  </h4> -->
+                  </div>
+                  <!-- <p
+                  class="body md:text-left mt-2 lg:mt-0 xl:text-lg"
+                  data-role="chartSeedsDescription"
+                >
+                  Sacha Inchi sobresale nuevamente como una fuente excepcional
+                  de grasas saludables, siendo una opción ideal para quienes
+                  buscan ácidos grasos esenciales en su dieta. Aunque los demás
+                  frutos secos y semillas también son buenas fuentes, su
+                  contenido lipídico varía considerablemente.
+                </p> -->
                 </div>
+              </div>
+
+              <div class="body-text flex flex-col flex-1 mt-5 items-center">
+                <h4
+                  class="product text-pretty text-center bold text-darkGreen text-lg lg:text-2xl xl:text-3xl ml-2 border-b border-accent"
+                  data-role="chartSeedsTitle"
+                >
+                  Nuts, Grains, and Oils
+                </h4>
                 <p
-                  class="body md:text-left mt-2 xl:text-lg"
+                  class="body text-center mt-2 lg:text-lg  font-semibold xl:prose-xl text-petroleumBlue"
                   data-role="chartSeedsDescription"
                 >
                   Sacha Inchi sobresale nuevamente como una fuente excepcional
@@ -1166,32 +1199,42 @@
                   frutos secos y semillas también son buenas fuentes, su
                   contenido lipídico varía considerablemente.
                 </p>
+                <img
+                  src="/assets/img/seedsBlackAndWhite.png"
+                  alt="seeds drawed"
+                  width="150"
+                  height="150"
+                  class="mt-3"
+                />
               </div>
             </div>
             <!-- Oil Healthy Fats Comparison -->
             <div
-              class="tableContainer flex flex-col-reverse md:flex-row-reverse md:align-top gap-5 md:w-full md:p-2 bg-[#e1c9a6]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4 overflow-hidden"
+              class="tableContainer flex flex-col md:align-top gap-5 md:w-full md:p-2 lg:p-4 overflow-hidden"
             >
-              <div
-                class="chartAnalisis md:w-[50%] px-2 pb-1 md:pl-2 lg:flex-1 text-petroleumBlue"
-              >
-                <div class="title flex border-b border-accent justify-center md:flex-col items-center">
-                  <figure>
-                    <img
-                      src="/assets/img/sachaInchi-oil-chart.webp"
-                      alt="oilBotles"
-                      width="200"
-                      class="object-cover rounded-lg"
-                    />
-                  </figure>
-                  <h4
+              <div class="images flex flex-col md:flex-row">
+                <div
+                  class="chartAnalisis md:w-[50%] px-2 pb-1 md:pl-2 lg:flex-1 text-petroleumBlue"
+                >
+                  <div
+                    class="title flex flex-col items-center justify-center content-center h-full w-full"
+                  >
+                    <figure>
+                      <img
+                        src="/assets/img/menJumping.png"
+                        alt="men jumping"
+                        height="200"
+                        class="object-cover rounded-lg w-full lg:h-[380px] xl:h-[430px]"
+                      />
+                    </figure>
+                    <!-- <h4
                     class="product text-pretty text-center content-center bold text-petroleumBlue text-lg lg:text-xl xl:text-2xl"
                     data-role="chartOilTitle"
                   >
                     Oil
-                  </h4>
-                </div>
-                <p
+                  </h4> -->
+                  </div>
+                  <!-- <p
                   class="body text-lef mt-2 xl:text-lg"
                   data-role="chartOilDescription"
                 >
@@ -1201,72 +1244,131 @@
                   son ricos en grasas, su perfil nutricional varía. Este
                   análisis subraya la importancia de elegir fuentes de grasas de
                   calidad para una alimentación equilibrada y saludable.
-                </p>
+                </p> -->
+                </div>
+                <div
+                  class="graphContainer w-full h-auto md:h-96 xl:h-[27rem] md:w-[100%] bg-cerulean-navy-soft rounded-lg overflow-hidden transform transition-transform duration-300 lg:hover:scale-105 lg:flex-1"
+                >
+                  <canvas id="oilChart" class="w-full h-[300px] p-2"></canvas>
+                </div>
               </div>
-              <div
-                class="graphContainer w-full h-auto md:h-96 xl:h-[27rem] md:w-[100%] bg-cerulean-navy-soft rounded-lg overflow-hidden transform transition-transform duration-300 lg:hover:scale-105 lg:flex-1"
-              >
-                <canvas id="oilChart" class="w-full h-[300px] p-2"></canvas>
+              <div class="body-text flex flex-col flex-1 mt-5 items-center">
+                <h4
+                  class="product text-pretty text-center bold text-darkGreen text-lg lg:text-2xl xl:text-3xl ml-2 border-b border-accent"
+                  data-role="chartOilTitle"
+                >
+                  Oil
+                </h4>
+                <p
+                  class="body text-center mt-2 lg:prose-lg font-semibold xl:prose-xl"
+                  data-role="chartOilDescription"
+                >
+                  Sacha Inchi sobresale como la mejor fuente de grasas
+                  saludables, lo que refuerza su valor como superalimento.
+                  Aunque otros aceites como los de lino, soja y girasol también
+                  son ricos en grasas, su perfil nutricional varía. Este
+                  análisis subraya la importancia de elegir fuentes de grasas de
+                  calidad para una alimentación equilibrada y saludable.
+                </p>
+                <img
+                  src="/assets/img/seedsBlackAndWhite.png"
+                  alt="seeds drawed"
+                  width="150"
+                  height="150"
+                  class="mt-3"
+                />
               </div>
             </div>
             <!--Protein Comparison-->
             <div
-              class="tableContainer flex flex-col-reverse md:flex-row gap-5 md:w-full md:p-2 bg-[#f0dab9]/50 backdrop-blur-md rounded-lg shadow-lg border border-white lg:p-4"
+              class="tableContainer flex flex-col gap-5 md:w-full md:p-2 lg:p-4"
             >
-              <div
-                class="chartAnalisis md:w-[65%] px-2 pb-1 md:pl-2 text-petroleumBlue lg:flex-1"
-              >
-                <div class="title flex flex-col items-center border-b border-accent justify-center">
-                  <figure>
-                    <img
-                      src="/assets/img/seedsAndOilSacha.webp"
-                      alt="seeds&Oils"
-                      width="200"
-                      class="object-cover rounded-lg" 
-                    />
-                  </figure>
-                  <h4
-                    class="product text-pretty text-center content-center bold text-petroleumBlue text-lg xl:text-2xl"
-                    data-role="chartProteinTitle"
-                  >
-                    Nuts, Grains, and Oils
-                  </h4>
-                </div>
-                <p
-                  class="body text-lef mt-2 xl:text-lg"
-                  data-role="chartProteinDescription"
-                >
-                  Se destaca a Sacha Inchi como una alternativa altamente
-                  proteica comparable al maní, pero con un perfil lipídico más
-                  saludable. Los frutos secos y semillas son una fuente clave de
-                  proteínas vegetales, mientras que los aceites y frutos como el
-                  aguacate y la aceituna aportan otros beneficios nutricionales,
-                  pero no son ricos en proteínas.
-                </p>
-              </div>
-
-              <div
-                class="graphContainer w-full md:w-[100%] md:h-96 xl:h-[27rem] md:mt-0 bg-cerulean-navy-soft rounded-lg overflow-hidden transform transition-transform duration-300 lg:hover:scale-105 lg:flex-1"
-              >
+              <div class="images flex flex-col md:flex-row-reverse">
                 <div
-                  class="nuts&OilImage flex align-middle justify-center text-center"
+                  class="chartAnalisis md:w-[65%] px-2 pb-1 md:pl-2 text-petroleumBlue lg:flex-1"
                 >
-                  <!-- <figure>
+                  <div
+                    class="title flex flex-col items-center justify-center"
+                  >
+                    <figure>
+                      <img
+                        src="/assets/img/womanStaring.png"
+                        alt="seeds&Oils"
+                        height="200"
+                        class="object-cover rounded-lg w-full lg:h-[380px] xl:h-[430px]"
+                      />
+                    </figure>
+                    <!-- <h4
+                      class="product text-pretty text-center content-center bold text-petroleumBlue text-lg xl:text-2xl"
+                      data-role="chartProteinTitle"
+                    >
+                      Nuts, Grains, and Oils
+                    </h4> -->
+                  </div>
+                  <!-- <p
+                    class="body text-lef mt-2 xl:text-lg"
+                    data-role="chartProteinDescription"
+                  >
+                    Se destaca a Sacha Inchi como una alternativa altamente
+                    proteica comparable al maní, pero con un perfil lipídico más
+                    saludable. Los frutos secos y semillas son una fuente clave
+                    de proteínas vegetales, mientras que los aceites y frutos
+                    como el aguacate y la aceituna aportan otros beneficios
+                    nutricionales, pero no son ricos en proteínas.
+                  </p> -->
+                </div>
+
+                <div
+                  class="graphContainer w-full md:w-[100%] md:h-96 xl:h-[27rem] md:mt-0 bg-cerulean-navy-soft rounded-lg overflow-hidden transform transition-transform duration-300 lg:hover:scale-105 lg:flex-1"
+                >
+                  <div
+                    class="nuts&OilImage flex align-middle justify-center text-center"
+                  >
+                    <!-- <figure>
                             <img
                               src="/assets/img/nutsAndOil.webp"
                               alt="seeds&Oils"
                               width="70"
                             />
                           </figure> -->
-                  <!-- <h4
+                    <!-- <h4
                           class="product text-pretty text-center"
                           data-role="table_protein"
                         >
                           Nuts, Grains, and Oils
                         </h4> -->
+                  </div>
+                  <canvas
+                    id="proteinChart"
+                    class="w-full h-[300px] p-2"
+                  ></canvas>
                 </div>
-
-                <canvas id="proteinChart" class="w-full h-[300px] p-2"></canvas>
+              </div>
+              <div class="body-text flex flex-col flex-1 mt-5 items-center">
+                <h4
+                      class="product text-pretty text-center content-center bold text-petroleumBlue text-lg lg:text-2xl  border-b border-accent"
+                      data-role="chartProteinTitle"
+                    >
+                      Nuts, Grains, and Oils
+                    </h4>
+                <p
+                    class="body text-center mt-2 lg:prose-lg xl:text-lg font-semibold xl:prose-xl"
+                    data-role="chartProteinDescription"
+                  >
+                    Se destaca a Sacha Inchi como una alternativa altamente
+                    proteica comparable al maní, pero con un perfil lipídico más
+                    saludable. Los frutos secos y semillas son una fuente clave
+                    de proteínas vegetales, mientras que los aceites y frutos
+                    como el aguacate y la aceituna aportan otros beneficios
+                    nutricionales, pero no son ricos en proteínas.
+                  </p>
+                <img
+                  src="/assets/img/seedsBlackAndWhite.png"
+                  alt="seeds drawed"
+                  width="150"
+                  height="150"
+                  class="mt-3"
+                />
               </div>
             </div>
           </div>

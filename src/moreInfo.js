@@ -242,7 +242,7 @@ const translations = {
       //Table 2
       chartSeedsTitle: "Nuts & Seeds",
       chartSeedsDescription:
-        "Sacha Inchi once again stands out as an exceptional source of healthy fats, making it an ideal choice for those looking to incorporate essential fatty acids into their diet. While other nuts and seeds also provide beneficial fats, their lipid content varies significantly. This highlights the unique nutritional advantage of Sacha Inchi, offering a superior balance of Omega-3, 6, and 9 to support overall well-being.",
+        "Sacha Inchi stands out as an exceptional source of healthy fats, making it an ideal choice for those looking to incorporate essential fatty acids into their diet. While other nuts and seeds also provide beneficial fats, their lipid content varies significantly. This highlights the unique nutritional advantage of Sacha Inchi, offering a superior balance of Omega-3, 6, and 9 to support overall well-being.",
       table_seedsBottom: "Percent of Healthy Fats Content",
       //Table 3
       chartProteinTitle: "Nuts, Grains, and Oils",

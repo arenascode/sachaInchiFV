@@ -349,7 +349,7 @@ body.body_mission {
   content: "";
   height: 300px;
   width: 400px;
-  background-image: url("../assets/img/lines4.webp");
+  background-image: url("../assets/img/seedsBlackAndWhite.png");
   position: absolute;
   top: -130px;
   left: 0;
@@ -375,9 +375,10 @@ body.body_mission {
     content: "";
     height: 300px;
     width: 400px;
-    background-image: url("../assets/img/lines4.webp");
+    background-image: url("../assets/img/seedsBlackAndWhite.png");
     position: absolute;
-    top: -130px;
+    opacity: 0.3;
+    top: -100px;
     left: 0;
     background-size: cover;
     background-position: center;
@@ -395,7 +396,7 @@ body.body_mission {
   .missionStatement::before {
     height: 380px;
     width: 550px;
-    top: -149px;
+    top: -100px;
     left: 0;
 
     /* opacity: 0.5; */
