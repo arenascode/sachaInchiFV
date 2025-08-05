@@ -44,8 +44,10 @@ export default {
         "cerulean-navy-soft-top-bottom":
           "linear-gradient(180deg, #0A3D62 0%, #5CA8D6 100%)",
         "navy-gradient": "linear-gradient(45deg, #002D62 0%, #001634 100%)",
-        "sandy-gradient": "radial-gradient(circle,#f4e3c1 0%,#cbae82 100%)",
-        "powderBlue-iceBlue": "radial-gradient(circle,#B0E0E6 0%,#E0F7FA 100%)",
+        "sandy-gradient":
+          "radial-gradient(circle at center, #ffffff 0%, #fdf6ec 20%, #f9ecd6 45%, #f4e3c1 70%, #e5d1a8 100%)",
+        "powderBlue-iceBlue":
+          "radial-gradient(circle at center, #ffffff 0%, #f4fbff 30%, #d9f0ff 70%, #c6e4f7 100%)",
       },
       keyframes: {
         scroll: {
