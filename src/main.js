@@ -102,7 +102,7 @@ const translations = {
       subtitle: "Amazon’s Superfood for a Healthier You!",
       description: `Discover the natural goodness of sustainable nutrition rich in`,
       description2: "Omega 3, 6 and 9.",
-      cta: "Step Into the Secrets of Ancient Nutrition",
+      cta: "Step Into the Secrets of Ancestral Nutrition",
     },
     section2: {
       home: "Home",
@@ -117,7 +117,7 @@ const translations = {
     section3: {
       title1: "What is",
       title2: "Sacha Inchi?",
-      p1: `Sacha Inchi, the Amazonian superfood hailed as the Indigenous Peanut or the Indigenous Seed, is native to the lush Amazonian rainforests of Ecuador, Colombia and Peru. For centuries, indigenous communities have treasured this powerful plant for its remarkable ability to nourish and fuel the body.`,
+      p1: `Sacha Inchi — sometimes referred to as the “Inca Peanut” though it is not a peanut but a seed — is an Amazonian superfood native to Ecuador, Colombia, and Peru. Indigenous communities have valued it for generations as a rich source of nourishment.`,
       p2: "Known as a nutrient powerhouse, Sacha Inchi seeds are rich in protein and an excellent source of healthy fats, especially Omega 3, 6 and 9. Packed with fiber, vitamin E, and antioxidants, they provide a holistic boost for your body. Sacha Inchi supports heart health, brain function, immune strength, and radiant skin.",
       p3: "Beyond its health benefits, Sacha Inchi represents the wisdom and sustainable practices of the Amazon’s indigenous people.",
       p4: "By integrating it into your healthy regimen, you’re not only honoring the planet but also supporting the biosphere— where plants, animals, and their surroundings work in harmony to provide a reliable source of food back to the Earth.",
