@@ -83,7 +83,7 @@ h1.logo {
 }
 
 #section1 {
-  background-image: url(/assets/img/heroBGV12.png);
+  background-image: url(/assets/img/heroBGMobile2.webp);
 }
 .heroSection_languageSwitch {
   position: absolute !important;
@@ -500,16 +500,17 @@ body.body_mission {
     max-width: 480px;
     /* box-shadow: 0 5px 0 rgba(0,0,0,0.1); */
   }
-  #section1 {
-    background-image: url(/assets/img/sacha-inchi-mobile.webp);
-  }
+  /* #section1 {
+    background-image: url(/assets/img/heroBGMobile.webp);
+    background-position: center;
+  } */
   .language {
     font-size: 1.2rem;
     padding: 0 2px;
   }
   .whatIsSachaInchi {
-    background-image: url(/assets/img/amazonForestMobile.webp);
-    padding: 1.5rem 1rem;
+    /* background-image: url(/assets/img/amazonForestMobile.webp); */
+    /* padding: 1.5rem 1rem; */
     font-size: 12px;
     height: auto;
   }
