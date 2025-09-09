@@ -376,6 +376,7 @@ body.body_mission {
 }
 .missionStatement {
   position: relative;
+  width: 100%;
 }
 .missionStatement::before {
   content: "";
@@ -383,13 +384,27 @@ body.body_mission {
   width: 400px;
   background-image: url("../assets/img/seedsBlackAndWhite.png");
   position: absolute;
-  top: -130px;
+  top: -40px;
   left: 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  /* opacity: 0.5; */
+  opacity: 0.3;
+}
+.missionStatement::after {
+  content: "";
+  height: 300px;
+  width: 400px;
+  background-image: url("../assets/img/seedsBlackAndWhite.png");
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -9;
+  opacity: 0.3;
 }
 
 @media (min-width: 1024px) {
@@ -402,6 +417,8 @@ body.body_mission {
   }
   .missionStatement {
     position: relative;
+    width: 100%;
+    justify-content: center;
   }
   .missionStatement::before {
     content: "";
@@ -410,7 +427,7 @@ body.body_mission {
     background-image: url("../assets/img/seedsBlackAndWhite.png");
     position: absolute;
     opacity: 0.3;
-    top: -100px;
+    top: -40px;
     left: 0;
     background-size: cover;
     background-position: center;
@@ -428,7 +445,7 @@ body.body_mission {
   .missionStatement::before {
     height: 380px;
     width: 550px;
-    top: -100px;
+    top: -30px;
     left: 0;
 
     /* opacity: 0.5; */
@@ -529,13 +546,15 @@ body.body_mission {
     justify-content: center;
     width: 100%;
   }
-  #section5 {
-    /* margin-top: 30px; */
-  }
   #section5 .videoContainer {
     /* width: 385px; */
     height: 385px;
   }
+
+  /* mission page */
+  .missionStatement::after {
+  right: 5px;
+}
 }
 
 /* Bosque Seco Page */
