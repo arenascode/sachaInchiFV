@@ -297,24 +297,42 @@ h1.logo {
 }
 
 .circular-image {
-  width: 365px;
-  height: 365px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   object-fit: cover;
   shape-outside: circle(50%);
   float: left;
   margin-right: 2rem;
   margin-bottom: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
 }
 
+.circular-image.biosphere {
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  object-fit: cover;
+  shape-outside: circle(50%);
+  float: left;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+}
+.circular-image.seeds-with-flowers {
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  object-fit: cover;
+  shape-outside: circle(50%);
+  float: left;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+}
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .circular-image {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin-right: 1rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
   }
 }
 
@@ -322,9 +340,18 @@ h1.logo {
   .circular-image {
     float: none;
     display: block;
-    margin: 0 auto 1.5rem auto;
+    margin: 0 auto 0.5rem auto;
     shape-outside: none;
   }
+  .circular-image.seeds-with-flowers {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  shape-outside: circle(50%);
+  float: left;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+}
 }
 
 

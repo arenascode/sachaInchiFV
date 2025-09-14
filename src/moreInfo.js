@@ -116,7 +116,7 @@ const translations = {
     },
     infoSection1: {
       title: "A Gift from the Amazon",
-      p1: "This seed has been a vital part of Amazonian culture for centuries. Indigenous communities in Ecuador, Colombia, and Peru have cultivated this remarkable seed, cherishing it for its health benefits and sustainability. With its star-shaped fruit and rich heritage, Sacha Inchi represents a deep connection between nature and tradition.",
+      p1: "This seed has been a vital part of Amazonian culture for centuries. Indigenous communities in Ecuador, Colombia, and Peru have cultivated this remarkable seed, cherishing it for its health benefits and sustainability. With its star-shaped seed and rich heritage, Sacha Inchi represents a deep connection between nature and tradition.",
       p1Strong1: "Sacha Inchi,",
       p1Strong2: "often called the",
       p1Strong3: `"Indigenous Peanut".`,
