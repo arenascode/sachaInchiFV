@@ -417,15 +417,15 @@ body.body_mission {
   z-index: 1;
 }
 .headerMission::after {
-    content: '';
-    width: 130px;
-    height: 130px;
-    position: absolute;
-    left: -1%;
-    bottom: -1%;
-    background: url("../assets/img/cornerBGHeader.png") right center no-repeat;
-    background-size: cover;
-    z-index: 99;
+  content: "";
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  left: -1%;
+  bottom: -1%;
+  background: url("../assets/img/cornerBGHeader.png") right center no-repeat;
+  background-size: cover;
+  z-index: 99;
 }
 .header-text {
   width: 55%;
@@ -447,6 +447,7 @@ body.body_mission {
 .missionStatement {
   position: relative;
   width: 100%;
+  height: 100%;
 }
 .missionStatement::before {
   content: "";
@@ -476,6 +477,44 @@ body.body_mission {
   z-index: -9;
   opacity: 0.3;
 }
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  /* border: 1px solid rgba(255, 255, 255, 0.2); */
+  /* box-shadow: 
+        0 25px 45px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(255, 255, 255, 0.05) inset,
+        0 1px 0 rgba(255, 255, 255, 0.2) inset; */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional: Shimmer effect on hover */
+.glass-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.glass-card:hover::before {
+  left: 100%;
+}
+
+/* Text shadow for better readability */
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 /* until here */
 @media (min-width: 1024px) {
   body.body_mission {
@@ -489,6 +528,9 @@ body.body_mission {
     position: relative;
     width: 100%;
     justify-content: center;
+    background: url("../assets/img/Sacha-Inchi-plantas.webp") right center
+      no-repeat;
+    background-size: cover;
   }
   .missionStatement::before {
     content: "";
@@ -496,9 +538,9 @@ body.body_mission {
     width: 400px;
     background-image: url("../assets/img/seedsBlackAndWhite.png");
     position: absolute;
-    opacity: 0.3;
-    top: -40px;
-    left: 0;
+    opacity: 0.15;
+    top: -125px;
+    left: -50px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -506,12 +548,64 @@ body.body_mission {
     /* opacity: 0.5; */
   }
 }
+
 @media (min-width: 1280px) {
   /* body {
     padding-top: 65px;
     scrollbar-color: none
   } */
-
+  .headerMission {
+    position: relative;
+    min-height: 300px;
+    max-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 60px 0;
+  }
+  .headerMission::before {
+    content: "";
+    width: 70%;
+    height: 100%;
+    background: #000;
+    background: url("../assets/img/bgHeader.png") right center no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .headerMission::after {
+    content: "";
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left: -1%;
+    bottom: -1%;
+    background: url("../assets/img/cornerBGHeader.png") right center no-repeat;
+    background-size: cover;
+    z-index: 99;
+  }
+  .header-text {
+  width: 58%;
+}
+.header-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+  .missionStatement {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    background: url("../assets/img/Sacha-Inchi-plantas.webp") right center
+      no-repeat;
+    background-size: cover;
+  }
   .missionStatement::before {
     height: 380px;
     width: 550px;
@@ -551,30 +645,30 @@ body.body_mission {
   }
   /* MISSION */
   .headerMission {
-  position: relative;
-  min-height: 300px;
-  max-height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  padding: 60px 0;
-}
-.headerMission::before {
-  content: "";
-  width: 85%;
-  height: 100%;
-  background: #000;
-  background: url("../assets/img/bgHeader.png") right center no-repeat;
-  background-size: cover;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-}
-.headerMission::after {
-    content: '';
+    position: relative;
+    min-height: 300px;
+    max-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 60px 0;
+  }
+  .headerMission::before {
+    content: "";
+    width: 85%;
+    height: 100%;
+    background: #000;
+    background: url("../assets/img/bgHeader.png") right center no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .headerMission::after {
+    content: "";
     width: 130px;
     height: 130px;
     position: absolute;
@@ -583,17 +677,17 @@ body.body_mission {
     background: url("../assets/img/cornerBGHeader.png") right center no-repeat;
     background-size: cover;
     z-index: 2;
-}
-.header-text {
-  width: 55%;
-}
-.header-image {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
-}
+  }
+  .header-text {
+    width: 60%;
+  }
+  .header-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+  }
 }
 
 /** Desktop */
