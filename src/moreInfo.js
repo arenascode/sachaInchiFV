@@ -120,7 +120,7 @@ const translations = {
       p1Strong1: "Sacha Inchi,",
       p1Strong2: "often called the",
       p1Strong3: `"Indigenous Peanut".`,
-      p2: "Sacha Inchi oil is cold-pressed from raw seeds, offering up to 92% Omega 3, 6, and 9, with no additives or preservatives. It’s also rich in vitamins A and E and tocopherols, making it a pure, nutrient-packed addition to your wellness routine",
+      p2: "The healthy fats found in Sacha Inchi seeds are more than just an energy source. These special fats, such as omega-3s, play a key role in keeping your body in balance. They support your heart by helping maintain healthy cholesterol levels and good circulation, they nourish your brain to keep memory and focus sharp, and they also have anti-inflammatory properties that can ease stress on your joints and muscles. Including them in your diet is like giving your body daily care from the inside out — protecting your long-term health in a simple and natural way.",
     },
     infoSection2: {
       title: "Nutritional Powerhouse",
@@ -233,7 +233,7 @@ const translations = {
     },
     infoSection4: {
       title:
-        "Nutritional values of Sacha Inchi compared to other nuts, seeds and oils",
+        "Nutritional values of Sacha Inchi compared to other nuts and seeds",
       //Table 1
       chartOilTitle: "Healthy Fats (Omega 3, 6 and 9)",
       chartOilDescription:
@@ -602,18 +602,243 @@ let proteinChart;
 //   oilChart.update();
 // }
 
+// function createOmegaChart(userLanguage) {
+//   const canvasElement = document.getElementById("omegaChart");
+//   if (!canvasElement) return;
+
+//   const ctx = document.getElementById("omegaChart").getContext("2d");
+  
+//   // Labels for different languages
+//   const chartLabels = {
+//     title: userLanguage === "en" ? "Omega Fatty Acids Content (g per 100g)" : "Contenido de Ácidos Grasos Omega (g por 100g)",
+//     omega3: userLanguage === "en" ? "Omega-3" : "Omega-3",
+//     omega6: userLanguage === "en" ? "Omega-6" : "Omega-6",
+//     omega9: userLanguage === "en" ? "Omega-9" : "Omega-9"
+//   };
+
+//   const foodLabels = {
+//     sachaInchi: userLanguage === "en" ? "Sacha Inchi" : "Sacha Inchi",
+//     flaxseeds: userLanguage === "en" ? "Flaxseeds" : "Semillas de Lino",
+//     chiaSeeds: userLanguage === "en" ? "Chia Seeds" : "Semillas de Chía",
+//     walnuts: userLanguage === "en" ? "Walnuts" : "Nueces",
+//     canolaOil: userLanguage === "en" ? "Canola Oil" : "Aceite de Canola",
+//     hempSeeds: userLanguage === "en" ? "Hemp Seeds" : "Semillas de Cáñamo",
+//     mackerel: userLanguage === "en" ? "Mackerel" : "Caballa",
+//     salmon: userLanguage === "en" ? "Salmon (wild)" : "Salmón (salvaje)",
+//     sardines: userLanguage === "en" ? "Sardines" : "Sardinas",
+//     soybeans: userLanguage === "en" ? "Soybeans" : "Soja",
+//     oliveOil: userLanguage === "en" ? "Olive Oil" : "Aceite de Oliva",
+//     macadamiaOil: userLanguage === "en" ? "Macadamia Nut Oil" : "Aceite de Macadamia",
+//     tuna: userLanguage === "en" ? "Tuna" : "Atún",
+//     avocados: userLanguage === "en" ? "Avocados" : "Aguacates",
+//     eggs: userLanguage === "en" ? "Eggs (pasture-raised)" : "Huevos (pastoreo)",
+//     beef: userLanguage === "en" ? "Grass-fed Beef" : "Carne de Res"
+//   };
+
+//   // Destroy existing chart if it exists
+//   if (typeof omegaChart !== 'undefined' && omegaChart) {
+//     omegaChart.destroy();
+//   }
+
+//   // Data arrays for each omega type
+//   const omega3Data = [48, 22.8, 17.8, 9.1, 9.1, 8.7, 4.6, 2.6, 1.5, 1.4, 0.8, 0.2, 0.2, 0.1, 0.1, 0.05];
+//   const omega6Data = [36, 5.9, 5.8, 38.1, 19, 27.5, 0.9, 0.5, 0.5, 9.9, 9.8, 1.3, 0.05, 1.7, 1.2, 0.2];
+//   const omega9Data = [9, 6, 6, 8.9, 61, 8.5, 6, 7, 6, 1.5, 70, 59, 7, 6.7, 4, 4];
+
+//   const data = {
+//     labels: [
+//       foodLabels.sachaInchi,
+//       foodLabels.flaxseeds,
+//       foodLabels.chiaSeeds,
+//       foodLabels.walnuts,
+//       foodLabels.canolaOil,
+//       foodLabels.hempSeeds,
+//       foodLabels.mackerel,
+//       foodLabels.salmon,
+//       foodLabels.sardines,
+//       foodLabels.soybeans,
+//       foodLabels.oliveOil,
+//       foodLabels.macadamiaOil,
+//       foodLabels.tuna,
+//       foodLabels.avocados,
+//       foodLabels.eggs,
+//       foodLabels.beef
+//     ],
+//     datasets: [
+//       {
+//         label: chartLabels.omega3,
+//         data: omega3Data,
+//         backgroundColor: "#4CAF50", // Green for Omega-3
+//         borderColor: "#388E3C",
+//         borderWidth: 1,
+//         borderRadius: 4,
+//       },
+//       {
+//         label: chartLabels.omega6,
+//         data: omega6Data,
+//         backgroundColor: "#FF9800", // Orange for Omega-6
+//         borderColor: "#F57C00",
+//         borderWidth: 1,
+//         borderRadius: 4,
+//       },
+//       {
+//         label: chartLabels.omega9,
+//         data: omega9Data,
+//         backgroundColor: "#2196F3", // Blue for Omega-9
+//         borderColor: "#1976D2",
+//         borderWidth: 1,
+//         borderRadius: 4,
+//       }
+//     ],
+//   };
+
+//   // Find the food with highest Omega-3 content for tooltip
+//   const maxOmega3Value = Math.max(...omega3Data);
+//   const maxOmega3Index = omega3Data.indexOf(maxOmega3Value);
+
+//   const config = {
+//     type: "bar",
+//     data: data,
+//     options: {
+//       indexAxis: "y", // Horizontal bar configuration
+//       responsive: true,
+//       maintainAspectRatio: false,
+//       animation: {
+//         duration: 1500,
+//       },
+//       plugins: {
+//         legend: {
+//           display: true,
+//           position: "top",
+//           labels: {
+//             color: "#E0F7FA",
+//             font: {
+//               size: 16,
+//               weight: 600,
+//               family: "'Playfair Display', sans-serif",
+//             },
+//           },
+//         },
+//         tooltip: {
+//           backgroundColor: "#fff9f0",
+//           titleColor: "#2A3D45",
+//           bodyColor: "#2A3D45",
+//           anchor: "end",
+//           align: "end",
+//           padding: 12,
+//           titleFont: { size: 16, weight: "bold" },
+//           bodyFont: { size: 14 },
+//           cornerRadius: 8,
+//           displayColors: true,
+//           callbacks: {
+//             label: function (tooltipItem) {
+//               const omegaType = tooltipItem.dataset.label;
+//               return `${omegaType}: ${tooltipItem.raw}g`;
+//             },
+//           },
+//         },
+//       },
+//       scales: {
+//         x: {
+//           stacked: false, // Set to true if you want stacked bars
+//           ticks: {
+//             color: "#ffffff",
+//             font: {
+//               size: 15,
+//               weight: 700,
+//               family: "'Lora', sans-serif",
+//             },
+//           },
+//           border: {
+//             color: "#ffffff",
+//           },
+//           grid: {
+//             color: "#E0F7FA",
+//           },
+//           title: {
+//             display: true,
+//             text: userLanguage === "en" ? "Grams per 100g" : "Gramos por 100g",
+//             color: "#E0F7FA",
+//             font: {
+//               size: 14,
+//               weight: 600,
+//             }
+//           }
+//         },
+//         y: {
+//           stacked: false, // Set to true if you want stacked bars
+//           ticks: {
+//             color: "#E0F7FA",
+//             font: {
+//               size: 13,
+//               weight: 600,
+//               family: "'Lora', sans-serif",
+//             },
+//           },
+//           border: {
+//             color: "#ffffff",
+//           },
+//           grid: {
+//             display: false,
+//           },
+//         },
+//       },
+//     },
+//   };
+
+//   // Create the chart
+//   omegaChart = new Chart(ctx, config);
+
+//   // Show tooltip for the highest Omega-3 source
+//   omegaChart.render();
+//   omegaChart.tooltip.setActiveElements(
+//     [{ datasetIndex: 0, index: maxOmega3Index }],
+//     { x: 0, y: 0 }
+//   );
+//   omegaChart.update();
+// }
+
+// Alternative version with stacked bars (uncomment if preferred)
+/*
+function createStackedOmegaChart(userLanguage) {
+  // ... same setup code ...
+  
+  const config = {
+    type: "bar",
+    data: data,
+    options: {
+      indexAxis: "y",
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: {
+          stacked: true, // Enable stacking
+        },
+        y: {
+          stacked: true, // Enable stacking
+        },
+      },
+      // ... rest of options
+    },
+  };
+}
+*/
+
 function createOmegaChart(userLanguage) {
   const canvasElement = document.getElementById("omegaChart");
   if (!canvasElement) return;
 
   const ctx = document.getElementById("omegaChart").getContext("2d");
-  
+
   // Labels for different languages
   const chartLabels = {
-    title: userLanguage === "en" ? "Omega Fatty Acids Content (g per 100g)" : "Contenido de Ácidos Grasos Omega (g por 100g)",
+    title:
+      userLanguage === "en"
+        ? "Omega Fatty Acids Content (g per 100g)"
+        : "Contenido de Ácidos Grasos Omega (g por 100g)",
     omega3: userLanguage === "en" ? "Omega-3" : "Omega-3",
     omega6: userLanguage === "en" ? "Omega-6" : "Omega-6",
-    omega9: userLanguage === "en" ? "Omega-9" : "Omega-9"
+    omega9: userLanguage === "en" ? "Omega-9" : "Omega-9",
   };
 
   const foodLabels = {
@@ -621,29 +846,22 @@ function createOmegaChart(userLanguage) {
     flaxseeds: userLanguage === "en" ? "Flaxseeds" : "Semillas de Lino",
     chiaSeeds: userLanguage === "en" ? "Chia Seeds" : "Semillas de Chía",
     walnuts: userLanguage === "en" ? "Walnuts" : "Nueces",
-    canolaOil: userLanguage === "en" ? "Canola Oil" : "Aceite de Canola",
     hempSeeds: userLanguage === "en" ? "Hemp Seeds" : "Semillas de Cáñamo",
-    mackerel: userLanguage === "en" ? "Mackerel" : "Caballa",
-    salmon: userLanguage === "en" ? "Salmon (wild)" : "Salmón (salvaje)",
-    sardines: userLanguage === "en" ? "Sardines" : "Sardinas",
     soybeans: userLanguage === "en" ? "Soybeans" : "Soja",
     oliveOil: userLanguage === "en" ? "Olive Oil" : "Aceite de Oliva",
-    macadamiaOil: userLanguage === "en" ? "Macadamia Nut Oil" : "Aceite de Macadamia",
-    tuna: userLanguage === "en" ? "Tuna" : "Atún",
     avocados: userLanguage === "en" ? "Avocados" : "Aguacates",
-    eggs: userLanguage === "en" ? "Eggs (pasture-raised)" : "Huevos (pastoreo)",
-    beef: userLanguage === "en" ? "Grass-fed Beef" : "Carne de Res"
   };
 
   // Destroy existing chart if it exists
-  if (typeof omegaChart !== 'undefined' && omegaChart) {
+  if (typeof omegaChart !== "undefined" && omegaChart) {
     omegaChart.destroy();
   }
 
-  // Data arrays for each omega type
-  const omega3Data = [48, 22.8, 17.8, 9.1, 9.1, 8.7, 4.6, 2.6, 1.5, 1.4, 0.8, 0.2, 0.2, 0.1, 0.1, 0.05];
-  const omega6Data = [36, 5.9, 5.8, 38.1, 19, 27.5, 0.9, 0.5, 0.5, 9.9, 9.8, 1.3, 0.05, 1.7, 1.2, 0.2];
-  const omega9Data = [9, 6, 6, 8.9, 61, 8.5, 6, 7, 6, 1.5, 70, 59, 7, 6.7, 4, 4];
+  // Filtered data arrays for each omega type (only selected products)
+  // Order: Sacha Inchi, Flaxseeds, Chia Seeds, Walnuts, Hemp Seeds, Soybeans, Olive Oil, Avocados, Grass-fed Beef
+  const omega3Data = [48, 22.8, 17.8, 9.1, 8.7, 1.4, 0.8, 0.1];
+  const omega6Data = [36, 5.9, 5.8, 38.1, 27.5, 9.9, 9.8, 1.7];
+  // const omega9Data = [9, 6, 6, 8.9, 8.5, 1.5, 70, 6.7, 4];
 
   const data = {
     labels: [
@@ -651,18 +869,10 @@ function createOmegaChart(userLanguage) {
       foodLabels.flaxseeds,
       foodLabels.chiaSeeds,
       foodLabels.walnuts,
-      foodLabels.canolaOil,
       foodLabels.hempSeeds,
-      foodLabels.mackerel,
-      foodLabels.salmon,
-      foodLabels.sardines,
       foodLabels.soybeans,
       foodLabels.oliveOil,
-      foodLabels.macadamiaOil,
-      foodLabels.tuna,
       foodLabels.avocados,
-      foodLabels.eggs,
-      foodLabels.beef
     ],
     datasets: [
       {
@@ -676,19 +886,19 @@ function createOmegaChart(userLanguage) {
       {
         label: chartLabels.omega6,
         data: omega6Data,
-        backgroundColor: "#FF9800", // Orange for Omega-6
-        borderColor: "#F57C00",
+        backgroundColor: "#d6cc99", // Orange for Omega-6
+        borderColor: "#d6cc99",
         borderWidth: 1,
         borderRadius: 4,
       },
-      {
-        label: chartLabels.omega9,
-        data: omega9Data,
-        backgroundColor: "#2196F3", // Blue for Omega-9
-        borderColor: "#1976D2",
-        borderWidth: 1,
-        borderRadius: 4,
-      }
+      // {
+      //   label: chartLabels.omega9,
+      //   data: omega9Data,
+      //   backgroundColor: "#2196F3", // Blue for Omega-9
+      //   borderColor: "#1976D2",
+      //   borderWidth: 1,
+      //   borderRadius: 4,
+      // },
     ],
   };
 
@@ -735,14 +945,6 @@ function createOmegaChart(userLanguage) {
               const omegaType = tooltipItem.dataset.label;
               return `${omegaType}: ${tooltipItem.raw}g`;
             },
-            // afterLabel: function (tooltipItem) {
-            //   const dataIndex = tooltipItem.dataIndex;
-            //   return [
-            //     `Omega-3: ${omega3Data[dataIndex]}g`,
-            //     `Omega-6: ${omega6Data[dataIndex]}g`,
-            //     `Omega-9: ${omega9Data[dataIndex]}g`
-            //   ];
-            // }
           },
         },
       },
@@ -770,8 +972,8 @@ function createOmegaChart(userLanguage) {
             font: {
               size: 14,
               weight: 600,
-            }
-          }
+            },
+          },
         },
         y: {
           stacked: false, // Set to true if you want stacked bars
@@ -797,7 +999,7 @@ function createOmegaChart(userLanguage) {
   // Create the chart
   omegaChart = new Chart(ctx, config);
 
-  // Show tooltip for the highest Omega-3 source
+  // Show tooltip for the highest Omega-3 source (Sacha Inchi)
   omegaChart.render();
   omegaChart.tooltip.setActiveElements(
     [{ datasetIndex: 0, index: maxOmega3Index }],
@@ -805,32 +1007,6 @@ function createOmegaChart(userLanguage) {
   );
   omegaChart.update();
 }
-
-// Alternative version with stacked bars (uncomment if preferred)
-/*
-function createStackedOmegaChart(userLanguage) {
-  // ... same setup code ...
-  
-  const config = {
-    type: "bar",
-    data: data,
-    options: {
-      indexAxis: "y",
-      responsive: true,
-      maintainAspectRatio: false,
-      scales: {
-        x: {
-          stacked: true, // Enable stacking
-        },
-        y: {
-          stacked: true, // Enable stacking
-        },
-      },
-      // ... rest of options
-    },
-  };
-}
-*/
 
 function createSeedsChart(userLanguage) {
   const canvasElement = document.getElementById("seedsChart");
