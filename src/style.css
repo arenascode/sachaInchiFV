@@ -315,7 +315,7 @@ h1.logo {
   object-fit: cover;
   shape-outside: circle(50%);
   float: left;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 .circular-image.seeds-with-flowers {
   width: 420px;
@@ -324,7 +324,7 @@ h1.logo {
   object-fit: cover;
   shape-outside: circle(50%);
   float: left;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -344,17 +344,15 @@ h1.logo {
     shape-outside: none;
   }
   .circular-image.seeds-with-flowers {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  shape-outside: circle(50%);
-  float: left;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    shape-outside: circle(50%);
+    float: left;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
 }
-}
-
-
 
 .flowing-text {
   text-align: justify;
@@ -395,9 +393,54 @@ body.body_mission {
   scrollbar-color: none;
 }
 
+.headerMission {
+  position: relative;
+  min-height: 300px;
+  max-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 60px 0;
+}
+.headerMission::before {
+  content: "";
+  width: 72%;
+  height: 100%;
+  background: #000;
+  background: url("../assets/img/bgHeader.png") right center no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.headerMission::after {
+    content: '';
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left: -1%;
+    bottom: -1%;
+    background: url("../assets/img/cornerBGHeader.png") right center no-repeat;
+    background-size: cover;
+    z-index: 99;
+}
+.header-text {
+  width: 55%;
+}
+.header-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+/* delte this */
 .parallaxMission {
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-repeat: repeat;
   background-size: contain;
 }
@@ -433,7 +476,7 @@ body.body_mission {
   z-index: -9;
   opacity: 0.3;
 }
-
+/* until here */
 @media (min-width: 1024px) {
   body.body_mission {
     padding-top: 65px;
@@ -506,6 +549,51 @@ body.body_mission {
     display: flex;
     flex-direction: row;
   }
+  /* MISSION */
+  .headerMission {
+  position: relative;
+  min-height: 300px;
+  max-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 60px 0;
+}
+.headerMission::before {
+  content: "";
+  width: 85%;
+  height: 100%;
+  background: #000;
+  background: url("../assets/img/bgHeader.png") right center no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.headerMission::after {
+    content: '';
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left: -1%;
+    bottom: -1%;
+    background: url("../assets/img/cornerBGHeader.png") right center no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+.header-text {
+  width: 55%;
+}
+.header-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
 }
 
 /** Desktop */
@@ -580,8 +668,8 @@ body.body_mission {
 
   /* mission page */
   .missionStatement::after {
-  right: 5px;
-}
+    right: 5px;
+  }
 }
 
 /* Bosque Seco Page */

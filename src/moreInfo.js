@@ -256,7 +256,7 @@ const translations = {
     },
     //*Mission Section **/
     mission: {
-      title: "NOURISH YOUR BODY. HONOR THE EARTH",
+      title: "Nourish Your Body From The Inside Out While Honoring The earth.",
       subTitle: "Our Mission",
       p1: "At the heart of our mission is the commitment to care for your well-being inside and out, providing you with the nourishing benefits of organic Sacha Inchi, nature's superfood. By choosing Sacha Inchi, you're not only fueling your body but also helping to protect the Amazon and support sustainable farming practices for a better future.",
       // p2: "We are committed to providing an all-natural, sustainable product that nourishes both people and the planet. By enhancing daily nutrition, we help people live healthier, more vibrant lives, all while honoring the biosphere and supporting the environment.",
