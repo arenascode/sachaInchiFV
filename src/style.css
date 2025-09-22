@@ -450,19 +450,20 @@ body.body_mission {
   height: 100%;
 }
 .missionStatement::before {
-  content: "";
-  height: 300px;
-  width: 400px;
-  background-image: url("../assets/img/seedsBlackAndWhite.png");
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    content: "";
+    height: 150px;
+    width: 150px;
+    background-image: url("../assets/img/InchiChar.webp");
+    position: absolute;
+    /* opacity: 0.15; */
+    top: 55%;
+    left: 35%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 9;
+  }
 
-  opacity: 0.3;
-}
 .missionStatement::after {
   content: "";
   height: 300px;
@@ -478,7 +479,7 @@ body.body_mission {
   opacity: 0.3;
 }
 .glass-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.09);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   /* border: 1px solid rgba(255, 255, 255, 0.2); */
@@ -534,18 +535,17 @@ body.body_mission {
   }
   .missionStatement::before {
     content: "";
-    height: 300px;
-    width: 400px;
-    background-image: url("../assets/img/seedsBlackAndWhite.png");
+    height: 150px;
+    width: 150px;
+    background-image: url("../assets/img/InchiChar.webp");
     position: absolute;
-    opacity: 0.15;
-    top: -125px;
-    left: -50px;
+    /* opacity: 0.15; */
+    top: 55%;
+    left: 35%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    /* opacity: 0.5; */
+    z-index: 9;
   }
 }
 
@@ -584,21 +584,21 @@ body.body_mission {
     height: 230px;
     position: absolute;
     left: -1%;
-    bottom: -1%;
+    bottom: -2%;
     background: url("../assets/img/cornerBGHeader.png") right center no-repeat;
     background-size: cover;
     z-index: 99;
   }
   .header-text {
-  width: 58%;
-}
-.header-image {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
-}
+    width: 58%;
+  }
+  .header-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+  }
   .missionStatement {
     position: relative;
     width: 100%;
@@ -606,14 +606,6 @@ body.body_mission {
     background: url("../assets/img/Sacha-Inchi-plantas.webp") right center
       no-repeat;
     background-size: cover;
-  }
-  .missionStatement::before {
-    height: 380px;
-    width: 550px;
-    top: -30px;
-    left: 0;
-
-    /* opacity: 0.5; */
   }
 }
 /** Tablet */
@@ -630,8 +622,8 @@ body.body_mission {
   }
   .headerMission {
     position: relative;
-    min-height: 300px;
-    max-height: 400px;
+    min-height: 250px;
+    max-height: 250px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -652,15 +644,15 @@ body.body_mission {
     z-index: 1;
   }
   .headerMission::after {
-  content: "";
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: -5%;
-  bottom: -7.9%;
-  background: url("../assets/img/cornerBGHeader.png") right center no-repeat;
-  background-size: cover;
-  z-index: 3;
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: -5%;
+    bottom: -7.9%;
+    background: url("../assets/img/cornerBGHeader.png") right center no-repeat;
+    background-size: cover;
+    z-index: 3;
   }
   .header-text {
     width: 60%;
@@ -691,8 +683,8 @@ body.body_mission {
   /* MISSION */
   .headerMission {
     position: relative;
-    min-height: 300px;
-    max-height: 400px;
+    min-height: 250px;
+    max-height: 250px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -713,15 +705,15 @@ body.body_mission {
     z-index: 1;
   }
   .headerMission::after {
-     content: "";
-  width: 230px;
-  height: 230px;
-  position: absolute;
-  left: -5%;
-  bottom: -9%;
-  background: url("../assets/img/cornerBGHeader.png") right center no-repeat;
-  background-size: cover;
-  z-index: 3;
+    content: "";
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    left: -5%;
+    bottom: -11%;
+    background: url("../assets/img/cornerBGHeader.png") right center no-repeat;
+    background-size: cover;
+    z-index: 3;
   }
   .header-text {
     width: 60%;
