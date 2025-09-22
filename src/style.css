@@ -565,6 +565,7 @@ body.body_mission {
     align-items: center;
     padding: 60px 0;
   }
+
   .headerMission::before {
     content: "";
     width: 70%;
