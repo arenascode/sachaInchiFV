@@ -120,7 +120,7 @@ const translations = {
       p1Strong1: "Sacha Inchi,",
       p1Strong2: "often called the",
       p1Strong3: `"Indigenous Peanut".`,
-      p2: "The healthy fats found in Sacha Inchi seeds are more than just an energy source. These special fats, such as omega-3s, play a key role in keeping your body in balance. They support your heart by helping maintain healthy cholesterol levels and good circulation, they nourish your brain to keep memory and focus sharp, and they also have anti-inflammatory properties that can ease stress on your joints and muscles. Including them in your diet is like giving your body daily care from the inside out — protecting your long-term health in a simple and natural way.",
+      p2: "The healthy fats (LA, ALA) found in Sacha Inchi seeds are more than just an energy source. These special fats, such as omega-3s, play a key role in keeping your body in balance. They support your heart by helping maintain healthy cholesterol levels and good circulation, they nourish your brain to keep memory and focus sharp, and they also have anti-inflammatory properties that can ease stress on your joints and muscles. Including them in your diet is like giving your body daily care from the inside out — protecting your long-term health in a simple and natural way.",
     },
     infoSection2: {
       title: "Nutritional Powerhouse",
@@ -232,12 +232,11 @@ const translations = {
         "By incorporating Sacha Inchi into your diet, you're not only supporting cardiovascular health but also reducing the risk of heart-related conditions. This Amazonian treasure is a natural way to maintain a healthy heart and overall wellness.",
     },
     infoSection4: {
-      title:
-        "Nutritional values of Sacha Inchi compared to other nuts and seeds",
+      title: "Sacha Inchi: A Superior Source of Healthy Fats (Omega 3, 6)",
       //Table 1
-      chartOilTitle: "Healthy Fats (Omega 3, 6 and 9)",
+      chartOilTitle: "Healthy Fats (Omega 3, 6)",
       chartOilDescription:
-        "Sacha Inchi leads as the ultimate Omega-3 source with 48g per 100g, followed by flaxseeds and chia seeds. While fish provides quality Omega-3s, plant sources offer the highest concentrations. Different foods excel in different omega types - olive oil in Omega-9, walnuts in Omega-6 - emphasizing the need for diverse, balanced fat intake for optimal health.",
+        "Sacha Inchi stands out as one of the richest plant-based sources of essential fatty acids, delivering an unparalleled 48g of Omega-3 per 100g—far exceeding flaxseeds and chia seeds. While fish remains a quality source of Omega-3s, plant-based options like Sacha Inchi provide the highest concentrations alongside a superior balance of Omega-3, 6, and 9. Compared to other nuts and seeds, whose fat profiles vary widely, Sacha Inchi offers a unique nutritional advantage, making it a powerful ally for balanced, heart-healthy, and overall well-being.",
       table_oilBottom: "Percent of Healthy Fats Content",
       //Table 2
       chartSeedsTitle: "Nuts & Seeds",
@@ -245,7 +244,8 @@ const translations = {
         "Sacha Inchi stands out as an exceptional source of healthy fats, making it an ideal choice for those looking to incorporate essential fatty acids into their diet. While other nuts and seeds also provide beneficial fats, their lipid content varies significantly. This highlights the unique nutritional advantage of Sacha Inchi, offering a superior balance of Omega-3, 6, and 9 to support overall well-being.",
       table_seedsBottom: "Percent of Healthy Fats Content",
       //Table 3
-      chartProteinTitle: "Nuts, Grains, and Oils",
+      chartProteinTitle:
+        "Beyond Healthy Fats: The Protein Advantage of Sacha Inchi",
       chartProteinDescription:
         "Sacha Inchi stands out as a highly protein-rich alternative, comparable to peanuts but with a healthier lipid profile. Nuts and seeds serve as key sources of plant-based protein, while oils and fruits like avocado and olives offer other nutritional benefits but are not particularly high in protein. This distinction reinforces the value of Sacha Inchi as a well-rounded superfood, providing both high-quality protein and essential healthy fats for a balanced diet.",
     },
