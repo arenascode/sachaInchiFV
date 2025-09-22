@@ -46,7 +46,7 @@ h5 {
   /* width: 100%; */
   transition: all 0.5s;
   /* position: relative; */
-  z-index: 2;
+  z-index: 3;
   /* background-color: #002D62; */
 }
 .navMission {
@@ -83,7 +83,7 @@ h1.logo {
 }
 
 #section1 {
-  background-image: url(/assets/img/heroBGMobile2.webp);
+  background-image: url(/assets/img/newBGHero.png);
 }
 .heroSection_languageSwitch {
   position: absolute !important;
@@ -169,7 +169,7 @@ h1.logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ccc;
+  background-color: #687750;
   border-radius: 20px;
   position: relative;
   cursor: pointer;
@@ -193,7 +193,7 @@ h1.logo {
   position: absolute;
   width: 1.8rem;
   height: 1.8rem;
-  background-color: #fff;
+  background-color: #f4e3c1;
   border-radius: 18px;
   top: 0px;
   right: 27px;
@@ -418,8 +418,8 @@ body.body_mission {
 }
 .headerMission::after {
   content: "";
-  width: 130px;
-  height: 130px;
+  width: 230px;
+  height: 230px;
   position: absolute;
   left: -1%;
   bottom: -1%;
@@ -580,12 +580,12 @@ body.body_mission {
   }
   .headerMission::after {
     content: "";
-    width: 130px;
-    height: 130px;
+    width: 230px;
+    height: 230px;
     position: absolute;
     left: -1%;
     bottom: -1%;
-    background: url("../assets/img/cornerBGHeader.png") right center no-repeat;
+    background: url("../assets/img/cornerBGheader.png") right center no-repeat;
     background-size: cover;
     z-index: 99;
   }
@@ -658,10 +658,10 @@ body.body_mission {
   }
   .headerMission::before {
     content: "";
-    width: 85%;
+    width: 95%;
     height: 100%;
     background: #000;
-    background: url("../assets/img/bgHeader.png") right center no-repeat;
+    background: url("../assets/img/headerBGV2.png") right center no-repeat;
     background-size: cover;
     position: absolute;
     left: 0;
@@ -670,12 +670,12 @@ body.body_mission {
   }
   .headerMission::after {
     content: "";
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     position: absolute;
     left: -1%;
-    bottom: -1%;
-    background: url("../assets/img/cornerBGHeader.png") right center no-repeat;
+    bottom: -5.9%;
+    background: url("../assets/img/cornerBGheader.png") right center no-repeat;
     background-size: cover;
     z-index: 2;
   }
@@ -686,7 +686,7 @@ body.body_mission {
     position: absolute;
     right: 0;
     top: 0;
-    width: 50%;
+    width: 34%;
     height: 100%;
   }
 }
