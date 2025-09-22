@@ -464,7 +464,7 @@ body.body_mission {
     z-index: 9;
   }
 
-.missionStatement::after {
+/* .missionStatement::after {
   content: "";
   height: 300px;
   width: 400px;
@@ -477,7 +477,7 @@ body.body_mission {
   background-repeat: no-repeat;
   z-index: -9;
   opacity: 0.3;
-}
+} */
 .glass-card {
   background: rgba(0, 0, 0, 0.09);
   backdrop-filter: blur(30px);
