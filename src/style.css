@@ -590,7 +590,7 @@ body.body_mission {
     z-index: 99;
   }
   .header-text {
-    width: 58%;
+    width: 65%;
   }
   .header-image {
     position: absolute;
@@ -716,7 +716,7 @@ body.body_mission {
     z-index: 3;
   }
   .header-text {
-    width: 60%;
+    width: 65%;
   }
   .header-image {
     position: absolute;
