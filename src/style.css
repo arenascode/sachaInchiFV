@@ -694,7 +694,7 @@ body.body_mission {
   }
   .headerMission::before {
     content: "";
-    width: 95%;
+    width: 88%;
     height: 100%;
     background: #000;
     background: url("../assets/img/headerBGV2.png") right center no-repeat;

@@ -249,6 +249,24 @@ const translations = {
       chartProteinDescription:
         "Sacha Inchi stands out as a highly protein-rich alternative, comparable to peanuts but with a healthier lipid profile. Nuts and seeds serve as key sources of plant-based protein, while oils and fruits like avocado and olives offer other nutritional benefits but are not particularly high in protein. This distinction reinforces the value of Sacha Inchi as a well-rounded superfood, providing both high-quality protein and essential healthy fats for a balanced diet.",
     },
+    infoSection4_2: {
+      title: "Sacha Inchi: A Superior Source of Healthy Fats (Omega 3, 6)",
+      //Table 1
+      chartOilTitle: "Healthy Fats (Omega 3, 6)",
+      chartOilDescription:
+        "Sacha Inchi stands out as one of the richest plant-based sources of essential fatty acids, delivering an unparalleled 48g of Omega-3 per 100g—far exceeding flaxseeds and chia seeds. While fish remains a quality source of Omega-3s, plant-based options like Sacha Inchi provide the highest concentrations alongside a superior balance of Omega-3, 6, and 9. Compared to other nuts and seeds, whose fat profiles vary widely, Sacha Inchi offers a unique nutritional advantage, making it a powerful ally for balanced, heart-healthy, and overall well-being.",
+      table_oilBottom: "Percent of Healthy Fats Content",
+      //Table 2
+      chartSeedsTitle: "Nuts & Seeds",
+      chartSeedsDescription:
+        "Sacha Inchi stands out as an exceptional source of healthy fats, making it an ideal choice for those looking to incorporate essential fatty acids into their diet. While other nuts and seeds also provide beneficial fats, their lipid content varies significantly. This highlights the unique nutritional advantage of Sacha Inchi, offering a superior balance of Omega-3, 6, and 9 to support overall well-being.",
+      table_seedsBottom: "Percent of Healthy Fats Content",
+      //Table 3
+      chartProteinTitle:
+        "Beyond Healthy Fats: The Protein Advantage of Sacha Inchi",
+      chartProteinDescription:
+        "Sacha Inchi stands out as a highly protein-rich alternative, comparable to peanuts but with a healthier lipid profile. Nuts and seeds serve as key sources of plant-based protein, while oils and fruits like avocado and olives offer other nutritional benefits but are not particularly high in protein. This distinction reinforces the value of Sacha Inchi as a well-rounded superfood, providing both high-quality protein and essential healthy fats for a balanced diet.",
+    },
     infoSection5: {
       title: "Sustainability and Impact",
       p1: "Supporting Sacha Inchi means contributing to the preservation of the Amazon and earth ecosystem, a vital part of Earth's biosphere that regulates the planet's climate and houses unparalleled biodiversity. By choosing Sacha Inchi, you are empowering local communities through sustainable farming practices that harmonize with the delicate balance of the Amazon ecosystem.",
