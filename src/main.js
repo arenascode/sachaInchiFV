@@ -408,26 +408,3 @@ updateTranslations(userLanguage);
 window.addEventListener("load", () => updateTranslations(userLanguage));
 //*Play Introduction VIDEO
 
-document.addEventListener("DOMContentLoaded", () => {
-  const videoOil = document.querySelectorAll(".videoOil");
-  const videoSalad = document.querySelectorAll(".videoSalad");
-  const videoSmoothie = document.querySelectorAll(".videoSmoothie");
-  const videoSnacks = document.querySelectorAll(".videoSnacks");
-  const videos = [...videoOil, ...videoSalad, ...videoSmoothie, ...videoSnacks];
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        const video = entry.target;
-        if (entry.isIntersecting) {
-          video.play();
-        } else {
-          video.pause();
-        }
-      });
-    },
-    { threshold: 0.5 } // Adjust the threshold as needed (e.g., 0.5 means 50% of the video should be visible).
-  );
-
-  videos.forEach((video) => observer.observe(video));
-});
