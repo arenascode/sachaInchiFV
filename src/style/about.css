@@ -163,7 +163,7 @@ h1.logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #687750;
+  background-color: #007BA7;
   border-radius: 20px;
   position: relative;
   cursor: pointer;
@@ -187,7 +187,7 @@ h1.logo {
   position: absolute;
   width: 1.8rem;
   height: 1.8rem;
-  background-color: #f4e3c1;
+  background-color: #E6D3B3;
   border-radius: 18px;
   top: 0px;
   right: 27px;
