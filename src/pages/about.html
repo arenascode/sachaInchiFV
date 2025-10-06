@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Sacha Inchi</title>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link rel="stylesheet" href="../style/learnMore.css" />
     <link
       rel="shortcut icon"
       href="../../assets/img/sacha-inchi-grano.webp"
@@ -231,7 +236,7 @@
           alt="seeds drawed"
           width="150"
           height="150"
-          class="self-center"
+          class="self-center" data-aos="fade-up"
         />
         <!-- Section 2: Nutritional PowerHouse -->
         <div
@@ -498,7 +503,7 @@
           alt="seeds drawed"
           width="150"
           height="150"
-          class="self-center"
+          class="self-center" data-aos="fade-up"
         />
         <!-- Section 4: Comparison 1 -->
         <div
@@ -603,7 +608,7 @@
           alt="seeds drawed"
           width="150"
           height="150"
-          class="self-center"
+          class="self-center" data-aos="fade-up"
         />
         <!-- Section 4: Comparison 2-->
         <div
@@ -877,5 +882,11 @@
       </div>
     </footer>
     <script type="module" src="../moreInfo.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
   </body>
 </html>

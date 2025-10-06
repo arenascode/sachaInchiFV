@@ -1,0 +1,550 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@plugin "@tailwindcss/typography";
+
+body {
+  overflow-x: hidden;
+  font-family: "Lora", sans-serif;
+  scrollbar-width: none;
+  scrollbar-color: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 500;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
+  scrollbar {
+    display: none;
+    scrollbar-width: none;
+  }
+}
+
+.nav {
+  position: relative;
+  top: 0;
+  transition: all 0.5s;
+
+  z-index: 3;
+}
+.navMission {
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+}
+.navMission .logoMission {
+  width: max-content;
+  font-family: "Noto Serif", sans-serif;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+body.fixed-nav nav {
+  position: fixed;
+  width: 100vw;
+}
+
+h1.logo {
+  max-width: 0;
+  overflow: hidden;
+  transition: all 1.3s ease-in-out;
+  text-wrap: nowrap;
+  font-family: "Noto Serif", sans-serif;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+.fixed-nav h1.logo {
+  max-width: 500px;
+}
+
+.heroSection_languageSwitch {
+  position: absolute !important;
+  top: 20px;
+  right: 20px;
+}
+/** Mobile Menu Section  */
+#navBar_mobileMenu {
+  display: none;
+  opacity: 0;
+  font-family: var(--pharagrap-font);
+  letter-spacing: 1.8px;
+  font-size: 1.2rem;
+  width: 100vw;
+  height: 100dvh;
+  z-index: 999 !important;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition-property: opacity;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in-out;
+}
+.mobileMenu_content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100dvh;
+  width: 50%;
+  background-color: #002d62;
+  z-index: 99;
+}
+#closeModalBtn {
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+}
+.links_menu {
+  margin-top: 130px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+/** WhatsApp Icon **/
+.wtspIconContainer {
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  right: 0.5rem;
+  transform: translateY(-40%);
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* LANGUAGE SWITCH */
+/* Container for the switch */
+.language-switch {
+  position: relative;
+  width: 3.5rem;
+  height: 1.8rem;
+  display: inline-block;
+}
+
+/* Hidden checkbox */
+.language-switch input {
+  display: none;
+}
+
+/* Switch background */
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #687750;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s ease;
+}
+
+/* Language labels */
+.language {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  padding: 0 3px;
+  transition: opacity 0.3s ease;
+}
+
+/* Toggle button */
+.switch::after {
+  content: "";
+  position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: #f4e3c1;
+  border-radius: 18px;
+  top: 0px;
+  right: 27px;
+  transition: transform 0.3s ease;
+}
+
+/* When the toggle is checked */
+.language-switch input:checked + .switch {
+  /* background-color: #4caf4fe0; */
+}
+
+.language-switch input:checked + .switch::after {
+  transform: translateX(27px);
+}
+
+footer {
+  background-color: #163020;
+  color: #fff9f0;
+  text-align: center;
+  padding: 20px;
+}
+
+/** Mission Statement **/
+body.body_mission {
+  padding-top: 65px;
+  scrollbar-color: none;
+}
+
+.headerMission {
+  position: relative;
+  min-height: 300px;
+  max-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 60px 0;
+}
+.headerMission::before {
+  content: "";
+  width: 72%;
+  height: 100%;
+  background: #000;
+  background: url("../../assets/img/headerBGV2.png") right center no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.headerMission::after {
+  content: "";
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  left: -1%;
+  bottom: -1%;
+  background: url("../../assets/img/cornerBGHeader.png") right center no-repeat;
+  background-size: cover;
+  z-index: 3;
+}
+.header-text {
+  width: 55%;
+}
+.header-text h1 {
+  animation: fadeInUp 0.8s ease-out 0.8s backwards
+}
+.header-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+.missionStatement {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.missionStatement::before {
+  content: "";
+  height: 150px;
+  width: 150px;
+  background-image: url("../../assets/img/InchiChar.webp");
+  position: absolute;
+  /* opacity: 0.15; */
+  top: 55%;
+  left: 35%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 9;
+}
+
+.glass-card {
+  background: rgba(0, 0, 0, 0.09);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional: Shimmer effect on hover */
+.glass-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.glass-card:hover::before {
+  left: 100%;
+}
+
+/* Text shadow for better readability */
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* until here */
+@media (min-width: 1024px) {
+  body.body_mission {
+    padding-top: 65px;
+    scrollbar-color: none;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  .missionStatement {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    background: url("../../assets/img/Sacha-Inchi-plantas.webp") right center
+      no-repeat;
+    background-size: cover;
+  }
+  .missionStatement::before {
+    content: "";
+    height: 150px;
+    width: 150px;
+    background-image: url("../../assets/img/InchiChar.webp");
+    position: absolute;
+    /* opacity: 0.15; */
+    top: 55%;
+    left: 35%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 9;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .headerMission {
+    position: relative;
+    min-height: 300px;
+    max-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 60px 0;
+  }
+
+  .headerMission::before {
+    content: "";
+    width: 70%;
+    height: 100%;
+    background: #000;
+    background: url("../../assets/img/bgHeader.png") right center no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .headerMission::after {
+    content: "";
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    left: -1%;
+    bottom: -2%;
+    background: url("../../assets/img/cornerBGHeader.png") right center no-repeat;
+    background-size: cover;
+    z-index: 99;
+  }
+  .header-text {
+    width: 65%;
+  }
+  .header-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+  }
+  .missionStatement {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    background: url("../../assets/img/Sacha-Inchi-plantas.webp") right center
+      no-repeat;
+    background-size: cover;
+  }
+}
+/** Tablet */
+@media (max-width: 960px) {
+  body.fixed-nav nav {
+    position: fixed;
+    width: 100vw;
+    max-width: 960px;
+    /* box-shadow: 0 5px 0 rgba(0,0,0,0.1); */
+  }
+  .button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .headerMission {
+    position: relative;
+    min-height: 250px;
+    max-height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 60px 0;
+  }
+  .headerMission::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    background: url("../../assets/img/headerBGV2.png") right center no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .headerMission::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: -5%;
+    bottom: -7.9%;
+    background: url("../../assets/img/cornerBGHeader.png") right center no-repeat;
+    background-size: cover;
+    z-index: 3;
+  }
+  .header-text {
+    width: 60%;
+  }
+  .header-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 34%;
+    height: 100%;
+  }
+}
+
+/** LG */
+
+@media (min-width: 1024px) {
+  #section7 .container {
+    display: flex;
+    flex-direction: row;
+  }
+  /* MISSION */
+  .headerMission {
+    position: relative;
+    min-height: 250px;
+    max-height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 60px 0;
+  }
+  .headerMission::before {
+    content: "";
+    width: 88%;
+    height: 100%;
+    background: #000;
+    background: url("../../assets/img/headerBGV2.png") right center no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .headerMission::after {
+    content: "";
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    left: -5%;
+    bottom: -11%;
+    background: url("../../assets/img/cornerBGHeader.png") right center no-repeat;
+    background-size: cover;
+    z-index: 3;
+  }
+  .header-text {
+    width: 65%;
+  }
+  .header-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 34%;
+    height: 100%;
+  }
+}
+
+/** Desktop */
+@media (min-width: 1280px) {
+  
+}
+
+/** Mobile */
+@media (max-width: 480px) {
+  body.fixed-nav nav {
+    position: fixed;
+    width: 100vw;
+    max-width: 480px;
+  }
+  .language {
+    font-size: 1.2rem;
+    padding: 0 2px;
+  }
+  /* mission page */
+  .missionStatement::after {
+    right: 5px;
+  }
+}
+
+/* New Hero Style Concept */
+/* Mobile First */
+/* Main Hero Container */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
