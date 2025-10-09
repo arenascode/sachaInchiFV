@@ -883,9 +883,6 @@ body.es .hero-text-content h3 {
 }
 /*                          TABLET                           */
 @media (min-width: 960px) and (max-width: 1024px) {
-  body.fixed-nav nav {
-    max-width: 960px;
-  }
   .hero {
     padding: 0 1rem;
   }
@@ -1160,8 +1157,19 @@ body.es .hero-text-content h3 {
     background-size: cover;
     z-index: 3;
   }
+  body.es .header_title {
+    padding-right: 0.3rem;
+  }
   .header-text {
     width: 65%;
+  }
+  body.es .header-text {
+    width: 70%;
+    padding-left: 0rem;
+    padding-right: 1.5rem;
+  }
+  body.es .header-text span {
+    padding-left: 0.3rem;
   }
   .header-image {
     position: absolute;
@@ -1188,4 +1196,31 @@ body.es .hero-text-content h3 {
   .imageSection4 {
     min-height: 180px;
   }
+  .text-wrap-container {
+    display: flex;
+    flex-direction: column;
+  overflow: hidden;
+}
+
+.circular-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  shape-outside: circle(50%);
+  float: left;
+  align-self: center;
+  margin-right: 0;
+  margin-bottom: 0;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+}
+.circular-image.biosphere {
+  margin-right: 0;
+}
+.flowing-text,
+.flowing-text-biosphere {
+  text-align: justify;
+  line-height: 1.7;
+  hyphens: auto;
+}
 }

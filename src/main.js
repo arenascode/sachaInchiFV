@@ -117,10 +117,14 @@ const translations = {
     section3: {
       title1: "What is",
       title2: "Sacha Inchi?",
+      subtitle: "An ancestral Amazonian seed, rich in history and nutrition",
       p1: `Sacha Inchi — sometimes referred to as the “Inca Peanut” though it is not a peanut but a seed — is an Amazonian superfood native to Ecuador, Colombia, and Peru. Indigenous communities have valued it for generations as a rich source of nourishment.`,
       p2: "Known as a nutrient powerhouse, Sacha Inchi seeds are rich in protein and an excellent source of healthy fats, especially Omega 3, 6 and 9. Packed with fiber, vitamin E, and antioxidants, they provide a holistic boost for your body. Sacha Inchi supports heart health, brain function, immune strength, and radiant skin.",
       p3: "Beyond its health benefits, Sacha Inchi represents the wisdom and sustainable practices of the Amazon’s indigenous people.",
       p4: "By integrating it into your healthy regimen, you’re not only honoring the planet but also supporting the biosphere— where plants, animals, and their surroundings work in harmony to provide a reliable source of food back to the Earth.",
+    },
+    homeParallax1: {
+      parallaxText: "Nature’s Superfood for a Healthier, Happier You",
     },
     section4: {
       title: "Sacha Inchi is a",
@@ -178,43 +182,31 @@ const translations = {
       //Parallax Text
       parallaxText: "Nature’s Superfood for a Healthier, Vibrant You",
     },
-    section5: {
-      title: "The Many Ways to Enjoy Sacha Inchi",
+    infoSection5: {
+      parallaxTitle: "Sustainability and Impact",
       //Product 1
-      product1Title: "Oil",
-      product1p1:
-        "Sacha Inchi Oil is a nutrient-rich treasure packed with Omega-3s, 6, 9, Vitamin E, and powerful antioxidants.",
-      product1Subtitle: "How To Use It",
-      product1p2:
-        "Perfect for drizzling over salads, or as a supplement, it supports heart health, glowing skin, and overall vitality.",
-      product1VideoTitle: "Try it in your favorite salads 😋",
-      //Product 2
-      product2Title: "Protein Powder",
-      product2p1:
-        "Sacha Inchi Protein Powder is a plant-based powerhouse loaded with essential amino acids.",
-      product2Subtitle: "How To Use It",
-      product2p2:
-        "Add it to smoothies, baked goods, or post-workout shakes for natural muscle recovery and sustained energy.",
-      product2VideoTitle: "Try it in your favorite smoothies 😋",
-      //Product 3
-      product3Title: "More Than Just Smoothies",
-      product3p1:
-        "Sacha Inchi protein powder isn’t just great for smoothies—you can also add it to your favorite granola, boosting its nutritional value and versatility.",
-      product3Subtitle: "How to Use It",
-      product3p2:
-        "A perfect way to add a guilt-free protein boost while fueling your energy and supporting your health any time of the day.",
-      product3VideoTitle: "Try it in your favorite Granola 😋",
-    },
-    section6: {
-      title: "Awards for Sacha Inchi",
-      description:
-        "Recognized Excellence: Award-Winning Sacha Inchi Oil Through the Years",
-    },
-    section7: {
-      title: "Experience the Benefits of Sacha Inchi",
-      description:
+      title: "Sustainable by Design",
+      p1: "Our products are crafted under strict environmental and ethical standards, prioritizing both quality and sustainability. From renewable energy sources to eco-conscious packaging, every stage of the process is designed to respect nature and minimize environmental impact.",
+      li1Strong: "Clean Energy:",
+      li1Desc:
+        "powered by renewable hydroelectric systems, ensuring zero carbon emissions in production.",
+      li2Strong: "Responsible Sourcing:",
+      li2Desc: "only sustainably harvested raw materials are used.",
+      li3Strong: "Low-waste practices:",
+      li3Desc:
+        "packaging and production are optimized to reduce environmental footprint.",
+      li4Strong: "Fair working conditions:",
+      li4Desc: "with values rooted in respect, equity, and community support.",
+      li5Strong: "Circular Thinking:",
+      li5Desc: "embracing regeneration over extraction for a better future.",
+      finalDesc:
+        "We believe that conscious innovation can nourish people while protecting the planet — today and for generations to come.",
+      p2: "Supporting Sacha Inchi means contributing to the preservation of the Amazon and earth ecosystem, a vital part of Earth's biosphere that regulates the planet's climate and houses unparalleled biodiversity. By choosing Sacha Inchi, you are empowering local communities through sustainable farming practices that harmonize with the delicate balance of the Amazon ecosystem.",
+      p3: "This crop provides economic opportunities for indigenous farmers, enabling them to thrive while protecting their natural environment. Cultivating Sacha Inchi encourages agroforestry and reduces the need for deforestation, fostering a model where the health of the biosphere and human well-being are intrinsically connected. The sustainable cultivation of this remarkable plant creates a positive cycle where environmental protection and economic prosperity work hand in hand.",
+      ctaTitle: "Experience the Benefits of Sacha Inchi",
+      ctaDesc:
         "Take the first step towards better health and wellness with this award-winning Amazonian treasure. Learn more to start your journey.",
-      button: "Learn More",
+      button: "Learn More"
     },
     section8: {
       description:
@@ -246,10 +238,16 @@ const translations = {
     },
     section3: {
       title: "¿Qué es Sacha Inchi?",
+      title1: "¿Qué es",
+      subtitle: "Semilla ancestral amazónica, rica en historia y nutrición",
       p1: `Sacha Inchi, el superalimento amazónico conocido como el “Maní Indígena” o la “Semilla Indígena,” es nativa de las exuberantes selvas tropicales de Ecuador, Colombia y Perú. Durante siglos, las comunidades indígenas han valorado esta poderosa planta por su extraordinaria capacidad para nutrir y fortalecer el cuerpo.`,
       p2: "Conocidas como un superalimento lleno de nutrientes, las semillas de Sacha Inchi son ricas en proteínas y una excelente fuente de grasas saludables, especialmente Omega 3, 6 y 9. Son ricas en fibra, vitamina E y antioxidantes, brindando un impulso integral para tu cuerpo. Sacha Inchi mejora la salud del corazón, la función cerebral, la fortaleza del sistema inmunológico y una piel radiante.",
       p3: "Más allá de sus beneficios para la salud, Sacha Inchi representa la sabiduría y las prácticas sostenibles de los pueblos indígenas de la Amazonía.",
       p4: "Al integrarlo a tu dieta saludable, no solo honras al planeta, sino que también apoyas la biosfera, donde las plantas, los animales y su entorno trabajan en armonía para proporcionar una fuente de alimentos de vuelta a la Tierra.",
+    },
+    homeParallax1: {
+      parallaxText:
+        "El superalimento de la naturaleza para una vida más saludable y vibrante",
     },
     section4: {
       title: "Sacha Inchi es un",
@@ -311,42 +309,31 @@ const translations = {
       parallaxText:
         "El superalimento de la naturaleza para una vida más saludable y vibrante",
     },
-    section5: {
-      title: "Múltiples formas de disfrutar Sacha Inchi",
+    infoSection5: {
+      parallaxTitle: "Sostenibilidad e Impacto",
       // Product 1
-      product1Title: "Aceite",
-      product1p1:
-        "El aceite de Sacha Inchi es un tesoro rico en nutrientes, cargado de Omega-3, 6, 9, vitamina E y potentes antioxidantes.",
-      product1Subtitle: "Cómo usarlo",
-      product1p2:
-        "Perfecto para aderezar ensaladas o como suplemento, apoya la salud del corazón, una piel radiante y el bienestar general.",
-      product1VideoTitle: "Pruébalo en tus ensaladas favoritas 😋",
-      // Product 2
-      product2Title: "Proteína en polvo",
-      product2p1:
-        "La proteína en polvo de Sacha Inchi es una fuente vegetal poderosa cargada de aminoácidos esenciales.",
-      product2Subtitle: "Cómo usarla",
-      product2p2:
-        "Agrégala a batidos, productos horneados o bebidas post-entrenamiento para una recuperación muscular natural y energía sostenida.",
-      product2VideoTitle: "Pruébalo en tu batido favorito 😋",
-      // Product 3
-      product3Title: "Más que solo batidos",
-      product3p1:
-        "La proteína en polvo de Sacha Inchi no solo es ideal para batidos, sino que también puedes añadirla a tu granola favorita, aumentando su valor nutricional y versatilidad.",
-      product3Subtitle: "Cómo usarlas",
-      product3p2:
-        "Perfecta para añadir un extra de proteina sin culpa mientras impulsas tu energía y tu salud en cualquier momento del día.",
-      product3VideoTitle: "Pruébalo en tu granola favorita 😋",
-    },
-    section6: {
-      title: "Reconocimientos Recibidos Por Sacha Inchi",
-      description:
-        "Excelencia Reconocida: Aceite de Sacha Inchi Ganador de Premios a lo Largo de los Años",
-    },
-    section7: {
-      title: "Experimenta los Beneficios de Sacha Inchi",
-      description:
-        "Da el primer paso hacia una mejor salud y bienestar con este tesoro amazónico galardonado. Aprende más para comenzar tu viaje.",
+      title: "Diseñado para la Sostenibilidad",
+      p1: "Cada uno de nuestros productos nace bajo estrictos principios ambientales y éticos, donde la calidad y la sostenibilidad son prioridad. Desde la energía renovable hasta los empaques responsables, todo el proceso está pensado para cuidar la naturaleza y reducir nuestro impacto en el planeta.",
+      li1Strong: "Energia limpia:",
+      li1Desc:
+        "Producción impulsada por energía hidroeléctrica renovable, garantizando cero emisiones de carbono.",
+      li2Strong: "Origen responsable:",
+      li2Desc: "Utilizamos únicamente materias primas de origen sostenible.",
+      li3Strong: "Producción consciente",
+      li3Desc:
+        "optimizamos el empaque y cada etapa del proceso para reducir nuestro impacto en el entorno.",
+      li4Strong: "Condiciones laborales éticas:",
+      li4Desc:
+        "guiadas por el respeto, la igualdad y el fortalecimiento de las comunidades locales.",
+      li5Strong: "Filosofía Circular:",
+      li5Desc:
+        "Promoviendo la regeneración sobre la extracción para  un futuro más sostenible.",
+      finalDesc:
+        "Creemos que la innovación consciente puede nutrir a las personas mientras protege el planeta, hoy y para las generaciones futuras.",
+      p2: "Apoyar el Sacha Inchi significa contribuir a la preservación del Amazonas y del ecosistema terrestre — una fuerza vital que regula el clima del planeta y alberga una biodiversidad inigualable. Al elegir Sacha Inchi, estás empoderando a las comunidades locales que practican una agricultura sostenible en armonía con los delicados ritmos de la selva tropical.",
+      p3: "Este cultivo extraordinario no solo ofrece oportunidades económicas justas para los agricultores indígenas, sino que también promueve la agroforestería y reduce la deforestación. Su cultivo representa un equilibrio poderoso, donde el bienestar de las personas y la salud de la biosfera prosperan juntos en un ciclo de renovación y respeto por la naturaleza.",
+      ctaTitle: "Descubre los beneficios de Sacha Inchi",
+      ctaDesc: "Da el primer paso hacia una mejor salud y bienestar con este tesoro amazónico galardonado. Aprende más para comenzar tu viaje.",
       button: "Aprende Más",
     },
     section8: {
@@ -361,10 +348,10 @@ const translations = {
 };
 
 function updateTranslations(language) {
-
   Object.keys(translations[language]).forEach((sectionId) => {
     const sectionData = translations[language][sectionId];
     const section = document.getElementById(sectionId);
+    console.log({ section });
 
     if (section) {
       Object.keys(sectionData).forEach((role) => {
@@ -383,22 +370,20 @@ const toggle1 = document.getElementById("languageToggle");
 const toggle2 = document.getElementById("languageToggle2");
 
 function syncToggles(source, target) {
-
   target.checked = source.checked;
 }
 toggle1.addEventListener("change", () => syncToggles(toggle1, toggle2));
 toggle2.addEventListener("change", () => syncToggles(toggle2, toggle1));
 
 languageToggle.forEach((el) => {
-  
   el.addEventListener("change", (event) => {
     console.log(`toggleando`);
 
     const selectedLanguage = event.target.checked ? "es" : "en";
-    if (selectedLanguage === 'es') {
-      document.body.classList.add(selectedLanguage)
+    if (selectedLanguage === "es") {
+      document.body.classList.add(selectedLanguage);
     } else {
-      document.body.classList.remove('es')
+      document.body.classList.remove("es");
     }
     updateTranslations(selectedLanguage); // Call your translation function
   });
@@ -414,5 +399,3 @@ languageToggle.forEach((el) => {
 updateTranslations(userLanguage);
 
 window.addEventListener("load", () => updateTranslations(userLanguage));
-//*Play Introduction VIDEO
-
