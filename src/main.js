@@ -232,7 +232,7 @@ const translations = {
       description:
         "Descubre la bondad natural de una nutrición sostenible y rica en",
       description2: "Omega 3, 6 y 9.",
-      cta: "¡Descubre el Secreto del Amazonas!",
+      cta: "Descubre el Secreto del Amazonas",
     },
     section2: {
       home: "Inicio",
@@ -390,8 +390,16 @@ toggle1.addEventListener("change", () => syncToggles(toggle1, toggle2));
 toggle2.addEventListener("change", () => syncToggles(toggle2, toggle1));
 
 languageToggle.forEach((el) => {
+  
   el.addEventListener("change", (event) => {
+    console.log(`toggleando`);
+
     const selectedLanguage = event.target.checked ? "es" : "en";
+    if (selectedLanguage === 'es') {
+      document.body.classList.add(selectedLanguage)
+    } else {
+      document.body.classList.remove('es')
+    }
     updateTranslations(selectedLanguage); // Call your translation function
   });
 });
