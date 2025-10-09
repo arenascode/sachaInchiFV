@@ -1107,7 +1107,7 @@ body.es .hero-text-content h3 {
   .cta-button {
     font-size: 18px;
     padding: 10px;
-    width: max-content;
+    /* width: max-content; */
   }
   body.es .cta-button {
     padding: 7px 15px;
@@ -1158,7 +1158,7 @@ body.es .hero-text-content h3 {
     z-index: 3;
   }
   body.es .header_title {
-    padding-right: 0.3rem;
+    padding-right: 0.5rem;
   }
   .header-text {
     width: 65%;
