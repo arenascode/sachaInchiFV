@@ -339,6 +339,11 @@ body.body_mission {
   .header-text {
     margin-left: 4rem;
   }
+  .headerMission::before {
+    width: 80%;
+    background: url("/assets/img/headerBGV2.png") right center no-repeat;
+    background-size: cover;
+  }
   .headerMission::after {
     width: 230px;
     height: 230px;
@@ -393,6 +398,20 @@ body.body_mission {
     background: url("/assets/img/Sacha-Inchi-plantas.webp") right center
       no-repeat;
     background-size: cover;
+  }
+  .missionStatement::before {
+    content: "";
+    height: 130px;
+    width: 130px;
+    background-image: url("/assets/img/InchiChar.webp");
+    position: absolute;
+    /* opacity: 0.15; */
+    top: 55%;
+    left: 35%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 9;
   }
 }
 
@@ -519,6 +538,9 @@ body.body_mission {
   .header-text {
     width: 65%;
   }
+  body.es .header-text {
+    padding-left: 1.5rem;
+  }
   .header-image {
     width: 34%;
   }
@@ -594,6 +616,10 @@ body.body_mission {
     background-position: center;
     background-repeat: no-repeat;
     z-index: 9;
+  }
+  body.es .missionStatement h1 {
+    text-wrap: nowrap;
+    margin-left: 2.5rem;
   }
 }
 /*                          TABLET                           */
@@ -679,6 +705,9 @@ body.body_mission {
     width: 69%;
     padding-left: 5rem;
   }
+  body.es .header-text {
+    padding-left: 3.4rem;
+  }
   .missionStatement {
     position: relative;
     width: 100%;
@@ -700,6 +729,9 @@ body.body_mission {
     background-position: center;
     background-repeat: no-repeat;
     z-index: 3;
+  }
+  body.es .missionStatement::before {
+    left: 73%;
   }
 }
 
@@ -763,7 +795,9 @@ body.body_mission {
     width: 66%;
     padding-left: 1.1rem;
   }
-
+  body.es .header-text {
+    padding-left: 1.3rem;
+  }
   .header-image {
     position: absolute;
     right: 0;
@@ -793,6 +827,9 @@ body.body_mission {
     background-position: center;
     background-repeat: no-repeat;
     z-index: 3;
+  }
+  body.es .missionStatement::before {
+    left: 76%;
   }
   .glass-card {
     background: rgba(0, 0, 0, 0.09);
