@@ -226,7 +226,7 @@ body.body_mission {
   width: 72%;
   height: 100%;
   background: #000;
-  background: url("../../assets/img/headerBGV2.png") right center no-repeat;
+  background: url("/assets/img/headerBGV2.png") right center no-repeat;
   background-size: cover;
   position: absolute;
   left: 0;
@@ -240,7 +240,7 @@ body.body_mission {
   position: absolute;
   left: -1%;
   bottom: -1%;
-  background: url("../../assets/img/cornerBGHeader.png") right center no-repeat;
+  background: url("/assets/img/cornerBGHeader.png") right center no-repeat;
   background-size: cover;
   z-index: 3;
 }
@@ -258,24 +258,28 @@ body.body_mission {
   height: 100%;
 }
 .missionStatement {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.missionStatement::before {
-  content: "";
-  height: 150px;
-  width: 150px;
-  background-image: url("../../assets/img/InchiChar.webp");
-  position: absolute;
-  /* opacity: 0.15; */
-  top: 55%;
-  left: 35%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 9;
-}
+    position: relative;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    background: url("/assets/img/Sacha-Inchi-plantas.webp") right center
+      no-repeat;
+    background-size: cover;
+  }
+  .missionStatement::before {
+    content: "";
+    height: 100px;
+    width: 100px;
+    background-image: url("/assets/img/InchiChar.webp");
+    position: absolute;
+    /* opacity: 0.15; */
+    top: 1%;
+    left: 73%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 3;
+  }
 
 .glass-card {
   background: rgba(0, 0, 0, 0.09);
@@ -329,17 +333,11 @@ body.body_mission {
 
 /*                          XXL DESKTOP                           */
 @media (min-width: 1537px) {
- 
   .headerMission {
     min-height: 300px;
   }
   .header-text {
     margin-left: 4rem;
-  }
-  .headerMission::before {
-    width: 84%;
-    background: url("../../assets/img/headerBGV2.png") right center no-repeat;
-    background-size: cover;
   }
   .headerMission::after {
     width: 230px;
@@ -351,13 +349,26 @@ body.body_mission {
     position: relative;
     width: 100%;
     justify-content: center;
-    background: url("../../assets/img/Sacha-Inchi-plantas.webp") right center
+    background: url("/assets/img/Sacha-Inchi-plantas.webp") right center
       no-repeat;
     background-size: cover;
   }
+  .missionStatement::before {
+    content: "";
+    height: 130px;
+    width: 130px;
+    background-image: url("/assets/img/InchiChar.webp");
+    position: absolute;
+    /* opacity: 0.15; */
+    top: 55%;
+    left: 35%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 9;
+  }
 }
 @media (min-width: 1441px) and (max-width: 1536px) {
- 
   .headerMission {
     min-height: 300px;
   }
@@ -366,7 +377,7 @@ body.body_mission {
   }
   .headerMission::before {
     width: 84%;
-    background: url("../../assets/img/headerBGV2.png") right center no-repeat;
+    background: url("/assets/img/headerBGV2.png") right center no-repeat;
     background-size: cover;
   }
   .headerMission::after {
@@ -379,7 +390,7 @@ body.body_mission {
     position: relative;
     width: 100%;
     justify-content: center;
-    background: url("../../assets/img/Sacha-Inchi-plantas.webp") right center
+    background: url("/assets/img/Sacha-Inchi-plantas.webp") right center
       no-repeat;
     background-size: cover;
   }
@@ -400,7 +411,7 @@ body.body_mission {
 
   .headerMission::before {
     width: 90%;
-    background: url("../../assets/img/headerBGV2.png") right center no-repeat;
+    background: url("/assets/img/headerBGV2.png") right center no-repeat;
     background-size: cover;
   }
   .headerMission::after {
@@ -420,9 +431,23 @@ body.body_mission {
     position: relative;
     width: 100%;
     justify-content: center;
-    background: url("../../assets/img/Sacha-Inchi-plantas.webp") right center
+    background: url("/assets/img/Sacha-Inchi-plantas.webp") right center
       no-repeat;
     background-size: cover;
+  }
+  .missionStatement::before {
+    content: "";
+    height: 130px;
+    width: 130px;
+    background-image: url("/assets/img/InchiChar.webp");
+    position: absolute;
+    /* opacity: 0.15; */
+    top: 55%;
+    left: 35%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 9;
   }
 }
 
@@ -437,7 +462,7 @@ body.body_mission {
 
   .headerMission::before {
     width: 84%;
-    background: url("../../assets/img/headerBGV2.png") right center no-repeat;
+    background: url("/assets/img/headerBGV2.png") right center no-repeat;
     background-size: cover;
   }
   .headerMission::after {
@@ -456,9 +481,23 @@ body.body_mission {
     position: relative;
     width: 100%;
     justify-content: center;
-    background: url("../../assets/img/Sacha-Inchi-plantas.webp") right center
+    background: url("/assets/img/Sacha-Inchi-plantas.webp") right center
       no-repeat;
     background-size: cover;
+  }
+  .missionStatement::before {
+    content: "";
+    height: 130px;
+    width: 130px;
+    background-image: url("/assets/img/InchiChar.webp");
+    position: absolute;
+    /* opacity: 0.15; */
+    top: 55%;
+    left: 35%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 9;
   }
 }
 /*                          LAPTOP                           */
@@ -505,7 +544,7 @@ body.body_mission {
     width: 88%;
     height: 100%;
     background: #000;
-    background: url("../../assets/img/headerBGV2.png") right center no-repeat;
+    background: url("/assets/img/headerBGV2.png") right center no-repeat;
     background-size: cover;
     position: absolute;
     left: 0;
@@ -519,7 +558,7 @@ body.body_mission {
     position: absolute;
     left: -5%;
     bottom: -11%;
-    background: url("../../assets/img/cornerBGHeader.png") right center
+    background: url("/assets/img/cornerBGHeader.png") right center
       no-repeat;
     background-size: cover;
     z-index: 3;
@@ -538,7 +577,7 @@ body.body_mission {
     position: relative;
     width: 100%;
     justify-content: center;
-    background: url("../../assets/img/Sacha-Inchi-plantas.webp") right center
+    background: url("/assets/img/Sacha-Inchi-plantas.webp") right center
       no-repeat;
     background-size: cover;
   }
@@ -546,7 +585,7 @@ body.body_mission {
     content: "";
     height: 130px;
     width: 130px;
-    background-image: url("../../assets/img/InchiChar.webp");
+    background-image: url("/assets/img/InchiChar.webp");
     position: absolute;
     /* opacity: 0.15; */
     top: 55%;
@@ -601,7 +640,6 @@ body.body_mission {
     background-repeat: no-repeat;
     z-index: 9;
   }
-  
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -615,7 +653,7 @@ body.body_mission {
     width: 86%;
     height: 100%;
     background: #000;
-    background: url("../../assets/img/headerBGV2.png") right center no-repeat;
+    background: url("/assets/img/headerBGV2.png") right center no-repeat;
     background-size: cover;
     position: absolute;
     left: 0;
@@ -629,7 +667,7 @@ body.body_mission {
     position: absolute;
     left: -1%;
     bottom: -6.3%;
-    background: url("../../assets/img/cornerBGHeader.png") right center
+    background: url("/assets/img/cornerBGHeader.png") right center
       no-repeat;
     background-size: cover;
     z-index: 3;
@@ -645,15 +683,15 @@ body.body_mission {
     position: relative;
     width: 100%;
     justify-content: center;
-    background: url("../../assets/img/Sacha-Inchi-plantas.webp") right center
-      no-repeat;
+    background: url("/assets/img/Sacha-Inchi-plantas.webp") right
+      center no-repeat;
     background-size: cover;
   }
   .missionStatement::before {
     content: "";
     height: 100px;
     width: 100px;
-    background-image: url("../../assets/img/InchiChar.webp");
+    background-image: url("/assets/img/InchiChar.webp");
     position: absolute;
     /* opacity: 0.15; */
     top: 4%;
@@ -702,7 +740,7 @@ body.body_mission {
     width: 103%;
     height: 100%;
     background: #000;
-    background: url("../../assets/img/headerBGV2.png") right center no-repeat;
+    background: url("/assets/img/headerBGV2.png") right center no-repeat;
     background-size: cover;
     position: absolute;
     left: 0;
@@ -716,14 +754,14 @@ body.body_mission {
     position: absolute;
     left: -1%;
     bottom: -3.6%;
-    background: url("../../assets/img/cornerBGHeader.png") right center
+    background: url("/assets/img/cornerBGHeader.png") right center
       no-repeat;
     background-size: cover;
     z-index: 3;
   }
   .header-text {
     width: 66%;
-    padding-left: 0.8rem;
+    padding-left: 1.1rem;
   }
 
   .header-image {
@@ -734,15 +772,11 @@ body.body_mission {
     height: 100%;
   }
   .missionStatement {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.missionStatement {
     position: relative;
+    height: 100%;
     width: 100%;
     justify-content: center;
-    background: url("../../assets/img/Sacha-Inchi-plantas.webp") right center
+    background: url("/assets/img/Sacha-Inchi-plantas.webp") right center
       no-repeat;
     background-size: cover;
   }
@@ -750,7 +784,7 @@ body.body_mission {
     content: "";
     height: 100px;
     width: 100px;
-    background-image: url("../../assets/img/InchiChar.webp");
+    background-image: url("/assets/img/InchiChar.webp");
     position: absolute;
     /* opacity: 0.15; */
     top: 1%;
@@ -761,32 +795,31 @@ body.body_mission {
     z-index: 3;
   }
   .glass-card {
-  background: rgba(0, 0, 0, 0.09);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  position: relative;
-  overflow: hidden;
-}
+    background: rgba(0, 0, 0, 0.09);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    position: relative;
+    overflow: hidden;
+  }
 
-/* Optional: Shimmer effect on hover */
-.glass-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.1),
-    transparent
-  );
-  transition: left 0.5s;
-}
+  /* Optional: Shimmer effect on hover */
+  .glass-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent
+    );
+    transition: left 0.5s;
+  }
 
-.glass-card:hover::before {
-  left: 100%;
-}
-
+  .glass-card:hover::before {
+    left: 100%;
+  }
 }
