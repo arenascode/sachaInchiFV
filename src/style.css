@@ -378,7 +378,7 @@ footer {
   position: relative;
   width: 50%;
   min-width: 50%;
-  color: white;
+  /* color: white; */
   z-index: 10;
   align-items: center;
   display: flex;
@@ -418,11 +418,13 @@ body.es .hero-text-content h3 {
   font-weight: 600;
   letter-spacing: 3.5px;
   line-height: 1;
+  color: #ffd683;
   /* text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3); */
 }
 
 .title-group .highlight {
-  color: #efd180;
+  /* color: #efd180; */
+  color: #ffd683;
   /* color: #b48811; */
 }
 
@@ -707,6 +709,33 @@ body.es .hero-text-content h3 {
   .header-image {
     width: 34%;
   }
+
+  .text-wrap-container {
+  overflow: hidden;
+}
+
+.circular-image {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+  shape-outside: circle(50%);
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+}
+.circular-image.biosphere {
+  margin-right: 0;
+}
+.flowing-text,
+.flowing-text-biosphere {
+  text-align: justify;
+  line-height: 1.7;
+  hyphens: auto;
+  font-size: 24px;
+}
+
   .imageSection4 {
     min-height: 300px;
   }
