@@ -17,7 +17,8 @@ export default {
         sand: "#F4E3C1",
         warmSandy: "#E6D3B3",
         goldenSand: "#CBAE82",
-        goldTitle: "#d4a574",
+        goldTitle: "#efd180",
+        goldSecondary: "#b48811",
         sandStone: "#D4BFAA",
         darkGreen: "#163020", // Darker green
         emerald: "#15200c",
