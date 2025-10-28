@@ -144,8 +144,7 @@ h1.logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: #687750; */
-  background-color: #efd180;
+  background-color: #b48811;
   border-radius: 20px;
   position: relative;
   cursor: pointer;
@@ -172,7 +171,7 @@ h1.logo {
   background-color: #f4e3c1;
   border-radius: 18px;
   top: 0px;
-  right: 27px;
+  right: 28px;
   transition: transform 0.3s ease;
 }
 
@@ -182,7 +181,7 @@ h1.logo {
 }
 
 .language-switch input:checked + .switch::after {
-  transform: translateX(27px);
+  transform: translateX(28.5px);
 }
 
 /**SECTION 3*/
@@ -247,6 +246,7 @@ h1.logo {
   margin-bottom: 1rem;
   /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
 }
+
 .circular-image.biosphere {
   margin-right: 0;
 }
@@ -320,7 +320,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #FFF8E7;
+  background: #fff8e7;
   background-image: url(/assets/img/seedsBlackAndWhite.png);
   /* background-opacity: 0.5; */
   background-position: right;
@@ -344,7 +344,7 @@ footer {
   padding: 0;
 }
 
-.video-blob-wrapper {
+/* .video-blob-wrapper {
   position: relative;
   width: 100%;
   height: 600px;
@@ -372,7 +372,7 @@ footer {
   mask-size: contain;
   mask-position: center;
   mask-repeat: no-repeat;
-}
+} */
 
 .hero-text-content {
   position: relative;
@@ -392,7 +392,7 @@ footer {
 .hero-text-content h3 {
   font-size: 1.5rem;
   font-weight: 500;
-  font-style: italic;
+  /* font-style: italic; */
   /* color: #d4a574; */
   color: #b48811;
   margin-bottom: 10px;
@@ -403,8 +403,9 @@ footer {
   text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 body.es .hero-text-content h3 {
-    text-wrap: wrap;
-  }
+  text-wrap: wrap;
+}
+
 .title-group {
   display: flex;
   align-items: center;
@@ -433,7 +434,11 @@ body.es .hero-text-content h3 {
   height: 80px;
   opacity: 1;
 }
-
+.description-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .description {
   font-size: 22px;
   line-height: 1.7;
@@ -445,7 +450,7 @@ body.es .hero-text-content h3 {
 .description.italic {
   font-style: italic;
   font-weight: 400;
-   text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .description.omega-highlight {
@@ -484,8 +489,9 @@ body.es .hero-text-content h3 {
 }
 
 .cta-button:hover::before {
-  width: 300px;
+  width: 100%;
   height: 300px;
+  border-radius: 0;
 }
 
 .cta-button:hover {
@@ -526,14 +532,13 @@ body.es .hero-text-content h3 {
 @media (min-width: 1536px) {
   .hero {
     padding: 2rem 1rem 2rem 1.5rem;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   .hero-content {
     height: auto;
     max-width: 1451px;
     flex-direction: row;
-    height: 750px;
     width: 100%;
     flex-wrap: nowrap;
     overflow: hidden;
@@ -543,52 +548,66 @@ body.es .hero-text-content h3 {
   .hero-text-content {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 2.6rem;
     width: 50%;
     text-align: center;
+    margin-right: 12rem;
   }
 
   .hero-text-content h3 {
-    font-size: 2.1rem;
-    margin-bottom: 20px;
+    font-size: 2.2rem;
     font-weight: 400;
     text-wrap: nowrap;
     text-align: center;
-    margin-left: 2rem;
   }
 
   .title-group {
-    gap: 20px;
-    margin-bottom: 30px;
+    gap: 2rem;
+    margin-bottom: 20px;
+    flex-direction: column;
   }
 
   .title-group h1 {
-    font-size: 72px;
+    font-size: 5rem;
     text-shadow: 2px 4px 8px rgb(28 45 21);
   }
 
   .seed-divider {
-    width: 120px;
-    height: 100px;
+    width: 175px;
+    height: 140px;
   }
-
+  .description-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .description {
-    font-size: 30px;
+    width: max-content;
+    font-size: 1.8rem;
     line-height: 1.5;
+    text-wrap: balance;
     margin-bottom: 0;
   }
 
   .cta-button {
-    margin-top: 40px;
-    padding: 20px;
-    font-size: 28px;
+    margin-top: 30px;
+    padding: 10px 13px;
+    font-size: 22px;
   }
 
-  .video-blob-wrapper {
-    width: 100%;
-    height: 1110px;
-    overflow: hidden;
+  .charImage {
+    position: absolute;
+    bottom: 3.4%;
+    right: 14%;
+    width: 110px;
+    height: 110px;
+    animation: fadeInUp 0.8s ease-out 1s backwards;
   }
+
+  /* Section 3 */
   .header {
     min-height: 300px;
   }
@@ -637,55 +656,53 @@ body.es .hero-text-content h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     width: 65%;
-    height: 90dvh;
     text-align: center;
     margin-right: 7rem;
   }
 
   .hero-text-content h3 {
-    font-size: 2.4rem;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
     font-weight: 400;
     text-wrap: nowrap;
     text-align: center;
-    margin-left: 2rem;
   }
 
   .title-group {
-    gap: 20px;
-    margin-bottom: 30px;
+    gap: 1.5rem;
+    margin-bottom: 10px;
     flex-direction: column;
   }
 
   .title-group h1 {
-    font-size: 5rem;
+    font-size: 4.4rem;
     text-shadow: 2px 4px 8px rgb(28 45 21);
   }
 
   .seed-divider {
-    width: 230px;
-    height: 170px;
+    width: 210px;
+    height: 150px;
   }
 
   .description {
-    font-size: 34px;
+    font-size: 1.7rem;
     line-height: 1.5;
     margin-bottom: 0;
   }
 
   .cta-button {
     margin-top: 40px;
-    padding: 20px;
-    font-size: 28px;
+    padding: 10px;
+    font-size: 20px;
   }
-
-  .video-blob-wrapper {
-    width: 100%;
-    height: 1000px;
-    overflow: hidden;
+  .charImage {
+    bottom: 3.2%;
+    right: 25%;
+    width: 110px;
+    height: 110px;
   }
+  /* Section 3 */
   .header {
     min-height: 300px;
     max-height: 400px;
@@ -711,30 +728,30 @@ body.es .hero-text-content h3 {
   }
 
   .text-wrap-container {
-  overflow: hidden;
-}
+    overflow: hidden;
+  }
 
-.circular-image {
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  object-fit: cover;
-  shape-outside: circle(50%);
-  float: left;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
-  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
-}
-.circular-image.biosphere {
-  margin-right: 0;
-}
-.flowing-text,
-.flowing-text-biosphere {
-  text-align: justify;
-  line-height: 1.7;
-  hyphens: auto;
-  font-size: 24px;
-}
+  .circular-image {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    shape-outside: circle(50%);
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+  }
+  .circular-image.biosphere {
+    margin-right: 0;
+  }
+  .flowing-text,
+  .flowing-text-biosphere {
+    text-align: justify;
+    line-height: 1.7;
+    hyphens: auto;
+    font-size: 24px;
+  }
 
   .imageSection4 {
     min-height: 300px;
@@ -749,66 +766,65 @@ body.es .hero-text-content h3 {
   }
 
   .hero-content {
-    height: 700px;
     max-width: 1400px;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 5rem;
+    gap: 3rem;
   }
 
   .hero-text-content {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    width: 65%;
+    gap: 2rem;
     text-align: center;
     margin-right: 7rem;
   }
 
   .hero-text-content h3 {
-    font-size: 2.1rem;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
     font-weight: 400;
     text-wrap: nowrap;
     text-align: center;
-    margin-left: 2rem;
   }
   body.es .hero-text-content h3 {
     text-wrap: wrap;
   }
   .title-group {
     gap: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     flex-direction: column;
   }
 
   .title-group h1 {
-    font-size: 72px;
+    font-size: 4.5rem;
     text-shadow: 2px 4px 8px rgb(28 45 21);
   }
 
   .seed-divider {
-    width: 200px;
-    height: 150px;
+    width: 180px;
+    height: 130px;
     opacity: 1;
   }
 
   .description {
-    font-size: 30px;
+    font-size: 22px;
     line-height: 1.5;
     margin-bottom: 0;
   }
 
   .cta-button {
     margin-top: 40px;
-    padding: 20px;
-    font-size: 24px;
+    padding: 10px;
+    font-size: 20px;
   }
 
-  .video-blob-wrapper {
-    width: 100%;
-    height: 1000px;
+  .charImage {
+    bottom: 14.3%;
+    right: 10%;
+    width: 110px;
+    height: 110px;
   }
+  /* Sect 3 */
   .header {
     min-height: 300px;
     max-height: 400px;
@@ -844,28 +860,23 @@ body.es .hero-text-content h3 {
   }
 
   .hero-content {
-    height: 500px;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 2rem;
-    
   }
 
   .hero-text-content {
     align-items: center;
-    gap: 2rem;
-    width: 65%;
+    gap: 4.5rem;
     text-align: center;
     margin-right: 7rem;
   }
 
   .hero-text-content h3 {
     font-size: 1.7rem;
-    margin-bottom: 10px;
     font-weight: 400;
     text-wrap: nowrap;
     text-align: center;
-    margin-left: 2rem;
   }
   body.es .hero-text-content h3 {
     text-wrap: wrap;
@@ -877,29 +888,34 @@ body.es .hero-text-content h3 {
   }
 
   .title-group h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 
   .seed-divider {
-    width: 180px;
-    height: 140px;
+    width: 160px;
+    height: 120px;
   }
 
   .description {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.4;
     margin-bottom: 0;
   }
 
   .cta-button {
     margin-top: 5px;
-    padding: 20px;
+    padding: 10px;
     font-size: 18px;
   }
 
-  .video-blob-wrapper {
-    height: 850px;
+  .charImage {
+    bottom: 14.3%;
+    right: 10%;
+    width: 100px;
+    height: 100px;
   }
+
+  /* Sect 3 */
 
   .header {
     min-height: 220px;
@@ -944,7 +960,6 @@ body.es .hero-text-content h3 {
   }
 
   .hero-content {
-    height: 500px;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 1rem;
@@ -952,40 +967,37 @@ body.es .hero-text-content h3 {
 
   .hero-text-content {
     align-items: center;
-    gap: 2rem;
-    width: 50%;
-    min-width: 50%;
+    gap: 2.5rem;
     text-align: center;
+    margin-right: 7rem;
   }
   body.es .hero-text-content {
     width: 80%;
   }
   .hero-text-content h3 {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
     font-weight: 400;
-    text-wrap: nowrap;
+    text-wrap: pretty;
     text-align: center;
-    margin-left: 2rem;
   }
   body.es .hero-text-content h3 {
-    text-wrap: wrap;
+    text-wrap: pretty;
   }
 
   .title-group {
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .title-group h1 {
-    font-size: 48px;
+    font-size: 3.5rem;
     text-shadow: 2px 4px 8px rgb(28 45 21);
   }
 
   .seed-divider {
-    width: 100px;
-    height: 80px;
+    width: 125px;
+    height: 95px;
     opacity: 1;
   }
 
@@ -994,21 +1006,23 @@ body.es .hero-text-content h3 {
     line-height: 1.4;
     margin-bottom: 0;
   }
-
+  body.es .description-group {
+    width: 80%;
+  }
   .cta-button {
     margin-top: 40px;
-    padding: 20px;
+    padding: 10px;
     font-size: 18px;
   }
 
-  .video-blob-wrapper {
-    height: 900px;
+  .charImage {
+    bottom: 14.3%;
+    right: 10%;
+    width: 85px;
+    height: 85px;
   }
 
-  .button {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
+  /* Sect 3 */
   .headerMission {
     min-height: 250px;
     max-height: 250px;
@@ -1039,6 +1053,7 @@ body.es .hero-text-content h3 {
   }
   .hero {
     padding: 2rem;
+    background-image: url(/assets/img/sacha-inchi-granos.webp);
   }
 
   .hero-content {
@@ -1046,34 +1061,30 @@ body.es .hero-text-content h3 {
     gap: 4.5rem;
   }
 
-  .video-blob-wrapper {
-    height: 600px;
-    display: none;
-  }
-
   .hero-text-content {
     width: 100%;
     text-align: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .hero-text-content h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-left: 0;
   }
 
   .title-group {
+    flex-direction: column;
     gap: 25px;
   }
 
   .title-group h1 {
-    font-size: 44px;
+    font-size: 52px;
   }
 
   .seed-divider {
-    width: 105px;
-    height: 80px;
+    width: 120px;
+    height: 100px;
   }
 
   .description {
@@ -1084,6 +1095,13 @@ body.es .hero-text-content h3 {
     padding: 10px 15px;
     font-size: 20px;
   }
+  .charImage {
+    bottom: 14.3%;
+    right: 10%;
+    width: 90px;
+    height: 90px;
+  }
+  /* section 3 */
 
   .header::after {
     content: "";
@@ -1116,8 +1134,9 @@ body.es .hero-text-content h3 {
     max-width: 480px;
   }
   .hero {
-    background-image: url(/assets/img/newBGHeroMobile.webp);
+    /* background-image: url(/assets/img/sacha-inchi-granos.webp); */
     padding: 1rem;
+    background-position: center;
   }
 
   .hero-content {
@@ -1128,11 +1147,9 @@ body.es .hero-text-content h3 {
     justify-content: center;
   }
 
-  .video-blob-wrapper {
-    display: none;
-  }
   .hero-text-content {
     width: 100%;
+    gap: 2rem;
   }
   .hero-text-content h3 {
     font-size: 1.2rem;
@@ -1150,19 +1167,19 @@ body.es .hero-text-content h3 {
   }
 
   .seed-divider {
-    width: 80px;
-    height: 70px;
+    width: 120px;
+    height: 90px;
     opacity: 1;
   }
 
   .description {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
   }
 
   .cta-button {
     font-size: 18px;
-    padding: 10px;
+    padding: 5px;
     /* width: max-content; */
   }
   body.es .cta-button {
@@ -1171,6 +1188,12 @@ body.es .hero-text-content h3 {
   .language {
     font-size: 1.2rem;
     padding: 0 2px;
+  }
+  .charImage {
+    bottom: 14.3%;
+    right: 10%;
+    width: 80px;
+    height: 80px;
   }
   /*What is Sacha Inchi Section*/
 
@@ -1255,28 +1278,28 @@ body.es .hero-text-content h3 {
   .text-wrap-container {
     display: flex;
     flex-direction: column;
-  overflow: hidden;
-}
+    overflow: hidden;
+  }
 
-.circular-image {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  object-fit: cover;
-  shape-outside: circle(50%);
-  float: left;
-  align-self: center;
-  margin-right: 0;
-  margin-bottom: 0;
-  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
-}
-.circular-image.biosphere {
-  margin-right: 0;
-}
-.flowing-text,
-.flowing-text-biosphere {
-  text-align: justify;
-  line-height: 1.7;
-  hyphens: auto;
-}
+  .circular-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    shape-outside: circle(50%);
+    float: left;
+    align-self: center;
+    margin-right: 0;
+    margin-bottom: 0;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+  }
+  .circular-image.biosphere {
+    margin-right: 0;
+  }
+  .flowing-text,
+  .flowing-text-biosphere {
+    text-align: justify;
+    line-height: 1.7;
+    hyphens: auto;
+  }
 }

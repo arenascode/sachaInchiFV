@@ -206,7 +206,7 @@ const translations = {
       ctaTitle: "Experience the Benefits of Sacha Inchi",
       ctaDesc:
         "Take the first step towards better health and wellness with this award-winning Amazonian treasure. Learn more to start your journey.",
-      button: "Learn More"
+      button: "Learn More",
     },
     section8: {
       description:
@@ -222,7 +222,7 @@ const translations = {
     section1: {
       subtitle: "El Superalimento del Amazonas para una Vida Más Saludable.",
       description:
-        "Descubre la bondad natural de una nutrición sostenible y rica en",
+        "Descubre las propiedades naturales de una nutrición sostenible y rica en",
       description2: "Omega 3, 6 y 9.",
       cta: "Descubre el Secreto del Amazonas",
     },
@@ -333,7 +333,8 @@ const translations = {
       p2: "Apoyar el Sacha Inchi significa contribuir a la preservación del Amazonas y del ecosistema terrestre — una fuerza vital que regula el clima del planeta y alberga una biodiversidad inigualable. Al elegir Sacha Inchi, estás empoderando a las comunidades locales que practican una agricultura sostenible en armonía con los delicados ritmos de la selva tropical.",
       p3: "Este cultivo extraordinario no solo ofrece oportunidades económicas justas para los agricultores indígenas, sino que también promueve la agroforestería y reduce la deforestación. Su cultivo representa un equilibrio poderoso, donde el bienestar de las personas y la salud de la biosfera prosperan juntos en un ciclo de renovación y respeto por la naturaleza.",
       ctaTitle: "Descubre los beneficios de Sacha Inchi",
-      ctaDesc: "Da el primer paso hacia una mejor salud y bienestar con este tesoro amazónico galardonado. Aprende más para comenzar tu viaje.",
+      ctaDesc:
+        "Da el primer paso hacia una mejor salud y bienestar con este tesoro amazónico galardonado. Aprende más para comenzar tu viaje.",
       button: "Aprende Más",
     },
     section8: {
@@ -348,6 +349,68 @@ const translations = {
 };
 
 function updateTranslations(language) {
+  const heroContent = document.querySelector(".hero");
+  const heroContent_desc = heroContent.querySelector(".description");
+  const char_image = heroContent.querySelector(".charImage");
+
+  const window_width = window.innerWidth;
+
+  const body = document.body
+  if (language === "es") {
+    body.classList.add('es')
+
+    heroContent_desc.style.textWrap = "pretty";
+
+    if (window_width >= 1536) {
+      char_image.style.right = "20%";
+      char_image.style.bottom = "2.9%";
+    } else if (window_width >= 1440) {
+      char_image.style.right = "27%";
+      char_image.style.bottom = "2.8%";
+    } else if (window_width >= 1280) {
+      char_image.style.right = "15%";
+      char_image.style.bottom = "2.8%";
+    } else if (window_width >= 1024) {
+      char_image.style.right = "13%";
+      char_image.style.bottom = "3.2%";
+    } else if (window_width >= 960) {
+      char_image.style.right = "27%";
+      char_image.style.bottom = "4%";
+    } else if (window_width >= 768) {
+      char_image.style.right = "22%";
+      char_image.style.bottom = "4.3%";
+    } else if (window_width >= 400) {
+      char_image.style.right = "2px";
+      char_image.style.bottom = "4%";
+    }
+  } else {
+    body.classList.remove("es");
+    
+    if (window_width >= 1536) {
+      char_image.style.right = "14%";
+      char_image.style.bottom = "3.4%";
+    } else if (window_width >= 1440) {
+      char_image.style.right = "23%";
+      char_image.style.bottom = "3.2%";
+    } else if (window_width >= 1280) {
+      char_image.style.right = "10%";
+      char_image.style.bottom = "3.2%";
+    } else if (window_width >= 1024) {
+      char_image.style.right = "6%";
+      char_image.style.bottom = "3.3%";
+    } else if (window_width >= 960) {
+      char_image.style.right = "6%";
+      char_image.style.bottom = "4.1%";
+    } else if (window_width >= 768) {
+      char_image.style.right = "16%";
+      char_image.style.bottom = "4.9%";
+    } else if (window_width >= 400) {
+      char_image.style.right = "0";
+      char_image.style.bottom = "7.4%";
+    }
+
+  }
+
   Object.keys(translations[language]).forEach((sectionId) => {
     const sectionData = translations[language][sectionId];
     const section = document.getElementById(sectionId);
