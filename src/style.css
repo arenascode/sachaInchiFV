@@ -526,6 +526,146 @@ body.es .hero-text-content h3 {
   }
 }
 
+/* *Packaging section */
+.packaging-card {
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.packaging-card:hover {
+  transform: translateY(-20px) scale(1.05);
+}
+
+.packaging-card:hover .card-inner {
+  transform: rotateY(5deg) rotateX(-5deg);
+}
+
+.card-inner {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.packaging-image {
+  background: linear-gradient(135deg, #a8e6cf 0%, #7fb899 100%);
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.packaging-image::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transform: rotate(45deg);
+  transition: all 0.6s;
+}
+
+.packaging-card:hover .packaging-image::before {
+  left: 100%;
+}
+
+.eco-badge {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.detail-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.detail-image img {
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.detail-image:hover img {
+  transform: scale(1.1);
+}
+
+.feature-item {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideIn 0.6s forwards;
+}
+
+.feature-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.feature-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.feature-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.feature-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.section-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.leaf-decoration {
+  position: absolute;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #2d5016 0%, #5a9a3c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.texture-overlay {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(255, 255, 255, 0.03) 10px,
+    rgba(255, 255, 255, 0.03) 20px
+  );
+}
+
 /*                          MEDIA QUERIES                           */
 
 /*                          XXL DESKTOP                           */
