@@ -144,7 +144,7 @@ h1.logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #b48811;
+  background-color: #efd180 ;
   border-radius: 20px;
   position: relative;
   cursor: pointer;
@@ -168,7 +168,7 @@ h1.logo {
   position: absolute;
   width: 1.8rem;
   height: 1.8rem;
-  background-color: #f4e3c1;
+  background-color: #F4E3C1;
   border-radius: 18px;
   top: 0px;
   right: 28px;
@@ -419,13 +419,13 @@ body.es .hero-text-content h3 {
   font-weight: 600;
   letter-spacing: 3.5px;
   line-height: 1;
-  color: #ffd683;
+  color: #efd180 ;
   /* text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3); */
 }
 
 .title-group .highlight {
   /* color: #efd180; */
-  color: #ffd683;
+  color: #efd180 ;
   /* color: #b48811; */
 }
 
@@ -666,6 +666,70 @@ body.es .hero-text-content h3 {
   );
 }
 
+/* Founder Section */
+.founder-image {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.founder-image::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, #f6ba02 0%, #ffde59 100%);
+  border-radius: 50%;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.founder-image::after {
+  content: "";
+  position: absolute;
+  bottom: 60px;
+  left: 10px;
+  width: 160px;
+  height: 160px;
+  background: linear-gradient(135deg, #1b4d20 0%, #3a725f 100%);
+  border-radius: 50%;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.founder-image img {
+  position: relative;
+  z-index: 1;
+}
+
+.text-content p {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.accent-line {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #f6ba02 0%, #ffde59 100%);
+  margin: 0 auto 2rem;
+}
+
+.quote-mark {
+  font-size: 4rem;
+  line-height: 0;
+  color: #f6ba02;
+  opacity: 0.3;
+  font-family: "Cormorant Garamond", serif;
+}
+
+@media (max-width: 768px) {
+  .founder-image::before,
+  .founder-image::after {
+    width: 100px;
+    height: 100px;
+  }
+}
 /*                          MEDIA QUERIES                           */
 
 /*                          XXL DESKTOP                           */
