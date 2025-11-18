@@ -1056,6 +1056,7 @@ body.es .hero-text-content h3 {
     width: 280px;
     height: 400px;
   }
+  
 }
 /*                          LAPTOP                           */
 @media (min-width: 1024px) and (max-width: 1279px) {

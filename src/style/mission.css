@@ -375,7 +375,7 @@ body.body_mission {
 }
 @media (min-width: 1441px) and (max-width: 1536px) {
   .headerMission {
-    min-height: 300px;
+    min-height: 230px;
   }
   .header-text {
     margin-left: 4rem;
@@ -386,9 +386,9 @@ body.body_mission {
     background-size: cover;
   }
   .headerMission::after {
-    width: 230px;
-    height: 230px;
-    bottom: -9%;
+    width: 210px;
+    height: 210px;
+    bottom: -11.5%;
     z-index: 9;
   }
   .missionStatement {
@@ -418,15 +418,15 @@ body.body_mission {
 /*                          XL DESKTOP                           */
 @media (min-width: 1281px) and (max-width: 1440px) {
   .headerMission {
-    min-height: 300px;
-    max-height: 300px;
+    min-height: 220px;
+    max-height: 220px;
     padding: 60px 0;
   }
-  .headerMission {
+  /* .headerMission {
     min-height: 300px;
     max-height: 400px;
     padding: 60px 0;
-  }
+  } */
 
   .headerMission::before {
     width: 90%;
@@ -434,9 +434,9 @@ body.body_mission {
     background-size: cover;
   }
   .headerMission::after {
-    width: 230px;
-    height: 230px;
-    bottom: -9%;
+    width: 210px;
+    height: 210px;
+    bottom: -11.5%;
     z-index: 9;
   }
   .header-text {
