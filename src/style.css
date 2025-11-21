@@ -315,6 +315,7 @@ footer {
 .hero {
   position: relative;
   min-height: 100vh;
+  max-height: 100dvh;
   height: 100%;
   width: 100%;
   display: flex;
@@ -343,36 +344,6 @@ footer {
   gap: 4.5rem;
   padding: 0;
 }
-
-/* .video-blob-wrapper {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.video-blob {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.video-blob video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  -webkit-mask-image: url("/assets/img/circleMask.png");
-  -webkit-mask-size: contain;
-  -webkit-mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-image: url("/assets/img/circleMask.png");
-  mask-size: contain;
-  mask-position: center;
-  mask-repeat: no-repeat;
-} */
 
 .hero-text-content {
   position: relative;
@@ -425,7 +396,7 @@ body.es .hero-text-content h3 {
 
 .title-group .highlight {
   /* color: #efd180; */
-  color: #efd180 ;
+  color: #E5C06D ;
   /* color: #b48811; */
 }
 
@@ -863,7 +834,7 @@ body.es .hero-text-content h3 {
     gap: 3rem;
     width: 65%;
     text-align: center;
-    margin-right: 7rem;
+    /* margin-right: 7rem; */
   }
 
   .hero-text-content h3 {
@@ -1030,9 +1001,26 @@ body.es .hero-text-content h3 {
   }
   /* Sect 3 */
   .header {
-    min-height: 300px;
-    max-height: 400px;
+    min-height: 230px;
+    max-height: 250px;
     padding: 60px 0;
+  }
+  .header::before {
+    width: 90%;
+    background: url("../assets/img/headerBGV2.png") right center no-repeat;
+    background-size: cover;
+  }
+  .header::after {
+    width: 200px;
+    height: 220px;
+    bottom: -10.5%;
+    z-index: 9;
+  }
+  .header-text {
+    width: 65%;
+  }
+  .header-image {
+    width: 34%;
   }
   .whatIsSachaInchi {
     padding: 0 60px;
