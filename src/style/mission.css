@@ -261,10 +261,10 @@ body.body_mission {
     position: relative;
     height: 100%;
     width: 100%;
-    justify-content: center;
-    background: url("/assets/img/Sacha-Inchi-plantas.webp") right center
-      no-repeat;
+    /* justify-content: center; */
+    background: url("/assets/img/Sacha-Inchi-plantas.webp") center;
     background-size: cover;
+    border-radius: 5%;
   }
   .missionStatement::before {
     content: "";
@@ -283,32 +283,12 @@ body.body_mission {
 
 .glass-card {
   background: rgba(0, 0, 0, 0.09);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
   position: relative;
   overflow: hidden;
 }
 
-/* Optional: Shimmer effect on hover */
-.glass-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.1),
-    transparent
-  );
-  transition: left 0.5s;
-}
-
-.glass-card:hover::before {
-  left: 100%;
-}
 
 /* Text shadow for better readability */
 .text-shadow {
@@ -406,8 +386,8 @@ body.body_mission {
     background-image: url("/assets/img/InchiChar.webp");
     position: absolute;
     /* opacity: 0.15; */
-    top: 55%;
-    left: 35%;
+    top: 10%;
+    left: 63%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -461,8 +441,8 @@ body.body_mission {
     background-image: url("/assets/img/InchiChar.webp");
     position: absolute;
     /* opacity: 0.15; */
-    top: 55%;
-    left: 35%;
+    top: 9%;
+    left: 65%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -474,24 +454,24 @@ body.body_mission {
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   .headerMission {
-    min-height: 300px;
-    max-height: 300px;
+    min-height: 200px;
+    max-height: 250px;
     padding: 60px 0;
   }
 
   .headerMission::before {
-    width: 84%;
+    width: 86%;
     background: url("/assets/img/headerBGV2.png") right center no-repeat;
     background-size: cover;
   }
   .headerMission::after {
-    width: 230px;
-    height: 230px;
+    width: 150px;
+    height: 150px;
     bottom: -8.8%;
   }
   .header-text {
     width: 65%;
-    padding-left: 0.5rem;
+    padding-left: 0rem;
   }
   .header-image {
     width: 50%;
@@ -511,8 +491,8 @@ body.body_mission {
     background-image: url("/assets/img/InchiChar.webp");
     position: absolute;
     /* opacity: 0.15; */
-    top: 55%;
-    left: 35%;
+    top: 10%;
+    left: 65%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

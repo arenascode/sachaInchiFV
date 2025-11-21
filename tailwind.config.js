@@ -51,8 +51,6 @@ export default {
           "radial-gradient(circle at center, #ffffff 0%, #fdf6ec 20%, #f9ecd6 45%, #f4e3c1 70%, #e5d1a8 100%)",
         "powderBlue-iceBlue":
           "radial-gradient(circle at center, #ffffff 0%, #f4fbff 30%, #d9f0ff 70%, #c6e4f7 100%)",
-        "emerald-gradient":
-          "radial-gradient(circle at center, #7A8C80 0%, #445F53 40%, #2A3B34 70%, #1E2C26 100%)",
         "green-gradient": "linear-gradient(180deg, #8fa078 0%, #60784e 100%)",
       },
       keyframes: {
