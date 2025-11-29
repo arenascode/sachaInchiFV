@@ -273,7 +273,7 @@ body.body_mission {
     background-image: url("/assets/img/InchiChar.webp");
     position: absolute;
     /* opacity: 0.15; */
-    top: 1%;
+    top: 0;
     left: 73%;
     background-size: cover;
     background-position: center;
@@ -345,7 +345,7 @@ body.body_mission {
     background-image: url("/assets/img/InchiChar.webp");
     position: absolute;
     /* opacity: 0.15; */
-    top: 55%;
+    top: 35%;
     left: 35%;
     background-size: cover;
     background-position: center;
@@ -386,7 +386,7 @@ body.body_mission {
     background-image: url("/assets/img/InchiChar.webp");
     position: absolute;
     /* opacity: 0.15; */
-    top: 10%;
+    top: 0;
     left: 63%;
     background-size: cover;
     background-position: center;
@@ -441,7 +441,7 @@ body.body_mission {
     background-image: url("/assets/img/InchiChar.webp");
     position: absolute;
     /* opacity: 0.15; */
-    top: 9%;
+    top: 0;
     left: 65%;
     background-size: cover;
     background-position: center;
@@ -491,7 +491,7 @@ body.body_mission {
     background-image: url("/assets/img/InchiChar.webp");
     position: absolute;
     /* opacity: 0.15; */
-    top: 10%;
+    top: 0;
     left: 65%;
     background-size: cover;
     background-position: center;
