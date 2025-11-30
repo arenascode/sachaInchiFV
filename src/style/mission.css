@@ -264,7 +264,7 @@ body.body_mission {
     /* justify-content: center; */
     background: url("/assets/img/Sacha-Inchi-plantas.webp") center;
     background-size: cover;
-    border-radius: 5%;
+    overflow: hidden;
   }
   .missionStatement::before {
     content: "";
@@ -274,7 +274,7 @@ body.body_mission {
     position: absolute;
     /* opacity: 0.15; */
     top: 0;
-    left: 73%;
+    left: 70%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -345,8 +345,8 @@ body.body_mission {
     background-image: url("/assets/img/InchiChar.webp");
     position: absolute;
     /* opacity: 0.15; */
-    top: 35%;
-    left: 35%;
+    top: 0;
+    left: 65%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -387,7 +387,7 @@ body.body_mission {
     position: absolute;
     /* opacity: 0.15; */
     top: 0;
-    left: 63%;
+    left: 67%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -402,11 +402,7 @@ body.body_mission {
     max-height: 220px;
     padding: 60px 0;
   }
-  /* .headerMission {
-    min-height: 300px;
-    max-height: 400px;
-    padding: 60px 0;
-  } */
+
 
   .headerMission::before {
     width: 90%;
@@ -442,7 +438,7 @@ body.body_mission {
     position: absolute;
     /* opacity: 0.15; */
     top: 0;
-    left: 65%;
+    left: 67%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -532,8 +528,8 @@ body.body_mission {
   /* MISSION */
   .headerMission {
     position: relative;
-    min-height: 250px;
-    max-height: 250px;
+    min-height: 200px;
+    max-height: 200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -555,11 +551,11 @@ body.body_mission {
   }
   .headerMission::after {
     content: "";
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
     position: absolute;
     left: -5%;
-    bottom: -11%;
+    bottom: -11.8%;
     background: url("/assets/img/cornerBGHeader.webp") right center
       no-repeat;
     background-size: cover;
@@ -590,8 +586,8 @@ body.body_mission {
     background-image: url("/assets/img/InchiChar.webp");
     position: absolute;
     /* opacity: 0.15; */
-    top: 55%;
-    left: 35%;
+    top: 0;
+    left: 70%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -612,18 +608,18 @@ body.body_mission {
     font-size: 14px;
   }
   .headerMission {
-    min-height: 250px;
-    max-height: 250px;
+    min-height: 160px;
+    max-height: 160px;
     padding: 60px 0;
   }
   .headerMission::before {
     width: 100%;
   }
   .headerMission::after {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     left: -5%;
-    bottom: -7.9%;
+    bottom: -11.3%;
   }
   .header-image {
     width: 34%;
@@ -738,8 +734,8 @@ body.body_mission {
 
   .headerMission {
     position: relative;
-    min-height: 160px;
-    max-height: 160px;
+    min-height: 150px;
+    max-height: 150px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -765,14 +761,14 @@ body.body_mission {
     height: 50px;
     position: absolute;
     left: -1%;
-    bottom: -3.6%;
+    bottom: -4%;
     background: url("/assets/img/cornerBGHeader.webp") right center
       no-repeat;
     background-size: cover;
     z-index: 3;
   }
   .header-text {
-    width: 66%;
+    width: 70%;
     padding-left: 1.1rem;
   }
   body.es .header-text {
@@ -796,12 +792,12 @@ body.body_mission {
   }
   .missionStatement::before {
     content: "";
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     background-image: url("/assets/img/InchiChar.webp");
     position: absolute;
     /* opacity: 0.15; */
-    top: 1%;
+    top: 0;
     left: 73%;
     background-size: cover;
     background-position: center;
@@ -817,26 +813,5 @@ body.body_mission {
     -webkit-backdrop-filter: blur(30px);
     position: relative;
     overflow: hidden;
-  }
-
-  /* Optional: Shimmer effect on hover */
-  .glass-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255, 255, 255, 0.1),
-      transparent
-    );
-    transition: left 0.5s;
-  }
-
-  .glass-card:hover::before {
-    left: 100%;
   }
 }

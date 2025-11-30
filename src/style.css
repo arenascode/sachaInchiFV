@@ -338,7 +338,7 @@ footer {
   width: 100%;
   max-width: 1400px;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   align-items: center;
   /* justify-content: space-between; */
   gap: 4.5rem;
@@ -379,6 +379,7 @@ body.es .hero-text-content h3 {
 
 .title-group {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 25px;
   margin-bottom: 10px;
@@ -1169,7 +1170,7 @@ body.es .hero-text-content h3 {
     align-items: center;
     gap: 2.5rem;
     text-align: center;
-    margin-right: 7rem;
+    /* margin-right: 3rem; */
   }
   body.es .hero-text-content {
     width: 80%;
@@ -1253,7 +1254,7 @@ body.es .hero-text-content h3 {
   }
   .hero {
     padding: 2rem;
-    background-image: url(/assets/img/sacha-inchi-granos.webp);
+    /* background-image: url(/assets/img/sacha-inchi-granos.webp); */
   }
 
   .hero-content {
@@ -1390,7 +1391,7 @@ body.es .hero-text-content h3 {
     padding: 0 2px;
   }
   .charImage {
-    bottom: 14.3%;
+    bottom: 11.3%;
     right: 10%;
     width: 80px;
     height: 80px;

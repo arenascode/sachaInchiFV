@@ -184,25 +184,46 @@ const translations = {
     },
     infoSection5: {
       parallaxTitle: "Sustainability and Impact",
-      //Product 1
-      title: "Sustainable by Design",
-      p1: "Our products are crafted under strict environmental and ethical standards, prioritizing both quality and sustainability. From renewable energy sources to eco-conscious packaging, every stage of the process is designed to respect nature and minimize environmental impact.",
-      li1Strong: "Clean Energy:",
+      badge: "100% SUTAINABLE",
+      title: "Packaging That Cares",
+      p1: "Made from bagasse, a natural byproduct of sugarcane, it’s compostable, eco-friendly, and part of our commitment to a cleaner world.",
+      product1Title: "Perfect Mix",
+      product1Description:
+        "Fuel, fortify and Resilience in sustainable packaging.",
+      product1Badge: "Sugar Cane Based",
+      product2Title: "Omega & Protein",
+      product2Description: "Bost your Energy Naturally, same eco values.",
+      product2Badge: "Bagasse Is Biodegradable",
+      product3Title: "Guilt Free Snack",
+      product3Description: "The perfect guilt, zero waste.",
+      product3Badge: "Food-Safe & Non-Toxic",
+      detailedSectionTitle: "Good for you. Gentle on the planet",
+      detailedSectionP1:
+        "Our packaging isn’t just eco-friendly — Crafted from sugarcane bagasse, our packaging gives agricultural waste a second life—turning nature’s leftovers into earth-loving protection for your food.",
+      li1Title: "Renewable Source",
       li1Desc:
-        "powered by renewable hydroelectric systems, ensuring zero carbon emissions in production.",
-      li2Strong: "Responsible Sourcing:",
-      li2Desc: "only sustainably harvested raw materials are used.",
-      li3Strong: "Low-waste practices:",
+        "Sugarcane naturally regrows every year, making bagasse a truly sustainable material.",
+      li2Title: "Bagasse Is Biodegradable",
+      li2Desc:
+        "Decomposes in 45–90 days, returning to the soil as compost — no waste, no toxins.",
+      li3Title: "Food-Safe & Non-Toxic",
       li3Desc:
-        "packaging and production are optimized to reduce environmental footprint.",
-      li4Strong: "Fair working conditions:",
-      li4Desc: "with values rooted in respect, equity, and community support.",
-      li5Strong: "Circular Thinking:",
-      li5Desc: "embracing regeneration over extraction for a better future.",
-      finalDesc:
-        "We believe that conscious innovation can nourish people while protecting the planet — today and for generations to come.",
+        "Certified safe for food contact, with no harmful chemicals or microplastics.",
+      li4Title: "Carbon Negative",
+      li4Desc:
+        "The process captures more CO₂ than it emits, helping fight climate change.",
       p2: "Supporting Sacha Inchi means contributing to the preservation of the Amazon and earth ecosystem, a vital part of Earth's biosphere that regulates the planet's climate and houses unparalleled biodiversity. By choosing Sacha Inchi, you are empowering local communities through sustainable farming practices that harmonize with the delicate balance of the Amazon ecosystem.",
       p3: "This crop provides economic opportunities for indigenous farmers, enabling them to thrive while protecting their natural environment. Cultivating Sacha Inchi encourages agroforestry and reduces the need for deforestation, fostering a model where the health of the biosphere and human well-being are intrinsically connected. The sustainable cultivation of this remarkable plant creates a positive cycle where environmental protection and economic prosperity work hand in hand.",
+      founderTitle: "Meet the Founder",
+      founderP1:
+        "Born in New York, raised in Ecuador — I grew up between two worlds that shaped how I see life, wellness, and purpose. Guided by my uncle — an agricultural engineer — I learned to have a deep respect and understanding of the ecology of plants and the living soil — when we care for nature, she cares for us in return.",
+      founderP2:
+        "My sweetest childhood memories - living on an hacienda where the eucalyptus filled the air, and weekends meant visiting open-air markets for fresh fruits, vegetables, and nuts from nearby and distant farms. My family lived by the belief that food should come straight from the earth — pure, fresh, and full of life — a philosophy that continues to guide me today.",
+      founderP3:
+        "Now, as a New Yorker, I carry with me the richness of both worlds. Living in a city celebrated for its diversity, creativity, and global connections, bridging Ecuador's ancestral bioorganic traditions with New York's modern, health-driven lifestyle — connecting local farmers to global consumers who seek authenticity, sustainability, and wellness in every bite.",
+      founderP4:
+        "Each bite of Omare is a tribute to both worlds — to Mother Earth and to the cultural diversity that makes wellness truly universal.",
+      founderSignature: "- Founder, Omaré",
       ctaTitle: "Experience the Benefits of Sacha Inchi",
       ctaDesc:
         "Take the first step towards better health and wellness with this award-winning Amazonian treasure. Learn more to start your journey.",
@@ -311,27 +332,48 @@ const translations = {
     },
     infoSection5: {
       parallaxTitle: "Sostenibilidad e Impacto",
-      // Product 1
-      title: "Diseñado para la Sostenibilidad",
-      p1: "Cada uno de nuestros productos nace bajo estrictos principios ambientales y éticos, donde la calidad y la sostenibilidad son prioridad. Desde la energía renovable hasta los empaques responsables, todo el proceso está pensado para cuidar la naturaleza y reducir nuestro impacto en el planeta.",
-      li1Strong: "Energia limpia:",
+      badge: "100% SOSTENIBLE",
+      title: "Un Empaque Con Conciencia",
+      subtitle: "Cada detalle cuenta: incluso el empaque",
+      p1: "Elaborado con bagazo de caña de azúcar, es un material natural, compostable y ecológico. Es parte esencial de nuestro compromiso por un mundo más limpio.",
+      product1Title: "La Mezcla Perfecta",
+      product1Description:
+        "Energía, fortaleza y resiliencia en un empaque sostenible.",
+      product1Badge: "A base de caña de azúcar",
+      product2Title: "Omega y Proteína",
+      product2Description:
+        "Potencia tu energía naturalmente, con la misma conciencia ecológica.",
+      product2Badge: "Bagazo biodegradable",
+      product3Title: "Snack Sin Culpas",
+      product3Description: "El placer perfecto: cero residuos.",
+      product3Badge: "Empaque apto para alimentos",
+      detailedSectionTitle: "Bueno para ti. Respetuoso con el planeta",
+      detailedSectionP1:
+        "Nuestro empaque va más allá de lo ecológico. Fabricado con bagazo de caña de azúcar, da una segunda vida a los residuos agrícolas, transformando los restos de la naturaleza en una protección que respeta la Tierra para tus alimentos.",
+      li1Title: "Fuente Renovable",
       li1Desc:
-        "Producción impulsada por energía hidroeléctrica renovable, garantizando cero emisiones de carbono.",
-      li2Strong: "Origen responsable:",
-      li2Desc: "Utilizamos únicamente materias primas de origen sostenible.",
-      li3Strong: "Producción consciente",
+        "La caña de azúcar se regenera naturalmente cada año, haciendo del bagazo un material verdaderamente sostenible.",
+      li2Title: "Bagazo Biodegradable",
+      li2Desc:
+        "Se descompone en 45 a 90 días, regresando al suelo como abono. Cero residuos, cero toxinas.",
+      li3Title: "Apto para Alimentos y No Tóxico",
       li3Desc:
-        "optimizamos el empaque y cada etapa del proceso para reducir nuestro impacto en el entorno.",
-      li4Strong: "Condiciones laborales éticas:",
+        "Certificado como seguro para el contacto alimentario, sin químicos dañinos ni microplásticos.",
+      li4Title: "Carbono Negativo",
       li4Desc:
-        "guiadas por el respeto, la igualdad y el fortalecimiento de las comunidades locales.",
-      li5Strong: "Filosofía Circular:",
-      li5Desc:
-        "Promoviendo la regeneración sobre la extracción para  un futuro más sostenible.",
-      finalDesc:
-        "Creemos que la innovación consciente puede nutrir a las personas mientras protege el planeta, hoy y para las generaciones futuras.",
+        "El proceso de fabricación captura más CO₂ del que emite, contribuyendo a la lucha contra el cambio climático.",
       p2: "Apoyar el Sacha Inchi significa contribuir a la preservación del Amazonas y del ecosistema terrestre — una fuerza vital que regula el clima del planeta y alberga una biodiversidad inigualable. Al elegir Sacha Inchi, estás empoderando a las comunidades locales que practican una agricultura sostenible en armonía con los delicados ritmos de la selva tropical.",
       p3: "Este cultivo extraordinario no solo ofrece oportunidades económicas justas para los agricultores indígenas, sino que también promueve la agroforestería y reduce la deforestación. Su cultivo representa un equilibrio poderoso, donde el bienestar de las personas y la salud de la biosfera prosperan juntos en un ciclo de renovación y respeto por la naturaleza.",
+      founderTitle: "Conoce a la Fundadora",
+      founderP1:
+        "Nacida en Nueva York, criada en Ecuador: crecí entre dos mundos que forjaron mi visión de la vida, el bienestar y el propósito. Guiada por mi tío —un ingeniero agrónomo— adquirí un profundo respeto y comprensión por la ecología de las plantas y la sabiduría del suelo vivo. Cuando cuidamos la naturaleza, ella nos cuida a cambio.",
+      founderP2:
+        "Mis recuerdos de infancia más dulces provienen de vivir en una hacienda, donde el eucalipto impregnaba el aire. Los fines de semana visitábamos mercados al aire libre, repletos de frutas, verduras y nueces frescas. Mi familia creía firmemente que el alimento debe venir directo de la tierra: puro, fresco y lleno de vida. Una filosofía que me guía hasta hoy.",
+      founderP3:
+        "Ahora, como neoyorquina, llevo conmigo la riqueza de ambos mundos. En esta ciudad de diversidad y creatividad global, tiendo un puente entre las tradiciones bioorgánicas ancestrales de Ecuador y el estilo de vida moderno de Nueva York, impulsado por la salud. Así conectamos a nuestros agricultores con consumidores globales que buscan autenticidad, sostenibilidad y bienestar en cada bocado.",
+      founderP4:
+        "Cada bocado de Omare es un homenaje a ambos mundos: a la Madre Tierra y a la diversidad cultural que hace que el bienestar sea verdaderamente universal.",
+      founderSignature: "- Fundadora, Omaré",
       ctaTitle: "Descubre los beneficios de Sacha Inchi",
       ctaDesc:
         "Da el primer paso hacia una mejor salud y bienestar con este tesoro amazónico galardonado. Aprende más para comenzar tu viaje.",
@@ -355,9 +397,9 @@ function updateTranslations(language) {
 
   const window_width = window.innerWidth;
 
-  const body = document.body
+  const body = document.body;
   if (language === "es") {
-    body.classList.add('es')
+    body.classList.add("es");
 
     heroContent_desc.style.textWrap = "pretty";
 
@@ -374,18 +416,18 @@ function updateTranslations(language) {
       char_image.style.right = "13%";
       char_image.style.bottom = "3.2%";
     } else if (window_width >= 960) {
-      char_image.style.right = "27%";
+      char_image.style.right = "28%";
       char_image.style.bottom = "4%";
     } else if (window_width >= 768) {
-      char_image.style.right = "22%";
-      char_image.style.bottom = "4.3%";
+      char_image.style.right = "20%";
+      char_image.style.bottom = "4.8%";
     } else if (window_width >= 400) {
       char_image.style.right = "2px";
-      char_image.style.bottom = "4%";
+      char_image.style.bottom = "5%";
     }
   } else {
     body.classList.remove("es");
-    
+
     if (window_width >= 1536) {
       char_image.style.right = "14%";
       char_image.style.bottom = "3.4%";
@@ -400,15 +442,14 @@ function updateTranslations(language) {
       char_image.style.bottom = "3.3%";
     } else if (window_width >= 960) {
       char_image.style.right = "6%";
-      char_image.style.bottom = "4.1%";
+      char_image.style.bottom = "4.5%";
     } else if (window_width >= 768) {
       char_image.style.right = "16%";
       char_image.style.bottom = "4.9%";
     } else if (window_width >= 400) {
       char_image.style.right = "0";
-      char_image.style.bottom = "7.4%";
+      char_image.style.bottom = "9.5%";
     }
-
   }
 
   Object.keys(translations[language]).forEach((sectionId) => {
@@ -463,56 +504,56 @@ updateTranslations(userLanguage);
 
 window.addEventListener("load", () => updateTranslations(userLanguage));
 
-// *Packaging Section* 
+// *Packaging Section*
 // Scroll reveal animation
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -100px 0px",
+};
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, observerOptions);
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
+    }
+  });
+}, observerOptions);
 
-        document.querySelectorAll('.section-reveal').forEach(el => {
-            observer.observe(el);
-        });
+document.querySelectorAll(".section-reveal").forEach((el) => {
+  observer.observe(el);
+});
 
-        // Enhanced 3D tilt effect for cards
-        document.querySelectorAll('.packaging-card').forEach(card => {
-            card.addEventListener('mousemove', (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                
-                const rotateX = (y - centerY) / 10;
-                const rotateY = (centerX - x) / 10;
-                
-                const inner = card.querySelector('.card-inner');
-                inner.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
-            });
-            
-            card.addEventListener('mouseleave', () => {
-                const inner = card.querySelector('.card-inner');
-                inner.style.transform = 'rotateX(0) rotateY(0) scale(1)';
-            });
-        });
+// Enhanced 3D tilt effect for cards
+document.querySelectorAll(".packaging-card").forEach((card) => {
+  card.addEventListener("mousemove", (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
 
-        // Parallax effect for decorative elements
-        document.addEventListener('mousemove', (e) => {
-            const leaves = document.querySelectorAll('.leaf-decoration');
-            const x = e.clientX / window.innerWidth;
-            const y = e.clientY / window.innerHeight;
-            
-            leaves.forEach((leaf, index) => {
-                const speed = (index + 1) * 20;
-                leaf.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
-            });
-        });
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = (y - centerY) / 10;
+    const rotateY = (centerX - x) / 10;
+
+    const inner = card.querySelector(".card-inner");
+    inner.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+  });
+
+  card.addEventListener("mouseleave", () => {
+    const inner = card.querySelector(".card-inner");
+    inner.style.transform = "rotateX(0) rotateY(0) scale(1)";
+  });
+});
+
+// Parallax effect for decorative elements
+document.addEventListener("mousemove", (e) => {
+  const leaves = document.querySelectorAll(".leaf-decoration");
+  const x = e.clientX / window.innerWidth;
+  const y = e.clientY / window.innerHeight;
+
+  leaves.forEach((leaf, index) => {
+    const speed = (index + 1) * 20;
+    leaf.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+  });
+});
