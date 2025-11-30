@@ -280,7 +280,7 @@ footer {
   width: 96%;
   height: 100%;
   background: #000;
-  background: url("../assets/img/headerBGV2.png") right center no-repeat;
+  background: url("../assets/img/headerBGV2.webp") right center no-repeat;
   background-size: cover;
   position: absolute;
   left: 0;
@@ -294,7 +294,7 @@ footer {
   position: absolute;
   left: -1%;
   bottom: -11%;
-  background: url("../assets/img/cornerBGHeader.png") right center no-repeat;
+  background: url("../assets/img/cornerBGHeader.webp") right center no-repeat;
   background-size: cover;
   z-index: 3;
 }
@@ -795,7 +795,7 @@ body.es .hero-text-content h3 {
   }
   .header::before {
     width: 83%;
-    background: url("../assets/img/headerBGV2.png") right center no-repeat;
+    background: url("../assets/img/headerBGV2.webp") right center no-repeat;
     background-size: cover;
   }
   .header::after {
@@ -893,7 +893,7 @@ body.es .hero-text-content h3 {
 
   .header::before {
     width: 90%;
-    background: url("../assets/img/headerBGV2.png") right center no-repeat;
+    background: url("../assets/img/headerBGV2.webp") right center no-repeat;
     background-size: cover;
   }
   .header::after {
@@ -1014,7 +1014,7 @@ body.es .hero-text-content h3 {
   }
   .header::before {
     width: 90%;
-    background: url("../assets/img/headerBGV2.png") right center no-repeat;
+    background: url("../assets/img/headerBGV2.webp") right center no-repeat;
     background-size: cover;
   }
   .header::after {
@@ -1310,7 +1310,7 @@ body.es .hero-text-content h3 {
     position: absolute;
     left: -1%;
     bottom: -5.8%;
-    background: url("../assets/img/cornerBGHeader.png") right center no-repeat;
+    background: url("../assets/img/cornerBGHeader.webp") right center no-repeat;
     background-size: cover;
     z-index: 3;
   }
@@ -1418,7 +1418,7 @@ body.es .hero-text-content h3 {
     width: 98%;
     height: 100%;
     background: #000;
-    background: url("../assets/img/headerBGV2.png") right center no-repeat;
+    background: url("../assets/img/headerBGV2.webp") right center no-repeat;
     background-size: cover;
     position: absolute;
     left: 0;
@@ -1432,7 +1432,7 @@ body.es .hero-text-content h3 {
     position: absolute;
     left: -1%;
     bottom: -3.6%;
-    background: url("../assets/img/cornerBGHeader.png") right center no-repeat;
+    background: url("../assets/img/cornerBGHeader.webp") right center no-repeat;
     background-size: cover;
     z-index: 3;
   }
