@@ -509,14 +509,6 @@ body.es .hero-text-content h3 {
   transform: scale(1.05);
 }
 
-.packaging-card:hover .card-inner {
-  /* transform: rotateY(5deg) rotateX(-5deg); */
-}
-
-.card-inner {
-  /* transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  transform-style: preserve-3d; */
-}
 
 .packaging-image {
   background: linear-gradient(135deg, #a8e6cf 0%, #7fb899 100%);
@@ -544,12 +536,6 @@ body.es .hero-text-content h3 {
 
 .packaging-card:hover .packaging-image::before {
   left: 100%;
-}
-
-.eco-badge {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -615,11 +601,6 @@ body.es .hero-text-content h3 {
   transform: translateY(0);
 }
 
-.leaf-decoration {
-  position: absolute;
-  opacity: 0.5;
-  pointer-events: none;
-}
 
 .gradient-text {
   background: linear-gradient(135deg, #2d5016 0%, #5a9a3c 100%);
@@ -1478,10 +1459,12 @@ body.es .hero-text-content h3 {
   }
   .text-wrap-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     overflow: hidden;
   }
-
+.tex-wrap-sustainable-section {
+    flex-direction: column;
+  }
   .circular-image {
     width: 300px;
     height: 300px;
