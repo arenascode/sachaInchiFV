@@ -499,6 +499,7 @@ body.es .hero-text-content h3 {
 }
 
 /* *Packaging section */
+
 .packaging-card {
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   transform-style: preserve-3d;
@@ -515,27 +516,6 @@ body.es .hero-text-content h3 {
   /* border-radius: 24px; */
   position: relative;
   overflow: hidden;
-}
-
-.packaging-image::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    rgba(255, 255, 255, 0.3),
-    transparent
-  );
-  transform: rotate(45deg);
-  transition: all 0.6s;
-}
-
-.packaging-card:hover .packaging-image::before {
-  left: 100%;
 }
 
 @keyframes float {
@@ -1372,10 +1352,13 @@ body.es .hero-text-content h3 {
     padding: 0 2px;
   }
   .charImage {
-    bottom: 11.3%;
-    right: 10%;
+    bottom: 9%;
+    right: 6%;
     width: 80px;
     height: 80px;
+  }
+  body.es .charImage {
+    bottom: 5%;
   }
   /*What is Sacha Inchi Section*/
 
@@ -1465,6 +1448,12 @@ body.es .hero-text-content h3 {
 .tex-wrap-sustainable-section {
     flex-direction: column;
   }
+  body.es .packaging-section-title  {
+    height: 5rem;
+}
+body.es .packaging-section-subtitle  {
+    margin: 1rem 0;
+}
   .circular-image {
     width: 300px;
     height: 300px;

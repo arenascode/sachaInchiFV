@@ -186,6 +186,7 @@ const translations = {
       parallaxTitle: "Sustainability and Impact",
       badge: "100% SUTAINABLE",
       title: "Packaging That Cares",
+      subtitle: "Every detail matters - Even our packaging",
       p1: "Made from bagasse, a natural byproduct of sugarcane, it’s compostable, eco-friendly, and part of our commitment to a cleaner world.",
       product1Title: "Perfect Mix",
       product1Description:
@@ -422,7 +423,7 @@ function updateTranslations(language) {
       char_image.style.right = "20%";
       char_image.style.bottom = "4.8%";
     } else if (window_width >= 400) {
-      char_image.style.right = "2px";
+      char_image.style.right = "0";
       char_image.style.bottom = "5%";
     }
   } else {
@@ -446,16 +447,18 @@ function updateTranslations(language) {
     } else if (window_width >= 768) {
       char_image.style.right = "16%";
       char_image.style.bottom = "4.9%";
-    } else if (window_width >= 400) {
+    } else if (window_width >= 480) {
       char_image.style.right = "0";
       char_image.style.bottom = "9.5%";
+    } else if (window_width >= 400) {
+      char_image.style.right = "-5%";
+      char_image.style.bottom = "5%";
     }
   }
 
   Object.keys(translations[language]).forEach((sectionId) => {
     const sectionData = translations[language][sectionId];
     const section = document.getElementById(sectionId);
-    console.log({ section });
 
     if (section) {
       Object.keys(sectionData).forEach((role) => {
