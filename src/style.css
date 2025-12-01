@@ -144,7 +144,7 @@ h1.logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #efd180 ;
+  background-color: #efd180;
   border-radius: 20px;
   position: relative;
   cursor: pointer;
@@ -168,7 +168,7 @@ h1.logo {
   position: absolute;
   width: 1.8rem;
   height: 1.8rem;
-  background-color: #F4E3C1;
+  background-color: #f4e3c1;
   border-radius: 18px;
   top: 0px;
   right: 28px;
@@ -341,7 +341,7 @@ footer {
   flex-direction: column;
   align-items: center;
   /* justify-content: space-between; */
-  gap: 4.5rem;
+  gap: 4rem;
   padding: 0;
 }
 
@@ -391,13 +391,13 @@ body.es .hero-text-content h3 {
   font-weight: 600;
   letter-spacing: 3.5px;
   line-height: 1;
-  color: #efd180 ;
+  color: #efd180;
   /* text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3); */
 }
 
 .title-group .highlight {
   /* color: #efd180; */
-  color: #E5C06D ;
+  color: #e5c06d;
   /* color: #b48811; */
 }
 
@@ -429,7 +429,42 @@ body.es .hero-text-content h3 {
   color: #b48811;
   font-weight: 600;
 }
+.button-character-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 2rem; */
+}
 
+.charImage {
+  width: 120px;
+  height: auto;
+  margin-bottom: -64px; /* Overlap with button */
+  z-index: 2;
+  align-self: flex-end;
+  animation: fadeInUp 0.8s ease-out 1s backwards;
+}
+
+.cta-button {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive sizing */
+/* @media (max-width: 768px) {
+  .charImage {
+    width: 90px;
+    margin-bottom: -15px;
+  }
+} */
+
+/* @media (max-width: 480px) {
+  .charImage {
+    width: 70px;
+    margin-bottom: -12px;
+  }
+} */
 .cta-button {
   margin-top: 40px;
   /* background: linear-gradient(135deg, #d4a574 0%, #b8935f 100%); */
@@ -478,14 +513,14 @@ body.es .hero-text-content h3 {
   z-index: 1;
 }
 
-.charImage {
+/* .charImage {
   position: absolute;
   bottom: 12.3%;
   right: 13%;
   width: 130px;
   height: 130px;
-  animation: fadeInUp 0.8s ease-out 1s backwards;
-}
+  
+} */
 
 @keyframes fadeInUp {
   from {
@@ -509,7 +544,6 @@ body.es .hero-text-content h3 {
 .packaging-card:hover {
   transform: scale(1.05);
 }
-
 
 .packaging-image {
   background: linear-gradient(135deg, #a8e6cf 0%, #7fb899 100%);
@@ -580,7 +614,6 @@ body.es .hero-text-content h3 {
   opacity: 1;
   transform: translateY(0);
 }
-
 
 .gradient-text {
   background: linear-gradient(135deg, #2d5016 0%, #5a9a3c 100%);
@@ -656,6 +689,7 @@ body.es .hero-text-content h3 {
   font-family: "Cormorant Garamond", serif;
 }
 
+/* founder responsive */
 @media (max-width: 768px) {
   .founder-image::before,
   .founder-image::after {
@@ -694,7 +728,7 @@ body.es .hero-text-content h3 {
     gap: 2.6rem;
     width: 50%;
     text-align: center;
-    margin-right: 14rem;
+    margin-right: 3rem;
   }
 
   .hero-text-content h3 {
@@ -739,11 +773,12 @@ body.es .hero-text-content h3 {
   }
 
   .charImage {
-    position: absolute;
+    /* position: absolute; */
     bottom: 3.4%;
     right: 14%;
     width: 110px;
     height: 110px;
+    margin-bottom: -4rem;
     animation: fadeInUp 0.8s ease-out 1s backwards;
   }
 
@@ -800,10 +835,10 @@ body.es .hero-text-content h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3.5rem;
+    gap: 4rem;
     width: 65%;
     text-align: center;
-    margin-right: 7rem;
+    margin-right: 4rem;
   }
 
   .hero-text-content h3 {
@@ -845,6 +880,7 @@ body.es .hero-text-content h3 {
     right: 25%;
     width: 110px;
     height: 110px;
+    margin-bottom: -73px;
   }
   /* Section 3 */
   .header {
@@ -919,9 +955,9 @@ body.es .hero-text-content h3 {
   .hero-text-content {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     text-align: center;
-    margin-right: 7rem;
+    margin-right: 3rem;
   }
 
   .hero-text-content h3 {
@@ -967,6 +1003,7 @@ body.es .hero-text-content h3 {
     right: 10%;
     width: 110px;
     height: 110px;
+    margin-bottom: -73px;
   }
   /* Sect 3 */
   .header {
@@ -1013,7 +1050,6 @@ body.es .hero-text-content h3 {
     width: 280px;
     height: 400px;
   }
-  
 }
 /*                          LAPTOP                           */
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -1024,14 +1060,14 @@ body.es .hero-text-content h3 {
   .hero-content {
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .hero-text-content {
     align-items: center;
-    gap: 4.5rem;
+    gap: 3rem;
     text-align: center;
-    margin-right: 7rem;
+    margin-right: 2rem;
   }
 
   .hero-text-content h3 {
@@ -1075,6 +1111,7 @@ body.es .hero-text-content h3 {
     right: 10%;
     width: 100px;
     height: 100px;
+    margin-bottom: -34px;
   }
 
   /* Sect 3 */
@@ -1352,8 +1389,8 @@ body.es .hero-text-content h3 {
     padding: 0 2px;
   }
   .charImage {
-    bottom: 9%;
-    right: 6%;
+    /* bottom: 9%;
+    right: 6%; */
     width: 80px;
     height: 80px;
   }
@@ -1445,15 +1482,204 @@ body.es .hero-text-content h3 {
     flex-direction: column-reverse;
     overflow: hidden;
   }
-.tex-wrap-sustainable-section {
+  .tex-wrap-sustainable-section {
     flex-direction: column;
   }
-  body.es .packaging-section-title  {
+  body.es .packaging-section-title {
     height: 5rem;
-}
-body.es .packaging-section-subtitle  {
+  }
+  body.es .packaging-section-subtitle {
     margin: 1rem 0;
+  }
+  .circular-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    shape-outside: circle(50%);
+    float: left;
+    align-self: center;
+    margin-right: 0;
+    margin-bottom: 0;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+  }
+  .circular-image.biosphere {
+    margin-right: 0;
+  }
+  .flowing-text,
+  .flowing-text-biosphere {
+    text-align: justify;
+    line-height: 1.7;
+    hyphens: auto;
+  }
 }
+
+@media (max-width: 400px) {
+  body.fixed-nav nav {
+    max-width: 400px;
+  }
+  .hero {
+    /* background-image: url(/assets/img/sacha-inchi-granos.webp); */
+    padding: 0.5rem;
+    background-position: center;
+  }
+
+  .hero-content {
+    gap: 1rem;
+    height: 80dvh;
+    max-height: 80dvh;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-text-content {
+    width: 100%;
+    gap: 1rem;
+  }
+  .hero-text-content h3 {
+    font-size: 1.1rem;
+    margin-left: 0;
+  }
+
+  .title-group {
+    width: 100%;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .title-group h1 {
+    font-size: 36px;
+  }
+
+  .seed-divider {
+    width: 120px;
+    height: 90px;
+    opacity: 1;
+  }
+
+  .description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 5px;
+    /* width: max-content; */
+  }
+  body.es .cta-button {
+    padding: 7px 15px;
+  }
+  .language {
+    font-size: 1.2rem;
+    padding: 0 2px;
+  }
+  .charImage {
+    /* bottom: 9%;
+    right: 6%; */
+    width: 80px;
+    height: 80px;
+  }
+  body.es .charImage {
+    bottom: 5%;
+  }
+  /*What is Sacha Inchi Section*/
+
+  .whatIsSachaInchi {
+    font-size: 12px;
+    height: auto;
+    padding: 0;
+  }
+  .header {
+    position: relative;
+    min-height: 160px;
+    max-height: 160px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 60px 0;
+  }
+  .header::before {
+    content: "";
+    width: 98%;
+    height: 100%;
+    background: #000;
+    background: url("../assets/img/headerBGV2.webp") right center no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .header::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -1%;
+    bottom: -3.6%;
+    background: url("../assets/img/cornerBGHeader.webp") right center no-repeat;
+    background-size: cover;
+    z-index: 3;
+  }
+  body.es .header_title {
+    padding-right: 0.5rem;
+  }
+  .header-text {
+    width: 65%;
+  }
+  body.es .header-text {
+    width: 70%;
+    padding-left: 0rem;
+    padding-right: 1.5rem;
+  }
+  body.es .header-text span {
+    padding-left: 0.3rem;
+  }
+  .header-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+  }
+  .whatIsSachaInchi .imgContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .circular-image.biosphere {
+    margin-left: 0;
+    align-self: center;
+  }
+  .parallax {
+    background-attachment: scroll;
+  }
+  .parallaxText {
+    padding: 1rem;
+  }
+  .imageSection4 {
+    min-height: 180px;
+  }
+  .text-wrap-container {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+  }
+  .tex-wrap-sustainable-section {
+    flex-direction: column;
+  }
+  body.es .packaging-section-title {
+    height: 5rem;
+  }
+  .packaging-section-subtitle {
+    margin-top: 1rem;
+  }
+  body.es .packaging-section-subtitle {
+    margin: 1.3rem 0;
+  }
   .circular-image {
     width: 300px;
     height: 300px;
