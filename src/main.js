@@ -63,14 +63,14 @@ hamburguerBtn.addEventListener("click", openModalMenu);
 
 closeModalBtn.addEventListener("click", closeModalMenu);
 
-const moreinfoHeroBtn = document.getElementById("moreInfoHero");
-const targetSection = document.querySelector(".whatIsSachaInchi");
+// const moreinfoHeroBtn = document.getElementById("moreInfoHero");
+// const targetSection = document.querySelector(".whatIsSachaInchi");
 
-if (moreinfoHeroBtn) {
-  moreinfoHeroBtn.addEventListener("click", () => {
-    targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
-}
+// if (moreinfoHeroBtn) {
+//   moreinfoHeroBtn.addEventListener("click", () => {
+//     targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+//   });
+// }
 
 //* Close And Reopen Benefit Modals
 
