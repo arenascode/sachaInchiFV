@@ -3,21 +3,23 @@ const nav = document.querySelector(".nav");
 const hero = document.querySelector(".hero");
 const topOfNav = nav.offsetTop;
 
-function fixNav() {
-  const offsetTop = window.scrollY;
+console.log(nav.offsetHeight)
+// function fixNav() {
+//   const offsetTop = window.scrollY;
 
-  if (offsetTop >= topOfNav - 5) {
-    document.body.classList.add("fixed-nav");
-    document.body.style.paddingTop = nav.offsetHeight + "px";
-  } else {
-    document.body.style.paddingTop = 0;
-    document.body.classList.remove("fixed-nav");
-  }
-}
+//   if (offsetTop >= topOfNav - 5) {
+//     document.body.classList.add("fixed-nav");
+//     document.body.style.paddingTop = nav.offsetHeight + "px";
+//   } else {
+//     document.body.style.paddingTop = 0;
+//     document.body.classList.remove("fixed-nav");
+//   }
+// }
 
-window.addEventListener("scroll", fixNav);
+// window.addEventListener("scroll", fixNav);
 
 //*Show and hidde MobileMenu Modal */
+
 const mobileMenu = document.getElementById("navBar_mobileMenu");
 
 const hamburguerBtn = document.getElementById("hamburger-btn");
@@ -472,15 +474,15 @@ function updateTranslations(language) {
 }
 
 const languageToggle = document.querySelectorAll(".languageToggle");
-const languageToggle2 = document.querySelectorAll(".languageToggle2");
-const toggle1 = document.getElementById("languageToggle");
+// const languageToggle2 = document.querySelectorAll(".languageToggle2");
+// const toggle1 = document.getElementById("languageToggle");
 const toggle2 = document.getElementById("languageToggle2");
 
-function syncToggles(source, target) {
-  target.checked = source.checked;
-}
-toggle1.addEventListener("change", () => syncToggles(toggle1, toggle2));
-toggle2.addEventListener("change", () => syncToggles(toggle2, toggle1));
+// function syncToggles(source, target) {
+//   target.checked = source.checked;
+// }
+// toggle1.addEventListener("change", () => syncToggles(toggle1, toggle2));
+// toggle2.addEventListener("change", () => syncToggles(toggle2, toggle1));
 
 languageToggle.forEach((el) => {
   el.addEventListener("change", (event) => {
