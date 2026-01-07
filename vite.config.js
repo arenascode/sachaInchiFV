@@ -1,18 +1,18 @@
 import { defineConfig } from "vite";
-import {resolve} from "path";
+import { resolve } from "path";
 
-// Configuración básica
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
+  base: mode === "gh" ? "https://arenascode.github.io/sachaInchiFV" : "/",
+
   build: {
-    outDir: "dist", // Carpeta donde se generan los archivos compilados
+    outDir: "dist",
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"), // Main entry point
-        about: resolve(__dirname, "src/pages/about.html"), // About page
-        mission: resolve(__dirname, "src/pages/mission.html"), // Mission page
-        bosqueSeco: resolve(__dirname, "src/pages/bosqueSeco.html") //Bosque Seco page
+        main: resolve(__dirname, "index.html"),
+        about: resolve(__dirname, "src/pages/about.html"),
+        mission: resolve(__dirname, "src/pages/mission.html"),
+        bosqueSeco: resolve(__dirname, "src/pages/bosqueSeco.html"),
       },
     },
   },
-  base: "https://arenascode.github.io/sachaInchiFV",
-});
+}));
