@@ -62,6 +62,9 @@ export default {
       animation: {
         scroll: "scroll 15s linear infinite",
       },
+      screens: {
+        '1.5xl': '1440px'
+      }
     },
   },
   plugins: [
