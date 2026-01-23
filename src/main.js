@@ -187,34 +187,34 @@ const translations = {
     infoSection5: {
       parallaxTitle: "Sustainability and Impact",
       badge: "100% SUTAINABLE",
-      title: "Packaging That Cares",
-      subtitle: "Every detail matters - Even our packaging",
-      p1: "Made from bagasse, a natural byproduct of sugarcane, it’s compostable, eco-friendly, and part of our commitment to a cleaner world.",
-      product1Title: "Perfect Mix",
-      product1Description:
-        "Fuel, fortify and Resilience in sustainable packaging.",
-      product1Badge: "Sugar Cane Based",
-      product2Title: "Omega & Protein",
-      product2Description: "Bost your Energy Naturally, same eco values.",
-      product2Badge: "Bagasse Is Biodegradable",
-      product3Title: "Guilt Free Snack",
-      product3Description: "The perfect guilt, zero waste.",
-      product3Badge: "Food-Safe & Non-Toxic",
-      detailedSectionTitle: "Good for you. Gentle on the planet",
-      detailedSectionP1:
-        "Our packaging isn’t just eco-friendly — Crafted from sugarcane bagasse, our packaging gives agricultural waste a second life—turning nature’s leftovers into earth-loving protection for your food.",
-      li1Title: "Renewable Source",
-      li1Desc:
-        "Sugarcane naturally regrows every year, making bagasse a truly sustainable material.",
-      li2Title: "Bagasse Is Biodegradable",
-      li2Desc:
-        "Decomposes in 45–90 days, returning to the soil as compost — no waste, no toxins.",
-      li3Title: "Food-Safe & Non-Toxic",
-      li3Desc:
-        "Certified safe for food contact, with no harmful chemicals or microplastics.",
-      li4Title: "Carbon Negative",
-      li4Desc:
-        "The process captures more CO₂ than it emits, helping fight climate change.",
+      // title: "Packaging That Cares",
+      // subtitle: "Every detail matters - Even our packaging",
+      // p1: "Made from bagasse, a natural byproduct of sugarcane, it’s compostable, eco-friendly, and part of our commitment to a cleaner world.",
+      // product1Title: "Perfect Mix",
+      // product1Description:
+      //   "Fuel, fortify and Resilience in sustainable packaging.",
+      // product1Badge: "Sugar Cane Based",
+      // product2Title: "Omega & Protein",
+      // product2Description: "Bost your Energy Naturally, same eco values.",
+      // product2Badge: "Bagasse Is Biodegradable",
+      // product3Title: "Guilt Free Snack",
+      // product3Description: "The perfect guilt, zero waste.",
+      // product3Badge: "Food-Safe & Non-Toxic",
+      // detailedSectionTitle: "Good for you. Gentle on the planet",
+      // detailedSectionP1:
+      //   "Our packaging isn’t just eco-friendly — Crafted from sugarcane bagasse, our packaging gives agricultural waste a second life—turning nature’s leftovers into earth-loving protection for your food.",
+      // li1Title: "Renewable Source",
+      // li1Desc:
+      //   "Sugarcane naturally regrows every year, making bagasse a truly sustainable material.",
+      // li2Title: "Bagasse Is Biodegradable",
+      // li2Desc:
+      //   "Decomposes in 45–90 days, returning to the soil as compost — no waste, no toxins.",
+      // li3Title: "Food-Safe & Non-Toxic",
+      // li3Desc:
+      //   "Certified safe for food contact, with no harmful chemicals or microplastics.",
+      // li4Title: "Carbon Negative",
+      // li4Desc:
+      //   "The process captures more CO₂ than it emits, helping fight climate change.",
       p2: "Supporting Sacha Inchi means contributing to the preservation of the Amazon and earth ecosystem, a vital part of Earth's biosphere that regulates the planet's climate and houses unparalleled biodiversity. By choosing Sacha Inchi, you are empowering local communities through sustainable farming practices that harmonize with the delicate balance of the Amazon ecosystem.",
       p3: "This crop provides economic opportunities for indigenous farmers, enabling them to thrive while protecting their natural environment. Cultivating Sacha Inchi encourages agroforestry and reduces the need for deforestation, fostering a model where the health of the biosphere and human well-being are intrinsically connected. The sustainable cultivation of this remarkable plant creates a positive cycle where environmental protection and economic prosperity work hand in hand.",
       founderTitle: "Meet the Founder",
@@ -562,3 +562,41 @@ document.addEventListener("mousemove", (e) => {
     leaf.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
   });
 });
+
+//read more packaging section
+        // Expandable content toggle
+function toggleExpand(contentId, button) {
+          console.log('expanding');
+          
+            const content = document.getElementById(contentId);
+            const readText = button.querySelector('.read-text');
+            
+            if (content.classList.contains('expanded')) {
+                content.classList.remove('expanded');
+                button.classList.remove('expanded');
+                readText.textContent = 'Read more';
+            } else {
+                content.classList.add('expanded');
+                button.classList.add('expanded');
+                readText.textContent = 'Read less';
+            }
+        }
+
+const readMoreBtns = document.querySelectorAll('.read-more-btn'
+)
+
+readMoreBtns.forEach((btn) => btn.addEventListener('click', btn.addEventListener('click', function () {
+  const targetId = this.getAttribute('data-expand-target');
+  const content = document.getElementById(targetId);
+  const readText = this.querySelector('.read-text');
+                
+  if (content.classList.contains('expanded')) {
+    content.classList.remove('expanded');
+    this.classList.remove('expanded');
+    readText.textContent = 'Read more';
+  } else {
+    content.classList.add('expanded');
+    this.classList.add('expanded');
+    readText.textContent = 'Read less';
+  }
+})))
