@@ -353,6 +353,7 @@ footer {
   border-radius: 8px; /* Un pequeño redondeado ayuda a la sofisticación */
   border: 1px solid rgba(229, 209, 168, 0.3);
 }
+
 body.es .hero-content {
   margin-top: 7rem;
 }
@@ -540,86 +541,36 @@ body.es .title-group {
   }
 }
 /* * Transition Banner */
-.transition-banner {
-  background: linear-gradient(45deg, #0a3d62 0%, #5ca8d6 100%);
-  position: relative;
-  overflow: hidden;
+/* OPTION 2: Triple Line with Gradient */
+.divider-triple {
+  /* background: radial-gradient(circle at center, #ffffff 0%, #f4fbff 30%, #d9f0ff 70%, #c6e4f7 100%); */
+  width: 100%;
+  padding: 0.5rem 0 1rem;
 }
 
-/* Decorative wave overlay */
-.wave-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.05) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-}
-
-/* Banner content container */
-.banner-content {
-  position: relative;
-  z-index: 2;
-  padding: 2rem;
-}
-
-/* Decorative elements */
-.decorative-line {
-  height: 3px;
+.divider-triple .line {
+  height: 2px;
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.3) 20%,
-    rgba(255, 255, 255, 0.6) 50%,
-    rgba(255, 255, 255, 0.3) 80%,
+    #f9ecd6 20%,
+    #f4e3c1 50%,
+    #e5d1a8 80%,
     transparent 100%
   );
-  margin: 2rem auto;
-  max-width: 400px;
+  margin: 1rem auto;
+  max-width: 60%;
 }
 
-.decorative-dots {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: center;
-  align-items: center;
+.divider-triple .line:nth-child(2) {
+  max-width: 40%;
+  opacity: 0.6;
 }
 
-.dot {
-  width: 8px;
-  height: 8px;
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 50%;
-  animation: pulse 2s ease-in-out infinite;
+.divider-triple .line:nth-child(3) {
+  max-width: 20%;
+  opacity: 0.3;
 }
-
-.dot:nth-child(2) {
-  animation-delay: 0.3s;
-  width: 12px;
-  height: 12px;
-  background: rgba(255, 255, 255, 0.6);
-}
-
-.dot:nth-child(3) {
-  animation-delay: 0.6s;
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 0.4;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-}
-
 /* Icon styling */
 .icon-container {
   font-size: 3rem;
@@ -629,6 +580,9 @@ body.es .title-group {
 /* *Packaging section */
 
 .packaging-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   transform-style: preserve-3d;
   perspective: 1000px;
@@ -1191,7 +1145,6 @@ body.es .title-group {
 }
 /*                          LAPTOP                           */
 @media (min-width: 1024px) and (max-width: 1279px) {
-
   .hero-content {
     flex-direction: row;
     flex-wrap: nowrap;

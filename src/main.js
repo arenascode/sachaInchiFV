@@ -129,8 +129,8 @@ const translations = {
       parallaxText: "Nature’s Superfood for a Healthier, Happier You",
     },
     section4: {
-      title: "Sacha Inchi the",
-      subtitle: "SuperFood",
+      title: "Sacha Inchi:",
+      subtitle: "The SuperFood",
       cta: "Tap on a circle to explore more details!",
       benefit1Title: "Omega 3, 6, 9 Fatty Acid",
       benefit2Title: "Protein",
@@ -274,8 +274,8 @@ const translations = {
         "El superalimento de la naturaleza para una vida más saludable y vibrante",
     },
     section4: {
-      title: "Sacha Inchi, el",
-      subtitle: "Super Alimento",
+      title: "Sacha Inchi:",
+      subtitle: "El Super Alimento",
       cta: "Toca cualquier círculo para descubrir más",
       benefit1Title: "Omega 3, 6, 9",
       benefit2Title: "Proteina",

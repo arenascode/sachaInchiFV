@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -387,23 +387,25 @@
         <div
           class="section3_title flex gap-2 lg:gap-0 justify-center items-center lg:h-22 md:pt-4"
         >
-          <div class="title flex flex-col">
+          <div class="title flex flex-col md:flex-row">
             <h2
-              class="text-cerulean text-end leading-6 text-2xl mt-4 my-0 md:text-[26px] lg:text-5xl font-bold border-accent w-40 md:w-60 lg:w-80 text-pretty lg:text-right lg:pr-2 lg:leading-10 text-shadow-default"
+              class="text-cerulean text-end text-2xl mt-4 lg:mt-0 my-0 md:text-[26px] lg:text-5xl font-bold w-40 md:w-60 lg:w-96 text-pretty lg:text-right lg:pr-2 text-shadow-default"
               data-role="title"
             >
               Sacha Inchi is a
             </h2>
+            <h2
+              class="text-navyBlue mt-4 mr-12 lg:my-0 lg:text-5xl text-3xl font-bold text-left sm:mr-2 text-pretty pl-1 lg:pl-0 lg:self-center content-center text-shadow-strong"
+              data-role="subtitle"
+            >
+              SuperFood
+            </h2>
           </div>
-          <span
-            class="border-l-2 text-navyBlue mt-4 mr-12 lg:my-0 lg:text-6xl text-3xl font-bold text-left sm:mr-2 border-accent/70 text-pretty pl-1 lg:pl-2 lg:self-center lg:h-24 lg content-center text-shadow-strong"
-            data-role="subtitle"
-            >SuperFood</span
-          >
+
           <img
             src="/assets/img/InchiChar2.webp"
             alt="Inchi character"
-            class="w-36 lg:w-48 h-auto absolute md:top-14 md:right-14 lg:right-36 top-28 lg:top-32"
+            class="w-36 lg:w-44 h-auto absolute md:top-14 md:right-14 lg:right-36 xl:right-52 top-28 lg:top-20"
           />
         </div>
         <span
@@ -412,7 +414,7 @@
           >Tap on a circle to explore more details!</span
         >
         <div
-          class="container mt-5 lg:mt-10 lg:mb-10 p-2 px-1 text-center flex flex-col md:flex-row width-full sm:grid sm:grid-cols-2 md:gap-y-10 md:grid-cols-1"
+          class="container mt-5 lg:mt-14 xl:mt-16 lg:mb-10 p-2 px-1 text-center flex flex-col md:flex-row width-full sm:grid sm:grid-cols-2 md:gap-y-10 md:grid-cols-1"
         >
           <!-- Benefits Grid -->
           <div
@@ -992,164 +994,156 @@
         </div>
       </div>
     </section>
-    <div class="transition-banner pattern-overlay shadow-xl">
-        <div class="wave-overlay"></div>
-        <div class="banner-content text-center">
-            <div class="icon-container mb-3">
-                🌟
-            </div>
-            <h3 class="text-2xl md:text-4xl font-bold gradient-text-light mb-4">
-                Ready to Experience It?
-            </h3>
-            <p class="text-white/90 text-lg md:text-xl font-medium max-w-2xl mx-auto mb-2">
-                Choose your favorite way to enjoy all these benefits
-            </p>
-            <div class="decorative-dots mt-6">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-        </div>
-    </div>
-    <section class="bg-sandy-gradient">
+
+    <section class="bg-cerulean-navy-soft lg:flex lg:flex-col lg:items-center">
+      <div class="divider-triple">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
       <!-- Product Options -->
-      <div class="text-center mb-10 section-reveal active">
-            <div class="inline-block my-4">
-                <span class="text-green-700 px-6 py-2  rounded-full text-sm font-semibold tracking-wide" data-role="badge">
-                    THREE NUTRITIOUS OPTIONS
-                </span>
-            </div>
-            <h2 class="text-4xl lg:text-5xl font-bold gradient-text lg:mb-2 sm:h-[3.5rem] lg:h-[4.5rem] packaging-section-title" data-role="title">
-                Enjoy Sacha Inchi Your Way
-            </h2>
-            <p class="text-lg lg:text-xl gradient-text max-w-2xl mx-auto font-semibold mb-3 lg:mb-5 packaging-section-subtitle" data-role="subtitle">
-                The same superfood goodness, three unique experiences
-            </p>
-            <p class="text-lg 2xl:text-2xl text-gray-700 max-w-3xl px-3 mx-auto" data-role="p1">
-                Experience the versatility of Amazonian Sacha Inchi seeds through three thoughtfully crafted options—a vibrant trail mix, toasted seeds with sea salt, and cacao-covered indulgence. All sustainably packaged.
-            </p>
+      <div class="text-center mb-10 xl:mb-16 section-reveal active">
+        <div class="inline-block mb-2">
+          <span
+            class="text-sand px-6 rounded-full text-sm xl:text-base font-semibold tracking-wide"
+            data-role="badge"
+          >
+            THREE NUTRITIOUS OPTIONS
+          </span>
+        </div>
+        <h2
+          class="text-4xl lg:text-5xl xl:text-6xl font-bold text-cream lg:mb-4 sm:h-[3.5rem] lg:h-[4.5rem] packaging-section-title"
+          data-role="title"
+        >
+          Enjoy Sacha Inchi Your Way
+        </h2>
+        <p
+          class="text-lg lg:text-xl xl:text-2xl text-iceBlue max-w-2xl mx-auto font-semibold mb-3 lg:mb-7 packaging-section-subtitle"
+          data-role="subtitle"
+        >
+          The same superfood goodness, three unique experiences
+        </p>
+        <p
+          class="text-lg xl:text-xl 2xl:text-2xl text-gray-200 max-w-3xl px-3 mx-auto"
+          data-role="p1"
+        >
+          Experience the versatility of Amazonian Sacha Inchi seeds through
+          three thoughtfully crafted options—a vibrant trail mix, toasted seeds
+          with sea salt, and cacao-covered indulgence. All sustainably packaged.
+        </p>
       </div>
       <!-- Product Cards Grid -->
       <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-12 xl:gap-10 2xl:gap-16 pb-10 lg:pb-16 section-reveal xl:mx-10 self-center content-center justify-center items-center w-[90%] lg:max-w-full mx-auto"
-          >
-            <!-- Variant 1 -->
-            <div class="packaging-card cursor-pointer">
-              <div class="">
-                <div
-                  class="bg-white rounded-2xl shadow-2xl overflow-hidden texture-overlay"
+        class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-10 xl:gap-16 pb-10 lg:pb-16 lg:px-6 xl:px-12 section-reveal w-full lg:max-w-full mx-auto"
+      >
+        <!-- Variant 1 -->
+            <div
+              class="bg-cream packaging-card cursor-pointer rounded-2xl shadow-2xl overflow-hidden texture-overlay"
+            >
+              <div
+                class="packaging-image rounded-none rounded-t-lg overflow-hidden flex items-center justify-center relative flex-2"
+              >
+                <img
+                  src="assets/img/sachaMix.webp"
+                  class="w-full h-full"
+                  alt="Sacha Mix Product"
+                />
+              </div>
+              <div class="p-5 pt-2 flex flex-col grow flex-1 justify-between">
+                <h3
+                  class="text-xl font-bold text-gray-800 mb-2"
+                  data-role="product1Title"
                 >
-                  <div
-                    class="packaging-image rounded-none rounded-t-lg overflow-hidden flex items-center justify-center relative"
-                  >
-                    <img
-                      src="assets/img/sachaMix.webp"
-                      class="w-full h-full"
-                      alt="Sacha Mix Product"
-                    />
-                  </div>
-                  <div class="p-6">
-                    <h3
-                      class="text-2xl font-bold text-gray-800 mb-2"
-                      data-role="product1Title"
-                    >
-                      Perfect Mix
-                    </h3>
-                    <p
-                      class="text-gray-600 mb-4 xl:text-lg text-pretty"
-                      data-role="product1Description"
-                    >
-                      Fuel, fortify and Resilience in sustainable packaging
-                    </p>
-                    <div
-                      class="flex items-center gap-2 text-sm xl:text-lg text-green-600"
-                    >
-                      <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-                      <span data-role="product1Badge"> Sugar cane based </span>
-                    </div>
-                  </div>
+                  FUEL, FORTIFY, RESILIENCE
+                </h3>
+                <p
+                  class="text-gray-600 mb-4 xl:text-lg text-pretty"
+                  data-role="product1Description"
+                >
+                  Carefully selected nut mix Sacha Inchi, Yogurt covered
+                  Blueberry Almonds and Banana Chips
+                </p>
+                <div
+                  class="flex items-center gap-2 text-sm xl:text-lg text-cerulean"
+                >
+                  <span class="w-2 h-2 bg-cerulean rounded-full"></span>
+                  <span data-role="product2Badge">
+                    Omega & Protein
+                  </span>
+                </div>
+              </div>
+            </div>    
+
+        <!-- Variant 2 -->      
+            <div
+              class="bg-cream packaging-card cursor-pointer rounded-3xl shadow-2xl overflow-hidden texture-overlay flex flex-col"
+            >
+              <div
+                class="packaging-image flex items-center justify-center relative flex-2"
+              >
+                <img
+                  src="assets/img/sachaRealSeeds.webp"
+                  class="w-full h-full object-fill"
+                  alt="Sacha seeds product"
+                />
+              </div>
+              <div class="p-5 pt-2 flex flex-col flex-1 justify-between">
+                <h3
+                  class="text-xl font-bold text-gray-800 mb-2"
+                  data-role="product2Title"
+                >
+                  BOOST YOUR ENERGY NATURALLY
+                </h3>
+                <p
+                  class="text-gray-600 mb-4 xl:text-lg text-pretty grow"
+                  data-role="product2Description"
+                >
+                  Level up your snack game with Sacha Inchi Salt seeds tha nutritious power house!
+                </p>
+                <div
+                  class="flex items-center gap-2 text-sm xl:text-lg text-cerulean"
+                >
+                  <span class="w-2 h-2 bg-cerulean rounded-full"></span>
+                  <span data-role="product2Badge">
+                    Omega & Protein
+                  </span>
                 </div>
               </div>
             </div>
+          
+        
 
-            <!-- Variant 2 -->
-            <div class="packaging-card cursor-pointer">
-              <div class="">
-                <div
-                  class="bg-white rounded-3xl shadow-2xl overflow-hidden texture-overlay"
-                >
-                  <div
-                    class="packaging-image flex items-center justify-center relative"
-                  >
-                    <img
-                      src="assets/img/sachaRealSeeds.webp"
-                      class="w-full h-full object-fill"
-                      alt="Sacha seeds product"
-                    />
-                  </div>
-                  <div class="p-6">
-                    <h3
-                      class="text-2xl font-bold text-gray-800 mb-2"
-                      data-role="product2Title"
-                    >
-                      Omega & Protein
-                    </h3>
-                    <p
-                      class="text-gray-600 mb-4 xl:text-lg text-pretty"
-                      data-role="product2Description"
-                    >
-                      Bost your Energy Naturally, same eco values
-                    </p>
-                    <div
-                      class="flex items-center gap-2 text-sm xl:text-lg text-green-600"
-                    >
-                      <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-                      <span data-role="product2Badge">
-                        Bagasse is Biodegradable
-                      </span>
-                    </div>
-                  </div>
-                </div>
+        <!-- Variant 3 -->
+            <div
+              class="bg-cream packaging-card cursor-pointer h-full rounded-3xl shadow-2xl overflow-hidden texture-overlay"
+            >
+              <div
+                class="packaging-image flex items-center justify-center relative flex-2"
+              >
+                <img
+                  src="assets/img/sachaCacao.webp"
+                  class="w-full h-full object-fill"
+                  alt="Sacha Cacao Seeds"
+                />
               </div>
-            </div>
-
-            <!-- Variant 3 -->
-            <div class="packaging-card cursor-pointer">
-              <div class="">
-                <div
-                  class="bg-white rounded-3xl shadow-2xl overflow-hidden texture-overlay"
+              <div class="p-5 pt-2 flex flex-col justify-between flex-1">
+                <h3
+                  class="text-xl font-bold text-gray-800 mb-2"
+                  data-role="product3Title"
                 >
-                  <div
-                    class="packaging-image flex items-center justify-center relative"
-                  >
-                    <img
-                      src="assets/img/sachaCacao.webp"
-                      class="w-full h-full object-fill"
-                      alt="Sacha Cacao Seeds"
-                    />
-                  </div>
-                  <div class="p-6 py-9">
-                    <h3
-                      class="text-2xl font-bold text-gray-800 mb-2"
-                      data-role="product3Title"
-                    >
-                      Guilt Free Snack
-                    </h3>
-                    <p
-                      class="text-gray-600 mb-4 xl:text-lg"
-                      data-role="product3Description"
-                    >
-                      The perfect guilt, zero waste
-                    </p>
-                    <div
-                      class="flex items-center gap-2 text-sm xl:text-lg text-green-600"
-                    >
-                      <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-                      <span data-role="product3Badge">
-                        Food-Safe & Non-Toxic
-                      </span>
-                    </div>
-                  </div>
+                  THE PERFECT GUILT
+                </h3>
+                <p
+                  class="text-gray-600 mb-4 xl:text-lg"
+                  data-role="product3Description"
+                >
+                  Crunchy Sacha Inchi seeds kissed with velvety Cacao Chips
+                </p>
+                <div
+                  class="flex items-center gap-2 text-sm xl:text-lg text-cerulean"
+                >
+                  <span class="w-2 h-2 bg-cerulean rounded-full"></span>
+                  <span data-role="product3Badge"> Free Snack </span>
                 </div>
               </div>
             </div>
@@ -1165,7 +1159,7 @@
         class="imageSection4 relative parallax flex align-middle justify-center inset-0 bg-black bg-opacity-30 lg:mt-0 lg:h-64"
         style="background-image: url(/assets/img/amazonasBG2.webp)"
       >
-        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+        <div class="absolute inset-0 bg-black bg-opacity-10"></div>
         <span
           class="text-white italic text-4xl lg:text-6xl text-center self-center bold relative parallaxText text-shadow-strong"
           data-role="parallaxTitle"
@@ -1177,13 +1171,13 @@
       <div class="packaging relative max-w-full">
         <div class="w-full mx-auto flex flex-col text-center">
           <div class="inline-block mb-4">
-              <span
-                class="text-green-700 px-6 py-2 rounded-full text-sm font-semibold tracking-wide"
-                data-role="badge"
-              >
-                100% SUSTAINABLE
-              </span>
-            </div>
+            <span
+              class="text-green-700 px-6 py-2 rounded-full text-sm font-semibold tracking-wide"
+              data-role="badge"
+            >
+              100% SUSTAINABLE
+            </span>
+          </div>
           <!-- Header Section -->
           <!-- <div class="text-center mb-10 section-reveal">
             
@@ -1798,7 +1792,7 @@
           </div>
         </div>
         <article
-          class="textBody max-w-full xl:max-w-7xl mx-auto rounded-lg p-4 lg:p-8 lg:pt-10 xl:pt-16  2xl:mt-8 xl:px-14 2xl:px-10"
+          class="textBody max-w-full xl:max-w-7xl mx-auto rounded-lg p-4 lg:p-8 lg:pt-10 xl:pt-16 2xl:mt-8 xl:px-14 2xl:px-10"
         >
           <div class="text-wrap-container tex-wrap-sustainable-section">
             <img
