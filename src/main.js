@@ -186,7 +186,7 @@ const translations = {
     },
     infoSection5: {
       parallaxTitle: "Sustainability and Impact",
-      badge: "100% SUTAINABLE",
+      badge: "100% COMMITED",
       // title: "Packaging That Cares",
       // subtitle: "Every detail matters - Even our packaging",
       // p1: "Made from bagasse, a natural byproduct of sugarcane, it’s compostable, eco-friendly, and part of our commitment to a cleaner world.",
@@ -335,36 +335,36 @@ const translations = {
     },
     infoSection5: {
       parallaxTitle: "Sostenibilidad e Impacto",
-      badge: "100% SOSTENIBLE",
-      title: "Un Empaque Con Conciencia",
-      subtitle: "Cada detalle cuenta: incluso el empaque",
-      p1: "Elaborado con bagazo de caña de azúcar, es un material natural, compostable y ecológico. Es parte esencial de nuestro compromiso por un mundo más limpio.",
-      product1Title: "La Mezcla Perfecta",
-      product1Description:
-        "Energía, fortaleza y resiliencia en un empaque sostenible.",
-      product1Badge: "A base de caña de azúcar",
-      product2Title: "Omega y Proteína",
-      product2Description:
-        "Potencia tu energía naturalmente, con la misma conciencia ecológica.",
-      product2Badge: "Bagazo biodegradable",
-      product3Title: "Snack Sin Culpas",
-      product3Description: "El placer perfecto: cero residuos.",
-      product3Badge: "Empaque apto para alimentos",
-      detailedSectionTitle: "Bueno para ti. Respetuoso con el planeta",
-      detailedSectionP1:
-        "Nuestro empaque va más allá de lo ecológico. Fabricado con bagazo de caña de azúcar, da una segunda vida a los residuos agrícolas, transformando los restos de la naturaleza en una protección que respeta la Tierra para tus alimentos.",
-      li1Title: "Fuente Renovable",
-      li1Desc:
-        "La caña de azúcar se regenera naturalmente cada año, haciendo del bagazo un material verdaderamente sostenible.",
-      li2Title: "Bagazo Biodegradable",
-      li2Desc:
-        "Se descompone en 45 a 90 días, regresando al suelo como abono. Cero residuos, cero toxinas.",
-      li3Title: "Apto para Alimentos y No Tóxico",
-      li3Desc:
-        "Certificado como seguro para el contacto alimentario, sin químicos dañinos ni microplásticos.",
-      li4Title: "Carbono Negativo",
-      li4Desc:
-        "El proceso de fabricación captura más CO₂ del que emite, contribuyendo a la lucha contra el cambio climático.",
+      badge: "100% COMPROMETIDOS",
+      // title: "Un Empaque Con Conciencia",
+      // subtitle: "Cada detalle cuenta: incluso el empaque",
+      // p1: "Elaborado con bagazo de caña de azúcar, es un material natural, compostable y ecológico. Es parte esencial de nuestro compromiso por un mundo más limpio.",
+      // product1Title: "La Mezcla Perfecta",
+      // product1Description:
+      //   "Energía, fortaleza y resiliencia en un empaque sostenible.",
+      // product1Badge: "A base de caña de azúcar",
+      // product2Title: "Omega y Proteína",
+      // product2Description:
+      //   "Potencia tu energía naturalmente, con la misma conciencia ecológica.",
+      // product2Badge: "Bagazo biodegradable",
+      // product3Title: "Snack Sin Culpas",
+      // product3Description: "El placer perfecto: cero residuos.",
+      // product3Badge: "Empaque apto para alimentos",
+      // detailedSectionTitle: "Bueno para ti. Respetuoso con el planeta",
+      // detailedSectionP1:
+      //   "Nuestro empaque va más allá de lo ecológico. Fabricado con bagazo de caña de azúcar, da una segunda vida a los residuos agrícolas, transformando los restos de la naturaleza en una protección que respeta la Tierra para tus alimentos.",
+      // li1Title: "Fuente Renovable",
+      // li1Desc:
+      //   "La caña de azúcar se regenera naturalmente cada año, haciendo del bagazo un material verdaderamente sostenible.",
+      // li2Title: "Bagazo Biodegradable",
+      // li2Desc:
+      //   "Se descompone en 45 a 90 días, regresando al suelo como abono. Cero residuos, cero toxinas.",
+      // li3Title: "Apto para Alimentos y No Tóxico",
+      // li3Desc:
+      //   "Certificado como seguro para el contacto alimentario, sin químicos dañinos ni microplásticos.",
+      // li4Title: "Carbono Negativo",
+      // li4Desc:
+      //   "El proceso de fabricación captura más CO₂ del que emite, contribuyendo a la lucha contra el cambio climático.",
       p2: "Apoyar el Sacha Inchi significa contribuir a la preservación del Amazonas y del ecosistema terrestre — una fuerza vital que regula el clima del planeta y alberga una biodiversidad inigualable. Al elegir Sacha Inchi, estás empoderando a las comunidades locales que practican una agricultura sostenible en armonía con los delicados ritmos de la selva tropical.",
       p3: "Este cultivo extraordinario no solo ofrece oportunidades económicas justas para los agricultores indígenas, sino que también promueve la agroforestería y reduce la deforestación. Su cultivo representa un equilibrio poderoso, donde el bienestar de las personas y la salud de la biosfera prosperan juntos en un ciclo de renovación y respeto por la naturaleza.",
       founderTitle: "Conoce a la Fundadora",
