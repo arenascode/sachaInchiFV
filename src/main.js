@@ -3,21 +3,23 @@ const nav = document.querySelector(".nav");
 const hero = document.querySelector(".hero");
 const topOfNav = nav.offsetTop;
 
-function fixNav() {
-  const offsetTop = window.scrollY;
+console.log(nav.offsetHeight)
+// function fixNav() {
+//   const offsetTop = window.scrollY;
 
-  if (offsetTop >= topOfNav - 5) {
-    document.body.classList.add("fixed-nav");
-    document.body.style.paddingTop = nav.offsetHeight + "px";
-  } else {
-    document.body.style.paddingTop = 0;
-    document.body.classList.remove("fixed-nav");
-  }
-}
+//   if (offsetTop >= topOfNav - 5) {
+//     document.body.classList.add("fixed-nav");
+//     document.body.style.paddingTop = nav.offsetHeight + "px";
+//   } else {
+//     document.body.style.paddingTop = 0;
+//     document.body.classList.remove("fixed-nav");
+//   }
+// }
 
-window.addEventListener("scroll", fixNav);
+// window.addEventListener("scroll", fixNav);
 
 //*Show and hidde MobileMenu Modal */
+
 const mobileMenu = document.getElementById("navBar_mobileMenu");
 
 const hamburguerBtn = document.getElementById("hamburger-btn");
@@ -63,14 +65,14 @@ hamburguerBtn.addEventListener("click", openModalMenu);
 
 closeModalBtn.addEventListener("click", closeModalMenu);
 
-const moreinfoHeroBtn = document.getElementById("moreInfoHero");
-const targetSection = document.querySelector(".whatIsSachaInchi");
+// const moreinfoHeroBtn = document.getElementById("moreInfoHero");
+// const targetSection = document.querySelector(".whatIsSachaInchi");
 
-if (moreinfoHeroBtn) {
-  moreinfoHeroBtn.addEventListener("click", () => {
-    targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
-}
+// if (moreinfoHeroBtn) {
+//   moreinfoHeroBtn.addEventListener("click", () => {
+//     targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+//   });
+// }
 
 //* Close And Reopen Benefit Modals
 
@@ -127,8 +129,8 @@ const translations = {
       parallaxText: "Nature’s Superfood for a Healthier, Happier You",
     },
     section4: {
-      title: "Sacha Inchi the",
-      subtitle: "SuperFood",
+      title: "Sacha Inchi:",
+      subtitle: "The SuperFood",
       cta: "Tap on a circle to explore more details!",
       benefit1Title: "Omega 3, 6, 9 Fatty Acid",
       benefit2Title: "Protein",
@@ -184,35 +186,35 @@ const translations = {
     },
     infoSection5: {
       parallaxTitle: "Sustainability and Impact",
-      badge: "100% SUTAINABLE",
-      title: "Packaging That Cares",
-      subtitle: "Every detail matters - Even our packaging",
-      p1: "Made from bagasse, a natural byproduct of sugarcane, it’s compostable, eco-friendly, and part of our commitment to a cleaner world.",
-      product1Title: "Perfect Mix",
-      product1Description:
-        "Fuel, fortify and Resilience in sustainable packaging.",
-      product1Badge: "Sugar Cane Based",
-      product2Title: "Omega & Protein",
-      product2Description: "Bost your Energy Naturally, same eco values.",
-      product2Badge: "Bagasse Is Biodegradable",
-      product3Title: "Guilt Free Snack",
-      product3Description: "The perfect guilt, zero waste.",
-      product3Badge: "Food-Safe & Non-Toxic",
-      detailedSectionTitle: "Good for you. Gentle on the planet",
-      detailedSectionP1:
-        "Our packaging isn’t just eco-friendly — Crafted from sugarcane bagasse, our packaging gives agricultural waste a second life—turning nature’s leftovers into earth-loving protection for your food.",
-      li1Title: "Renewable Source",
-      li1Desc:
-        "Sugarcane naturally regrows every year, making bagasse a truly sustainable material.",
-      li2Title: "Bagasse Is Biodegradable",
-      li2Desc:
-        "Decomposes in 45–90 days, returning to the soil as compost — no waste, no toxins.",
-      li3Title: "Food-Safe & Non-Toxic",
-      li3Desc:
-        "Certified safe for food contact, with no harmful chemicals or microplastics.",
-      li4Title: "Carbon Negative",
-      li4Desc:
-        "The process captures more CO₂ than it emits, helping fight climate change.",
+      badge: "100% COMMITED",
+      // title: "Packaging That Cares",
+      // subtitle: "Every detail matters - Even our packaging",
+      // p1: "Made from bagasse, a natural byproduct of sugarcane, it’s compostable, eco-friendly, and part of our commitment to a cleaner world.",
+      // product1Title: "Perfect Mix",
+      // product1Description:
+      //   "Fuel, fortify and Resilience in sustainable packaging.",
+      // product1Badge: "Sugar Cane Based",
+      // product2Title: "Omega & Protein",
+      // product2Description: "Bost your Energy Naturally, same eco values.",
+      // product2Badge: "Bagasse Is Biodegradable",
+      // product3Title: "Guilt Free Snack",
+      // product3Description: "The perfect guilt, zero waste.",
+      // product3Badge: "Food-Safe & Non-Toxic",
+      // detailedSectionTitle: "Good for you. Gentle on the planet",
+      // detailedSectionP1:
+      //   "Our packaging isn’t just eco-friendly — Crafted from sugarcane bagasse, our packaging gives agricultural waste a second life—turning nature’s leftovers into earth-loving protection for your food.",
+      // li1Title: "Renewable Source",
+      // li1Desc:
+      //   "Sugarcane naturally regrows every year, making bagasse a truly sustainable material.",
+      // li2Title: "Bagasse Is Biodegradable",
+      // li2Desc:
+      //   "Decomposes in 45–90 days, returning to the soil as compost — no waste, no toxins.",
+      // li3Title: "Food-Safe & Non-Toxic",
+      // li3Desc:
+      //   "Certified safe for food contact, with no harmful chemicals or microplastics.",
+      // li4Title: "Carbon Negative",
+      // li4Desc:
+      //   "The process captures more CO₂ than it emits, helping fight climate change.",
       p2: "Supporting Sacha Inchi means contributing to the preservation of the Amazon and earth ecosystem, a vital part of Earth's biosphere that regulates the planet's climate and houses unparalleled biodiversity. By choosing Sacha Inchi, you are empowering local communities through sustainable farming practices that harmonize with the delicate balance of the Amazon ecosystem.",
       p3: "This crop provides economic opportunities for indigenous farmers, enabling them to thrive while protecting their natural environment. Cultivating Sacha Inchi encourages agroforestry and reduces the need for deforestation, fostering a model where the health of the biosphere and human well-being are intrinsically connected. The sustainable cultivation of this remarkable plant creates a positive cycle where environmental protection and economic prosperity work hand in hand.",
       founderTitle: "Meet the Founder",
@@ -272,8 +274,8 @@ const translations = {
         "El superalimento de la naturaleza para una vida más saludable y vibrante",
     },
     section4: {
-      title: "Sacha Inchi, el",
-      subtitle: "Super Alimento",
+      title: "Sacha Inchi:",
+      subtitle: "El Super Alimento",
       cta: "Toca cualquier círculo para descubrir más",
       benefit1Title: "Omega 3, 6, 9",
       benefit2Title: "Proteina",
@@ -333,36 +335,36 @@ const translations = {
     },
     infoSection5: {
       parallaxTitle: "Sostenibilidad e Impacto",
-      badge: "100% SOSTENIBLE",
-      title: "Un Empaque Con Conciencia",
-      subtitle: "Cada detalle cuenta: incluso el empaque",
-      p1: "Elaborado con bagazo de caña de azúcar, es un material natural, compostable y ecológico. Es parte esencial de nuestro compromiso por un mundo más limpio.",
-      product1Title: "La Mezcla Perfecta",
-      product1Description:
-        "Energía, fortaleza y resiliencia en un empaque sostenible.",
-      product1Badge: "A base de caña de azúcar",
-      product2Title: "Omega y Proteína",
-      product2Description:
-        "Potencia tu energía naturalmente, con la misma conciencia ecológica.",
-      product2Badge: "Bagazo biodegradable",
-      product3Title: "Snack Sin Culpas",
-      product3Description: "El placer perfecto: cero residuos.",
-      product3Badge: "Empaque apto para alimentos",
-      detailedSectionTitle: "Bueno para ti. Respetuoso con el planeta",
-      detailedSectionP1:
-        "Nuestro empaque va más allá de lo ecológico. Fabricado con bagazo de caña de azúcar, da una segunda vida a los residuos agrícolas, transformando los restos de la naturaleza en una protección que respeta la Tierra para tus alimentos.",
-      li1Title: "Fuente Renovable",
-      li1Desc:
-        "La caña de azúcar se regenera naturalmente cada año, haciendo del bagazo un material verdaderamente sostenible.",
-      li2Title: "Bagazo Biodegradable",
-      li2Desc:
-        "Se descompone en 45 a 90 días, regresando al suelo como abono. Cero residuos, cero toxinas.",
-      li3Title: "Apto para Alimentos y No Tóxico",
-      li3Desc:
-        "Certificado como seguro para el contacto alimentario, sin químicos dañinos ni microplásticos.",
-      li4Title: "Carbono Negativo",
-      li4Desc:
-        "El proceso de fabricación captura más CO₂ del que emite, contribuyendo a la lucha contra el cambio climático.",
+      badge: "100% COMPROMETIDOS",
+      // title: "Un Empaque Con Conciencia",
+      // subtitle: "Cada detalle cuenta: incluso el empaque",
+      // p1: "Elaborado con bagazo de caña de azúcar, es un material natural, compostable y ecológico. Es parte esencial de nuestro compromiso por un mundo más limpio.",
+      // product1Title: "La Mezcla Perfecta",
+      // product1Description:
+      //   "Energía, fortaleza y resiliencia en un empaque sostenible.",
+      // product1Badge: "A base de caña de azúcar",
+      // product2Title: "Omega y Proteína",
+      // product2Description:
+      //   "Potencia tu energía naturalmente, con la misma conciencia ecológica.",
+      // product2Badge: "Bagazo biodegradable",
+      // product3Title: "Snack Sin Culpas",
+      // product3Description: "El placer perfecto: cero residuos.",
+      // product3Badge: "Empaque apto para alimentos",
+      // detailedSectionTitle: "Bueno para ti. Respetuoso con el planeta",
+      // detailedSectionP1:
+      //   "Nuestro empaque va más allá de lo ecológico. Fabricado con bagazo de caña de azúcar, da una segunda vida a los residuos agrícolas, transformando los restos de la naturaleza en una protección que respeta la Tierra para tus alimentos.",
+      // li1Title: "Fuente Renovable",
+      // li1Desc:
+      //   "La caña de azúcar se regenera naturalmente cada año, haciendo del bagazo un material verdaderamente sostenible.",
+      // li2Title: "Bagazo Biodegradable",
+      // li2Desc:
+      //   "Se descompone en 45 a 90 días, regresando al suelo como abono. Cero residuos, cero toxinas.",
+      // li3Title: "Apto para Alimentos y No Tóxico",
+      // li3Desc:
+      //   "Certificado como seguro para el contacto alimentario, sin químicos dañinos ni microplásticos.",
+      // li4Title: "Carbono Negativo",
+      // li4Desc:
+      //   "El proceso de fabricación captura más CO₂ del que emite, contribuyendo a la lucha contra el cambio climático.",
       p2: "Apoyar el Sacha Inchi significa contribuir a la preservación del Amazonas y del ecosistema terrestre — una fuerza vital que regula el clima del planeta y alberga una biodiversidad inigualable. Al elegir Sacha Inchi, estás empoderando a las comunidades locales que practican una agricultura sostenible en armonía con los delicados ritmos de la selva tropical.",
       p3: "Este cultivo extraordinario no solo ofrece oportunidades económicas justas para los agricultores indígenas, sino que también promueve la agroforestería y reduce la deforestación. Su cultivo representa un equilibrio poderoso, donde el bienestar de las personas y la salud de la biosfera prosperan juntos en un ciclo de renovación y respeto por la naturaleza.",
       founderTitle: "Conoce a la Fundadora",
@@ -472,15 +474,15 @@ function updateTranslations(language) {
 }
 
 const languageToggle = document.querySelectorAll(".languageToggle");
-const languageToggle2 = document.querySelectorAll(".languageToggle2");
-const toggle1 = document.getElementById("languageToggle");
+// const languageToggle2 = document.querySelectorAll(".languageToggle2");
+// const toggle1 = document.getElementById("languageToggle");
 const toggle2 = document.getElementById("languageToggle2");
 
-function syncToggles(source, target) {
-  target.checked = source.checked;
-}
-toggle1.addEventListener("change", () => syncToggles(toggle1, toggle2));
-toggle2.addEventListener("change", () => syncToggles(toggle2, toggle1));
+// function syncToggles(source, target) {
+//   target.checked = source.checked;
+// }
+// toggle1.addEventListener("change", () => syncToggles(toggle1, toggle2));
+// toggle2.addEventListener("change", () => syncToggles(toggle2, toggle1));
 
 languageToggle.forEach((el) => {
   el.addEventListener("change", (event) => {
@@ -560,3 +562,41 @@ document.addEventListener("mousemove", (e) => {
     leaf.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
   });
 });
+
+//read more packaging section
+        // Expandable content toggle
+function toggleExpand(contentId, button) {
+          console.log('expanding');
+          
+            const content = document.getElementById(contentId);
+            const readText = button.querySelector('.read-text');
+            
+            if (content.classList.contains('expanded')) {
+                content.classList.remove('expanded');
+                button.classList.remove('expanded');
+                readText.textContent = 'Read more';
+            } else {
+                content.classList.add('expanded');
+                button.classList.add('expanded');
+                readText.textContent = 'Read less';
+            }
+        }
+
+const readMoreBtns = document.querySelectorAll('.read-more-btn'
+)
+
+readMoreBtns.forEach((btn) => btn.addEventListener('click', btn.addEventListener('click', function () {
+  const targetId = this.getAttribute('data-expand-target');
+  const content = document.getElementById(targetId);
+  const readText = this.querySelector('.read-text');
+                
+  if (content.classList.contains('expanded')) {
+    content.classList.remove('expanded');
+    this.classList.remove('expanded');
+    readText.textContent = 'Read more';
+  } else {
+    content.classList.add('expanded');
+    this.classList.add('expanded');
+    readText.textContent = 'Read less';
+  }
+})))
