@@ -326,6 +326,22 @@ footer {
   overflow: hidden;
 }
 
+/* Hero decorative plant image */
+.hero-plant-decoration {
+  position: absolute;
+  align-self: center;
+  width: 55%;
+  top: -6rem;
+  right: -5rem;
+  transform: scaleX(-1);
+  height: 65dvh;
+  object-fit: fill;
+  object-position: center;
+  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.15));
+  pointer-events: none;
+  z-index: 1;
+}
+
 .hero-content {
   position: relative;
   z-index: 10;
@@ -791,7 +807,7 @@ body.es .title-group {
 /*                          XXL DESKTOP                           */
 @media (min-width: 1536px) {
   .hero {
-    padding: 2rem 1rem 2rem 1.5rem;
+    padding: 5rem 1rem 2rem 1.5rem;
     justify-content: center;
     height: 100dvh;
     min-height: 100dvh;
@@ -805,7 +821,8 @@ body.es .title-group {
     width: 100%;
     flex-wrap: nowrap;
     overflow: hidden;
-    gap: 3rem;
+    gap: 2rem;
+    padding: 0 2rem;
   }
 
   .hero-text-content {
@@ -815,16 +832,19 @@ body.es .title-group {
     justify-content: center;
     justify-items: center;
     gap: 2.6rem;
-    width: 50%;
+    width: 55%;
+    max-width: 800px;
     text-align: center;
-    margin-right: 3rem;
+    margin: 0 auto;
+    padding-right: 1rem;
   }
 
   .hero-text-content h3 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     font-weight: 400;
-    text-wrap: nowrap;
+    /* text-wrap: balance; */
     text-align: center;
+    line-height: 1.3;
   }
 
   .title-group {
@@ -834,7 +854,7 @@ body.es .title-group {
   }
 
   .title-group h1 {
-    font-size: 5rem;
+    font-size: 5.5rem;
     text-shadow: 2px 4px 8px rgb(28 45 21);
   }
 
@@ -848,27 +868,34 @@ body.es .title-group {
     align-items: center;
   }
   .description {
-    width: max-content;
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.5;
     text-wrap: balance;
     margin-bottom: 0;
   }
-
+  /* body.es .descrtiption {
+    font-size: 1.6rem;
+    text-wrap: pretty;
+    width: 70%;
+  } */
   .cta-button {
-    margin-top: 30px;
+    margin-top: 24px;
     padding: 10px 13px;
-    font-size: 22px;
+    font-size: 30px;
   }
 
   .charImage {
-    /* position: absolute; */
-    bottom: 3.4%;
-    right: 14%;
     width: 110px;
     height: 110px;
-    margin-bottom: -4rem;
-    animation: fadeInUp 0.8s ease-out 1s backwards;
+    margin-bottom: -3.6rem;
+  }
+
+  /* Hero plant decoration */
+  .hero-plant-decoration {
+    width: 35%;
+    height: 75dvh;
+    top: -4rem;
+    right: -3rem;
   }
 
   /* Section 3 */
@@ -905,41 +932,44 @@ body.es .title-group {
 /*                          XL DESKTOP                           */
 @media (min-width: 1440px) and (max-width: 1535px) {
   .hero {
-    padding: 2rem 1.8rem 2rem 1.5rem;
+    padding: 5rem 1.8rem 2rem 1.5rem;
     height: 100dvh;
     min-height: 100dvh;
     max-height: 100dvh;
   }
 
   .hero-content {
-    /* height: 700px; */
     max-width: 1400px;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 4rem;
+    gap: 3rem;
     overflow: hidden;
+    padding: 0 2rem;
   }
 
   .hero-text-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 4rem;
-    width: 65%;
+    gap: 3rem;
+    width: 60%;
+    max-width: 750px;
     text-align: center;
-    margin-right: 4rem;
+    margin: 0 auto;
+    padding-right: 1rem;
   }
 
   .hero-text-content h3 {
     font-size: 2rem;
     font-weight: 400;
-    text-wrap: nowrap;
+    text-wrap: balance;
     text-align: center;
+    line-height: 1.3;
   }
 
   body.es .hero-text-content h3 {
-    width: 80%;
-    text-wrap: pretty;
+    font-size: 1.85rem;
+    text-wrap: balance;
   }
   .title-group {
     gap: 2rem;
@@ -969,12 +999,19 @@ body.es .title-group {
     font-size: 20px;
   }
   .charImage {
-    bottom: 3.2%;
-    right: 25%;
     width: 110px;
     height: 110px;
-    margin-bottom: -73px;
+    margin-bottom: -70px;
   }
+
+  /* Hero plant decoration */
+  .hero-plant-decoration {
+    width: 32%;
+    height: 72dvh;
+    top: -3.5rem;
+    right: -2.5rem;
+  }
+
   /* Section 3 */
   .header {
     min-height: 250px;
@@ -1038,9 +1075,9 @@ body.es .title-group {
     max-width: 1400px;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 3rem;
+    gap: 2rem;
     margin-bottom: 1rem;
-    padding-top: 1rem;
+    padding: 0 2rem;
   }
   body.es .hero-content {
     margin: auto;
@@ -1048,18 +1085,24 @@ body.es .title-group {
   .hero-text-content {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2.5rem;
+    width: 60%;
+    max-width: 700px;
     text-align: center;
+    margin: 0 auto;
+    padding-right: 1rem;
   }
 
   .hero-text-content h3 {
     font-size: 1.8rem;
     font-weight: 400;
-    text-wrap: nowrap;
+    text-wrap: balance;
     text-align: center;
+    line-height: 1.3;
   }
   body.es .hero-text-content h3 {
-    text-wrap: wrap;
+    font-size: 1.7rem;
+    text-wrap: balance;
   }
   .title-group {
     gap: 20px;
@@ -1091,12 +1134,19 @@ body.es .title-group {
   }
 
   .charImage {
-    bottom: 14.3%;
-    right: 10%;
     width: 110px;
     height: 110px;
-    margin-bottom: -73px;
+    margin-bottom: -65px;
   }
+
+  /* Hero plant decoration */
+  .hero-plant-decoration {
+    width: 35%;
+    height: 68dvh;
+    top: -3rem;
+    right: -2rem;
+  }
+
   /* Sect 3 */
   .header {
     min-height: 230px;
@@ -1148,8 +1198,8 @@ body.es .title-group {
   .hero-content {
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 1rem;
-    padding-top: 1rem;
+    gap: 2rem;
+    padding: 0 1.5rem;
     margin-bottom: 1rem;
   }
   body.es .hero-content {
@@ -1158,8 +1208,12 @@ body.es .title-group {
   .hero-text-content {
     align-items: center;
     gap: 1.8rem;
+    width: 60%;
+    max-width: 650px;
     text-align: center;
-    /* margin-right: 2rem; */
+    margin: 0 auto;
+    padding-right: 1rem;
+    margin-top: 2rem;
   }
   body.es .hero-text-content {
     gap: 1.5rem;
@@ -1167,11 +1221,13 @@ body.es .title-group {
   .hero-text-content h3 {
     font-size: 1.7rem;
     font-weight: 400;
-    text-wrap: nowrap;
+    text-wrap: balance;
     text-align: center;
+    line-height: 1.3;
   }
   body.es .hero-text-content h3 {
-    text-wrap: wrap;
+    font-size: 1.6rem;
+    text-wrap: balance;
   }
   .title-group {
     flex-direction: column;
@@ -1201,11 +1257,17 @@ body.es .title-group {
   }
 
   .charImage {
-    bottom: 14.3%;
-    right: 10%;
     width: 100px;
     height: 100px;
-    margin-bottom: -34px;
+    margin-bottom: -35px;
+  }
+
+  /* Hero plant decoration */
+  .hero-plant-decoration {
+    width: 38%;
+    height: 65dvh;
+    top: -2.5rem;
+    right: -2rem;
   }
 
   /* Sect 3 */
@@ -1249,32 +1311,38 @@ body.es .title-group {
 /*                          TABLET                           */
 @media (min-width: 960px) and (max-width: 1023px) {
   .hero {
-    padding: 0 1rem;
+    padding: 1rem;
   }
 
   .hero-content {
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 1rem;
+    gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .hero-text-content {
     align-items: center;
-    gap: 2.5rem;
+    gap: 2rem;
+    width: 65%;
+    max-width: 600px;
     text-align: center;
-    /* margin-right: 3rem; */
+    margin: 0 auto;
   }
   body.es .hero-text-content {
-    width: 80%;
+    width: 70%;
+    max-width: 650px;
   }
   .hero-text-content h3 {
     font-size: 1.5rem;
     font-weight: 400;
-    text-wrap: pretty;
+    text-wrap: balance;
     text-align: center;
+    line-height: 1.3;
   }
   body.es .hero-text-content h3 {
-    text-wrap: pretty;
+    font-size: 1.4rem;
+    text-wrap: balance;
   }
 
   .title-group {
@@ -1309,10 +1377,17 @@ body.es .title-group {
   }
 
   .charImage {
-    bottom: 14.3%;
-    right: 10%;
     width: 85px;
     height: 85px;
+    margin-bottom: -48px;
+  }
+
+  /* Hero plant decoration */
+  .hero-plant-decoration {
+    width: 40%;
+    height: 60dvh;
+    top: -2rem;
+    right: -2.5rem;
   }
 
   /* Sect 3 */
@@ -1367,27 +1442,34 @@ body.es .title-group {
     margin-right: 1rem;
   }
   .hero {
-    padding: 2rem;
-    /* background-image: url(/assets/img/sacha-inchi-granos.webp); */
+    padding: 1.5rem;
   }
 
   .hero-content {
     flex-direction: column;
-    gap: 4.5rem;
+    gap: 3rem;
+    padding: 0;
   }
 
   .hero-text-content {
     width: 100%;
+    max-width: 600px;
     text-align: center;
     align-items: center;
     gap: 2rem;
+    margin: 0 auto;
+    margin-top: 5rem;
   }
 
   .hero-text-content h3 {
     font-size: 1.5rem;
     margin-left: 0;
+    width: 50%;
+    text-wrap: pretty;
   }
-
+  body.es .hero-content {
+    margin-top: 2rem;
+  }
   .title-group {
     flex-direction: column;
     gap: 25px;
@@ -1409,13 +1491,22 @@ body.es .title-group {
   .cta-button {
     padding: 10px 15px;
     font-size: 20px;
+    margin-top: 0;
   }
   .charImage {
-    bottom: 14.3%;
-    right: 10%;
     width: 90px;
     height: 90px;
+    margin-bottom: -28px;
   }
+
+  /* Hero plant decoration */
+  .hero-plant-decoration {
+    width: 45%;
+    height: 55dvh;
+    top: -1.5rem;
+    right: -3rem;
+  }
+
   /* section 3 */
 
   .header::after {
@@ -1449,31 +1540,42 @@ body.es .title-group {
     max-width: 480px;
   }
   .hero {
-    /* background-image: url(/assets/img/sacha-inchi-granos.webp); */
-    padding: 1rem;
+    padding: 1rem 0.5rem;
     background-position: center;
   }
 
   .hero-content {
-    gap: 2rem;
-    height: 90dvh;
-    max-height: 90dvh;
+    gap: 1.5rem;
+    height: auto;
+    min-height: 85dvh;
     width: 100%;
-    margin-top: 7rem;
+    margin-top: 9rem;
     justify-content: center;
+    padding: 0 0.5rem;
   }
-
+  body.es .hero-content {
+    margin-top: 8rem;
+  }
   .hero-text-content {
     width: 100%;
-    gap: 2rem;
+    max-width: 100%;
+    gap: 1.5rem;
+    padding: 0;
   }
   body.es .hero-text-content {
-    gap: 2rem;
+    gap: 1.5rem;
   }
   .hero-text-content h3 {
     font-size: 1.3rem;
-    width: 80%;
+    width: 95%;
     margin-left: 0;
+    text-wrap: balance;
+    line-height: 1.3;
+  }
+
+  body.es .hero-text-content h3 {
+    font-size: 1.2rem;
+    width: 80%;
   }
 
   .title-group {
@@ -1511,14 +1613,19 @@ body.es .title-group {
     padding: 0 2px;
   }
   .charImage {
-    bottom: 20%;
-    right: 6%;
     width: 80px;
     height: 80px;
+    margin-bottom: -45px;
   }
-  body.es .charImage {
-    bottom: 5%;
+
+  /* Hero plant decoration - adjusted for mobile */
+  .hero-plant-decoration {
+    width: 50%;
+    height: 45dvh;
+    top: -1rem;
+    right: -2.5rem;
   }
+
   /*What is Sacha Inchi Section*/
 
   .whatIsSachaInchi {
@@ -1641,26 +1748,34 @@ body.es .title-group {
     max-width: 400px;
   }
   .hero {
-    /* background-image: url(/assets/img/sacha-inchi-granos.webp); */
     padding: 0.5rem;
     background-position: center;
   }
 
   .hero-content {
-    gap: 1rem;
-    height: 80dvh;
-    max-height: 80dvh;
+    gap: 1.5rem;
+    height: auto;
+    min-height: 80dvh;
     width: 100%;
     justify-content: center;
+    padding: 0 0.5rem;
   }
 
   .hero-text-content {
     width: 100%;
-    gap: 3rem;
+    max-width: 100%;
+    gap: 1.5rem;
+    padding: 0;
   }
   .hero-text-content h3 {
     font-size: 1.1rem;
     margin-left: 0;
+    text-wrap: balance;
+    line-height: 1.3;
+  }
+
+  body.es .hero-text-content h3 {
+    font-size: 1.05rem;
   }
 
   .title-group {
@@ -1697,14 +1812,19 @@ body.es .title-group {
     padding: 0 2px;
   }
   .charImage {
-    /* bottom: 9%;
-    right: 6%; */
     width: 80px;
     height: 80px;
+    margin-bottom: -45px;
   }
-  body.es .charImage {
-    bottom: 5%;
+
+  /* Hero plant decoration - adjusted for mobile */
+  .hero-plant-decoration {
+    width: 45%;
+    height: 40dvh;
+    top: -1rem;
+    right: -2.5rem;
   }
+
   /*What is Sacha Inchi Section*/
 
   .whatIsSachaInchi {
