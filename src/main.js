@@ -3,7 +3,7 @@ const nav = document.querySelector(".nav");
 const hero = document.querySelector(".hero");
 const topOfNav = nav.offsetTop;
 
-console.log(nav.offsetHeight)
+console.log(nav.offsetHeight);
 // function fixNav() {
 //   const offsetTop = window.scrollY;
 
@@ -182,39 +182,41 @@ const translations = {
       benefit7Cardp2:
         "By incorporating Sacha Inchi into your diet, you're not only supporting cardiovascular health but also reducing the risk of heart-related conditions. This Amazonian treasure is a natural way to maintain a healthy heart and overall wellness.",
       //Parallax Text
-      parallaxText: "Nature’s Superfood for a Healthier, Vibrant You",
+      parallaxText: "Nature's Superfood for a Healthier, Vibrant You",
+    },
+    packagingSection: {
+      title: "Three Flavors",
+      subtitle: "One Powerful Seed",
+      p1: "Crunchy Nut Mix, clean Sea Salt, and rich cacao-covered Sacha Inchi. Simple ingredients. Powerful nourishment.",
+      p2: "(Carefully in the making)",
+      product1Title: "FUEL, FORTIFY, RESILIENCE",
+      product2Badge: "Omega & Protein",
+      product1Description:
+        "Carefully selected nut mix Sacha Inchi, Yogurt covered Blueberry Almonds and Banana Chips",
+      product2Title: "BOOST YOUR ENERGY NATURALLY",
+      product2Description:
+        "Level up your snack game with Sacha Inchi Salt seeds tha nutritious power house!",
+      product3Title: "THE PERFECT GUILT FREE SNACK",
+      product3Badge: "OMEGA & PROTEIN",
+      product3Description:
+        "Crunchy Sacha Inchi seeds kissed with velvety Cacao Chips",
     },
     infoSection5: {
       parallaxTitle: "Sustainability and Impact",
       badge: "100% COMMITED",
-      // title: "Packaging That Cares",
-      // subtitle: "Every detail matters - Even our packaging",
-      // p1: "Made from bagasse, a natural byproduct of sugarcane, it’s compostable, eco-friendly, and part of our commitment to a cleaner world.",
-      // product1Title: "Perfect Mix",
-      // product1Description:
-      //   "Fuel, fortify and Resilience in sustainable packaging.",
-      // product1Badge: "Sugar Cane Based",
-      // product2Title: "Omega & Protein",
-      // product2Description: "Bost your Energy Naturally, same eco values.",
-      // product2Badge: "Bagasse Is Biodegradable",
-      // product3Title: "Guilt Free Snack",
-      // product3Description: "The perfect guilt, zero waste.",
-      // product3Badge: "Food-Safe & Non-Toxic",
-      // detailedSectionTitle: "Good for you. Gentle on the planet",
-      // detailedSectionP1:
-      //   "Our packaging isn’t just eco-friendly — Crafted from sugarcane bagasse, our packaging gives agricultural waste a second life—turning nature’s leftovers into earth-loving protection for your food.",
-      // li1Title: "Renewable Source",
-      // li1Desc:
-      //   "Sugarcane naturally regrows every year, making bagasse a truly sustainable material.",
-      // li2Title: "Bagasse Is Biodegradable",
-      // li2Desc:
-      //   "Decomposes in 45–90 days, returning to the soil as compost — no waste, no toxins.",
-      // li3Title: "Food-Safe & Non-Toxic",
-      // li3Desc:
-      //   "Certified safe for food contact, with no harmful chemicals or microplastics.",
-      // li4Title: "Carbon Negative",
-      // li4Desc:
-      //   "The process captures more CO₂ than it emits, helping fight climate change.",
+      detailedSectionTitle:
+        "Omare uses Sustainable packaging that protects our planet",
+      detailedSectionP1:
+        "At the heart of Omare Sacha Inchi products is a commitment to the planet. That's why we use bagasse paper packaging—a smarter, more sustainable alternative to traditional paper.",
+      li1Title: "Renewable Source",
+      li2Title: "Why Rethink Paper?",
+      li2Desc:
+        "Global paper demand reached 408 million tonnes in 2021. Conventional paper production requires cutting down millions of trees yearly, contributing to deforestation and climate change.",
+      li3Title: "A Lower Environmental Footprint",
+      li3Desc: "Compared to traditional wood-based paper, bagasse paper:",
+      li4Title: "Packaging with Purpose",
+      li4Desc:
+        "Our Sacha Inchi packaging does more than protect a premium product—it reflects our responsibility to the environment. By choosing bagasse paper, we help conserve forests, reduce waste, and support a more sustainable future.",
       p2: "Supporting Sacha Inchi means contributing to the preservation of the Amazon and earth ecosystem, a vital part of Earth's biosphere that regulates the planet's climate and houses unparalleled biodiversity. By choosing Sacha Inchi, you are empowering local communities through sustainable farming practices that harmonize with the delicate balance of the Amazon ecosystem.",
       p3: "This crop provides economic opportunities for indigenous farmers, enabling them to thrive while protecting their natural environment. Cultivating Sacha Inchi encourages agroforestry and reduces the need for deforestation, fostering a model where the health of the biosphere and human well-being are intrinsically connected. The sustainable cultivation of this remarkable plant creates a positive cycle where environmental protection and economic prosperity work hand in hand.",
       founderTitle: "Meet the Founder",
@@ -333,38 +335,40 @@ const translations = {
       parallaxText:
         "El superalimento de la naturaleza para una vida más saludable y vibrante",
     },
+    packagingSection: {
+      title: "Tres Sabores",
+      subtitle: "Una Semilla Poderosa",
+      p1: "Mezcla crujiente de frutos secos, sal marina y Sacha Inchi cubierto de cacao. Ingredientes simples. Nutrición poderosa.",
+      p2: "(Próximamente, cuidando cada detalle para ofrecerte la calidad que mereces)",
+      product1Title: "ENERGÍA, FORTALEZA, RESILIENCIA",
+      product2Badge: "Omega y Proteína",
+      product1Description:
+        "Mezcla cuidadosamente seleccionada de Sacha Inchi, Arándanos cubiertos de Yogurt, Almendras y Chips de Banana",
+      product2Title: "POTENCIA TU ENERGÍA NATURALMENTE",
+      product2Description:
+        "Eleva tu snack con semillas de Sacha Inchi con Sal, ¡una fuente nutritiva de alto poder!",
+      product3Title: "EL SNACK PERFECTO SIN CULPAS",
+      product3Badge: "OMEGA Y PROTEÍNA",
+      product3Description:
+        "Crujientes semillas de Sacha Inchi bañadas en delicioso Cacao",
+    },
     infoSection5: {
       parallaxTitle: "Sostenibilidad e Impacto",
       badge: "100% COMPROMETIDOS",
-      // title: "Un Empaque Con Conciencia",
-      // subtitle: "Cada detalle cuenta: incluso el empaque",
-      // p1: "Elaborado con bagazo de caña de azúcar, es un material natural, compostable y ecológico. Es parte esencial de nuestro compromiso por un mundo más limpio.",
-      // product1Title: "La Mezcla Perfecta",
-      // product1Description:
-      //   "Energía, fortaleza y resiliencia en un empaque sostenible.",
-      // product1Badge: "A base de caña de azúcar",
-      // product2Title: "Omega y Proteína",
-      // product2Description:
-      //   "Potencia tu energía naturalmente, con la misma conciencia ecológica.",
-      // product2Badge: "Bagazo biodegradable",
-      // product3Title: "Snack Sin Culpas",
-      // product3Description: "El placer perfecto: cero residuos.",
-      // product3Badge: "Empaque apto para alimentos",
-      // detailedSectionTitle: "Bueno para ti. Respetuoso con el planeta",
-      // detailedSectionP1:
-      //   "Nuestro empaque va más allá de lo ecológico. Fabricado con bagazo de caña de azúcar, da una segunda vida a los residuos agrícolas, transformando los restos de la naturaleza en una protección que respeta la Tierra para tus alimentos.",
-      // li1Title: "Fuente Renovable",
-      // li1Desc:
-      //   "La caña de azúcar se regenera naturalmente cada año, haciendo del bagazo un material verdaderamente sostenible.",
-      // li2Title: "Bagazo Biodegradable",
-      // li2Desc:
-      //   "Se descompone en 45 a 90 días, regresando al suelo como abono. Cero residuos, cero toxinas.",
-      // li3Title: "Apto para Alimentos y No Tóxico",
-      // li3Desc:
-      //   "Certificado como seguro para el contacto alimentario, sin químicos dañinos ni microplásticos.",
-      // li4Title: "Carbono Negativo",
-      // li4Desc:
-      //   "El proceso de fabricación captura más CO₂ del que emite, contribuyendo a la lucha contra el cambio climático.",
+      detailedSectionTitle:
+        "Omare utiliza empaques sostenibles que protegen nuestro planeta",
+      detailedSectionP1:
+        "En el corazón de los productos Omare Sacha Inchi hay un compromiso con el planeta. Por eso utilizamos empaques de papel de bagazo, una alternativa más inteligente y sostenible al papel tradicional.",
+      li1Title: "Fuente Renovable",
+      li2Title: "¿Por qué repensar el papel?",
+      li2Desc:
+        "La demanda global de papel alcanzó 408 millones de toneladas en 2021. La producción convencional de papel requiere talar millones de árboles cada año, contribuyendo a la deforestación y el cambio climático.",
+      li3Title: "Menor Huella Ambiental",
+      li3Desc:
+        "Comparado con el papel tradicional a base de madera, el papel de bagazo:",
+      li4Title: "Empaque con Propósito",
+      li4Desc:
+        "Nuestro empaque de Sacha Inchi hace más que proteger un producto premium: refleja nuestra responsabilidad con el medio ambiente. Al elegir papel de bagazo, ayudamos a conservar bosques, reducir residuos y apoyar un futuro más sostenible.",
       p2: "Apoyar el Sacha Inchi significa contribuir a la preservación del Amazonas y del ecosistema terrestre — una fuerza vital que regula el clima del planeta y alberga una biodiversidad inigualable. Al elegir Sacha Inchi, estás empoderando a las comunidades locales que practican una agricultura sostenible en armonía con los delicados ritmos de la selva tropical.",
       p3: "Este cultivo extraordinario no solo ofrece oportunidades económicas justas para los agricultores indígenas, sino que también promueve la agroforestería y reduce la deforestación. Su cultivo representa un equilibrio poderoso, donde el bienestar de las personas y la salud de la biosfera prosperan juntos en un ciclo de renovación y respeto por la naturaleza.",
       founderTitle: "Conoce a la Fundadora",
@@ -564,39 +568,43 @@ document.addEventListener("mousemove", (e) => {
 });
 
 //read more packaging section
-        // Expandable content toggle
+// Expandable content toggle
 function toggleExpand(contentId, button) {
-          console.log('expanding');
-          
-            const content = document.getElementById(contentId);
-            const readText = button.querySelector('.read-text');
-            
-            if (content.classList.contains('expanded')) {
-                content.classList.remove('expanded');
-                button.classList.remove('expanded');
-                readText.textContent = 'Read more';
-            } else {
-                content.classList.add('expanded');
-                button.classList.add('expanded');
-                readText.textContent = 'Read less';
-            }
-        }
+  console.log("expanding");
 
-const readMoreBtns = document.querySelectorAll('.read-more-btn'
-)
+  const content = document.getElementById(contentId);
+  const readText = button.querySelector(".read-text");
 
-readMoreBtns.forEach((btn) => btn.addEventListener('click', btn.addEventListener('click', function () {
-  const targetId = this.getAttribute('data-expand-target');
-  const content = document.getElementById(targetId);
-  const readText = this.querySelector('.read-text');
-                
-  if (content.classList.contains('expanded')) {
-    content.classList.remove('expanded');
-    this.classList.remove('expanded');
-    readText.textContent = 'Read more';
+  if (content.classList.contains("expanded")) {
+    content.classList.remove("expanded");
+    button.classList.remove("expanded");
+    readText.textContent = "Read more";
   } else {
-    content.classList.add('expanded');
-    this.classList.add('expanded');
-    readText.textContent = 'Read less';
+    content.classList.add("expanded");
+    button.classList.add("expanded");
+    readText.textContent = "Read less";
   }
-})))
+}
+
+const readMoreBtns = document.querySelectorAll(".read-more-btn");
+
+readMoreBtns.forEach((btn) =>
+  btn.addEventListener(
+    "click",
+    btn.addEventListener("click", function () {
+      const targetId = this.getAttribute("data-expand-target");
+      const content = document.getElementById(targetId);
+      const readText = this.querySelector(".read-text");
+
+      if (content.classList.contains("expanded")) {
+        content.classList.remove("expanded");
+        this.classList.remove("expanded");
+        readText.textContent = "Read more";
+      } else {
+        content.classList.add("expanded");
+        this.classList.add("expanded");
+        readText.textContent = "Read less";
+      }
+    }),
+  ),
+);
