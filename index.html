@@ -995,7 +995,10 @@
       </div>
     </section>
 
-    <section class="bg-cerulean-navy-soft lg:flex lg:flex-col lg:items-center" id="packagingSection">
+    <section
+      class="bg-cerulean-navy-soft lg:flex lg:flex-col lg:items-center"
+      id="packagingSection"
+    >
       <div class="pt-5 lg:pt-6 justify-center self-center">
         <div class="flex items-center gap-2 justify-center">
           <div
@@ -1031,11 +1034,33 @@
           data-role="p1"
         >
           Crunchy Nut Mix, clean Sea Salt, and rich cacao-covered Sacha Inchi.
-          Simple ingredients. Powerful nourishment. 
+          Simple ingredients. Powerful nourishment.
         </p>
-        <span class="text-gray-200 mt-2" data-role="p2">(Carefully in the making)</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e5e7eb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-clock"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.5 21h-4.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v3" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h10" /><path d="M14 18a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M18 16.5v1.5l.5 .5" /></svg>
-        
+        <span class="text-gray-200 mt-2" data-role="p2"
+          >(Carefully in the making)</span
+        >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#e5e7eb"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-clock"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M10.5 21h-4.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v3"
+          />
+          <path d="M16 3v4" />
+          <path d="M8 3v4" />
+          <path d="M4 11h10" />
+          <path d="M14 18a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+          <path d="M18 16.5v1.5l.5 .5" />
+        </svg>
       </div>
       <!-- Product Cards Grid -->
       <div
@@ -1065,7 +1090,7 @@
                 FUEL, FORTIFY, RESILIENCE
               </h3>
               <h3
-                data-role="product2Badge"
+                data-role="product1Badge"
                 class="text-base sm:text-lg md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold text-cerulean text-center uppercase tracking-wide"
               >
                 Omega & Protein
@@ -1073,14 +1098,17 @@
             </div>
 
             <p
-              class="text-base xl:text-base 2xl:text-lg text-gray-600 leading-relaxed text-center"
-              data-role="product1Description"
+              class="text-base xl:text-base 2xl:text-lg text-gray-600 leading-relaxed text-left"
             >
-              Carefully selected nut mix
-              <strong class="text-black"
+              <span data-role="product1Description"
+                >Carefully selected nut mix
+              </span>
+              <strong class="text-black" data-role="product1_strongDescription"
                 >Sacha Inchi, Yogurt covered Blueberry</strong
               >
-              Almonds and Banana Chips
+              <span data-role="product1_2Description">
+              Almonds and Banana Chips</span
+              >
             </p>
           </div>
         </div>
@@ -1115,14 +1143,19 @@
                 Omega & Protein
               </h3>
             </div>
-
             <p
-              class="text-base xl:text-base 2xl:text-lg text-gray-600 leading-relaxed text-center"
-              data-role="product2Description"
+              class="text-base xl:text-base 2xl:text-lg text-gray-600 leading-relaxed text-left"
             >
-              Level up your snack game with
-              <strong class="text-black">Sacha Inchi Salt</strong> seeds tha
-              nutritious power house!
+              <span data-role="product2Description"
+                >Level up your snack game with
+              </span>
+              <strong class="text-black" data-role="product2_strongDescription"
+                >Sacha Inchi Salt</strong
+              >
+              <span data-role="product2_2Description">
+              seeds that
+              nutritious power house!</span
+              >
             </p>
           </div>
         </div>
@@ -1157,13 +1190,15 @@
                 OMEGA & PROTEIN
               </h3>
             </div>
-
             <p
-              class="text-base xl:text-base 2xl:text-lg text-gray-600 leading-relaxed text-center"
-              data-role="product3Description"
+              class="text-base xl:text-base 2xl:text-lg text-gray-600 leading-relaxed text-left"
             >
-              Crunchy Sacha Inchi seeds kissed with
-              <strong class="text-black">velvety Cacao Chips</strong>
+              <span data-role="product3Description"
+                >Crunchy Sacha Inchi seeds kissed with
+              </span>
+              <strong class="text-black" data-role="product3_strongDescription"
+                >velvety Cacao Chips</strong
+              >
             </p>
           </div>
         </div>
@@ -1237,12 +1272,6 @@
 
               <!-- Content Side -->
               <div class="order-2 lg:order-2">
-                <!-- <h3 class="text-3xl md:text-4xl font-bold gradient-text mb-4 text-center lg:text-left" data-role="detailedSectionTitle">
-                    Sustainable Packaging That Protects What Matters
-                </h3>
-                <p class="text-base md:text-lg text-gray-700 mb-6 leading-relaxed text-center lg:text-left" data-role="detailedSectionP1">
-                    At the heart of Omare Sacha Inchi products is a commitment to the planet. That's why we use bagasse paper packaging—a smarter, more sustainable alternative to traditional paper.
-                </p> -->
 
                 <div class="space-y-6 lg:space-y-8 text-left">
                   <!-- Mobile Image 1 -->
@@ -1288,7 +1317,7 @@
                           Renewable Source
                         </h4>
                         <div class="expandable-content mt-2" id="expand1">
-                          <p class="text-gray-600 text-sm md:text-base">
+                          <p class="text-gray-600 text-sm md:text-base" data-role="li1Desc">
                             Bagasse is the natural fibrous byproduct left after
                             sugarcane is processed. Instead of going to waste,
                             this renewable material is transformed into durable,
@@ -1298,8 +1327,9 @@
                         <button
                           class="read-more-btn text-green-600 text-sm font-medium mt-2 flex items-center gap-1"
                           data-expand-target="expand1"
+                          
                         >
-                          <span class="read-text">Read more</span>
+                          <span class="read-text" data-role="expandButton">Read more</span>
                           <span class="arrow">▼</span>
                         </button>
                         <!-- <p
@@ -1356,14 +1386,14 @@
                         <div class="expandable-content mt-2" id="expand2">
                           <p
                             class="text-gray-600 text-sm md:text-base"
-                            data-role="li2Desc"
+                            data-role="li2_1Desc"
                           >
                             Global paper demand reached 408 million tonnes in
                             2021. Conventional paper production requires cutting
                             down millions of trees yearly, contributing to
                             deforestation and climate change.
                           </p>
-                          <p class="text-gray-600 text-sm md:text-base">
+                          <p class="text-gray-600 text-sm mt-1 md:text-base" data-role="li2_2Desc">
                             As packaging demand grows, the urgency to find
                             sustainable solutions becomes critical. Bagasse
                             offers a viable alternative that helps preserve our
@@ -1374,7 +1404,7 @@
                           class="read-more-btn text-green-600 text-sm font-medium mt-2 flex items-center gap-1"
                           data-expand-target="expand2"
                         >
-                          <span class="read-text">Read more</span>
+                          <span class="read-text" data-role="expand2Button">Read more</span>
                           <span class="arrow">▼</span>
                         </button>
                       </div>
@@ -1437,7 +1467,7 @@
                         <div class="expandable-content mt-2" id="expand3">
                           <p
                             class="text-gray-600 text-sm md:text-base mb-2"
-                            data-role="li3Desc"
+                            data-role="li3_1Desc"
                           >
                             Compared to traditional wood-based paper, bagasse
                             paper:
@@ -1445,12 +1475,12 @@
                           <ul
                             class="text-gray-600 list-disc list-inside text-sm md:text-base space-y-1"
                           >
-                            <li>Uses less energy</li>
-                            <li>Requires fewer chemicals</li>
-                            <li>Consumes significantly less water</li>
-                            <li>Helps reduce agricultural waste</li>
+                            <li data-role="li3_1">Uses less energy</li>
+                            <li data-role="li3_2">Requires fewer chemicals</li>
+                            <li data-role="li3_3">Consumes significantly less water</li>
+                            <li data-role="li3_4">Helps reduce agricultural waste</li>
                           </ul>
-                          <p class="text-gray-600 text-sm md:text-base">
+                          <p class="text-gray-600 text-sm mt-2 md:text-base" data-role="li3_2Desc">
                             The result is packaging that's better for the
                             planet, without compromising strength or quality.
                             This sustainable approach helps combat climate
@@ -1461,7 +1491,7 @@
                           class="read-more-btn text-green-600 text-sm font-medium mt-2 flex items-center gap-1"
                           data-expand-target="expand3"
                         >
-                          <span class="read-text">Read more</span>
+                          <span class="read-text" data-role="expand3Button">Read more</span>
                           <span class="arrow">▼</span>
                         </button>
                       </div>
@@ -1525,7 +1555,7 @@
                           class="read-more-btn text-green-600 text-sm font-medium mt-2 flex items-center gap-1"
                           data-expand-target="expand4"
                         >
-                          <span class="read-text">Read more</span>
+                          <span class="read-text" data-role="expand4Button">Read more</span>
                           <span class="arrow">▼</span>
                         </button>
                       </div>
@@ -1535,7 +1565,7 @@
                     class="feature-item feature-compact bg-white/70 backdrop-blur rounded-2xl p-4 shadow-sm"
                   >
                     <p
-                      class="text-sm md:text-base xl:text-lg font-medium text-green-700"
+                      class="text-sm md:text-base xl:text-lg font-medium text-green-700" data-role="lastPackagingDesc"
                     >
                       Bagasse paper isn't just an alternative. It's the future
                       of responsible packaging.
@@ -1706,7 +1736,11 @@
 
               <!-- Signature or Name -->
               <div class="mt-2 pt-2 border-t border-[#c4d7b2] flex">
-                <img src="assets/img/CynthiaSignature.webp" alt="founder Signature" class="w-32">
+                <img
+                  src="assets/img/CynthiaSignature.webp"
+                  alt="founder Signature"
+                  class="w-32"
+                />
               </div>
             </div>
           </div>
@@ -1827,7 +1861,6 @@
                 >Mission</a
               >
             </li>
-            
 
             <!-- <li>
               <a

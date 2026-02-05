@@ -190,16 +190,19 @@ const translations = {
       p1: "Crunchy Nut Mix, clean Sea Salt, and rich cacao-covered Sacha Inchi. Simple ingredients. Powerful nourishment.",
       p2: "(Carefully in the making)",
       product1Title: "FUEL, FORTIFY, RESILIENCE",
-      product2Badge: "Omega & Protein",
-      product1Description:
-        "Carefully selected nut mix Sacha Inchi, Yogurt covered Blueberry Almonds and Banana Chips",
+      product1Badge: "Omega & Protein",
+      product1Description: "Carefully selected nut mix",
+      product1_strongDescription: "Sacha Inchi, Yogurt covered Blueberry,",
+      product1_2Description: "Almonds and Banana Chips",
       product2Title: "BOOST YOUR ENERGY NATURALLY",
-      product2Description:
-        "Level up your snack game with Sacha Inchi Salt seeds tha nutritious power house!",
+      product2Badge: "Omega & Protein",
+      product2Description: "Level up your snack game with  ",
+      product2_strongDescription: "Sacha Inchi Salt",
+      product2_2Description: "seeds that nutritious power house!",
       product3Title: "THE PERFECT GUILT FREE SNACK",
       product3Badge: "OMEGA & PROTEIN",
-      product3Description:
-        "Crunchy Sacha Inchi seeds kissed with velvety Cacao Chips",
+      product3Description: "Crunchy Sacha Inchi seeds kissed with",
+      product3_strongDescription: "Velvety Cacao Chips",
     },
     infoSection5: {
       parallaxTitle: "Sustainability and Impact",
@@ -208,15 +211,31 @@ const translations = {
         "Omare uses Sustainable packaging that protects our planet",
       detailedSectionP1:
         "At the heart of Omare Sacha Inchi products is a commitment to the planet. That's why we use bagasse paper packaging—a smarter, more sustainable alternative to traditional paper.",
+      expandButton: "Read More",
       li1Title: "Renewable Source",
+      li1Desc:
+        "Bagasse is the natural fibrous byproduct left after sugarcane is processed. Instead of going to waste, this renewable material is transformed into durable, high-quality paper—without cutting down forests.",
+      expand2Button: "Read More",
       li2Title: "Why Rethink Paper?",
-      li2Desc:
+      li2_1Desc:
         "Global paper demand reached 408 million tonnes in 2021. Conventional paper production requires cutting down millions of trees yearly, contributing to deforestation and climate change.",
+      li2_2Desc:
+        "As packaging demand grows, the urgency to find sustainable solutions becomes critical. Bagasse offers a viable alternative that helps preserve our forests.",
+      expand3Button: "Read More",
       li3Title: "A Lower Environmental Footprint",
-      li3Desc: "Compared to traditional wood-based paper, bagasse paper:",
+      li3_1Desc: "Compared to traditional wood-based paper, bagasse paper:",
+      li3_1: "Uses less energy",
+      li3_2: "Requires fewer chemicals",
+      li3_3: "Consumes significantly less water",
+      li3_2Desc:
+        "The result is packaging that's better for the planet, without compromising strength or quality. This sustainable approach helps combat climate change while delivering premium protection.",
+      li3_4: "Helps reduce agricultural waste",
+      expand4Button: "Read More",
       li4Title: "Packaging with Purpose",
       li4Desc:
         "Our Sacha Inchi packaging does more than protect a premium product—it reflects our responsibility to the environment. By choosing bagasse paper, we help conserve forests, reduce waste, and support a more sustainable future.",
+      lastPackagingDesc:
+        "Bagasse paper isn't just an alternative. It's the future of responsible packaging.",
       p2: "Supporting Sacha Inchi means contributing to the preservation of the Amazon and earth ecosystem, a vital part of Earth's biosphere that regulates the planet's climate and houses unparalleled biodiversity. By choosing Sacha Inchi, you are empowering local communities through sustainable farming practices that harmonize with the delicate balance of the Amazon ecosystem.",
       p3: "This crop provides economic opportunities for indigenous farmers, enabling them to thrive while protecting their natural environment. Cultivating Sacha Inchi encourages agroforestry and reduces the need for deforestation, fostering a model where the health of the biosphere and human well-being are intrinsically connected. The sustainable cultivation of this remarkable plant creates a positive cycle where environmental protection and economic prosperity work hand in hand.",
       founderTitle: "Meet the Founder",
@@ -341,16 +360,19 @@ const translations = {
       p1: "Mezcla crujiente de frutos secos, sal marina y Sacha Inchi cubierto de cacao. Ingredientes simples. Nutrición poderosa.",
       p2: "(Próximamente, cuidando cada detalle para ofrecerte la calidad que mereces)",
       product1Title: "ENERGÍA, FORTALEZA, RESILIENCIA",
-      product2Badge: "Omega y Proteína",
-      product1Description:
-        "Mezcla cuidadosamente seleccionada de Sacha Inchi, Arándanos cubiertos de Yogurt, Almendras y Chips de Banana",
+      product1Badge: "Omega & Proteína",
+      product1Description: "Mezcla cuidadosamente seleccionada de",
+      product1_strongDescription: "Sacha Inchi, Arándanos cubiertos de Yogurt,",
+      product1_2Description: "Almendras y Chips de Banana",
       product2Title: "POTENCIA TU ENERGÍA NATURALMENTE",
-      product2Description:
-        "Eleva tu snack con semillas de Sacha Inchi con Sal, ¡una fuente nutritiva de alto poder!",
+      product2Badge: "Omega & Proteina",
+      product2Description: "Eleva tu snack con semillas de ",
+      product2_strongDescription: "Sacha Inchi con Sal,",
+      product2_2Description: "¡una fuente nutritiva de alto poder!",
       product3Title: "EL SNACK PERFECTO SIN CULPAS",
-      product3Badge: "OMEGA Y PROTEÍNA",
-      product3Description:
-        "Crujientes semillas de Sacha Inchi bañadas en delicioso Cacao",
+      product3Badge: "OMEGA & PROTEÍNA",
+      product3Description: "Crujientes semillas de Sacha Inchi bañadas en",
+      product3_strongDescription: "Delicioso Cacao Aterciopelado",
     },
     infoSection5: {
       parallaxTitle: "Sostenibilidad e Impacto",
@@ -359,16 +381,32 @@ const translations = {
         "Omare utiliza empaques sostenibles que protegen nuestro planeta",
       detailedSectionP1:
         "En el corazón de los productos Omare Sacha Inchi hay un compromiso con el planeta. Por eso utilizamos empaques de papel de bagazo, una alternativa más inteligente y sostenible al papel tradicional.",
+      expandButton: "Leer Más",
       li1Title: "Fuente Renovable",
+      li1Desc:
+        "El bagazo es el subproducto fibroso natural que queda después de procesar la caña de azúcar. En lugar de desperdiciarse, este material renovable se transforma en papel duradero y de alta calidad, sin talar bosques.",
+      expand2Button: "Leer Más",
       li2Title: "¿Por qué repensar el papel?",
-      li2Desc:
+      li2_1Desc:
         "La demanda global de papel alcanzó 408 millones de toneladas en 2021. La producción convencional de papel requiere talar millones de árboles cada año, contribuyendo a la deforestación y el cambio climático.",
+      li2_2Desc:
+        "A medida que crece la demanda de empaques, la urgencia por encontrar soluciones sostenibles se vuelve crítica. El bagazo ofrece una alternativa viable que ayuda a preservar nuestros bosques.",
+      expand3Button: "Leer Más",
       li3Title: "Menor Huella Ambiental",
-      li3Desc:
+      li3_1Desc:
         "Comparado con el papel tradicional a base de madera, el papel de bagazo:",
+      li3_1: "Consume menos energía",
+      li3_2: "Requiere menos químicos",
+      li3_3: "Utiliza significativamente menos agua",
+      li3_4: "Ayuda a reducir los residuos agrícolas",
+      li3_2Desc:
+        "El resultado es un empaque mejor para el planeta, sin comprometer la resistencia ni la calidad. Este enfoque sostenible ayuda a combatir el cambio climático mientras ofrece una protección premium.",
+      expand4Button: "Leer Más",
       li4Title: "Empaque con Propósito",
       li4Desc:
         "Nuestro empaque de Sacha Inchi hace más que proteger un producto premium: refleja nuestra responsabilidad con el medio ambiente. Al elegir papel de bagazo, ayudamos a conservar bosques, reducir residuos y apoyar un futuro más sostenible.",
+      lastPackagingDesc:
+        "El papel de bagazo no es una alternativa. Es el futuro del empaque responsable.",
       p2: "Apoyar el Sacha Inchi significa contribuir a la preservación del Amazonas y del ecosistema terrestre — una fuerza vital que regula el clima del planeta y alberga una biodiversidad inigualable. Al elegir Sacha Inchi, estás empoderando a las comunidades locales que practican una agricultura sostenible en armonía con los delicados ritmos de la selva tropical.",
       p3: "Este cultivo extraordinario no solo ofrece oportunidades económicas justas para los agricultores indígenas, sino que también promueve la agroforestería y reduce la deforestación. Su cultivo representa un equilibrio poderoso, donde el bienestar de las personas y la salud de la biosfera prosperan juntos en un ciclo de renovación y respeto por la naturaleza.",
       founderTitle: "Conoce a la Fundadora",
@@ -475,6 +513,20 @@ function updateTranslations(language) {
       });
     }
   });
+
+  // Update read more/less buttons to match current language
+  const isSpanish = language === "es";
+  document.querySelectorAll(".read-more-btn").forEach((btn) => {
+    const readText = btn.querySelector(".read-text");
+    if (readText) {
+      const isExpanded = btn.classList.contains("expanded");
+      if (isExpanded) {
+        readText.textContent = isSpanish ? "Leer menos" : "Read less";
+      } else {
+        readText.textContent = isSpanish ? "Leer más" : "Read more";
+      }
+    }
+  });
 }
 
 const languageToggle = document.querySelectorAll(".languageToggle");
@@ -575,14 +627,16 @@ function toggleExpand(contentId, button) {
   const content = document.getElementById(contentId);
   const readText = button.querySelector(".read-text");
 
+  const isSpanish = document.body.classList.contains("es");
+
   if (content.classList.contains("expanded")) {
     content.classList.remove("expanded");
     button.classList.remove("expanded");
-    readText.textContent = "Read more";
+    readText.textContent = isSpanish ? "Leer más" : "Read more";
   } else {
     content.classList.add("expanded");
     button.classList.add("expanded");
-    readText.textContent = "Read less";
+    readText.textContent = isSpanish ? "Leer menos" : "Read less";
   }
 }
 
@@ -595,15 +649,16 @@ readMoreBtns.forEach((btn) =>
       const targetId = this.getAttribute("data-expand-target");
       const content = document.getElementById(targetId);
       const readText = this.querySelector(".read-text");
+      const isSpanish = document.body.classList.contains("es");
 
       if (content.classList.contains("expanded")) {
         content.classList.remove("expanded");
         this.classList.remove("expanded");
-        readText.textContent = "Read more";
+        readText.textContent = isSpanish ? "Leer más" : "Read more";
       } else {
         content.classList.add("expanded");
         this.classList.add("expanded");
-        readText.textContent = "Read less";
+        readText.textContent = isSpanish ? "Leer menos" : "Read less";
       }
     }),
   ),
